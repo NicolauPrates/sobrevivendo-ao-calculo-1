@@ -181,6 +181,68 @@ def funcao_e_derivada() -> None:
 
 
 # ======================================================================================
+# 3.2 — Derivadas das funções elementares
+# ======================================================================================
+
+def _eixo_em_pi(ax, de=-1, ate=2) -> None:
+    nomes = {-1: r"$-\pi$", -0.5: r"$-\frac{\pi}{2}$", 0.5: r"$\frac{\pi}{2}$",
+             1: r"$\pi$", 1.5: r"$\frac{3\pi}{2}$", 2: r"$2\pi$"}
+    marcas, rotulos = [], []
+    k = de
+    while k <= ate + 1e-9:
+        if abs(k) > 1e-9 and k in nomes:
+            marcas.append(k * np.pi)
+            rotulos.append(nomes[k])
+        k += 0.5
+    ax.set_xticks(marcas)
+    ax.set_xticklabels(rotulos)
+
+
+def seno_e_sua_derivada() -> None:
+    """sen e cos no mesmo plano: onde um tem pico, o outro cruza o eixo."""
+    fig, ax = ec.novo_plano(xlim=(-0.6, 2 * np.pi + 0.5), ylim=(-1.8, 1.8),
+                            figsize=(7.2, 3.6), passo_x=None, passo_y=1)
+    _eixo_em_pi(ax, de=0.5, ate=2)
+
+    ec.plotar(ax, np.sin, (0, 2 * np.pi), cor=ec.CORES["curva"],
+              rotulo=r"$f(x)=\mathrm{sen}\,x$")
+    ec.plotar(ax, np.cos, (0, 2 * np.pi), cor=ec.CORES["curva2"],
+              rotulo=r"$f'(x)=\cos x$")
+
+    for x0 in (np.pi / 2, 3 * np.pi / 2):
+        ec.ponto_fechado(ax, x0, np.sin(x0), cor=ec.CORES["destaque"], tamanho=6)
+        ec.ponto_fechado(ax, x0, 0, cor=ec.CORES["destaque"], tamanho=6)
+        ec.linha_guia(ax, x=x0)
+
+    ax.annotate("pico de $f$  ⇔  $f'$ zera", xy=(np.pi / 2, 1), xytext=(2.0, 1.45),
+                color=ec.CORES["destaque"], fontsize=9)
+
+    ec.legenda(ax, local="lower left")
+    ec.salvar(fig, UNIDADE, "3.2-seno-e-sua-derivada")
+
+
+def exponencial_inclinacao() -> None:
+    """Em e^x, a inclinação da tangente é igual à altura do ponto."""
+    fig, ax = ec.novo_plano(xlim=(-2.2, 2.2), ylim=(-1, 7), figsize=(6.0, 4.6),
+                            passo_y=1)
+
+    ec.plotar(ax, np.exp, (-2.2, 1.9), rotulo="$y=e^x$")
+
+    for a in (0.0, 1.0):
+        h = np.exp(a)
+        xs = np.array([a - 1.1, a + 1.1])
+        ax.plot(xs, h + h * (xs - a), color=ec.CORES["curva2"], linewidth=1.8,
+                zorder=3)
+        ec.ponto_fechado(ax, a, h, cor=ec.CORES["destaque"], tamanho=6)
+        ax.annotate(f"altura {h:.2f}\ninclinação {h:.2f}".replace(".", ","),
+                    xy=(a, h), xytext=(10, -34), textcoords="offset points",
+                    color=ec.CORES["destaque"], fontsize=9)
+
+    ec.legenda(ax, local="upper left")
+    ec.salvar(fig, UNIDADE, "3.2-exponencial-inclinacao")
+
+
+# ======================================================================================
 
 FIGURAS = [
     secantes_para_tangente,
@@ -190,6 +252,8 @@ FIGURAS = [
     nao_derivavel_tangente_vertical,
     nao_derivavel_salto,
     funcao_e_derivada,
+    seno_e_sua_derivada,
+    exponencial_inclinacao,
 ]
 
 
