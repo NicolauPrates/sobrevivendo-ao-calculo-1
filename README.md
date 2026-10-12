@@ -106,7 +106,7 @@ flowchart TD
 | [Como não reprovar](00-comece-aqui/como-nao-reprovar.md) | Estratégia de prova, gestão de tempo, erros que custam ponto |
 | [Bibliografia e recursos](00-comece-aqui/bibliografia-e-recursos.md) | O perfil de cada um dos seis livros de referência e como usá-los |
 
-### 1 · Funções reais de uma variável real · [índice da unidade](01-funcoes/README.md)
+### 1 · Funções reais de uma variável real ✅ · [índice da unidade](01-funcoes/README.md)
 
 | # | Teoria | 📝 Propostos | ✅ Gabarito |
 | :---: | --- | :---: | :---: |
