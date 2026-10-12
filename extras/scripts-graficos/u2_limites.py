@@ -249,6 +249,134 @@ def raiz_lateral() -> None:
 
 
 # ======================================================================================
+# 2.3 — Teorema do Confronto
+# ======================================================================================
+
+def confronto() -> None:
+    """A ideia do confronto: f espremida entre g e h, que se encontram em L."""
+    fig, ax = ec.novo_plano(xlim=(-1.2, 3.2), ylim=(-0.6, 3.4), figsize=(6.4, 4.4))
+
+    g = lambda x: 2 - 0.5 * (x - 1) ** 2
+    h = lambda x: 2 + 0.5 * (x - 1) ** 2
+    f = lambda x: 2 + 0.35 * (x - 1) ** 2 * np.sin(6 * (x - 1))
+
+    ec.plotar(ax, h, (-1.0, 3.0), cor=ec.CORES["curva2"], rotulo="$h(x)$")
+    ec.plotar(ax, g, (-1.0, 3.0), cor=ec.CORES["curva3"], rotulo="$g(x)$")
+    ec.plotar(ax, f, (-1.0, 3.0), cor=ec.CORES["curva"], rotulo="$f(x)$", largura=2.6)
+
+    ec.ponto_fechado(ax, 1, 2, cor=ec.CORES["destaque"], tamanho=7)
+    ec.linha_guia(ax, x=1)
+    ax.annotate("$L$", xy=(1, 2), xytext=(-14, 8), textcoords="offset points",
+                color=ec.CORES["destaque"], fontsize=12)
+    ax.annotate("$a$", xy=(1, 0), xytext=(0, -20), textcoords="offset points",
+                ha="center", color=ec.CORES["destaque"], fontsize=12)
+    ax.annotate("as duas pontas se encontram:\n$f$ não tem para onde fugir",
+                xy=(1, 2), xytext=(1.35, 0.35), color=ec.CORES["destaque"], fontsize=9)
+
+    ec.legenda(ax, local="upper left")
+    ec.salvar(fig, UNIDADE, "2.3-confronto")
+
+
+def x2_sen_um_sobre_x() -> None:
+    """x^2 sen(1/x) espremida entre -x^2 e x^2."""
+    fig, ax = ec.novo_plano(xlim=(-0.55, 0.55), ylim=(-0.3, 0.3), figsize=(6.2, 4.0),
+                            passo_x=None, passo_y=None)
+    ax.set_xticks([-0.4, -0.2, 0.2, 0.4])
+    ax.set_xticklabels(["-0,4", "-0,2", "0,2", "0,4"])
+    ax.set_yticks([-0.2, -0.1, 0.1, 0.2])
+    ax.set_yticklabels(["-0,2", "-0,1", "0,1", "0,2"])
+
+    ec.plotar(ax, lambda x: x**2, (-0.55, 0.55), cor=ec.CORES["curva2"],
+              rotulo="$y=x^2$")
+    ec.plotar(ax, lambda x: -x**2, (-0.55, 0.55), cor=ec.CORES["curva3"],
+              rotulo="$y=-x^2$")
+
+    for trecho in [(-0.55, -0.0008), (0.0008, 0.55)]:
+        x = np.linspace(*trecho, 9000)
+        ax.plot(x, x**2 * np.sin(1 / x), color=ec.CORES["curva"], linewidth=1.3,
+                zorder=4,
+                label=r"$y=x^2\,\mathrm{sen}\,\frac{1}{x}$" if trecho[0] > 0 else None)
+
+    ec.ponto_fechado(ax, 0, 0, cor=ec.CORES["destaque"], tamanho=6)
+    ec.legenda(ax, local="upper left")
+    ec.salvar(fig, UNIDADE, "2.3-x2-sen-um-sobre-x")
+
+
+def circulo_trigonometrico() -> None:
+    """A construção geométrica que prova sen(x)/x -> 1."""
+    fig, ax = ec.novo_plano(xlim=(-0.35, 1.9), ylim=(-0.35, 1.5), figsize=(6.0, 4.4),
+                            aspecto_igual=True, passo_x=None, passo_y=None)
+    ax.set_xticks([1])
+    ax.set_yticks([1])
+    ax.grid(False)
+
+    t = np.linspace(0, np.pi / 2.2, 300)
+    ax.plot(np.cos(t), np.sin(t), color=ec.CORES["tracejado"], linewidth=1.4, zorder=2)
+
+    ang = 0.9
+    P = (np.cos(ang), np.sin(ang))
+    T = (1.0, np.tan(ang))
+
+    # Setor circular (área x/2).
+    ts = np.linspace(0, ang, 120)
+    ax.fill(np.concatenate([[0], np.cos(ts), [0]]),
+            np.concatenate([[0], np.sin(ts), [0]]),
+            color=ec.CORES["curva3"], alpha=0.22, zorder=1)
+
+    # Triângulo menor OAP (área sen x / 2) e maior OAT (área tg x / 2).
+    ax.plot([0, 1, P[0], 0], [0, 0, P[1], 0], color=ec.CORES["curva"], linewidth=2.0,
+            zorder=3)
+    ax.plot([0, 1, T[0], 0], [0, 0, T[1], 0], color=ec.CORES["curva2"], linewidth=2.0,
+            zorder=3)
+    ax.plot([1, 1], [0, T[1]], color=ec.CORES["curva2"], linewidth=2.0, zorder=3)
+    ax.plot([P[0], P[0]], [0, P[1]], color=ec.CORES["curva"], linestyle=":",
+            linewidth=1.4, zorder=3)
+
+    ec.ponto_fechado(ax, 1, 0, cor=ec.CORES["eixo"], tamanho=5)
+    ec.ponto_fechado(ax, *P, cor=ec.CORES["curva"], tamanho=5)
+    ec.ponto_fechado(ax, *T, cor=ec.CORES["curva2"], tamanho=5)
+
+    ax.annotate("$O$", xy=(0, 0), xytext=(-16, -14), textcoords="offset points",
+                fontsize=11)
+    ax.annotate("$A$", xy=(1, 0), xytext=(10, -16), textcoords="offset points",
+                fontsize=11)
+    ax.annotate("$P$", xy=P, xytext=(-16, 6), textcoords="offset points",
+                color=ec.CORES["curva"], fontsize=11)
+    ax.annotate("$T$", xy=T, xytext=(6, 2), textcoords="offset points",
+                color=ec.CORES["curva2"], fontsize=11)
+    ax.annotate(r"$\mathrm{sen}\,x$", xy=(P[0], P[1] / 2), xytext=(-58, -4),
+                textcoords="offset points", color=ec.CORES["curva"], fontsize=10)
+    ax.annotate(r"$\mathrm{tg}\,x$", xy=(1, T[1] / 2), xytext=(8, -4),
+                textcoords="offset points", color=ec.CORES["curva2"], fontsize=10)
+    ax.annotate("$x$", xy=(0.22, 0.09), color=ec.CORES["curva3"], fontsize=11)
+
+    ec.salvar(fig, UNIDADE, "2.3-circulo-trigonometrico")
+
+
+def sen_x_sobre_x() -> None:
+    """O gráfico de sen(x)/x, com o furo em x = 0."""
+    fig, ax = ec.novo_plano(xlim=(-3 * np.pi, 3 * np.pi), ylim=(-0.5, 1.4),
+                            figsize=(7.0, 3.4), passo_x=None, passo_y=None)
+    marcas = [-2 * np.pi, -np.pi, np.pi, 2 * np.pi]
+    ax.set_xticks(marcas)
+    ax.set_xticklabels([r"$-2\pi$", r"$-\pi$", r"$\pi$", r"$2\pi$"])
+    ax.set_yticks([0.5, 1])
+    ax.set_yticklabels(["0,5", "1"])
+
+    for trecho in [(-3 * np.pi, -0.01), (0.01, 3 * np.pi)]:
+        ec.plotar(ax, lambda x: np.sin(x) / x, trecho, cor=ec.CORES["curva"],
+                  rotulo=r"$y=\frac{\mathrm{sen}\,x}{x}$" if trecho[0] > 0 else None)
+    ec.ponto_aberto(ax, 0, 1, cor=ec.CORES["curva"])
+    ec.linha_guia(ax, y=1)
+
+    ax.annotate("o limite é 1,\nmas a função\nnão existe em 0", xy=(0, 1),
+                xytext=(1.2, 0.35), color=ec.CORES["destaque"], fontsize=9)
+
+    ec.legenda(ax, local="lower right")
+    ec.salvar(fig, UNIDADE, "2.3-sen-x-sobre-x")
+
+
+# ======================================================================================
 
 FIGURAS = [
     ideia_de_limite,
@@ -257,6 +385,10 @@ FIGURAS = [
     modulo_sobre_x,
     maior_inteiro,
     raiz_lateral,
+    confronto,
+    x2_sen_um_sobre_x,
+    circulo_trigonometrico,
+    sen_x_sobre_x,
     valor_nao_importa_a,
     valor_nao_importa_b,
     valor_nao_importa_c,
