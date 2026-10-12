@@ -243,6 +243,71 @@ def exponencial_inclinacao() -> None:
 
 
 # ======================================================================================
+# 3.3 — Regra da cadeia e derivada da função inversa
+# ======================================================================================
+
+def cadeia_compressao() -> None:
+    """sen(3x) sobe três vezes mais rápido que sen(x): é o fator de dentro."""
+    fig, ax = ec.novo_plano(xlim=(-0.5, 2 * np.pi + 0.4), ylim=(-1.8, 1.8),
+                            figsize=(7.2, 3.8), passo_x=None, passo_y=1)
+    _eixo_em_pi(ax, de=0.5, ate=2)
+
+    ec.plotar(ax, np.sin, (0, 2 * np.pi), cor=ec.CORES["curva"],
+              rotulo=r"$y=\mathrm{sen}\,x$")
+    ec.plotar(ax, lambda x: np.sin(3 * x), (0, 2 * np.pi), cor=ec.CORES["curva2"],
+              rotulo=r"$y=\mathrm{sen}\,3x$")
+
+    # Tangentes na origem: inclinações 1 e 3.
+    xs = np.array([-0.35, 0.55])
+    ax.plot(xs, xs, color=ec.CORES["curva"], linestyle="--", linewidth=1.5, zorder=4)
+    ax.plot(np.array([-0.2, 0.42]), 3 * np.array([-0.2, 0.42]),
+            color=ec.CORES["curva2"], linestyle="--", linewidth=1.5, zorder=4)
+    ec.ponto_fechado(ax, 0, 0, cor=ec.CORES["destaque"], tamanho=6)
+
+    ax.annotate("inclinação 1", xy=(0.6, 0.6), color=ec.CORES["curva"], fontsize=9)
+    ax.annotate("inclinação 3", xy=(0.45, 1.45), color=ec.CORES["curva2"], fontsize=9)
+
+    ec.legenda(ax, local="lower left")
+    ec.salvar(fig, UNIDADE, "3.3-cadeia-compressao")
+
+
+def inversa_inclinacoes() -> None:
+    """As inclinações de f e de f^-1 em pontos correspondentes são inversas."""
+    fig, ax = ec.novo_plano(xlim=(-0.5, 4.5), ylim=(-0.5, 4.5), figsize=(5.4, 5.0),
+                            aspecto_igual=True)
+
+    f = lambda x: x**2
+    a = 1.5
+    b = f(a)  # 2.25
+
+    ec.plotar(ax, f, (0, 2.1), cor=ec.CORES["curva"], rotulo="$y=x^2$")
+    ec.plotar(ax, np.sqrt, (0, 4.5), cor=ec.CORES["curva2"],
+              rotulo=r"$y=\sqrt{x}$")
+    ax.plot([-0.4, 4.4], [-0.4, 4.4], color=ec.CORES["tracejado"], linestyle="--",
+            linewidth=1.2, zorder=2)
+
+    # Tangente a f em (a, b): inclinação 2a = 3.
+    m = 2 * a
+    xs = np.array([a - 0.8, a + 0.8])
+    ax.plot(xs, b + m * (xs - a), color=ec.CORES["curva"], linewidth=1.6, zorder=3)
+    # Tangente à inversa em (b, a): inclinação 1/(2a) = 1/3.
+    ys = np.array([b - 1.6, b + 1.6])
+    ax.plot(ys, a + (1 / m) * (ys - b), color=ec.CORES["curva2"], linewidth=1.6,
+            zorder=3)
+
+    ec.ponto_fechado(ax, a, b, cor=ec.CORES["destaque"], tamanho=6)
+    ec.ponto_fechado(ax, b, a, cor=ec.CORES["destaque"], tamanho=6)
+
+    ax.annotate("inclinação 3", xy=(a, b), xytext=(-18, 26),
+                textcoords="offset points", color=ec.CORES["curva"], fontsize=9)
+    ax.annotate(r"inclinação $1/3$", xy=(b, a), xytext=(14, -26),
+                textcoords="offset points", color=ec.CORES["curva2"], fontsize=9)
+
+    ec.legenda(ax, local="upper left")
+    ec.salvar(fig, UNIDADE, "3.3-inversa-inclinacoes")
+
+
+# ======================================================================================
 
 FIGURAS = [
     secantes_para_tangente,
@@ -254,6 +319,8 @@ FIGURAS = [
     funcao_e_derivada,
     seno_e_sua_derivada,
     exponencial_inclinacao,
+    cadeia_compressao,
+    inversa_inclinacoes,
 ]
 
 
