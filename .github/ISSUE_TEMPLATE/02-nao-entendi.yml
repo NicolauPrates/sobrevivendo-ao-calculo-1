@@ -1,0 +1,51 @@
+name: "❓ Não entendi este trecho"
+description: "Uma passagem confusa, um passo que apareceu do nada, uma explicação que não ficou clara."
+title: "[dúvida] "
+labels: ["dúvida", "clareza"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Perguntar aqui não é incomodar.** Se um trecho não ficou claro para você,
+        provavelmente não ficou claro para mais vinte pessoas da turma — e a sua
+        pergunta é o que vai fazer esse trecho ser reescrito.
+
+        Dúvida de pré-cálculo (fatoração, fração, trigonometria) é bem-vinda do mesmo jeito.
+
+  - type: input
+    id: arquivo
+    attributes:
+      label: Qual trecho?
+      description: "Link da página, ou número do tópico e título da seção."
+      placeholder: "03-derivadas/3.3 — seção Regra da cadeia, Exemplo 2, passo 4"
+    validations:
+      required: true
+
+  - type: textarea
+    id: duvida
+    attributes:
+      label: O que não ficou claro?
+      description: "Diga o mais concretamente possível onde o raciocínio se perdeu."
+      placeholder: |
+        Entendi até o passo 3. No passo 4 apareceu um 2x multiplicando e eu não
+        consegui ver de onde ele veio.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tentativa
+    attributes:
+      label: O que você já tentou? (opcional)
+      description: "Ajuda muito saber até onde você chegou — a resposta pode partir desse ponto."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmacoes
+    attributes:
+      label: Antes de enviar
+      options:
+        - label: "Reli o trecho e os pré-requisitos indicados no início da página."
+          required: false
+        - label: "Conferi se a dúvida já foi respondida em outra issue."
+          required: false

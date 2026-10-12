@@ -1,0 +1,28 @@
+# ---- Python (scripts opcionais em extras/scripts-graficos) ----
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# ---- Sistema operacional ----
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+
+# ---- Editores ----
+.vscode/
+.idea/
+*.swp
+*~
+
+# ---- Saidas temporarias ----
+*.log
+*.tmp
+/tmp/
+
+# ---- Nao versionar imagens rasterizadas geradas por engano ----
+# (o padrao do repositorio e SVG, versionado em assets/img/)
+assets/img/**/*.png

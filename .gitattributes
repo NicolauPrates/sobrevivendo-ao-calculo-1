@@ -1,0 +1,16 @@
+# Normaliza finais de linha: evita ruido de CRLF/LF entre Windows, Linux e o GitHub.
+* text=auto eol=lf
+
+# Arquivos binarios nao devem ser normalizados.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+
+# O GitHub trata .svg como imagem, mas e texto para fins de diff.
+*.svg text eol=lf
+
+# Este repositorio e material didatico em Markdown: os scripts opcionais de
+# extras/ nao devem definir a linguagem do repositorio na pagina do GitHub.
+extras/** linguist-vendored=true
+assets/** linguist-documentation=true

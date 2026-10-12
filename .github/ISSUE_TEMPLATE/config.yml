@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "📖 Como usar este material"
+    url: https://github.com/NicolauPrates/sobrevivendo-ao-calculo-1/blob/main/00-comece-aqui/como-usar-este-material.md
+    about: "Antes de abrir uma issue, veja o fluxo de estudo recomendado e a legenda dos ícones."
+  - name: "⭐ Revisão de Pré-Cálculo"
+    url: https://github.com/NicolauPrates/sobrevivendo-ao-calculo-1/blob/main/00-comece-aqui/revisao-pre-calculo.md
+    about: "Travou numa conta de álgebra, fração ou trigonometria? A resposta provavelmente está aqui."
+  - name: "🤝 Guia de contribuição"
+    url: https://github.com/NicolauPrates/sobrevivendo-ao-calculo-1/blob/main/CONTRIBUTING.md
+    about: "Quer corrigir ou escrever conteúdo? Comece por aqui."

@@ -1,0 +1,60 @@
+name: "💡 Sugestão de melhoria"
+description: "Ideia de exemplo, exercício, gráfico ou tópico que falta — ou qualquer coisa que tornaria o material melhor."
+title: "[sugestão] "
+labels: ["melhoria"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Este material é de aluno para aluno: ele melhora com quem o usa.
+        Sugestão de exercício que caiu na sua prova, de gráfico que faltou,
+        de resumo que ajudaria — tudo é bem-vindo aqui.
+
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de sugestão
+      options:
+        - "Falta um exemplo resolvido"
+        - "Falta um exercício ou uma lista"
+        - "Falta um gráfico ou uma visualização"
+        - "Um tópico da ementa está raso"
+        - "Melhoria de organização ou de navegação"
+        - "Dúvida sobre como contribuir"
+        - "Outro"
+    validations:
+      required: true
+
+  - type: input
+    id: onde
+    attributes:
+      label: Em qual página? (opcional)
+      description: "Se a sugestão for sobre um tópico específico, diga qual."
+      placeholder: "05-integrais/5.2 — técnicas de integração"
+    validations:
+      required: false
+
+  - type: textarea
+    id: sugestao
+    attributes:
+      label: Qual é a sugestão?
+      description: "Descreva a ideia. Se for um exercício, pode colar o enunciado que você tem em mente."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivo
+    attributes:
+      label: Por que isso ajudaria? (opcional)
+      placeholder: "Esse tipo de questão caiu na P2 e não tem nenhum exemplo parecido no material."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: autoria
+    attributes:
+      label: Direito autoral
+      description: "O repositório é CC BY-SA 4.0 e só pode conter material original."
+      options:
+        - label: "O conteúdo que estou sugerindo não é copiado literalmente de livro, de lista ou de prova de professor."
+          required: true

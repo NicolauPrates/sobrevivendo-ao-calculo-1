@@ -1,0 +1,54 @@
+name: "🐛 Achei um erro no material"
+description: "Erro de conta, sinal trocado, resposta divergente do gabarito, erro de digitação ou link quebrado."
+title: "[erro] "
+labels: ["erro", "triagem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar. Erro de material atrapalha o estudo de toda a turma —
+        achar um e avisar é a contribuição mais útil que existe aqui.
+
+        Não é preciso saber a resposta certa: basta dizer onde a conta não fecha.
+
+  - type: input
+    id: arquivo
+    attributes:
+      label: Onde está o erro?
+      description: "Cole o link da página (ou o permalink da linha) ou escreva o número do tópico e o título da seção."
+      placeholder: "01-funcoes/1.1-numeros-reais... — seção Desigualdades, Exemplo 7"
+    validations:
+      required: true
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que está errado?
+      description: "Copie o trecho e diga o que não fecha."
+      placeholder: |
+        No passo 3 o enunciado multiplica os dois lados por (x - 2), que pode ser
+        negativo, mas o sinal da desigualdade não é invertido.
+    validations:
+      required: true
+
+  - type: textarea
+    id: correcao
+    attributes:
+      label: Qual seria a correção? (opcional)
+      description: "Se você já sabe o certo, escreva aqui. Se não souber, deixe em branco — está tudo bem."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de erro
+      options:
+        - "Erro matemático (conta, sinal, resultado)"
+        - "Resposta do gabarito divergente"
+        - "Erro de digitação ou de português"
+        - "Fórmula que não renderiza (LaTeX quebrado)"
+        - "Link quebrado ou imagem que não carrega"
+        - "Outro"
+    validations:
+      required: true
