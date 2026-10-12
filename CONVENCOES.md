@@ -159,10 +159,28 @@ O GitHub renderiza LaTeX nativamente. As regras abaixo não são estéticas: cad
 | Texto dentro da fórmula | `\text{se } x > 0` | palavras em itálico de variável |
 | Função composta de nome longo | `\operatorname{arcsec} x` | `arcsec\,x` |
 | Épsilon e delta | `\varepsilon`, `\delta` | `\epsilon` (o símbolo "lunar" não é o usado nos livros) |
-| Seno, cosseno, log | `\sin`, `\cos`, `\ln`, `\log` | `sen`, `sin` sem barra, `Ln` |
+| Seno e tangente | `\operatorname{sen}`, `\operatorname{tg}` | `\sin`, `\tan`, `sen` sem comando |
+| Cosseno, log | `\cos`, `\ln`, `\log` | `cos` sem barra, `Ln` |
+
+### Notação trigonométrica — padrão brasileiro
+
+O material usa a notação dos livros brasileiros e do quadro do professor, e **não** a do LaTeX em inglês. O LaTeX não traz esses comandos prontos, então eles são escritos com `\operatorname`:
+
+| Função | Escreva | Renderiza | Nunca use |
+| --- | --- | :---: | --- |
+| seno | `\operatorname{sen} x` | $\operatorname{sen} x$ | `\sin` |
+| cosseno | `\cos x` | $\cos x$ | `cos` sem barra |
+| tangente | `\operatorname{tg} x` | $\operatorname{tg} x$ | `\tan` |
+| cotangente | `\operatorname{cotg} x` | $\operatorname{cotg} x$ | `\cot` |
+| secante | `\sec x` | $\sec x$ | — |
+| cossecante | `\operatorname{cossec} x` | $\operatorname{cossec} x$ | `\csc` |
+| arco seno | `\operatorname{arcsen} x` | $\operatorname{arcsen} x$ | `\arcsin` |
+| arco tangente | `\operatorname{arctg} x` | $\operatorname{arctg} x$ | `\arctan` |
+
+Potências e inversas funcionam normalmente: `\operatorname{sen}^2 x` dá $\operatorname{sen}^2 x$, e `\operatorname{tg}^{-1} x` dá $\operatorname{tg}^{-1} x$.
 
 > [!NOTE]
-> **Seno em português.** Os livros brasileiros escrevem $\operatorname{sen} x$; o LaTeX padrão só oferece `\sin`. Neste repositório usamos **`\sin`** em todas as fórmulas, por compatibilidade com o renderizador do GitHub, e escrevemos "seno" quando o nome aparece no texto corrido. Essa é a única concessão de notação ao inglês.
+> Nos **scripts de gráfico** o rótulo é escrito com o *mathtext* do matplotlib, que é mais limitado: lá se escreve `$\mathrm{sen}\,x$` (e `|x|` no lugar de `\lvert x \rvert`, porque o mathtext não conhece esse comando).
 
 ### 5.1 ⚠️ A regra mais importante deste arquivo: barra invertida antes de pontuação
 
