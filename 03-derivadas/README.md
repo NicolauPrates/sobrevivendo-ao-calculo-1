@@ -1,8 +1,5 @@
 # Unidade 3 · Derivadas: conceito e regras
 
-> [!NOTE]
-> 🚧 **Unidade em construção.** As páginas abaixo estão sendo escritas e publicadas em ordem. Enquanto isso, o índice já serve de roteiro de estudo.
-
 > Derivada é taxa de variação instantânea — e, geometricamente, a inclinação da reta tangente. Esta unidade transforma esse conceito em um conjunto de regras que você vai usar até o fim do curso de engenharia.
 
 ---

@@ -127,7 +127,7 @@ flowchart TD
 | 2.5 | [Continuidade e tipos de descontinuidade](02-limites-e-continuidade/2.5-continuidade-e-tipos-de-descontinuidade.md) | [lista](02-limites-e-continuidade/exercicios/lista-2.5-propostos.md) | [gabarito](02-limites-e-continuidade/gabaritos/gabarito-2.5.md) |
 | — | **Revisão da unidade** | [lista](02-limites-e-continuidade/exercicios/revisao-unidade-2.md) | [gabarito](02-limites-e-continuidade/gabaritos/gabarito-revisao-unidade-2.md) |
 
-### 3 · Derivadas: conceito e regras 🚧 · [índice da unidade](03-derivadas/README.md)
+### 3 · Derivadas: conceito e regras ✅ · [índice da unidade](03-derivadas/README.md)
 
 | # | Teoria | 📝 Propostos | ✅ Gabarito |
 | :---: | --- | :---: | :---: |
