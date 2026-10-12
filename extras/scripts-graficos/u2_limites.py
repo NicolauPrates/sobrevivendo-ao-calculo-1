@@ -459,6 +459,82 @@ def assintota_obliqua() -> None:
 
 
 # ======================================================================================
+# 2.5 — Continuidade e tipos de descontinuidade
+# ======================================================================================
+
+def _plano_descontinuidade(titulo: str):
+    return ec.novo_plano(xlim=(-0.6, 3.6), ylim=(-1.2, 4.2), figsize=(3.6, 3.2),
+                         titulo=titulo, passo_x=1, passo_y=1)
+
+
+def descontinuidade_removivel() -> None:
+    """Furo: o limite existe, mas não é o valor (ou o valor não existe)."""
+    fig, ax = _plano_descontinuidade("removível")
+    ec.plotar(ax, lambda x: x + 1, (-0.6, 3.6))
+    ec.ponto_aberto(ax, 1, 2, cor=ec.CORES["curva"])
+    ec.ponto_fechado(ax, 1, 3.4, cor=ec.CORES["destaque"])
+    ec.salvar(fig, UNIDADE, "2.5-descontinuidade-removivel")
+
+
+def descontinuidade_salto() -> None:
+    """Salto: os laterais existem e discordam."""
+    fig, ax = _plano_descontinuidade("de salto")
+    ec.plotar(ax, lambda x: x + 1, (-0.6, 1.5), cor=ec.CORES["curva"])
+    ec.plotar(ax, lambda x: x - 0.5, (1.5, 3.6), cor=ec.CORES["curva2"])
+    ec.ponto_aberto(ax, 1.5, 2.5, cor=ec.CORES["curva"])
+    ec.ponto_fechado(ax, 1.5, 1.0, cor=ec.CORES["curva2"])
+    ec.salvar(fig, UNIDADE, "2.5-descontinuidade-salto")
+
+
+def descontinuidade_infinita() -> None:
+    """Infinita: pelo menos um lateral explode."""
+    fig, ax = _plano_descontinuidade("infinita")
+    for trecho in [(-0.6, 1.25), (1.75, 3.6)]:
+        ec.plotar(ax, lambda x: 1 / (x - 1.5) + 1.5, trecho, cor=ec.CORES["curva"])
+    ec.assintota_vertical(ax, 1.5)
+    ec.salvar(fig, UNIDADE, "2.5-descontinuidade-infinita")
+
+
+def teorema_valor_intermediario() -> None:
+    """O TVI: função contínua assume todo valor entre f(a) e f(b)."""
+    fig, ax = ec.novo_plano(xlim=(-0.5, 6), ylim=(-3.5, 5), figsize=(6.4, 4.4),
+                            passo_y=1)
+
+    f = lambda x: 0.35 * (x - 1) ** 3 - 1.6 * (x - 1) + 0.4 * (x - 1) ** 2 - 2
+    a, b = 1.0, 5.0
+    N = 1.0
+
+    ec.plotar(ax, f, (a, b), rotulo="$f$ contínua em $[a,b]$")
+    ec.assintota_horizontal(ax, N, rotulo="$y=N$")
+
+    ec.ponto_fechado(ax, a, f(a), cor=ec.CORES["destaque"], tamanho=7)
+    ec.ponto_fechado(ax, b, f(b), cor=ec.CORES["destaque"], tamanho=7)
+
+    # Localiza numericamente um c com f(c) = N.
+    xs = np.linspace(a, b, 4000)
+    ys = f(xs)
+    c = xs[np.argmin(np.abs(ys - N))]
+    ec.ponto_fechado(ax, c, N, cor=ec.CORES["curva2"], tamanho=7)
+    ec.linha_guia(ax, x=c)
+
+    ax.annotate("$a$", xy=(a, 0), xytext=(-4, -22), textcoords="offset points",
+                fontsize=11)
+    ax.annotate("$b$", xy=(b, 0), xytext=(-4, -22), textcoords="offset points",
+                fontsize=11)
+    ax.annotate("$c$", xy=(c, 0), xytext=(-4, -22), textcoords="offset points",
+                color=ec.CORES["curva2"], fontsize=11)
+    ax.annotate("$f(a)$", xy=(a, f(a)), xytext=(6, -14), textcoords="offset points",
+                color=ec.CORES["destaque"], fontsize=10)
+    ax.annotate("$f(b)$", xy=(b, f(b)), xytext=(-40, 4), textcoords="offset points",
+                color=ec.CORES["destaque"], fontsize=10)
+    ax.annotate("existe $c$ com $f(c)=N$", xy=(c, N), xytext=(c + 0.25, 2.9),
+                color=ec.CORES["curva2"], fontsize=9)
+
+    ec.legenda(ax, local="lower right")
+    ec.salvar(fig, UNIDADE, "2.5-teorema-do-valor-intermediario")
+
+
+# ======================================================================================
 
 FIGURAS = [
     ideia_de_limite,
@@ -475,6 +551,10 @@ FIGURAS = [
     assintota_horizontal_fig,
     raiz_no_infinito,
     assintota_obliqua,
+    descontinuidade_removivel,
+    descontinuidade_salto,
+    descontinuidade_infinita,
+    teorema_valor_intermediario,
     valor_nao_importa_a,
     valor_nao_importa_b,
     valor_nao_importa_c,
