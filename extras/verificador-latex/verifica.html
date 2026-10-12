@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verificador de LaTeX — Sobrevivendo ao Cálculo 1</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.js"></script>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    max-width: 60rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5;
+  }
+  h1 { font-size: 1.4rem; }
+  #resumo { font-size: 1.1rem; padding: 0.9rem 1.1rem; border-radius: 8px; margin: 1.2rem 0; }
+  .ok   { background: #e6f4ea; color: #14532d; border: 1px solid #86c99b; }
+  .erro { background: #fdeaea; color: #7a1020; border: 1px solid #e0a0a8; }
+  .caso { border-left: 4px solid #a51d2d; padding: 0.6rem 0 0.6rem 0.9rem; margin: 1rem 0; }
+  .arquivo { font-weight: 600; }
+  code { background: rgba(127,127,127,0.16); padding: 0.1rem 0.35rem; border-radius: 4px;
+         font-size: 0.9em; word-break: break-all; }
+  .motivo { color: #a51d2d; }
+  footer { margin-top: 3rem; font-size: 0.85rem; opacity: 0.75; }
+</style>
+</head>
+<body>
+
+<h1>Verificador de LaTeX</h1>
+<p>Cada fórmula do material é passada pelo KaTeX <strong>já com o pré-processamento do
+GitHub aplicado</strong>. Se algo aparecer abaixo, essa fórmula não vai renderizar na
+página publicada — e vai levar junto todas as outras da mesma página.</p>
+
+<div id="resumo">Carregando <code>formulas.json</code>…</div>
+<div id="lista"></div>
+<div id="sandbox" hidden></div>
+
+<footer>
+  Gerado por <code>extrai_formulas.py</code> · <em>Sobrevivendo ao Cálculo 1 (UENF)</em> ·
+  por <strong>Nicolau Prates</strong> · CC BY-SA 4.0
+</footer>
+
+<script>
+(async () => {
+  const resumo = document.getElementById("resumo");
+  const lista = document.getElementById("lista");
+  const sandbox = document.getElementById("sandbox");
+
+  let itens;
+  try {
+    itens = await (await fetch("formulas.json")).json();
+  } catch (e) {
+    resumo.className = "erro";
+    resumo.textContent =
+      "Não consegui ler formulas.json. Rode extrai_formulas.py antes, e abra esta " +
+      "página por um servidor local (veja o README desta pasta).";
+    return;
+  }
+
+  const erros = [];
+  for (const item of itens) {
+    try {
+      katex.render(item.tex, sandbox, {
+        displayMode: item.estilo === "display",
+        throwOnError: true
+      });
+    } catch (e) {
+      erros.push({ ...item, motivo: e.message });
+    }
+  }
+
+  if (erros.length === 0) {
+    resumo.className = "ok";
+    resumo.textContent = `${itens.length} fórmulas verificadas — nenhum erro.`;
+  } else {
+    resumo.className = "erro";
+    resumo.textContent =
+      `${itens.length} fórmulas verificadas — ${erros.length} com erro:`;
+    for (const e of erros) {
+      const div = document.createElement("div");
+      div.className = "caso";
+      div.innerHTML =
+        `<div class="arquivo">${e.arquivo} <small>(${e.contexto})</small></div>` +
+        `<div><code>${e.tex.replace(/[<&]/g, c => ({ "<": "&lt;", "&": "&amp;" }[c]))}</code></div>` +
+        `<div class="motivo">${e.motivo.replace(/</g, "&lt;")}</div>`;
+      lista.appendChild(div);
+    }
+  }
+
+  // Disponível para inspeção pelo console do navegador.
+  window.RESULTADO = { total: itens.length, erros };
+})();
+</script>
+</body>
+</html>

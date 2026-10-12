@@ -26,3 +26,5 @@ desktop.ini
 # ---- Nao versionar imagens rasterizadas geradas por engano ----
 # (o padrao do repositorio e SVG, versionado em assets/img/)
 assets/img/**/*.png
+
+formulas.json

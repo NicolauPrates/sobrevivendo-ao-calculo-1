@@ -1,0 +1,80 @@
+# 🔎 Verificador de LaTeX
+
+> [!IMPORTANT]
+> **Isto não é material de estudo.** É uma ferramenta de manutenção, para quem escreve ou corrige páginas do repositório. Se você veio aprender Cálculo, volte para a [página inicial](../../README.md).
+
+Confere se **todas** as fórmulas do material vão renderizar no GitHub — antes de publicar.
+
+---
+
+## O problema que ele resolve
+
+O GitHub aplica os escapes do Markdown **antes** de entregar a fórmula ao renderizador de LaTeX. Dentro de `$...$`, toda barra invertida seguida de pontuação é apagada:
+
+| Você escreve | O LaTeX recebe | Resultado |
+| --- | --- | --- |
+| `$\{a, b\}$` | `${a, b}$` | as chaves somem, sem aviso |
+| `$S = \left\{ 1 \right\}$` | `$S = \left{ 1 }$` | **erro fatal** |
+| `$[1,\,2]$` | `$[1,,2]$` | duas vírgulas |
+
+> [!CAUTION]
+> **Um único erro desses derruba todas as fórmulas da página**, não só a defeituosa: o GitHub mostra uma tarja vermelha no topo e exibe o resto da matemática como texto cru, com os cifrões à mostra. Já aconteceu aqui — um `\left\{` deixou a página 1.1 inteira sem renderizar.
+
+A regra completa, com a tabela dos equivalentes seguros (`\lbrace`, `\thinspace`, blocos `$$` em várias linhas), está na **[§5.1 das convenções](../../CONVENCOES.md)**.
+
+---
+
+## Como usar
+
+### 1. Extraia as fórmulas
+
+Na pasta `extras/verificador-latex`:
+
+```bash
+python extrai_formulas.py
+```
+
+O script varre todos os `.md` do repositório, aplica o mesmo pré-processamento que o GitHub aplica e grava `formulas.json`.
+
+### 2. Abra a página de verificação
+
+`verifica.html` precisa ser servida por HTTP — abrir o arquivo direto pelo `file://` faz o navegador bloquear a leitura do `formulas.json`. Da mesma pasta:
+
+```bash
+python -m http.server 8777
+```
+
+Depois, no navegador: **<http://127.0.0.1:8777/verifica.html>**
+
+A página carrega o KaTeX, passa cada fórmula por ele e mostra:
+
+- ✅ **"nenhum erro"** — pode publicar;
+- ❌ a lista de fórmulas problemáticas, com **arquivo**, **contexto** (inline, `$$` de uma linha, bloco de várias linhas), o **LaTeX como o KaTeX o recebeu** e a **mensagem de erro**.
+
+Encerre o servidor com `Ctrl + C` quando terminar.
+
+---
+
+## Quando rodar
+
+- Antes de **todo** commit que acrescente ou altere fórmulas.
+- Antes de abrir um pull request — está no [checklist de contribuição](../../CONTRIBUTING.md).
+
+> [!NOTE]
+> O verificador pega erros de **sintaxe LaTeX**. Ele não confere se a matemática está certa: uma derivada errada renderiza lindamente. Para o conteúdo, não há atalho — é conferir a conta.
+
+---
+
+## O que ele não cobre
+
+- **Mermaid** (os diagramas de fluxo): confira olhando a página publicada.
+- **Erros de pareamento de cifrão** no documento inteiro — um `$` solto no texto pode desligar a matemática da página toda. O script tende a produzir fórmulas estranhas quando isso acontece; se aparecer um erro em uma "fórmula" que você não escreveu, procure um cifrão sobrando no arquivo.
+- A **versão exata do KaTeX** do GitHub. O verificador usa a 0.16.11, que é próxima, mas não necessariamente idêntica.
+
+---
+
+| ← Extras | 🏠 Índice | Convenções |
+| :--- | :---: | ---: |
+| [Extras](../README.md) | [Página inicial](../../README.md) | [CONVENCOES.md](../../CONVENCOES.md) |
+
+<sub>*Sobrevivendo ao Cálculo 1 (UENF)* · por **Nicolau Prates** · [CC BY-SA 4.0](../../LICENSE)</sub>

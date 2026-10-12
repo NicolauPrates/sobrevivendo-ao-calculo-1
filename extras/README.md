@@ -14,14 +14,20 @@
 ```text
 extras/
 ├── README.md                         você está aqui
-└── scripts-graficos/
-    ├── estilo_calculo.py             o estilo visual único de todos os gráficos
-    ├── u1_funcoes.py                 gráficos da Unidade 1
-    ├── u2_limites.py                 gráficos da Unidade 2
-    ├── u3_derivadas.py               gráficos da Unidade 3
-    ├── u4_aplicacoes.py              gráficos da Unidade 4
-    └── u5_integrais.py               gráficos da Unidade 5
+├── scripts-graficos/
+│   ├── estilo_calculo.py             o estilo visual único de todos os gráficos
+│   ├── u1_funcoes.py                 gráficos da Unidade 1
+│   ├── u2_limites.py                 gráficos da Unidade 2
+│   ├── u3_derivadas.py               gráficos da Unidade 3
+│   ├── u4_aplicacoes.py              gráficos da Unidade 4
+│   └── u5_integrais.py               gráficos da Unidade 5
+└── verificador-latex/                ferramenta de manutenção
+    ├── extrai_formulas.py            extrai a matemática como o GitHub a entrega
+    └── verifica.html                 passa tudo pelo KaTeX e aponta os erros
 ```
+
+> [!NOTE]
+> A pasta [`verificador-latex/`](verificador-latex/README.md) não é material de estudo nem de aprendizado de Python: é a ferramenta que confere se todas as fórmulas do repositório vão renderizar no GitHub. Interessa a quem escreve ou corrige páginas.
 
 Cada script gera os arquivos `.svg` de [`assets/img/`](../assets/img) usados nas páginas de teoria. A regra do repositório é simples: **nenhuma imagem entra aqui sem o script que a produz.** Isso garante que todo gráfico possa ser corrigido, ajustado e refeito anos depois.
 

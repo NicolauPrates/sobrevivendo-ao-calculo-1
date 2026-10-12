@@ -81,7 +81,7 @@ graficos(1.3): adiciona grafico de paridade de x^3 - 3x
 
 ### Checklist antes de abrir o pull request
 
-- [ ] O LaTeX renderiza (confira na aba **Preview** do GitHub, não só no editor local).
+- [ ] O LaTeX renderiza — rode o **[verificador](extras/verificador-latex/README.md)** (`python extrai_formulas.py` e depois `verifica.html`). O editor local aceita coisas que o GitHub rejeita.
 - [ ] As contas foram **verificadas**: toda resposta de exercício proposto está no gabarito e está certa.
 - [ ] Os links relativos funcionam, incluindo a navegação `anterior / índice / próximo` no rodapé.
 - [ ] A página segue a anatomia padrão descrita em [CONVENCOES.md](CONVENCOES.md).
