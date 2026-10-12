@@ -380,6 +380,95 @@ def triangulo_arcsen() -> None:
 
 
 # ======================================================================================
+# 3.5 — Problemas de taxa de variação
+# ======================================================================================
+
+def _figura_geometrica(xlim, ylim, figsize):
+    """Figura sem plano cartesiano, para desenhos de enunciado."""
+    import matplotlib.pyplot as plt
+
+    fig, ax = plt.subplots(figsize=figsize)
+    ax.set_xlim(*xlim)
+    ax.set_ylim(*ylim)
+    ax.set_aspect("equal", adjustable="box")
+    ax.set_xticks([])
+    ax.set_yticks([])
+    ax.grid(False)
+    for lado in ("left", "bottom", "right", "top"):
+        ax.spines[lado].set_visible(False)
+    return fig, ax
+
+
+def escada_deslizando() -> None:
+    """A escada apoiada na parede: x e y variam, a hipotenusa não."""
+    fig, ax = _figura_geometrica((-0.6, 4.2), (-0.8, 4.0), (5.4, 4.0))
+
+    # Parede e chão.
+    ax.plot([0, 0], [0, 3.6], color=ec.CORES["eixo"], linewidth=2.5)
+    ax.plot([0, 4.0], [0, 0], color=ec.CORES["eixo"], linewidth=2.5)
+
+    x, y = 2.4, 2.4 * 0.75 * 1.6667  # pé em x, topo em y (escada de 5)
+    y = np.sqrt(4.0**2 - x**2) * 0.75
+    ax.plot([0, x], [y, 0], color=ec.CORES["curva"], linewidth=3.0, zorder=3)
+
+    ax.plot([0.14, 0.14, 0], [0, 0.14, 0.14], color=ec.CORES["eixo"], linewidth=1.1)
+
+    ec.ponto_fechado(ax, x, 0, cor=ec.CORES["destaque"], tamanho=6)
+    ec.ponto_fechado(ax, 0, y, cor=ec.CORES["destaque"], tamanho=6)
+
+    ax.annotate(r"escada: $5$ m", xy=(x / 2 + 0.25, y / 2 + 0.25),
+                color=ec.CORES["curva"], fontsize=11, rotation=-38)
+    ax.annotate(r"$x$", xy=(x / 2, -0.35), ha="center", color=ec.CORES["curva2"],
+                fontsize=13)
+    ax.annotate(r"$y$", xy=(-0.33, y / 2), va="center", color=ec.CORES["curva3"],
+                fontsize=13)
+
+    ax.annotate("", xy=(x + 0.75, -0.02), xytext=(x + 0.12, -0.02),
+                arrowprops=dict(arrowstyle="->", color=ec.CORES["destaque"], lw=1.6))
+    ax.annotate(r"$\frac{dx}{dt}>0$", xy=(x + 0.18, -0.55),
+                color=ec.CORES["destaque"], fontsize=10)
+    ax.annotate("", xy=(-0.02, y - 0.8), xytext=(-0.02, y - 0.12),
+                arrowprops=dict(arrowstyle="->", color=ec.CORES["destaque"], lw=1.6))
+    ax.annotate(r"$\frac{dy}{dt}<0$", xy=(0.12, y - 0.75),
+                color=ec.CORES["destaque"], fontsize=10)
+
+    ax.annotate(r"$x^2+y^2=25$", xy=(1.9, 2.9), color=ec.CORES["eixo"], fontsize=12)
+
+    ec.salvar(fig, UNIDADE, "3.5-escada-deslizando")
+
+
+def cone_enchendo() -> None:
+    """O cone invertido sendo enchido: r e h crescem com proporção fixa."""
+    fig, ax = _figura_geometrica((-2.6, 2.6), (-0.6, 3.6), (4.8, 4.0))
+
+    R, H = 2.0, 3.0
+    # Paredes do cone.
+    ax.plot([-R, 0, R], [H, 0, H], color=ec.CORES["eixo"], linewidth=2.5, zorder=3)
+    ax.plot([-R, R], [H, H], color=ec.CORES["eixo"], linewidth=2.5, zorder=3)
+
+    # Água.
+    h = 1.8
+    r = R * h / H
+    ax.fill([-r, 0, r], [h, 0, h], color=ec.CORES["curva"], alpha=0.3, zorder=1)
+    ax.plot([-r, r], [h, h], color=ec.CORES["curva"], linewidth=2.0, zorder=3)
+
+    ax.plot([0, 0], [0, H], color=ec.CORES["tracejado"], linestyle=":", linewidth=1.2)
+    ax.plot([0, r], [h, h], color=ec.CORES["curva3"], linewidth=2.2, zorder=4)
+    ax.plot([0, 0], [0, h], color=ec.CORES["curva2"], linewidth=2.2, zorder=4)
+
+    ax.annotate(r"$r$", xy=(r / 2, h + 0.16), ha="center", color=ec.CORES["curva3"],
+                fontsize=13)
+    ax.annotate(r"$h$", xy=(-0.28, h / 2), va="center", color=ec.CORES["curva2"],
+                fontsize=13)
+    ax.annotate(r"$R=2$", xy=(R + 0.08, H + 0.02), color=ec.CORES["eixo"], fontsize=11)
+    ax.annotate(r"$H=3$", xy=(1.25, 2.7), color=ec.CORES["eixo"], fontsize=11)
+    ax.annotate("semelhança:\n" r"$\frac{r}{h}=\frac{R}{H}=\frac{2}{3}$",
+                xy=(-2.5, 2.5), color=ec.CORES["destaque"], fontsize=10)
+
+    ec.salvar(fig, UNIDADE, "3.5-cone-enchendo")
+
+
+# ======================================================================================
 
 FIGURAS = [
     secantes_para_tangente,
@@ -395,6 +484,8 @@ FIGURAS = [
     inversa_inclinacoes,
     arco_funcoes,
     triangulo_arcsen,
+    escada_deslizando,
+    cone_enchendo,
 ]
 
 
