@@ -308,6 +308,78 @@ def inversa_inclinacoes() -> None:
 
 
 # ======================================================================================
+# 3.4 — Derivadas das funções trigonométricas inversas
+# ======================================================================================
+
+def arco_funcoes() -> None:
+    """arcsen, arccos e arctg no mesmo plano, com os domínios e as assíntotas."""
+    fig, ax = ec.novo_plano(xlim=(-4.5, 4.5), ylim=(-2.4, 3.6), figsize=(6.8, 4.4),
+                            passo_x=1, passo_y=None)
+    ax.set_yticks([-np.pi / 2, np.pi / 2, np.pi])
+    ax.set_yticklabels([r"$-\frac{\pi}{2}$", r"$\frac{\pi}{2}$", r"$\pi$"])
+
+    ec.plotar(ax, np.arcsin, (-1, 1), cor=ec.CORES["curva"],
+              rotulo=r"$\mathrm{arcsen}\,x$")
+    ec.plotar(ax, np.arccos, (-1, 1), cor=ec.CORES["curva2"],
+              rotulo=r"$\arccos x$")
+    ec.plotar(ax, np.arctan, (-4.5, 4.5), cor=ec.CORES["curva3"],
+              rotulo=r"$\mathrm{arctg}\,x$")
+
+    ec.assintota_horizontal(ax, np.pi / 2)
+    ec.assintota_horizontal(ax, -np.pi / 2)
+
+    for x0 in (-1, 1):
+        ec.ponto_fechado(ax, x0, np.arcsin(x0), cor=ec.CORES["curva"], tamanho=5)
+        ec.ponto_fechado(ax, x0, np.arccos(x0), cor=ec.CORES["curva2"], tamanho=5)
+
+    ax.annotate("domínio $[-1,1]$", xy=(-1, -np.pi / 2), xytext=(-4.4, -1.9),
+                color=ec.CORES["curva"], fontsize=9)
+    ax.annotate(r"assíntotas $y=\pm\frac{\pi}{2}$", xy=(3, np.pi / 2),
+                xytext=(1.5, 2.3), color=ec.CORES["curva3"], fontsize=9)
+
+    ec.legenda(ax, local="upper left")
+    ec.salvar(fig, UNIDADE, "3.4-arco-funcoes")
+
+
+def triangulo_arcsen() -> None:
+    """O triângulo que traduz cos(arcsen x) em raiz de 1 - x^2."""
+    # Aqui não há plano cartesiano: é uma figura geométrica pura.
+    import matplotlib.pyplot as plt
+
+    fig, ax = plt.subplots(figsize=(5.6, 3.4))
+    ax.set_xlim(-0.3, 1.5)
+    ax.set_ylim(-0.35, 1.1)
+    ax.set_aspect("equal", adjustable="box")
+    ax.set_xticks([])
+    ax.set_yticks([])
+    ax.grid(False)
+    for lado in ("left", "bottom", "right", "top"):
+        ax.spines[lado].set_visible(False)
+
+    A, B, C = (0.0, 0.0), (1.1, 0.0), (1.1, 0.62)
+
+    ax.plot([A[0], B[0], C[0], A[0]], [A[1], B[1], C[1], A[1]],
+            color=ec.CORES["curva"], linewidth=2.2, zorder=3)
+    # Marca do ângulo reto.
+    ax.plot([B[0] - 0.08, B[0] - 0.08, B[0]], [B[1], B[1] + 0.08, B[1] + 0.08],
+            color=ec.CORES["eixo"], linewidth=1.2, zorder=3)
+    # Arco do ângulo theta.
+    t = np.linspace(0, np.arctan2(C[1], C[0]), 60)
+    ax.plot(0.22 * np.cos(t), 0.22 * np.sin(t), color=ec.CORES["destaque"],
+            linewidth=1.4, zorder=3)
+
+    ax.annotate(r"$\theta$", xy=(0.27, 0.07), color=ec.CORES["destaque"], fontsize=13)
+    ax.annotate(r"$1$", xy=(0.5, 0.38), color=ec.CORES["curva2"], fontsize=12)
+    ax.annotate(r"$x$", xy=(1.16, 0.28), color=ec.CORES["curva2"], fontsize=12)
+    ax.annotate(r"$\sqrt{1-x^2}$", xy=(0.4, -0.16), color=ec.CORES["curva2"],
+                fontsize=12)
+    ax.annotate(r"$\theta=\mathrm{arcsen}\,x \;\Rightarrow\; \mathrm{sen}\,\theta=x$",
+                xy=(-0.25, 0.95), color=ec.CORES["destaque"], fontsize=11)
+
+    ec.salvar(fig, UNIDADE, "3.4-triangulo-arcsen")
+
+
+# ======================================================================================
 
 FIGURAS = [
     secantes_para_tangente,
@@ -321,6 +393,8 @@ FIGURAS = [
     exponencial_inclinacao,
     cadeia_compressao,
     inversa_inclinacoes,
+    arco_funcoes,
+    triangulo_arcsen,
 ]
 
 
