@@ -164,12 +164,96 @@ def caixa_otimizacao() -> None:
 
 
 # ======================================================================================
+# 4.2 — Teoremas de Rolle e do Valor Médio
+# ======================================================================================
+
+def teorema_de_rolle() -> None:
+    """f(a) = f(b) obriga uma tangente horizontal em algum ponto interior."""
+    fig, ax = ec.novo_plano(xlim=(-0.6, 5.4), ylim=(-1.4, 3.6), figsize=(6.4, 4.2),
+                            passo_y=1)
+
+    f = lambda x: -0.5 * (x - 1) * (x - 4) + 1
+    a, b = 1.0, 4.0
+
+    ec.plotar(ax, f, (a - 0.35, b + 0.35), rotulo="$y=f(x)$")
+
+    # f(a) = f(b): reta horizontal ligando as pontas.
+    ax.plot([a, b], [f(a), f(b)], color=ec.CORES["tracejado"], linestyle="--",
+            linewidth=1.4, zorder=2)
+    ec.ponto_fechado(ax, a, f(a), cor=ec.CORES["eixo"], tamanho=6)
+    ec.ponto_fechado(ax, b, f(b), cor=ec.CORES["eixo"], tamanho=6)
+
+    c = 2.5  # vértice da parábola
+    ax.plot([c - 1.1, c + 1.1], [f(c), f(c)], color=ec.CORES["destaque"],
+            linewidth=2.0, zorder=3)
+    ec.ponto_fechado(ax, c, f(c), cor=ec.CORES["destaque"], tamanho=7)
+
+    ax.annotate("$a$", xy=(a, 0), xytext=(-4, -20), textcoords="offset points",
+                fontsize=11)
+    ax.annotate("$b$", xy=(b, 0), xytext=(-4, -20), textcoords="offset points",
+                fontsize=11)
+    ax.annotate("$c$", xy=(c, 0), xytext=(-4, -20), textcoords="offset points",
+                color=ec.CORES["destaque"], fontsize=11)
+    ec.linha_guia(ax, x=c)
+    ax.annotate("$f(a)=f(b)$", xy=(a, f(a)), xytext=(-6, -24),
+                textcoords="offset points", color=ec.CORES["tracejado"], fontsize=10)
+    ax.annotate(r"$f'(c)=0$", xy=(c, f(c)), xytext=(8, 12),
+                textcoords="offset points", color=ec.CORES["destaque"], fontsize=11)
+
+    ec.legenda(ax, local="lower right")
+    ec.salvar(fig, UNIDADE, "4.2-teorema-de-rolle")
+
+
+def teorema_valor_medio() -> None:
+    """A tangente em c é paralela à secante que liga as pontas."""
+    fig, ax = ec.novo_plano(xlim=(-0.6, 5.2), ylim=(-1.4, 4.6), figsize=(6.6, 4.4),
+                            passo_y=1)
+
+    f = lambda x: 0.22 * x**3 - 1.3 * x**2 + 2.4 * x
+    a, b = 0.6, 4.2
+
+    ec.plotar(ax, f, (a - 0.5, b + 0.4), rotulo="$y=f(x)$")
+
+    m = (f(b) - f(a)) / (b - a)
+    ax.plot([a - 0.3, b + 0.3], [f(a) + m * (-0.3), f(b) + m * (0.3)],
+            color=ec.CORES["curva2"], linewidth=2.0, zorder=3)
+    ec.ponto_fechado(ax, a, f(a), cor=ec.CORES["eixo"], tamanho=6)
+    ec.ponto_fechado(ax, b, f(b), cor=ec.CORES["eixo"], tamanho=6)
+
+    # Onde f'(c) = m: resolve numericamente.
+    xs = np.linspace(a, b, 4000)
+    d = 0.66 * xs**2 - 2.6 * xs + 2.4
+    c = xs[int(np.argmin(np.abs(d - m)))]
+
+    ax.plot([c - 1.0, c + 1.0], [f(c) - m, f(c) + m], color=ec.CORES["destaque"],
+            linewidth=2.0, zorder=4)
+    ec.ponto_fechado(ax, c, f(c), cor=ec.CORES["destaque"], tamanho=7)
+    ec.linha_guia(ax, x=c)
+
+    ax.annotate("$a$", xy=(a, 0), xytext=(-4, -20), textcoords="offset points",
+                fontsize=11)
+    ax.annotate("$b$", xy=(b, 0), xytext=(-4, -20), textcoords="offset points",
+                fontsize=11)
+    ax.annotate("$c$", xy=(c, 0), xytext=(-4, -20), textcoords="offset points",
+                color=ec.CORES["destaque"], fontsize=11)
+    ax.annotate("secante", xy=(b - 0.6, f(b) - 0.55), color=ec.CORES["curva2"],
+                fontsize=10)
+    ax.annotate("tangente paralela", xy=(c + 0.15, f(c) + 0.75),
+                color=ec.CORES["destaque"], fontsize=10)
+
+    ec.legenda(ax, local="upper left")
+    ec.salvar(fig, UNIDADE, "4.2-teorema-valor-medio")
+
+
+# ======================================================================================
 
 FIGURAS = [
     extremos_locais_e_absolutos,
     critico_sem_extremo,
     teste_primeira_derivada,
     caixa_otimizacao,
+    teorema_de_rolle,
+    teorema_valor_medio,
 ]
 
 
