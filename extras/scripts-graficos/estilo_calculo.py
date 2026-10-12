@@ -182,7 +182,17 @@ def nova_reta_real(
 ):
     """Cria uma reta real isolada — usada para intervalos, módulo e conjuntos-solução."""
     fig, ax = plt.subplots(figsize=figsize)
+    _estilizar_reta(ax, xlim, passo)
+    ax.annotate("$x$", xy=(1, 0), xycoords=ax.get_yaxis_transform(),
+                xytext=(6, -14), textcoords="offset points", fontsize=12)
 
+    if titulo:
+        ax.set_title(titulo, pad=10)
+    return fig, ax
+
+
+def _estilizar_reta(ax, xlim, passo, *, mostrar_zero=True):
+    """Aplica a aparência de reta real a um eixo já existente."""
     ax.set_xlim(*xlim)
     ax.set_ylim(-1, 1)
     ax.grid(False)
@@ -190,21 +200,42 @@ def nova_reta_real(
         ax.spines[lado].set_visible(False)
     ax.spines["bottom"].set_position("zero")
     ax.get_yaxis().set_visible(False)
-
     ax.xaxis.set_major_locator(MultipleLocator(passo))
     ax.xaxis.set_major_formatter(FuncFormatter(_sem_zero))
     ax.tick_params(direction="inout", length=6, width=1.0)
-
     ax.plot(1, 0, ">", color=CORES["eixo"], markersize=6,
             transform=ax.get_yaxis_transform(), clip_on=False)
-    ax.annotate("$x$", xy=(1, 0), xycoords=ax.get_yaxis_transform(),
-                xytext=(6, -14), textcoords="offset points", fontsize=12)
-    ax.annotate("$0$", xy=(0, 0), xytext=(-3, -16), textcoords="offset points",
-                fontsize=10)
+    if mostrar_zero:
+        ax.annotate("$0$", xy=(0, 0), xytext=(-3, -16), textcoords="offset points",
+                    fontsize=10)
 
+
+def novo_painel_retas(
+    rotulos: list[str],
+    xlim: tuple[float, float] = (-5, 5),
+    *,
+    passo: float = 1,
+    largura: float = 6.8,
+    altura_linha: float = 1.0,
+    titulo: str | None = None,
+):
+    """Empilha várias retas reais numa única figura, para comparar intervalos.
+
+    ``rotulos`` dá o texto que aparece acima de cada reta (use LaTeX, por exemplo
+    ``"$[a,b]$"``). Retorna ``(fig, eixos)``.
+    """
+    n = len(rotulos)
+    fig, eixos = plt.subplots(n, 1, figsize=(largura, altura_linha * n + 0.4))
+    if n == 1:
+        eixos = [eixos]
+    for ax, rotulo in zip(eixos, rotulos):
+        _estilizar_reta(ax, xlim, passo, mostrar_zero=False)
+        if rotulo:
+            ax.annotate(rotulo, xy=(0.005, 0.70), xycoords="axes fraction", fontsize=12)
     if titulo:
-        ax.set_title(titulo, pad=10)
-    return fig, ax
+        eixos[0].set_title(titulo, pad=12)
+    fig.subplots_adjust(hspace=0.55)
+    return fig, list(eixos)
 
 
 # --------------------------------------------------------------------------------------
