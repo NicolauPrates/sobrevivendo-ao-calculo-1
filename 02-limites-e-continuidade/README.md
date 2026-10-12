@@ -1,8 +1,5 @@
 # Unidade 2 · Limites e continuidade
 
-> [!NOTE]
-> 🚧 **Unidade em construção.** As páginas abaixo estão sendo escritas e publicadas em ordem. Enquanto isso, o índice já serve de roteiro de estudo.
-
 > O limite é a ideia que separa o Ensino Médio do Ensino Superior. Toda a matemática que vem depois — derivada, integral, série — é um limite disfarçado.
 
 ---

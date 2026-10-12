@@ -116,7 +116,7 @@ flowchart TD
 | 1.4 | [Injetoras, sobrejetoras, bijetoras e inversas](01-funcoes/1.4-injetoras-sobrejetoras-bijetoras-e-inversas.md) | [lista](01-funcoes/exercicios/lista-1.4-propostos.md) | [gabarito](01-funcoes/gabaritos/gabarito-1.4.md) |
 | — | **Revisão da unidade** — lista mista, nível de prova | [lista](01-funcoes/exercicios/revisao-unidade-1.md) | [gabarito](01-funcoes/gabaritos/gabarito-revisao-unidade-1.md) |
 
-### 2 · Limites e continuidade 🚧 · [índice da unidade](02-limites-e-continuidade/README.md)
+### 2 · Limites e continuidade ✅ · [índice da unidade](02-limites-e-continuidade/README.md)
 
 | # | Teoria | 📝 Propostos | ✅ Gabarito |
 | :---: | --- | :---: | :---: |
