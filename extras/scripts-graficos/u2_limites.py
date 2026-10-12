@@ -152,9 +152,111 @@ def epsilon_delta() -> None:
 
 
 # ======================================================================================
+# 2.2 — Limites laterais
+# ======================================================================================
+
+def laterais_iguais() -> None:
+    """Os dois lados vão para o mesmo valor: o limite bilateral existe."""
+    fig, ax = ec.novo_plano(xlim=(-1.5, 4.5), ylim=(-1.5, 4.5), figsize=(6.4, 4.4))
+
+    ec.plotar(ax, lambda x: x + 1, (-1.5, 2), cor=ec.CORES["curva"],
+              rotulo="$x+1$, para $x < 2$")
+    ec.plotar(ax, lambda x: 5 - x, (2, 4.5), cor=ec.CORES["curva2"],
+              rotulo="$5-x$, para $x > 2$")
+    ec.ponto_aberto(ax, 2, 3, cor=ec.CORES["destaque"])
+
+    ec.linha_guia(ax, x=2)
+    ax.annotate(r"$\lim_{x \to 2^-} f(x) = 3$", xy=(2, 3), xytext=(-1.4, 3.9),
+                color=ec.CORES["curva"], fontsize=10)
+    ax.annotate(r"$\lim_{x \to 2^+} f(x) = 3$", xy=(2, 3), xytext=(2.35, 3.9),
+                color=ec.CORES["curva2"], fontsize=10)
+    ax.annotate("os dois lados concordam:\no limite existe e vale 3",
+                xy=(2, 3), xytext=(0.1, 0.25), color=ec.CORES["destaque"], fontsize=9)
+
+    ec.legenda(ax, local="lower right")
+    ec.salvar(fig, UNIDADE, "2.2-laterais-iguais")
+
+
+def laterais_com_salto() -> None:
+    """Salto: os laterais existem, são diferentes, e o limite não existe."""
+    fig, ax = ec.novo_plano(xlim=(-1.5, 4.5), ylim=(-2.5, 4.5), figsize=(6.4, 4.4))
+
+    ec.plotar(ax, lambda x: x + 1, (-1.5, 2), cor=ec.CORES["curva"],
+              rotulo="$x+1$, para $x < 2$")
+    ec.plotar(ax, lambda x: x - 3, (2, 4.5), cor=ec.CORES["curva2"],
+              rotulo="$x-3$, para $x \\geq 2$")
+
+    ec.ponto_aberto(ax, 2, 3, cor=ec.CORES["curva"])
+    ec.ponto_fechado(ax, 2, -1, cor=ec.CORES["curva2"])
+
+    ax.annotate(r"$\lim_{x \to 2^-} f(x) = 3$", xy=(2, 3), xytext=(-1.4, 3.7),
+                color=ec.CORES["curva"], fontsize=10)
+    ax.annotate(r"$\lim_{x \to 2^+} f(x) = -1$", xy=(2, -1), xytext=(2.4, -2.1),
+                color=ec.CORES["curva2"], fontsize=10)
+    ax.annotate("salto de\naltura 4", xy=(2, 1), xytext=(2.6, 1.3),
+                color=ec.CORES["destaque"], fontsize=9)
+    ax.annotate("", xy=(2, 3), xytext=(2, -1),
+                arrowprops=dict(arrowstyle="<->", color=ec.CORES["destaque"], lw=1.3))
+
+    ec.legenda(ax, local="upper right")
+    ec.salvar(fig, UNIDADE, "2.2-laterais-com-salto")
+
+
+def modulo_sobre_x() -> None:
+    """y = |x|/x: vale -1 à esquerda e +1 à direita."""
+    fig, ax = ec.novo_plano(xlim=(-3, 3), ylim=(-2, 2), figsize=(5.6, 3.2), passo_y=1)
+
+    ax.plot([-3, 0], [-1, -1], color=ec.CORES["curva"], linewidth=2.2, zorder=3)
+    ax.plot([0, 3], [1, 1], color=ec.CORES["curva2"], linewidth=2.2, zorder=3)
+    ec.ponto_aberto(ax, 0, -1, cor=ec.CORES["curva"])
+    ec.ponto_aberto(ax, 0, 1, cor=ec.CORES["curva2"])
+
+    ax.annotate(r"$-1$", xy=(-2.2, -1), xytext=(0, 10), textcoords="offset points",
+                color=ec.CORES["curva"], fontsize=11)
+    ax.annotate(r"$+1$", xy=(2.0, 1), xytext=(0, -22), textcoords="offset points",
+                color=ec.CORES["curva2"], fontsize=11)
+
+    ec.salvar(fig, UNIDADE, "2.2-modulo-sobre-x")
+
+
+def maior_inteiro() -> None:
+    """A função maior inteiro: um salto em cada número inteiro."""
+    fig, ax = ec.novo_plano(xlim=(-3.2, 3.2), ylim=(-3.2, 3.2), figsize=(5.6, 4.0),
+                            aspecto_igual=True)
+
+    for k in range(-3, 3):
+        ax.plot([k, k + 1], [k, k], color=ec.CORES["curva"], linewidth=2.2, zorder=3)
+        ec.ponto_fechado(ax, k, k, cor=ec.CORES["curva"], tamanho=6)
+        ec.ponto_aberto(ax, k + 1, k, cor=ec.CORES["curva"], tamanho=6)
+
+    ec.salvar(fig, UNIDADE, "2.2-maior-inteiro")
+
+
+def raiz_lateral() -> None:
+    """Em x = 0 só existe o limite pela direita: à esquerda a função nem existe."""
+    fig, ax = ec.novo_plano(xlim=(-2, 4), ylim=(-1, 2.6), figsize=(5.8, 3.4))
+
+    ec.plotar(ax, np.sqrt, (0, 4), rotulo=r"$y=\sqrt{x}$")
+    ec.ponto_fechado(ax, 0, 0, cor=ec.CORES["curva"], tamanho=6)
+
+    ax.annotate("aqui a função\nnão existe", xy=(-1.0, 0.1), xytext=(-1.95, 1.3),
+                color=ec.CORES["destaque"], fontsize=9)
+    ax.annotate("", xy=(-0.1, 0.06), xytext=(-1.0, 1.15),
+                arrowprops=dict(arrowstyle="->", color=ec.CORES["destaque"], lw=1.3))
+
+    ec.legenda(ax, local="lower right")
+    ec.salvar(fig, UNIDADE, "2.2-raiz-lateral")
+
+
+# ======================================================================================
 
 FIGURAS = [
     ideia_de_limite,
+    laterais_iguais,
+    laterais_com_salto,
+    modulo_sobre_x,
+    maior_inteiro,
+    raiz_lateral,
     valor_nao_importa_a,
     valor_nao_importa_b,
     valor_nao_importa_c,
