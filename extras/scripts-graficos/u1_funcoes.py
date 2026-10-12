@@ -441,6 +441,89 @@ def paridade_impar() -> None:
 
 
 # ======================================================================================
+# 1.4 — Injetoras, sobrejetoras, bijetoras e inversas
+# ======================================================================================
+
+def reta_horizontal_sim() -> None:
+    """x^3 passa no teste da reta horizontal: é injetora."""
+    fig, ax = ec.novo_plano(xlim=(-2.4, 2.4), ylim=(-4.5, 4.5), figsize=(4.6, 3.8),
+                            titulo="injetora")
+
+    ec.plotar(ax, lambda x: x**3, (-1.62, 1.62))
+    for y0 in (2.0, -2.0):
+        ax.axhline(y0, color=ec.CORES["destaque"], linestyle="--", linewidth=1.4,
+                   zorder=2)
+        ec.ponto_fechado(ax, np.cbrt(y0), y0, cor=ec.CORES["destaque"], tamanho=6)
+
+    ax.annotate("toda horizontal\ncorta uma vez só", xy=(0, 0), xytext=(-2.3, 3.0),
+                color=ec.CORES["destaque"], fontsize=9)
+
+    ec.salvar(fig, UNIDADE, "1.4-reta-horizontal-sim")
+
+
+def reta_horizontal_nao() -> None:
+    """x^2 falha no teste da reta horizontal: não é injetora."""
+    fig, ax = ec.novo_plano(xlim=(-2.4, 2.4), ylim=(-1, 5), figsize=(4.6, 3.8),
+                            titulo="não é injetora")
+
+    ec.plotar(ax, lambda x: x**2, (-2.2, 2.2))
+    y0 = 2.25
+    ax.axhline(y0, color=ec.CORES["destaque"], linestyle="--", linewidth=1.4, zorder=2)
+    ec.ponto_fechado(ax, 1.5, y0, cor=ec.CORES["destaque"], tamanho=6)
+    ec.ponto_fechado(ax, -1.5, y0, cor=ec.CORES["destaque"], tamanho=6)
+
+    ax.annotate("$f(-1{,}5) = f(1{,}5)$", xy=(0, y0), xytext=(-1.1, 3.4),
+                color=ec.CORES["destaque"], fontsize=9)
+
+    ec.salvar(fig, UNIDADE, "1.4-reta-horizontal-nao")
+
+
+def inversa_reflexao() -> None:
+    """f(x) = x^3 e sua inversa, simétricas em relação à reta y = x."""
+    fig, ax = ec.novo_plano(xlim=(-3, 3), ylim=(-3, 3), figsize=(5.2, 4.8),
+                            aspecto_igual=True)
+
+    ec.plotar(ax, lambda x: x**3, (-1.45, 1.45), cor=ec.CORES["curva"],
+              rotulo="$y=x^3$")
+    ec.plotar(ax, np.cbrt, (-3, 3), cor=ec.CORES["curva2"],
+              rotulo=r"$y=\sqrt[3]{x}$")
+    ax.plot([-3, 3], [-3, 3], color=ec.CORES["tracejado"], linestyle="--",
+            linewidth=1.3, zorder=2)
+    ax.annotate("$y=x$", xy=(2.3, 2.3), xytext=(4, -14), textcoords="offset points",
+                color=ec.CORES["tracejado"], fontsize=10)
+
+    # Um par de pontos simétricos, para mostrar a troca de coordenadas.
+    ec.ponto_fechado(ax, 1.2, 1.728, cor=ec.CORES["destaque"], tamanho=6)
+    ec.ponto_fechado(ax, 1.728, 1.2, cor=ec.CORES["destaque"], tamanho=6)
+    ax.plot([1.2, 1.728], [1.728, 1.2], color=ec.CORES["destaque"], linestyle=":",
+            linewidth=1.2, zorder=4)
+
+    ec.legenda(ax, local="lower right")
+    ec.salvar(fig, UNIDADE, "1.4-inversa-reflexao")
+
+
+def restricao_do_seno() -> None:
+    """O seno restrito a [-pi/2, pi/2] e o arco seno."""
+    fig, ax = ec.novo_plano(xlim=(-2.2, 2.2), ylim=(-2.2, 2.2), figsize=(5.2, 4.8),
+                            aspecto_igual=True, passo_x=1, passo_y=1)
+
+    ec.plotar(ax, np.sin, (-np.pi / 2, np.pi / 2), cor=ec.CORES["curva"],
+              rotulo=r"$y=\mathrm{sen}\,x$,  $-\frac{\pi}{2}\leq x \leq \frac{\pi}{2}$")
+    ec.plotar(ax, np.arcsin, (-1, 1), cor=ec.CORES["curva2"],
+              rotulo=r"$y=\mathrm{arcsen}\,x$")
+    ax.plot([-2.1, 2.1], [-2.1, 2.1], color=ec.CORES["tracejado"], linestyle="--",
+            linewidth=1.3, zorder=2)
+
+    for x0 in (-np.pi / 2, np.pi / 2):
+        ec.ponto_fechado(ax, x0, np.sin(x0), cor=ec.CORES["curva"], tamanho=5)
+    for x0 in (-1, 1):
+        ec.ponto_fechado(ax, x0, np.arcsin(x0), cor=ec.CORES["curva2"], tamanho=5)
+
+    ec.legenda(ax, local="upper left")
+    ec.salvar(fig, UNIDADE, "1.4-restricao-do-seno")
+
+
+# ======================================================================================
 
 FIGURAS = [
     reta_real,
@@ -464,6 +547,10 @@ FIGURAS = [
     dilatacoes,
     paridade_par,
     paridade_impar,
+    reta_horizontal_sim,
+    reta_horizontal_nao,
+    inversa_reflexao,
+    restricao_do_seno,
 ]
 
 
