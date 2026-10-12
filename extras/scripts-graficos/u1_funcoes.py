@@ -224,6 +224,223 @@ def funcao_por_partes() -> None:
 
 
 # ======================================================================================
+# 1.3 — Funções elementares, paridade e gráficos
+# ======================================================================================
+
+def potencias() -> None:
+    """As quatro primeiras potências de x no mesmo plano."""
+    fig, ax = ec.novo_plano(xlim=(-2.2, 2.2), ylim=(-3, 4.2), figsize=(6.2, 4.6),
+                            passo_y=1)
+
+    ec.plotar(ax, lambda x: x, (-2.2, 2.2), cor=ec.CORES["curva"], rotulo="$y=x$")
+    ec.plotar(ax, lambda x: x**2, (-2.05, 2.05), cor=ec.CORES["curva2"],
+              rotulo="$y=x^2$")
+    ec.plotar(ax, lambda x: x**3, (-1.5, 1.6), cor=ec.CORES["curva3"],
+              rotulo="$y=x^3$")
+    ec.plotar(ax, lambda x: x**4, (-1.44, 1.44), cor=ec.CORES["auxiliar"],
+              rotulo="$y=x^4$")
+
+    ec.legenda(ax, local="lower right")
+    ec.salvar(fig, UNIDADE, "1.3-potencias")
+
+
+def raizes() -> None:
+    """Raiz quadrada e raiz cúbica."""
+    fig, ax = ec.novo_plano(xlim=(-4.5, 4.5), ylim=(-2.5, 2.5), figsize=(6.4, 3.8))
+
+    ec.plotar(ax, np.sqrt, (0, 4.5), cor=ec.CORES["curva"], rotulo=r"$y=\sqrt{x}$")
+    ec.plotar(ax, lambda x: np.cbrt(x), (-4.5, 4.5), cor=ec.CORES["curva2"],
+              rotulo=r"$y=\sqrt[3]{x}$")
+    ec.ponto_fechado(ax, 0, 0, cor=ec.CORES["curva"], tamanho=6)
+
+    ec.legenda(ax, local="lower right")
+    ec.salvar(fig, UNIDADE, "1.3-raizes")
+
+
+def racionais() -> None:
+    """As hipérboles 1/x e 1/x^2, com as assíntotas."""
+    fig, ax = ec.novo_plano(xlim=(-4, 4), ylim=(-4, 4), figsize=(6.0, 4.6),
+                            aspecto_igual=True)
+
+    for trecho in [(-4, -0.26), (0.26, 4)]:
+        ec.plotar(ax, lambda x: 1 / x, trecho, cor=ec.CORES["curva"],
+                  rotulo="$y=1/x$" if trecho[0] > 0 else None)
+    for trecho in [(-4, -0.51), (0.51, 4)]:
+        ec.plotar(ax, lambda x: 1 / x**2, trecho, cor=ec.CORES["curva2"],
+                  rotulo="$y=1/x^2$" if trecho[0] > 0 else None)
+
+    ec.legenda(ax, local="lower left")
+    ec.salvar(fig, UNIDADE, "1.3-racionais")
+
+
+def modular() -> None:
+    """A função modular."""
+    fig, ax = ec.novo_plano(xlim=(-4, 4), ylim=(-1.5, 4), figsize=(5.6, 3.6))
+    ec.plotar(ax, np.abs, (-4, 4), rotulo="$y=|x|$")
+    ec.anotar(ax, "bico em $x=0$:\nnão há reta tangente", xy=(0, 0), xytext=(0.5, 2.4),
+              fontsize=9)
+    ec.legenda(ax, local="upper left")
+    ec.salvar(fig, UNIDADE, "1.3-modular")
+
+
+def exp_e_log() -> None:
+    """Exponencial e logaritmo natural, simétricos em relação à reta y = x."""
+    fig, ax = ec.novo_plano(xlim=(-3, 6), ylim=(-3, 6), figsize=(5.8, 5.2),
+                            aspecto_igual=True)
+
+    ec.plotar(ax, np.exp, (-3, 1.8), cor=ec.CORES["curva"], rotulo="$y=e^x$")
+    ec.plotar(ax, np.log, (0.02, 6), cor=ec.CORES["curva2"], rotulo=r"$y=\ln x$")
+    ax.plot([-3, 6], [-3, 6], color=ec.CORES["tracejado"], linestyle="--",
+            linewidth=1.3, zorder=2)
+    ax.annotate("$y=x$", xy=(4.4, 4.4), xytext=(6, -10), textcoords="offset points",
+                color=ec.CORES["tracejado"], fontsize=10)
+
+    ec.ponto_fechado(ax, 0, 1, cor=ec.CORES["curva"], tamanho=6)
+    ec.ponto_fechado(ax, 1, 0, cor=ec.CORES["curva2"], tamanho=6)
+
+    ec.legenda(ax, local="lower right")
+    ec.salvar(fig, UNIDADE, "1.3-exp-e-log")
+
+
+def _eixo_em_pi(ax, de=-2, ate=2) -> None:
+    """Marca o eixo x em múltiplos de pi/2, com rótulos em LaTeX."""
+    marcas, rotulos = [], []
+    nomes = {-2: r"$-2\pi$", -1.5: r"$-\frac{3\pi}{2}$", -1: r"$-\pi$",
+             -0.5: r"$-\frac{\pi}{2}$", 0.5: r"$\frac{\pi}{2}$", 1: r"$\pi$",
+             1.5: r"$\frac{3\pi}{2}$", 2: r"$2\pi$"}
+    k = de
+    while k <= ate + 1e-9:
+        if abs(k) > 1e-9 and k in nomes:
+            marcas.append(k * np.pi)
+            rotulos.append(nomes[k])
+        k += 0.5
+    ax.set_xticks(marcas)
+    ax.set_xticklabels(rotulos)
+
+
+def seno_e_cosseno() -> None:
+    """Seno e cosseno em um período completo de cada lado."""
+    fig, ax = ec.novo_plano(xlim=(-2 * np.pi - 0.4, 2 * np.pi + 0.4), ylim=(-1.8, 1.8),
+                            figsize=(7.4, 3.6), passo_x=None, passo_y=1)
+    _eixo_em_pi(ax)
+
+    ec.plotar(ax, np.sin, (-2 * np.pi, 2 * np.pi), cor=ec.CORES["curva"],
+              rotulo=r"$y=\mathrm{sen}\,x$")
+    ec.plotar(ax, np.cos, (-2 * np.pi, 2 * np.pi), cor=ec.CORES["curva2"],
+              rotulo=r"$y=\cos x$")
+
+    ec.legenda(ax, local="upper right")
+    ec.salvar(fig, UNIDADE, "1.3-seno-e-cosseno")
+
+
+def tangente() -> None:
+    """A tangente e suas assíntotas verticais."""
+    fig, ax = ec.novo_plano(xlim=(-2 * np.pi - 0.3, 2 * np.pi + 0.3), ylim=(-4, 4),
+                            figsize=(7.4, 4.0), passo_x=None, passo_y=1)
+    _eixo_em_pi(ax)
+
+    for k in (-2, -1, 0, 1):
+        centro = k * np.pi
+        ec.plotar(ax, np.tan, (centro - np.pi / 2 + 0.12, centro + np.pi / 2 - 0.12),
+                  cor=ec.CORES["curva"],
+                  rotulo=r"$y=\mathrm{tg}\,x$" if k == 0 else None)
+    for k in (-3, -1, 1, 3):
+        ec.assintota_vertical(ax, k * np.pi / 2)
+
+    ec.legenda(ax, local="upper right")
+    ec.salvar(fig, UNIDADE, "1.3-tangente")
+
+
+def translacoes() -> None:
+    """Translações vertical e horizontal a partir de y = x^2."""
+    fig, ax = ec.novo_plano(xlim=(-4, 6), ylim=(-1.5, 7), figsize=(6.4, 4.4))
+
+    ec.plotar(ax, lambda x: x**2, (-2.7, 2.7), cor=ec.CORES["curva"],
+              rotulo="$y=x^2$")
+    ec.plotar(ax, lambda x: x**2 + 2, (-2.3, 2.3), cor=ec.CORES["curva2"],
+              rotulo="$y=x^2+2$")
+    ec.plotar(ax, lambda x: (x - 3) ** 2, (0.3, 5.7), cor=ec.CORES["curva3"],
+              rotulo="$y=(x-3)^2$")
+
+    ax.annotate("", xy=(0, 2), xytext=(0, 0),
+                arrowprops=dict(arrowstyle="->", color=ec.CORES["curva2"], lw=1.4))
+    ax.annotate("sobe 2", xy=(0.1, 1.0), color=ec.CORES["curva2"], fontsize=9)
+    ax.annotate("", xy=(3, 0), xytext=(0, 0),
+                arrowprops=dict(arrowstyle="->", color=ec.CORES["curva3"], lw=1.4))
+    ax.annotate("anda 3 para a direita", xy=(0.5, -0.9), color=ec.CORES["curva3"],
+                fontsize=9)
+
+    ec.legenda(ax, local="upper left")
+    ec.salvar(fig, UNIDADE, "1.3-translacoes")
+
+
+def reflexoes() -> None:
+    """Reflexões em relação aos dois eixos, a partir da raiz quadrada."""
+    fig, ax = ec.novo_plano(xlim=(-4.5, 4.5), ylim=(-2.6, 2.6), figsize=(6.4, 3.8))
+
+    ec.plotar(ax, np.sqrt, (0, 4.5), cor=ec.CORES["curva"], rotulo=r"$y=\sqrt{x}$")
+    ec.plotar(ax, lambda x: -np.sqrt(x), (0, 4.5), cor=ec.CORES["curva2"],
+              rotulo=r"$y=-\sqrt{x}$")
+    ec.plotar(ax, lambda x: np.sqrt(-x), (-4.5, 0), cor=ec.CORES["curva3"],
+              rotulo=r"$y=\sqrt{-x}$")
+
+    ax.annotate("espelho no eixo $x$", xy=(3.2, -1.78), color=ec.CORES["curva2"],
+                fontsize=9, ha="center")
+    ax.annotate("espelho no eixo $y$", xy=(-3.2, 2.1), color=ec.CORES["curva3"],
+                fontsize=9, ha="center")
+
+    ec.legenda(ax, local="upper left")
+    ec.salvar(fig, UNIDADE, "1.3-reflexoes")
+
+
+def dilatacoes() -> None:
+    """Dilatação vertical e horizontal a partir do seno."""
+    fig, ax = ec.novo_plano(xlim=(-0.6, 2 * np.pi + 0.4), ylim=(-2.6, 2.6),
+                            figsize=(7.2, 3.6), passo_x=None, passo_y=1)
+    _eixo_em_pi(ax, de=0.5, ate=2)
+
+    ec.plotar(ax, np.sin, (0, 2 * np.pi), cor=ec.CORES["curva"],
+              rotulo=r"$y=\mathrm{sen}\,x$")
+    ec.plotar(ax, lambda x: 2 * np.sin(x), (0, 2 * np.pi), cor=ec.CORES["curva2"],
+              rotulo=r"$y=2\,\mathrm{sen}\,x$")
+    ec.plotar(ax, lambda x: np.sin(2 * x), (0, 2 * np.pi), cor=ec.CORES["curva3"],
+              rotulo=r"$y=\mathrm{sen}\,2x$")
+
+    ec.legenda(ax, local="upper right")
+    ec.salvar(fig, UNIDADE, "1.3-dilatacoes")
+
+
+def paridade_par() -> None:
+    """Função par: simetria em relação ao eixo y."""
+    fig, ax = ec.novo_plano(xlim=(-3, 3), ylim=(-1.5, 5), figsize=(4.6, 3.6),
+                            titulo="par: $f(-x) = f(x)$")
+
+    f = lambda x: x**4 - 3 * x**2 + 2
+    ec.plotar(ax, f, (-2.2, 2.2))
+    for x0 in (1.6,):
+        ec.ponto_fechado(ax, x0, f(x0), cor=ec.CORES["destaque"], tamanho=6)
+        ec.ponto_fechado(ax, -x0, f(-x0), cor=ec.CORES["destaque"], tamanho=6)
+        ax.plot([-x0, x0], [f(x0), f(x0)], color=ec.CORES["destaque"],
+                linestyle=":", linewidth=1.2)
+    ec.salvar(fig, UNIDADE, "1.3-paridade-par")
+
+
+def paridade_impar() -> None:
+    """Função ímpar: simetria em relação à origem."""
+    fig, ax = ec.novo_plano(xlim=(-3, 3), ylim=(-4, 4), figsize=(4.6, 3.6),
+                            titulo="ímpar: $f(-x) = -f(x)$")
+
+    f = lambda x: x**3 - 3 * x
+    ec.plotar(ax, f, (-2.2, 2.2))
+    x0 = 1.6
+    ec.ponto_fechado(ax, x0, f(x0), cor=ec.CORES["destaque"], tamanho=6)
+    ec.ponto_fechado(ax, -x0, f(-x0), cor=ec.CORES["destaque"], tamanho=6)
+    ax.plot([-x0, x0], [f(-x0), f(x0)], color=ec.CORES["destaque"],
+            linestyle=":", linewidth=1.2)
+    ec.salvar(fig, UNIDADE, "1.3-paridade-impar")
+
+
+# ======================================================================================
 
 FIGURAS = [
     reta_real,
@@ -235,6 +452,18 @@ FIGURAS = [
     teste_reta_vertical_nao,
     dominio_e_imagem,
     funcao_por_partes,
+    potencias,
+    raizes,
+    racionais,
+    modular,
+    exp_e_log,
+    seno_e_cosseno,
+    tangente,
+    translacoes,
+    reflexoes,
+    dilatacoes,
+    paridade_par,
+    paridade_impar,
 ]
 
 
