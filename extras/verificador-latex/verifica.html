@@ -17,6 +17,9 @@
   .ok   { background: #e6f4ea; color: #14532d; border: 1px solid #86c99b; }
   .erro { background: #fdeaea; color: #7a1020; border: 1px solid #e0a0a8; }
   .caso { border-left: 4px solid #a51d2d; padding: 0.6rem 0 0.6rem 0.9rem; margin: 1rem 0; }
+  .alerta { border-left-color: #b26a00; }
+  .alerta .motivo { color: #b26a00; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
   .arquivo { font-weight: 600; }
   code { background: rgba(127,127,127,0.16); padding: 0.1rem 0.35rem; border-radius: 4px;
          font-size: 0.9em; word-break: break-all; }
@@ -57,7 +60,10 @@ página publicada — e vai levar junto todas as outras da mesma página.</p>
     return;
   }
 
+  const esc = s => s.replace(/[<&]/g, c => ({ "<": "&lt;", "&": "&amp;" }[c]));
   const erros = [];
+  const alertas = [];
+
   for (const item of itens) {
     try {
       katex.render(item.tex, sandbox, {
@@ -66,29 +72,50 @@ página publicada — e vai levar junto todas as outras da mesma página.</p>
       });
     } catch (e) {
       erros.push({ ...item, motivo: e.message });
+      continue;
+    }
+    // Renderizou, mas o Markdown comeu alguma barra invertida pelo caminho.
+    if (item.engolidos && item.engolidos.length) {
+      alertas.push({
+        ...item,
+        motivo: "o Markdown apaga aqui: " + item.engolidos.join("  ") +
+          "  — troque por \\lbrace, \\rbrace, \\thinspace, ou use um bloco $$ em várias linhas"
+      });
     }
   }
 
-  if (erros.length === 0) {
-    resumo.className = "ok";
-    resumo.textContent = `${itens.length} fórmulas verificadas — nenhum erro.`;
-  } else {
-    resumo.className = "erro";
-    resumo.textContent =
-      `${itens.length} fórmulas verificadas — ${erros.length} com erro:`;
-    for (const e of erros) {
+  const bloco = (titulo, casos, classe) => {
+    if (!casos.length) return;
+    const h = document.createElement("h2");
+    h.textContent = titulo;
+    lista.appendChild(h);
+    for (const c of casos) {
       const div = document.createElement("div");
-      div.className = "caso";
+      div.className = "caso " + classe;
       div.innerHTML =
-        `<div class="arquivo">${e.arquivo} <small>(${e.contexto})</small></div>` +
-        `<div><code>${e.tex.replace(/[<&]/g, c => ({ "<": "&lt;", "&": "&amp;" }[c]))}</code></div>` +
-        `<div class="motivo">${e.motivo.replace(/</g, "&lt;")}</div>`;
+        `<div class="arquivo">${esc(c.arquivo)} <small>(${c.contexto})</small></div>` +
+        `<div><code>${esc(c.tex)}</code></div>` +
+        `<div class="motivo">${esc(c.motivo)}</div>`;
       lista.appendChild(div);
     }
+  };
+
+  if (erros.length === 0 && alertas.length === 0) {
+    resumo.className = "ok";
+    resumo.textContent = `${itens.length} fórmulas verificadas — nenhum problema.`;
+  } else {
+    resumo.className = erros.length ? "erro" : "alerta-resumo";
+    resumo.style.cssText = erros.length ? "" :
+      "background:#fdf3e3;color:#6b3f00;border:1px solid #e0bb84;";
+    resumo.textContent =
+      `${itens.length} fórmulas verificadas — ${erros.length} com erro, ` +
+      `${alertas.length} com alerta.`;
+    bloco("❌ Erros (derrubam todas as fórmulas da página)", erros, "");
+    bloco("⚠️ Alertas (renderizam, mas saem erradas)", alertas, "alerta");
   }
 
   // Disponível para inspeção pelo console do navegador.
-  window.RESULTADO = { total: itens.length, erros };
+  window.RESULTADO = { total: itens.length, erros, alertas };
 })();
 </script>
 </body>

@@ -401,7 +401,7 @@ Cortando quadrados de lado $x$ nos quatro cantos e dobrando as abas, a caixa fic
 
 Logo
 
-$$V(x) = x\,(30-2x)^2$$
+$$V(x) = x\thinspace (30-2x)^2$$
 
 **Domínio do problema.** A fórmula faria sentido para qualquer real, mas a **caixa** não:
 

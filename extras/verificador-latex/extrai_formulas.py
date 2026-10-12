@@ -57,6 +57,24 @@ def aplicar_escapes(texto: str) -> str:
     return "".join(saida)
 
 
+def escapes_engolidos(texto: str) -> list[str]:
+    """Lista as sequências que o Markdown vai comer — mesmo as que não dão erro.
+
+    Um ``\\\\`` engolido não quebra a renderização: ele apenas apaga a quebra de
+    linha, e a fórmula sai numa linha só, errada e sem aviso nenhum. Por isso
+    estas ocorrências são reportadas como **alerta**, e não como erro.
+    """
+    achados: list[str] = []
+    i = 0
+    while i < len(texto):
+        if texto[i] == "\\" and i + 1 < len(texto) and texto[i + 1] in PONTUACAO:
+            achados.append(texto[i:i + 2])
+            i += 2
+        else:
+            i += 1
+    return sorted(set(achados))
+
+
 def extrair(md: str, arquivo: str) -> list[dict]:
     """Devolve a lista de fórmulas de um arquivo, já como o KaTeX as receberia."""
     itens: list[dict] = []
@@ -101,6 +119,7 @@ def extrair(md: str, arquivo: str) -> list[dict]:
             "estilo": "display",
             "contexto": "$$ em uma linha so",
             "tex": aplicar_escapes(m.group(1)),
+            "engolidos": escapes_engolidos(m.group(1)),
         })
 
     for m in RE_INLINE.finditer(RE_DISPLAY_LINHA.sub(" ", texto)):
@@ -109,6 +128,7 @@ def extrair(md: str, arquivo: str) -> list[dict]:
             "estilo": "inline",
             "contexto": "inline",
             "tex": aplicar_escapes(m.group(1)),
+            "engolidos": escapes_engolidos(m.group(1)),
         })
 
     return itens

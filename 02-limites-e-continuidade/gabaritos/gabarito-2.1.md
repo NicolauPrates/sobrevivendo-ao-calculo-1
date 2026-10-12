@@ -285,7 +285,7 @@ $$\lim_{x\to a}(x+a) = 2a$$
 
 Seja $\varepsilon > 0$ dado. Analisando a quantidade que se quer tornar pequena:
 
-$$\big\lvert (3x+2) - (-1) \big\rvert = \lvert 3x+3 \rvert = 3\,\lvert x+1 \rvert$$
+$$\big\lvert (3x+2) - (-1) \big\rvert = \lvert 3x+3 \rvert = 3\thinspace \lvert x+1 \rvert$$
 
 Queremos $3\lvert x+1\rvert < \varepsilon$, isto é, $\lvert x+1 \rvert < \dfrac{\varepsilon}{3}$.
 

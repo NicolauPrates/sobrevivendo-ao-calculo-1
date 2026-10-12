@@ -332,7 +332,7 @@ $$= \frac{1}{\sqrt{1+\frac{1}{x^2}}+1} \ \longrightarrow \ \frac{1}{1+1} = \frac
 
 Separe o fator que você já sabe tratar:
 
-$$\frac{x^2\operatorname{sen}\frac1x}{x+1} = \underbrace{\left(x\operatorname{sen}\frac1x\right)}_{\to\,1}\cdot\underbrace{\frac{x}{x+1}}_{\to\,1}$$
+$$\frac{x^2\operatorname{sen}\frac1x}{x+1} = \underbrace{\left(x\operatorname{sen}\frac1x\right)}_{\to\thinspace 1}\cdot\underbrace{\frac{x}{x+1}}_{\to\thinspace 1}$$
 
 **Por que o primeiro fator tende a $1$:** faça $u = \frac1x$. Quando $x\to+\infty$, tem-se $u\to0^{+}$, e
 

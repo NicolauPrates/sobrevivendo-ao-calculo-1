@@ -257,7 +257,7 @@ Zeros: $5$ (numerador, entra) e $2$ (denominador, não entra).
 
 Fatore primeiro, sempre:
 
-$$x^3 - x^2 - 6x = x\,(x^2 - x - 6) = x\,(x-3)(x+2)$$
+$$x^3 - x^2 - 6x = x\thinspace (x^2 - x - 6) = x\thinspace (x-3)(x+2)$$
 
 Zeros: $-2$, $0$ e $3$ — todos entram, pois a desigualdade é $\leqslant$.
 
@@ -404,9 +404,9 @@ Unindo as três faixas: $[-3,-1) \cup [-1,2) \cup [2,4] = [-3,\thinspace 4]$.
 
 Faça aparecer $\lvert x - 3 \rvert$ dentro do que se quer tornar pequeno:
 
-$$\lvert 5x - 15 \rvert = \lvert 5(x-3) \rvert = 5\,\lvert x - 3 \rvert$$
+$$\lvert 5x - 15 \rvert = \lvert 5(x-3) \rvert = 5\thinspace \lvert x - 3 \rvert$$
 
-Queremos $5\,\lvert x-3 \rvert < 0{,}2$, ou seja, $\lvert x-3 \rvert < \dfrac{0{,}2}{5} = 0{,}04$.
+Queremos $5\thinspace \lvert x-3 \rvert < 0{,}2$, ou seja, $\lvert x-3 \rvert < \dfrac{0{,}2}{5} = 0{,}04$.
 
 **Resposta.** $\delta = 0{,}04$ (qualquer $0 < \delta \leqslant 0{,}04$ também serve).
 

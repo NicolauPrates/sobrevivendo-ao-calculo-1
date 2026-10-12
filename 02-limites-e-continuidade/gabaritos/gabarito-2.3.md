@@ -120,7 +120,12 @@ $$\frac{1-\cos x}{x^2} = \left(\frac{\operatorname{sen} x}{x}\right)^2\cdot\frac
 
 **(b) Falso.** As pontas precisam ter o **mesmo** limite. Contraexemplo: $g(x) = 1$, $h(x) = 3$ e
 
-$$f(x) = \begin{cases} 1, & x < 0 \\ 3, & x \geqslant 0 \end{cases}$$
+$$
+f(x) = \begin{cases}
+1, & \text{se } x < 0 \\
+3, & \text{se } x \geqslant 0
+\end{cases}
+$$
 
 satisfaz $g \leqslant f \leqslant h$, e $\lim_{x\to0} f(x)$ não existe.
 
@@ -228,7 +233,7 @@ $$
 \begin{aligned}
 \frac{\cos(a+h)-\cos a}{h}
 &= \frac{\cos a\cos h - \operatorname{sen} a\operatorname{sen} h - \cos a}{h} \\
-&= \frac{\cos a\,(\cos h - 1) - \operatorname{sen} a\operatorname{sen} h}{h} \\
+&= \frac{\cos a\thinspace (\cos h - 1) - \operatorname{sen} a\operatorname{sen} h}{h} \\
 &= -\cos a \cdot \frac{1-\cos h}{h} - \operatorname{sen} a\cdot\frac{\operatorname{sen} h}{h}
 \end{aligned}
 $$
@@ -314,11 +319,11 @@ No limite: $1 \cdot \dfrac{2}{1+1} = 1$.
 
 **Demonstração.** Para esses $x$,
 
-$$\big\lvert f(x)g(x) \big\rvert = \lvert f(x)\rvert \cdot \lvert g(x)\rvert \leqslant M\,\lvert g(x) \rvert$$
+$$\big\lvert f(x)g(x) \big\rvert = \lvert f(x)\rvert \cdot \lvert g(x)\rvert \leqslant M\thinspace \lvert g(x) \rvert$$
 
 e, portanto,
 
-$$-M\,\lvert g(x)\rvert \ \leqslant \ f(x)g(x) \ \leqslant \ M\,\lvert g(x)\rvert$$
+$$-M\thinspace \lvert g(x)\rvert \ \leqslant \ f(x)g(x) \ \leqslant \ M\thinspace \lvert g(x)\rvert$$
 
 Como $g(x) \to 0$, também $\lvert g(x)\rvert \to 0$ e, por L2, $\pm M\lvert g(x)\rvert \to 0$. As duas pontas do sanduíche tendem a $0$; pelo Teorema do Confronto,
 

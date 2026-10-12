@@ -46,10 +46,16 @@ python -m http.server 8777
 
 Depois, no navegador: **<http://127.0.0.1:8777/verifica.html>**
 
-A página carrega o KaTeX, passa cada fórmula por ele e mostra:
+A página carrega o KaTeX, passa cada fórmula por ele e mostra o resultado em dois níveis:
 
-- ✅ **"nenhum erro"** — pode publicar;
-- ❌ a lista de fórmulas problemáticas, com **arquivo**, **contexto** (inline, `$$` de uma linha, bloco de várias linhas), o **LaTeX como o KaTeX o recebeu** e a **mensagem de erro**.
+| | O que é | Gravidade |
+| :---: | --- | --- |
+| ❌ **Erro** | O KaTeX recusa a fórmula. **Derruba todas as fórmulas da página**, não só a defeituosa. | Impede a publicação |
+| ⚠️ **Alerta** | A fórmula renderiza, mas o Markdown comeu uma barra invertida pelo caminho — e ela sai **errada e sem aviso**. O caso típico é `\,` virando vírgula, e `\\` deixando de quebrar a linha. | Corrija antes de publicar |
+
+Cada caso mostra o **arquivo**, o **contexto** (inline, `$$` de uma linha, bloco de várias linhas), o **LaTeX como o KaTeX o recebeu** e o motivo.
+
+Se tudo estiver limpo, aparece **"nenhum problema"** — pode publicar.
 
 Encerre o servidor com `Ctrl + C` quando terminar.
 

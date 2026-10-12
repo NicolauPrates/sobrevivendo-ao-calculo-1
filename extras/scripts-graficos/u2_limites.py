@@ -500,7 +500,7 @@ def teorema_valor_intermediario() -> None:
     fig, ax = ec.novo_plano(xlim=(-0.5, 6), ylim=(-3.5, 5), figsize=(6.4, 4.4),
                             passo_y=1)
 
-    f = lambda x: 0.35 * (x - 1) ** 3 - 1.6 * (x - 1) + 0.4 * (x - 1) ** 2 - 2
+    f = lambda x: -2 + 1.5 * (x - 1) - 0.8 * np.sin(2.2 * (x - 1))
     a, b = 1.0, 5.0
     N = 1.0
 
