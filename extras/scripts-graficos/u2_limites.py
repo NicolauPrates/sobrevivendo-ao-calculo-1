@@ -377,6 +377,88 @@ def sen_x_sobre_x() -> None:
 
 
 # ======================================================================================
+# 2.4 — Limites infinitos, limites no infinito e assíntotas
+# ======================================================================================
+
+def assintota_vertical_fig() -> None:
+    """1/(x-2): os dois lados fogem para infinitos de sinais opostos."""
+    fig, ax = ec.novo_plano(xlim=(-1.5, 5.5), ylim=(-6, 6), figsize=(6.2, 4.6),
+                            passo_y=2)
+
+    for trecho in [(-1.5, 1.83), (2.17, 5.5)]:
+        ec.plotar(ax, lambda x: 1 / (x - 2), trecho, cor=ec.CORES["curva"],
+                  rotulo=r"$y=\frac{1}{x-2}$" if trecho[0] > 0 else None)
+    ec.assintota_vertical(ax, 2)
+    ec.assintota_horizontal(ax, 0)
+
+    ax.annotate(r"$x \to 2^-$:  $-\infty$", xy=(2, -4), xytext=(-1.4, -4.6),
+                color=ec.CORES["destaque"], fontsize=10)
+    ax.annotate(r"$x \to 2^+$:  $+\infty$", xy=(2, 4), xytext=(2.5, 4.6),
+                color=ec.CORES["destaque"], fontsize=10)
+    ax.annotate(r"$x=2$", xy=(2, 0), xytext=(-34, -26), textcoords="offset points",
+                color=ec.CORES["tracejado"], fontsize=10)
+
+    ec.legenda(ax, local="upper left")
+    ec.salvar(fig, UNIDADE, "2.4-assintota-vertical")
+
+
+def assintota_horizontal_fig() -> None:
+    """(3x^2+1)/(x^2+2): a curva se aproxima da reta y = 3 nos dois extremos."""
+    fig, ax = ec.novo_plano(xlim=(-9, 9), ylim=(-0.8, 4.2), figsize=(6.6, 3.8),
+                            passo_x=2, passo_y=1)
+
+    ec.plotar(ax, lambda x: (3 * x**2 + 1) / (x**2 + 2), (-9, 9),
+              rotulo=r"$y=\frac{3x^2+1}{x^2+2}$")
+    ec.assintota_horizontal(ax, 3, rotulo="$y=3$")
+
+    ax.annotate("quando $x$ cresce, a curva\ngruda na reta $y=3$", xy=(7, 2.9),
+                xytext=(1.2, 1.1), color=ec.CORES["destaque"], fontsize=9)
+
+    ec.legenda(ax, local="lower right")
+    ec.salvar(fig, UNIDADE, "2.4-assintota-horizontal")
+
+
+def raiz_no_infinito() -> None:
+    """sqrt(x^2+1)/x: tende a 1 à direita e a -1 à esquerda."""
+    fig, ax = ec.novo_plano(xlim=(-9, 9), ylim=(-2.2, 2.2), figsize=(6.6, 3.6),
+                            passo_x=2, passo_y=1)
+
+    f = lambda x: np.sqrt(x**2 + 1) / x
+    for trecho in [(-9, -0.35), (0.35, 9)]:
+        ec.plotar(ax, f, trecho, cor=ec.CORES["curva"],
+                  rotulo=r"$y=\frac{\sqrt{x^2+1}}{x}$" if trecho[0] > 0 else None)
+
+    ec.assintota_horizontal(ax, 1, rotulo="$y=1$")
+    ec.assintota_horizontal(ax, -1, rotulo="$y=-1$")
+
+    ax.annotate("duas assíntotas horizontais:\no sinal muda porque\n"
+                r"$\sqrt{x^2}=|x|$", xy=(-6, -1), xytext=(-8.6, 0.8),
+                va="top", color=ec.CORES["destaque"], fontsize=9)
+
+    ec.legenda(ax, local="lower right")
+    ec.salvar(fig, UNIDADE, "2.4-raiz-no-infinito")
+
+
+def assintota_obliqua() -> None:
+    """(x^2+1)/x = x + 1/x: a curva se aproxima da reta y = x."""
+    fig, ax = ec.novo_plano(xlim=(-6, 6), ylim=(-7, 7), figsize=(5.8, 4.8),
+                            passo_y=2)
+
+    for trecho in [(-6, -0.17), (0.17, 6)]:
+        ec.plotar(ax, lambda x: (x**2 + 1) / x, trecho, cor=ec.CORES["curva"],
+                  rotulo=r"$y=\frac{x^2+1}{x}$" if trecho[0] > 0 else None)
+
+    ax.plot([-6, 6], [-6, 6], color=ec.CORES["tracejado"], linestyle="--",
+            linewidth=1.4, zorder=2)
+    ax.annotate("$y=x$", xy=(4.4, 4.4), xytext=(8, -14), textcoords="offset points",
+                color=ec.CORES["tracejado"], fontsize=10)
+    ec.assintota_vertical(ax, 0)
+
+    ec.legenda(ax, local="lower right")
+    ec.salvar(fig, UNIDADE, "2.4-assintota-obliqua")
+
+
+# ======================================================================================
 
 FIGURAS = [
     ideia_de_limite,
@@ -389,6 +471,10 @@ FIGURAS = [
     x2_sen_um_sobre_x,
     circulo_trigonometrico,
     sen_x_sobre_x,
+    assintota_vertical_fig,
+    assintota_horizontal_fig,
+    raiz_no_infinito,
+    assintota_obliqua,
     valor_nao_importa_a,
     valor_nao_importa_b,
     valor_nao_importa_c,
