@@ -148,12 +148,14 @@ O GitHub renderiza LaTeX nativamente. As regras abaixo não são estéticas: cad
 | --- | --- | --- |
 | Fórmula no meio do texto | `$f(x) = x^2$` | `\(f(x)=x^2\)` |
 | Fórmula destacada | `$$ \ldots $$` em **linha própria**, com linha em branco antes e depois | `\[ \ldots \]` |
-| Várias linhas alinhadas | `$$\begin{aligned} a &= b \\ &= c \end{aligned}$$` | `\begin{equation}`, `\begin{align}` (sem o `ed`) |
+| Várias linhas alinhadas | bloco `$$` em **várias linhas**, com `\begin{aligned}` | `\begin{equation}`, `\begin{align}` (sem o `ed`) |
 | Fração em destaque | `\dfrac{a}{b}` | `\frac` em display quando a fração ficar pequena |
 | Módulo | `\lvert x \rvert` | `|x|` — a barra vertical quebra tabelas |
+| Chaves de conjunto | `\lbrace x \rbrace` | `\{x\}` — veja a §5.1 |
+| Espaço fino | `\thinspace` | `\,` — veja a §5.1 |
 | Conjunto dos reais | `\mathbb{R}` | `R`, `IR` |
 | Limite | `\lim_{x \to a}` | `lim`, `\lim_{x->a}` |
-| Diferencial | `\int f(x)\,dx` (com `\,`) | `\int f(x) dx` |
+| Diferencial | `\int f(x)\thinspace dx` | `\int f(x) dx`, `\int f(x)\,dx` |
 | Texto dentro da fórmula | `\text{se } x > 0` | palavras em itálico de variável |
 | Função composta de nome longo | `\operatorname{arcsec} x` | `arcsec\,x` |
 | Épsilon e delta | `\varepsilon`, `\delta` | `\epsilon` (o símbolo "lunar" não é o usado nos livros) |
@@ -162,18 +164,63 @@ O GitHub renderiza LaTeX nativamente. As regras abaixo não são estéticas: cad
 > [!NOTE]
 > **Seno em português.** Os livros brasileiros escrevem $\operatorname{sen} x$; o LaTeX padrão só oferece `\sin`. Neste repositório usamos **`\sin`** em todas as fórmulas, por compatibilidade com o renderizador do GitHub, e escrevemos "seno" quando o nome aparece no texto corrido. Essa é a única concessão de notação ao inglês.
 
-**Cinco armadilhas de renderização**, todas já vistas na prática:
+### 5.1 ⚠️ A regra mais importante deste arquivo: barra invertida antes de pontuação
+
+O GitHub processa os **escapes do Markdown antes** de entregar a fórmula ao renderizador de LaTeX. Consequência, verificada no próprio GitHub:
+
+> **Dentro de `$...$` — e também de um `$$...$$` escrito em uma única linha — toda barra invertida seguida de um sinal de pontuação ASCII é simplesmente apagada.**
+
+O que o autor escreve, o que o LaTeX recebe e o que acontece:
+
+| Você escreve | O LaTeX recebe | Resultado |
+| --- | --- | --- |
+| `$\{a, b\}$` | `${a, b}$` | as chaves **somem** da fórmula, sem aviso nenhum |
+| `$S = \left\{ 1 \right\}$` | `$S = \left{ 1 }$` | **erro fatal**: "Missing or unrecognized delimiter for \left" |
+| `$[1,\,2]$` | `$[1,,2]$` | aparecem **duas vírgulas** |
+| `$$a \\ b$$` (uma linha) | `$$a \ b$$` | a quebra de linha vira um espaço |
+
+> [!CAUTION]
+> **Um único erro desses derruba TODAS as fórmulas da página**, não só a defeituosa. O GitHub exibe uma tarja de erro no topo e mostra o restante da matemática como texto cru, com os cifrões à mostra. Já aconteceu neste repositório: um `\left\{` deixou a página 1.1 inteira sem renderizar.
+
+**Portanto, dentro de matemática, nunca escreva barra invertida antes de pontuação.** Use sempre os equivalentes só com letras:
+
+| Em vez de | Escreva | Significado |
+| :---: | :---: | --- |
+| `\{` e `\}` | `\lbrace` e `\rbrace` | chaves de conjunto |
+| `\,` | `\thinspace` | espaço fino |
+| barra invertida + barra vertical | `\Vert`, `\mid`, `\lvert`, `\rvert` | barra vertical (que também quebra tabelas) |
+| `\[` e `\]` | `\lbrack` e `\rbrack` | colchetes (ou use `[` e `]` sem barra) |
+| `\\` | bloco `$$` em várias linhas | quebra de linha em `cases`, `aligned`, `matrix` |
+| `\%` | escreva "por cento" no texto | em LaTeX, `%` inicia comentário |
+
+**Para quebrar linha** (em `\begin{cases}`, `\begin{aligned}`, matrizes), o bloco `$$` precisa estar escrito em **várias linhas**, com os delimitadores sozinhos:
+
+```markdown
+$$
+\lvert x \rvert = \begin{cases}
+x, & \text{se } x \geqslant 0 \\
+-x, & \text{se } x < 0
+\end{cases}
+$$
+```
+
+Nesse formato o GitHub **não** aplica escapes, e `\\`, `&` e tudo mais chegam intactos ao LaTeX. O mesmo vale dentro de citação (`>`), desde que cada linha do bloco leve o seu `>`.
+
+### 5.2 Outras armadilhas de renderização
 
 1. **Não deixe espaço depois do `$` de abertura**: `$ x $` pode não renderizar; `$x$` sempre renderiza.
-2. **Dentro de tabelas**, o caractere `|` precisa de escape ou — melhor — ser substituído por `\mid` e `\lvert \rvert`.
+2. **Dentro de tabelas**, o caractere `|` quebra a célula: use `\mid`, `\lvert`, `\rvert`.
 3. **Em listas numeradas**, um `$$` destacado precisa estar **indentado com 3 espaços** para continuar pertencendo ao item.
-4. **`\\` dentro de `$$...$$` em uma única linha** pode ser interpretado como escape pelo Markdown: quebre o bloco em várias linhas.
+4. **Um cifrão solto no texto** (`custa \$5`) pode desregular o pareamento de `$` e desligar a matemática do **documento inteiro**. Escreva "5 reais", ou ponha o cifrão dentro de `código`.
 5. **Não use `\label`, `\ref`, `\tag` nem `\newcommand`** — o renderizador do GitHub não mantém estado entre blocos.
+
+> [!TIP]
+> **Confira sempre na página publicada, não no editor local.** O VS Code renderiza `\{` sem reclamar; o GitHub, não. Depois de publicar, abra a página e verifique se há tarja vermelha no topo e se os cifrões sumiram do texto.
 
 ### Números e decimais
 
 - **Vírgula decimal**, como nos livros brasileiros. Dentro de fórmulas, escreva `0{,}5` (com as chaves) para o espaçamento sair correto: $0{,}5$.
-- Quando houver decimal **dentro** de um intervalo ou de um par ordenado, troque o separador por ponto e vírgula para não gerar ambiguidade: $[0{,}5\,;\,2]$, $(1{,}5\,;\,3)$.
+- Quando houver decimal **dentro** de um intervalo ou de um par ordenado, troque o separador por ponto e vírgula para não gerar ambiguidade: $[0{,}5\thinspace ;\thinspace 2]$, $(1{,}5\thinspace ;\thinspace 3)$.
 - Milhar sem separador: $12000$, não $12.000$.
 - Resultados aproximados sempre com o símbolo correto e a precisão declarada: $\pi \approx 3{,}14$.
 

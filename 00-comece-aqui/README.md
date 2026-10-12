@@ -37,7 +37,7 @@ Antes de abrir a Unidade 1, responda a estas oito perguntas **no papel, sem calc
 | :---: | --- | :---: | --- |
 | 1 | $(x-2)(x^2+2x+4)$ | 5 | $-\dfrac{1}{2}$ |
 | 2 | $\dfrac{x+3}{x-3}$ | 6 | $x = 4$ |
-| 3 | $\dfrac{\sqrt{x+1}+1}{x}$ | 7 | $(3,\,7)$ |
+| 3 | $\dfrac{\sqrt{x+1}+1}{x}$ | 7 | $(3,\thinspace 7)$ |
 | 4 | $(-\infty,-2) \cup [1,+\infty)$ | 8 | $-\dfrac{1}{x(x+h)}$ |
 
 **Como interpretar o resultado:**
