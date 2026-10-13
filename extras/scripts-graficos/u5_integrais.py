@@ -303,6 +303,298 @@ def valor_medio_integral() -> None:
 
 
 # ======================================================================================
+# 5.4 · Aplicações da integral definida
+# ======================================================================================
+
+def area_entre_curvas() -> None:
+    """A região entre duas curvas e o retângulo representativo de altura f - g."""
+    fig, ax = ec.novo_plano(xlim=(-1.2, 3.4), ylim=(-1.9, 4.6), figsize=(6.6, 4.6),
+                            passo_y=1)
+
+    f = lambda x: x + 2          # reta, a curva "de cima"
+    g = lambda x: x**2           # parábola, a curva "de baixo"
+    a, b = -1.0, 2.0             # interseções: x + 2 = x^2
+
+    x = np.linspace(a, b, 300)
+    ax.fill_between(x, g(x), f(x), color=ec.CORES["area"], alpha=0.22, linewidth=0,
+                    zorder=1)
+
+    ec.plotar(ax, f, (-1.15, 3.1), cor=ec.CORES["curva"], rotulo="$y = f(x)$")
+    ec.plotar(ax, g, (-1.15, 2.1), cor=ec.CORES["curva2"], rotulo="$y = g(x)$")
+
+    # Retangulo representativo: e dele que sai o integrando.
+    xr = 0.7
+    ax.plot([xr, xr], [g(xr), f(xr)], color=ec.CORES["destaque"], linewidth=2.2,
+            zorder=5)
+    ax.add_patch(Rectangle((xr - 0.07, g(xr)), 0.14, f(xr) - g(xr),
+                           facecolor=ec.CORES["destaque"], alpha=0.3,
+                           edgecolor=ec.CORES["destaque"], linewidth=1.0, zorder=4))
+
+    ax.annotate("altura $= f(x)-g(x)$\nlargura $= dx$",
+                xy=(xr, g(xr) - 0.04), xytext=(0.75, -1.15), ha="center",
+                color=ec.CORES["destaque"], fontsize=10, zorder=6,
+                arrowprops=dict(arrowstyle="->", color=ec.CORES["destaque"],
+                                linewidth=1.3, shrinkA=0, shrinkB=4))
+
+    ec.ponto_fechado(ax, a, f(a), cor=ec.CORES["eixo"], tamanho=6)
+    ec.ponto_fechado(ax, b, f(b), cor=ec.CORES["eixo"], tamanho=6)
+    ax.set_xticks([a, b])
+    ax.set_xticklabels(["$a$", "$b$"])
+    ec.legenda(ax, local="upper left")
+    ec.salvar(fig, UNIDADE, "5.4-area-entre-curvas")
+
+
+def metodo_do_disco() -> None:
+    """A região girada em torno do eixo x, e o disco que o retângulo varre."""
+    fig = plt.figure(figsize=(9.4, 4.0))
+    f = lambda x: np.sqrt(x)
+    a, b, xr = 0.0, 4.0, 2.3
+
+    # --- Painel esquerdo: a regiao plana -------------------------------------------
+    ax1 = fig.add_subplot(1, 2, 1)
+    ax1.set_xlim(-0.6, 4.8)
+    ax1.set_ylim(-0.8, 2.9)
+    for lado in ("right", "top"):
+        ax1.spines[lado].set_visible(False)
+    ax1.spines["left"].set_position("zero")
+    ax1.spines["bottom"].set_position("zero")
+    ax1.set_yticks([])
+    ax1.set_xticks([a, b])
+    ax1.set_xticklabels(["$a$", "$b$"])
+    ax1.tick_params(labelsize=9)
+
+    x = np.linspace(a, b, 300)
+    ax1.fill_between(x, 0, f(x), color=ec.CORES["area"], alpha=0.22, linewidth=0)
+    ax1.plot(x, f(x), color=ec.CORES["curva"], linewidth=2.3, zorder=3)
+    ax1.text(4.3, 2.3, "$y=f(x)$", fontsize=11, color=ec.CORES["curva"], ha="right")
+
+    ax1.add_patch(Rectangle((xr - 0.09, 0), 0.18, f(xr),
+                            facecolor=ec.CORES["destaque"], alpha=0.35,
+                            edgecolor=ec.CORES["destaque"], linewidth=1.0, zorder=4))
+    ax1.annotate("raio $= f(x)$", xy=(xr + 0.1, f(xr) / 2), xytext=(0.5, -0.55),
+                 color=ec.CORES["destaque"], fontsize=10,
+                 arrowprops=dict(arrowstyle="->", color=ec.CORES["destaque"],
+                                 linewidth=1.3, shrinkA=0, shrinkB=4))
+    ax1.set_title("a região", fontsize=11, color=ec.CORES["texto"], pad=4)
+
+    # --- Painel direito: o solido de revolucao -------------------------------------
+    ax2 = fig.add_subplot(1, 2, 2, projection="3d")
+    u = np.linspace(a, b, 60)
+    t = np.linspace(0, 2 * np.pi, 60)
+    U, T = np.meshgrid(u, t)
+    # shade=False mantem a cor chapada; com sombreamento, o azul vira cinza.
+    ax2.plot_surface(U, f(U) * np.cos(T), f(U) * np.sin(T),
+                     color=ec.CORES["curva"], alpha=0.22, linewidth=0,
+                     antialiased=True, shade=False)
+
+    # O disco varrido pelo retangulo destacado.
+    r = np.linspace(0, f(xr), 20)
+    R, T2 = np.meshgrid(r, t)
+    ax2.plot_surface(np.full_like(R, xr), R * np.cos(T2), R * np.sin(T2),
+                     color=ec.CORES["destaque"], alpha=0.95, linewidth=0,
+                     shade=False, zorder=10)
+
+    ax2.set_box_aspect((2.2, 1, 1))
+    ax2.view_init(elev=16, azim=-62)
+    ax2.set_axis_off()
+    ax2.set_title("o sólido, com um disco destacado", fontsize=11,
+                  color=ec.CORES["texto"], pad=0)
+    ax2.text2D(0.5, 0.02, "$dV = \\pi\\,[f(x)]^2\\,dx$", transform=ax2.transAxes,
+               fontsize=12, color=ec.CORES["destaque"], ha="center")
+
+    fig.tight_layout()
+    ec.salvar(fig, UNIDADE, "5.4-metodo-do-disco")
+
+
+def metodo_do_anel() -> None:
+    """Região entre duas curvas girada: a secção é um anel, não um disco."""
+    fig, eixos = plt.subplots(1, 2, figsize=(9.0, 3.8))
+
+    f = lambda x: np.sqrt(x) + 1.0   # borda externa
+    g = lambda x: 0.45 * x           # borda interna
+    a, b, xr = 0.0, 4.0, 2.4
+
+    # --- A regiao -------------------------------------------------------------------
+    ax = eixos[0]
+    ax.set_xlim(-0.6, 4.8)
+    ax.set_ylim(-0.5, 3.4)
+    for lado in ("right", "top"):
+        ax.spines[lado].set_visible(False)
+    ax.spines["left"].set_position("zero")
+    ax.spines["bottom"].set_position("zero")
+    ax.set_yticks([])
+    ax.set_xticks([a, b])
+    ax.set_xticklabels(["$a$", "$b$"])
+    ax.tick_params(labelsize=9)
+
+    x = np.linspace(a, b, 300)
+    ax.fill_between(x, g(x), f(x), color=ec.CORES["area"], alpha=0.22, linewidth=0)
+    ax.plot(x, f(x), color=ec.CORES["curva"], linewidth=2.2, zorder=3)
+    ax.plot(x, g(x), color=ec.CORES["curva2"], linewidth=2.2, zorder=3)
+    ax.text(4.2, f(4.0), "$f$", fontsize=12, color=ec.CORES["curva"], va="center")
+    ax.text(4.2, g(4.0), "$g$", fontsize=12, color=ec.CORES["curva2"], va="center")
+
+    ax.plot([xr, xr], [g(xr), f(xr)], color=ec.CORES["destaque"], linewidth=2.4,
+            zorder=5)
+    ax.set_title("a região (não encosta no eixo)", fontsize=11,
+                 color=ec.CORES["texto"], pad=4)
+
+    # --- O anel ---------------------------------------------------------------------
+    ax = eixos[1]
+    ax.set_xlim(-3.1, 3.1)
+    ax.set_ylim(-3.5, 2.8)
+    ax.set_aspect("equal", adjustable="box")
+    ax.axis("off")
+
+    R, rr = f(xr), g(xr)
+    t = np.linspace(0, 2 * np.pi, 200)
+    ax.fill(R * np.cos(t), R * np.sin(t), color=ec.CORES["curva"], alpha=0.28,
+            linewidth=0)
+    ax.fill(rr * np.cos(t), rr * np.sin(t), color=ec.CORES["fundo"], linewidth=0)
+    ax.plot(R * np.cos(t), R * np.sin(t), color=ec.CORES["curva"], linewidth=2.0)
+    ax.plot(rr * np.cos(t), rr * np.sin(t), color=ec.CORES["curva2"], linewidth=2.0)
+
+    ax.plot([0, R], [0, 0], color=ec.CORES["curva"], linewidth=1.6)
+    ax.plot([0, 0], [0, -rr], color=ec.CORES["curva2"], linewidth=1.6)
+    ax.text(R / 2, 0.18, "$R$", fontsize=12, color=ec.CORES["curva"], ha="center")
+    ax.text(0.16, -rr / 2, "$r$", fontsize=12, color=ec.CORES["curva2"],
+            ha="left", va="center")
+
+    ax.set_title("a secção: um anel", fontsize=11, color=ec.CORES["texto"], pad=4)
+    ax.text(0, -2.95, "$R=f(x)$,   $r=g(x)$", fontsize=10.5,
+            color=ec.CORES["texto"], ha="center")
+    ax.text(0, -3.35, "$dV = \\pi\\left(R^2-r^2\\right)dx$", fontsize=12,
+            color=ec.CORES["destaque"], ha="center")
+
+    fig.tight_layout()
+    ec.salvar(fig, UNIDADE, "5.4-metodo-do-anel")
+
+
+def casca_cilindrica() -> None:
+    """A casca desenrolada vira um retângulo: 2(pi)x de largura por h de altura."""
+    fig, eixos = plt.subplots(1, 2, figsize=(9.2, 3.8))
+
+    h = lambda x: 2.4 - 0.45 * x**2
+    a, b, xr = 0.0, 2.1, 1.25
+
+    # --- A regiao e a casca ---------------------------------------------------------
+    ax = eixos[0]
+    ax.set_xlim(-2.6, 2.8)
+    ax.set_ylim(-0.7, 4.1)
+    for lado in ("right", "top"):
+        ax.spines[lado].set_visible(False)
+    ax.spines["left"].set_position("zero")
+    ax.spines["bottom"].set_position("zero")
+    ax.set_yticks([])
+    ax.set_xticks([xr])
+    ax.set_xticklabels(["$x$"])
+    ax.tick_params(labelsize=9)
+
+    x = np.linspace(a, b, 300)
+    ax.fill_between(x, 0, h(x), color=ec.CORES["area"], alpha=0.22, linewidth=0)
+    ax.plot(x, h(x), color=ec.CORES["curva"], linewidth=2.2, zorder=3)
+    ax.add_patch(Rectangle((xr - 0.08, 0), 0.16, h(xr),
+                           facecolor=ec.CORES["destaque"], alpha=0.4,
+                           edgecolor=ec.CORES["destaque"], linewidth=1.0, zorder=4))
+    # A imagem espelhada mostra para onde o retangulo vai ao girar.
+    ax.add_patch(Rectangle((-xr - 0.08, 0), 0.16, h(xr),
+                           facecolor=ec.CORES["destaque"], alpha=0.18,
+                           edgecolor=ec.CORES["destaque"], linewidth=1.0,
+                           linestyle="--", zorder=4))
+    ax.annotate("", xy=(-xr, 2.85), xytext=(xr, 2.85),
+                arrowprops=dict(arrowstyle="->", color=ec.CORES["destaque"],
+                                linewidth=1.3, connectionstyle="arc3,rad=0.35"))
+    ax.text(0, 3.55, "gira em torno do eixo $y$", fontsize=9.5,
+            color=ec.CORES["destaque"], ha="center")
+    ax.set_title("o retângulo gira e vira uma casca", fontsize=11,
+                 color=ec.CORES["texto"], pad=4)
+
+    # --- A casca desenrolada --------------------------------------------------------
+    ax = eixos[1]
+    ax.set_xlim(-0.9, 8.2)
+    ax.set_ylim(-0.9, 3.2)
+    ax.axis("off")
+
+    larg = 7.0
+    ax.add_patch(Rectangle((0, 0), larg, h(xr), facecolor=ec.CORES["destaque"],
+                           alpha=0.3, edgecolor=ec.CORES["destaque"], linewidth=1.6))
+    ax.annotate("", xy=(larg, -0.35), xytext=(0, -0.35),
+                arrowprops=dict(arrowstyle="<->", color=ec.CORES["texto"],
+                                linewidth=1.2))
+    ax.text(larg / 2, -0.72, "$2\\pi x$  (a circunferência)", fontsize=10.5,
+            color=ec.CORES["texto"], ha="center")
+    ax.annotate("", xy=(-0.4, h(xr)), xytext=(-0.4, 0),
+                arrowprops=dict(arrowstyle="<->", color=ec.CORES["texto"],
+                                linewidth=1.2))
+    ax.text(-0.55, h(xr) / 2, "$h(x)$", fontsize=10.5, color=ec.CORES["texto"],
+            ha="right", va="center", rotation=90)
+
+    ax.set_title("desenrolada, é um retângulo", fontsize=11,
+                 color=ec.CORES["texto"], pad=4)
+    ax.text(larg / 2, 2.72, "$dV = 2\\pi x\\,h(x)\\,dx$", fontsize=12,
+            color=ec.CORES["destaque"], ha="center")
+
+    fig.tight_layout()
+    ec.salvar(fig, UNIDADE, "5.4-casca-cilindrica")
+
+
+def comprimento_de_arco() -> None:
+    """O arco aproximado por segmentos, e o triângulo que dá a fórmula."""
+    fig, eixos = plt.subplots(1, 2, figsize=(9.0, 3.7))
+
+    f = lambda x: 0.35 * x**2 + 0.4
+
+    # --- O arco e a poligonal -------------------------------------------------------
+    ax = eixos[0]
+    ax.set_xlim(-0.4, 3.4)
+    ax.set_ylim(-0.4, 4.0)
+    for lado in ("right", "top"):
+        ax.spines[lado].set_visible(False)
+    ax.spines["left"].set_position("zero")
+    ax.spines["bottom"].set_position("zero")
+    ax.set_yticks([])
+    ax.set_xticks([0.3, 3.0])
+    ax.set_xticklabels(["$a$", "$b$"])
+    ax.tick_params(labelsize=9)
+
+    x = np.linspace(0.3, 3.0, 300)
+    ax.plot(x, f(x), color=ec.CORES["curva"], linewidth=2.4, zorder=3)
+    nos = np.linspace(0.3, 3.0, 4)
+    ax.plot(nos, f(nos), color=ec.CORES["destaque"], linewidth=1.6,
+            marker="o", markersize=5, zorder=4)
+    ax.annotate("cada corda\n\"corta\" a curva", xy=(1.9, f(1.65) + 0.08),
+                xytext=(0.45, 3.1), color=ec.CORES["destaque"], fontsize=9.5,
+                arrowprops=dict(arrowstyle="->", color=ec.CORES["destaque"],
+                                linewidth=1.2, shrinkA=0, shrinkB=4))
+    ax.set_title("o arco, aproximado por segmentos", fontsize=11,
+                 color=ec.CORES["texto"], pad=4)
+
+    # --- O triangulo infinitesimal --------------------------------------------------
+    ax = eixos[1]
+    ax.set_xlim(-0.5, 4.4)
+    ax.set_ylim(-0.8, 3.0)
+    ax.set_aspect("equal", adjustable="box")
+    ax.axis("off")
+
+    ax.plot([0, 3.2, 3.2, 0], [0, 0, 2.0, 0], color=ec.CORES["eixo"], linewidth=1.6)
+    ax.plot([0, 3.2], [0, 2.0], color=ec.CORES["destaque"], linewidth=2.4)
+    m = 0.22
+    ax.plot([3.2 - m, 3.2 - m, 3.2], [0, m, m], color=ec.CORES["eixo"], linewidth=1.0)
+
+    ax.text(1.6, -0.42, "$dx$", fontsize=13, color=ec.CORES["texto"], ha="center")
+    ax.text(3.35, 1.0, "$dy$", fontsize=13, color=ec.CORES["texto"], va="center")
+    ax.text(1.35, 1.35, "$ds$", fontsize=13, color=ec.CORES["destaque"], ha="center")
+
+    ax.text(1.8, 2.6, "$ds=\\sqrt{dx^2+dy^2}=\\sqrt{1+(y')^2}\\;dx$", fontsize=11.5,
+            color=ec.CORES["destaque"], ha="center")
+    ax.set_title("cada segmento é a hipotenusa", fontsize=11,
+                 color=ec.CORES["texto"], pad=4)
+
+    fig.tight_layout()
+    ec.salvar(fig, UNIDADE, "5.4-comprimento-de-arco")
+
+
+# ======================================================================================
 
 FIGURAS = [
     familia_de_primitivas,
@@ -312,6 +604,11 @@ FIGURAS = [
     area_com_sinal,
     funcao_area_acumulada,
     valor_medio_integral,
+    area_entre_curvas,
+    metodo_do_disco,
+    metodo_do_anel,
+    casca_cilindrica,
+    comprimento_de_arco,
 ]
 
 
