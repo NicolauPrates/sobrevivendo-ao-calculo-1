@@ -70,6 +70,60 @@ def primitiva_pela_condicao() -> None:
 
 
 # ======================================================================================
+# 5.2 · Técnicas de integração
+# ======================================================================================
+
+def triangulos_substituicao() -> None:
+    """Os três triângulos de referência da substituição trigonométrica."""
+    casos = [
+        # (radical, hipotenusa, cateto oposto, cateto adjacente, substituicao)
+        ("$\\sqrt{a^2-x^2}$", "$a$", "$x$", "$\\sqrt{a^2-x^2}$",
+         "$x = a\\operatorname{sen}\\theta$"),
+        ("$\\sqrt{a^2+x^2}$", "$\\sqrt{a^2+x^2}$", "$x$", "$a$",
+         "$x = a\\operatorname{tg}\\theta$"),
+        ("$\\sqrt{x^2-a^2}$", "$x$", "$\\sqrt{x^2-a^2}$", "$a$",
+         "$x = a\\operatorname{sec}\\theta$"),
+    ]
+
+    fig, eixos = plt.subplots(1, 3, figsize=(9.8, 3.6))
+    for ax, (radical, hip, oposto, adjacente, subst) in zip(eixos, casos):
+        ax.set_xlim(-0.35, 4.1)
+        ax.set_ylim(-1.15, 2.6)
+        ax.set_aspect("equal", adjustable="box")
+        ax.axis("off")
+
+        # Triangulo retangulo com o angulo theta no vertice da esquerda.
+        base, altura = 2.6, 1.7
+        ax.plot([0, base, base, 0], [0, 0, altura, 0],
+                color=ec.CORES["curva"], linewidth=2.0)
+
+        # Marca do angulo reto.
+        m = 0.22
+        ax.plot([base - m, base - m, base], [0, m, m],
+                color=ec.CORES["eixo"], linewidth=1.1)
+
+        # Marca do angulo theta.
+        t = np.linspace(0, np.arctan2(altura, base), 40)
+        ax.plot(0.55 * np.cos(t), 0.55 * np.sin(t),
+                color=ec.CORES["destaque"], linewidth=1.2)
+        ax.text(0.76, 0.17, "$\\theta$", color=ec.CORES["destaque"], fontsize=12)
+
+        ax.text(base / 2 - 0.3, altura / 2 + 0.42, hip, fontsize=11.5,
+                color=ec.CORES["texto"], ha="center", rotation=33)
+        ax.text(base + 0.1, altura / 2, oposto, fontsize=11.5,
+                color=ec.CORES["texto"], ha="left", va="center")
+        ax.text(base / 2, -0.38, adjacente, fontsize=11.5,
+                color=ec.CORES["texto"], ha="center", va="top")
+
+        ax.set_title(f"para {radical}", fontsize=11.5, color=ec.CORES["texto"], pad=6)
+        ax.text(base / 2, -0.95, subst, fontsize=12,
+                color=ec.CORES["destaque"], ha="center", va="center")
+
+    fig.tight_layout()
+    ec.salvar(fig, UNIDADE, "5.2-triangulos-substituicao")
+
+
+# ======================================================================================
 # 5.3 · Integral definida e o Teorema Fundamental
 # ======================================================================================
 
@@ -253,6 +307,7 @@ def valor_medio_integral() -> None:
 FIGURAS = [
     familia_de_primitivas,
     primitiva_pela_condicao,
+    triangulos_substituicao,
     somas_de_riemann,
     area_com_sinal,
     funcao_area_acumulada,
