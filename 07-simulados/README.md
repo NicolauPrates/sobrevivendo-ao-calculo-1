@@ -1,8 +1,5 @@
 # 🧪 07 · Simulados
 
-> [!NOTE]
-> 🚧 **Seção em construção.** Cada simulado é publicado depois que as unidades que ele cobra ficam prontas.
-
 Provas completas, no formato e no nível do que se cobra na disciplina, com **resolução comentada questão por questão**. É aqui que você descobre se estudou ou se apenas leu.
 
 ---

@@ -94,7 +94,7 @@ flowchart TD
 ## 📖 Sumário geral
 
 > [!NOTE]
-> 🚧 **Material em construção.** As unidades são escritas e publicadas em ordem. As seções marcadas com 🚧 ainda estão sendo redigidas — o índice delas já existe e serve de roteiro, mas alguns links ainda não abrem. [Acompanhe o andamento](../../commits/main).
+> ✅ **Material completo.** As cinco unidades da ementa, o formulário e os simulados estão publicados. Correções e melhorias continuam — [acompanhe o andamento](../../commits/main) ou [abra uma issue](../../issues/new?template=01-erro-no-material.yml) se achar um erro.
 
 ### ⭐ 00 · Comece aqui
 
@@ -170,7 +170,7 @@ O que abrir na véspera. [Índice completo](06-formulario/README.md).
 | [A1 · Tabela de derivadas](06-formulario/A1-tabela-de-derivadas.md) | [A2 · Tabela de integrais](06-formulario/A2-tabela-de-integrais.md) | [A3 · Identidades trigonométricas](06-formulario/A3-identidades-trigonometricas.md) |
 | [A4 · Limites notáveis](06-formulario/A4-limites-notaveis.md) | [A5 · Símbolos e alfabeto grego](06-formulario/A5-simbolos-e-alfabeto-grego.md) | [A6 · Glossário](06-formulario/A6-glossario.md) |
 
-## 🧪 07 · Simulados 🚧
+## 🧪 07 · Simulados ✅
 
 Provas completas, com resolução comentada questão por questão. [Índice](07-simulados/README.md).
 

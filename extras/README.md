@@ -21,13 +21,21 @@ extras/
 │   ├── u3_derivadas.py               gráficos da Unidade 3
 │   ├── u4_aplicacoes.py              gráficos da Unidade 4
 │   └── u5_integrais.py               gráficos da Unidade 5
-└── verificador-latex/                ferramenta de manutenção
-    ├── extrai_formulas.py            extrai a matemática como o GitHub a entrega
-    └── verifica.html                 passa tudo pelo KaTeX e aponta os erros
+├── verificador-latex/                ferramenta de manutenção
+│   ├── extrai_formulas.py            extrai a matemática como o GitHub a entrega
+│   └── verifica.html                 passa tudo pelo KaTeX e aponta os erros
+└── verificador-links/                ferramenta de manutenção
+    └── checa_links.py                confere se todo link interno aponta para algo
 ```
 
 > [!NOTE]
-> A pasta [`verificador-latex/`](verificador-latex/README.md) não é material de estudo nem de aprendizado de Python: é a ferramenta que confere se todas as fórmulas do repositório vão renderizar no GitHub. Interessa a quem escreve ou corrige páginas.
+> As pastas [`verificador-latex/`](verificador-latex/README.md) e `verificador-links/` não são material de estudo nem de aprendizado de Python: são as ferramentas que conferem, respectivamente, se todas as fórmulas vão renderizar no GitHub e se nenhum link interno está quebrado. Interessam a quem escreve ou corrige páginas.
+>
+> O verificador de links roda a partir da raiz do repositório e não precisa de nenhuma biblioteca externa:
+>
+> ```bash
+> python extras/verificador-links/checa_links.py
+> ```
 
 Cada script gera os arquivos `.svg` de [`assets/img/`](../assets/img) usados nas páginas de teoria. A regra do repositório é simples: **nenhuma imagem entra aqui sem o script que a produz.** Isso garante que todo gráfico possa ser corrigido, ajustado e refeito anos depois.
 
