@@ -1,8 +1,5 @@
 # Unidade 4 · Derivadas: aplicações
 
-> [!NOTE]
-> 🚧 **Unidade em construção.** As páginas abaixo estão sendo escritas e publicadas em ordem. Enquanto isso, o índice já serve de roteiro de estudo.
-
 > Nesta unidade a derivada deixa de ser conta e vira ferramenta: ela responde "qual é o maior valor possível?", "onde a curva muda de comportamento?" e "quanto vale esse limite que parece impossível?".
 
 ---

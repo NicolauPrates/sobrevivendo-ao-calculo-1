@@ -138,7 +138,7 @@ flowchart TD
 | 3.5 | [Problemas de taxa de variação](03-derivadas/3.5-problemas-de-taxa-de-variacao.md) | [lista](03-derivadas/exercicios/lista-3.5-propostos.md) | [gabarito](03-derivadas/gabaritos/gabarito-3.5.md) |
 | — | **Revisão da unidade** | [lista](03-derivadas/exercicios/revisao-unidade-3.md) | [gabarito](03-derivadas/gabaritos/gabarito-revisao-unidade-3.md) |
 
-### 4 · Derivadas: aplicações 🚧 · [índice da unidade](04-aplicacoes-das-derivadas/README.md)
+### 4 · Derivadas: aplicações ✅ · [índice da unidade](04-aplicacoes-das-derivadas/README.md)
 
 | # | Teoria | 📝 Propostos | ✅ Gabarito |
 | :---: | --- | :---: | :---: |
