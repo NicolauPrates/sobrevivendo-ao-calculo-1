@@ -246,6 +246,58 @@ def teorema_valor_medio() -> None:
 
 
 # ======================================================================================
+# 4.3 — Regra de L'Hôspital
+# ======================================================================================
+
+def hierarquia_do_infinito() -> None:
+    """Exponencial cresce mais que potência, que cresce mais que logaritmo."""
+    fig, ax = ec.novo_plano(xlim=(-0.5, 8.5), ylim=(-8, 80), figsize=(6.6, 4.6),
+                            passo_x=1, passo_y=20)
+
+    ec.plotar(ax, np.exp, (0, 4.4), cor=ec.CORES["curva"], rotulo="$y=e^x$")
+    ec.plotar(ax, lambda x: x**3, (0, 4.3), cor=ec.CORES["curva2"], rotulo="$y=x^3$")
+    ec.plotar(ax, lambda x: 10 * x, (0, 8.0), cor=ec.CORES["curva3"],
+              rotulo="$y=10x$")
+    ec.plotar(ax, lambda x: 10 * np.log(x), (0.12, 8.4), cor=ec.CORES["auxiliar"],
+              rotulo=r"$y=10\ln x$")
+
+    ax.annotate("mesmo começando atrás,\na exponencial ultrapassa todas",
+                xy=(4.2, 66), xytext=(4.6, 40), color=ec.CORES["destaque"],
+                fontsize=9)
+
+    ec.legenda(ax, local="upper left")
+    ec.salvar(fig, UNIDADE, "4.3-hierarquia-do-infinito")
+
+
+def lhospital_geometrico() -> None:
+    """Duas funções que zeram em a: a razão delas tende à razão das inclinações."""
+    fig, ax = ec.novo_plano(xlim=(-0.6, 3.2), ylim=(-1.6, 2.6), figsize=(6.2, 4.2),
+                            passo_y=1)
+
+    a = 1.0
+    f = lambda x: 1.2 * (x - a) + 0.35 * (x - a) ** 2
+    g = lambda x: 0.6 * (x - a) - 0.2 * (x - a) ** 2
+
+    ec.plotar(ax, f, (-0.3, 2.9), cor=ec.CORES["curva"], rotulo="$f$")
+    ec.plotar(ax, g, (-0.3, 2.9), cor=ec.CORES["curva2"], rotulo="$g$")
+
+    xs = np.array([a - 0.9, a + 1.4])
+    ax.plot(xs, 1.2 * (xs - a), color=ec.CORES["curva"], linestyle="--",
+            linewidth=1.4, zorder=2)
+    ax.plot(xs, 0.6 * (xs - a), color=ec.CORES["curva2"], linestyle="--",
+            linewidth=1.4, zorder=2)
+
+    ec.ponto_fechado(ax, a, 0, cor=ec.CORES["destaque"], tamanho=7)
+    ax.annotate("$a$", xy=(a, 0), xytext=(-4, -20), textcoords="offset points",
+                color=ec.CORES["destaque"], fontsize=11)
+    ax.annotate("as duas zeram em $a$;\nperto dali, cada uma é\nquase a sua tangente",
+                xy=(a, 0), xytext=(-0.5, 1.4), color=ec.CORES["destaque"], fontsize=9)
+
+    ec.legenda(ax, local="lower right")
+    ec.salvar(fig, UNIDADE, "4.3-lhospital-geometrico")
+
+
+# ======================================================================================
 
 FIGURAS = [
     extremos_locais_e_absolutos,
@@ -254,6 +306,8 @@ FIGURAS = [
     caixa_otimizacao,
     teorema_de_rolle,
     teorema_valor_medio,
+    hierarquia_do_infinito,
+    lhospital_geometrico,
 ]
 
 
