@@ -57,7 +57,7 @@ flowchart TD
 - [ ] Escolher a substituição certa em $\int x\sqrt{x^2+1}\thinspace dx$ e saber **por que** ela funciona.
 - [ ] Decidir quem é $u$ e quem é $dv$ na integração por partes.
 - [ ] Decompor $\dfrac{3x+1}{x^2-x-2}$ em frações parciais.
-- [ ] Usar o TFC para derivar $F(x) = \int_{1}^{x^2} \sin(t)\thinspace dt$.
+- [ ] Usar o TFC para derivar $F(x) = \int_{1}^{x^2} \operatorname{sen}(t)\thinspace dt$.
 - [ ] Montar a integral da área entre duas curvas achando os limites corretos.
 - [ ] Escolher entre discos, anéis e cascas cilíndricas conforme o eixo de revolução.
 - [ ] Decidir se $\int_{1}^{\infty} \frac{1}{x^p}\thinspace dx$ converge, em função de $p$.
