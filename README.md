@@ -161,7 +161,7 @@ flowchart TD
 
 ---
 
-## 🧾 06 · Formulário — a cola legal 🚧
+## 🧾 06 · Formulário — a cola legal ✅
 
 O que abrir na véspera. [Índice completo](06-formulario/README.md).
 

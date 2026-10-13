@@ -1,8 +1,5 @@
 # 🧾 06 · Formulário — a cola legal
 
-> [!NOTE]
-> 🚧 **Seção em construção.** As tabelas são publicadas conforme as unidades correspondentes ficam prontas.
-
 Esta seção não ensina nada: ela **lembra**. É o que você abre na véspera da prova, no meio de uma lista, ou quando esqueceu se a derivada da secante tem tangente junto (tem).
 
 > [!IMPORTANT]
@@ -32,8 +29,8 @@ Esta seção não ensina nada: ela **lembra**. É o que você abre na véspera d
 
 > [!TIP]
 > **O que vale a pena decorar e o que vale a pena saber deduzir.**
-> Decore: derivadas de $x^n$, $e^x$, $\ln x$, $\sin x$, $\cos x$; as regras do produto, do quociente e da cadeia; $\sin^2 + \cos^2 = 1$.
-> Saiba deduzir: $\tan$, $\sec$, $\csc$ e $\cot$ (saem do quociente), as trigonométricas inversas (saem da derivada da inversa), e o resto das identidades (saem das fórmulas de soma de arcos).
+> Decore: derivadas de $x^n$, $e^x$, $\ln x$, $\operatorname{sen} x$, $\cos x$; as regras do produto, do quociente e da cadeia; $\operatorname{sen}^2 + \cos^2 = 1$.
+> Saiba deduzir: $\operatorname{tg}$, $\operatorname{sec}$, $\operatorname{cossec}$ e $\operatorname{cotg}$ (saem do quociente), as trigonométricas inversas (saem da derivada da inversa), e o resto das identidades (saem das fórmulas de soma de arcos).
 
 ---
 
