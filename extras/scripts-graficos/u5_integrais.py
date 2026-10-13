@@ -595,6 +595,110 @@ def comprimento_de_arco() -> None:
 
 
 # ======================================================================================
+# 5.5 · Integrais impróprias
+# ======================================================================================
+
+def dois_tipos_de_impropria() -> None:
+    """Tipo 1: o intervalo é infinito. Tipo 2: o integrando explode."""
+    fig, eixos = plt.subplots(1, 2, figsize=(9.2, 3.6))
+
+    # --- Tipo 1: intervalo infinito -------------------------------------------------
+    ax = eixos[0]
+    ax.set_xlim(-0.5, 6.4)
+    ax.set_ylim(-0.35, 1.5)
+    for lado in ("right", "top"):
+        ax.spines[lado].set_visible(False)
+    ax.spines["left"].set_position("zero")
+    ax.spines["bottom"].set_position("zero")
+    ax.set_yticks([])
+    ax.set_xticks([1])
+    ax.set_xticklabels(["$a$"])
+    ax.tick_params(labelsize=10)
+
+    f = lambda x: np.exp(-0.55 * (x - 1))
+    x = np.linspace(1, 6.2, 300)
+    ax.fill_between(x, f(x), color=ec.CORES["area"], alpha=0.25, linewidth=0)
+    ax.plot(x, f(x), color=ec.CORES["curva"], linewidth=2.3, zorder=3)
+    ax.plot([1, 1], [0, f(1)], color=ec.CORES["curva"], linewidth=1.4)
+    ax.annotate("", xy=(6.3, 0), xytext=(5.4, 0),
+                arrowprops=dict(arrowstyle="->", color=ec.CORES["destaque"],
+                                linewidth=1.6))
+    ax.text(4.3, 0.75, "o intervalo\nnão termina", fontsize=10,
+            color=ec.CORES["destaque"], ha="center")
+    ax.set_title("Tipo 1 — intervalo infinito", fontsize=11.5,
+                 color=ec.CORES["texto"], pad=6)
+
+    # --- Tipo 2: integrando ilimitado -----------------------------------------------
+    ax = eixos[1]
+    ax.set_xlim(-0.5, 4.4)
+    ax.set_ylim(-0.35, 4.4)
+    for lado in ("right", "top"):
+        ax.spines[lado].set_visible(False)
+    ax.spines["left"].set_position("zero")
+    ax.spines["bottom"].set_position("zero")
+    ax.set_yticks([])
+    ax.set_xticks([1, 4])
+    ax.set_xticklabels(["$a$", "$b$"])
+    ax.tick_params(labelsize=10)
+
+    g = lambda x: 1.1 / np.sqrt(x - 1)
+    x = np.linspace(1.08, 4.0, 300)
+    ax.fill_between(x, g(x), color=ec.CORES["area"], alpha=0.25, linewidth=0)
+    ax.plot(x, g(x), color=ec.CORES["curva"], linewidth=2.3, zorder=3)
+    ax.plot([1, 1], [0, 4.3], color=ec.CORES["tracejado"], linewidth=1.4,
+            linestyle="--", zorder=2)
+    ax.plot([4, 4], [0, g(4.0)], color=ec.CORES["curva"], linewidth=1.4)
+    ax.annotate("", xy=(1.06, 4.25), xytext=(1.06, 3.1),
+                arrowprops=dict(arrowstyle="->", color=ec.CORES["destaque"],
+                                linewidth=1.6))
+    ax.text(2.6, 3.3, "a função\nnão é limitada", fontsize=10,
+            color=ec.CORES["destaque"], ha="center")
+    ax.set_title("Tipo 2 — integrando ilimitado", fontsize=11.5,
+                 color=ec.CORES["texto"], pad=6)
+
+    fig.tight_layout()
+    ec.salvar(fig, UNIDADE, "5.5-dois-tipos")
+
+
+def convergencia_1x_versus_1x2() -> None:
+    """Mesma aparência, destinos opostos: 1/x diverge, 1/x^2 converge."""
+    fig, eixos = plt.subplots(1, 2, figsize=(9.2, 3.8), sharey=True)
+
+    casos = [
+        (lambda x: 1 / x, "$y = \\dfrac{1}{x}$",
+         "área até $b$: $\\ln b \\to \\infty$", "DIVERGE", ec.CORES["destaque"]),
+        (lambda x: 1 / x**2, "$y = \\dfrac{1}{x^2}$",
+         "área até $b$: $1-\\dfrac{1}{b} \\to 1$", "CONVERGE para $1$",
+         ec.CORES["curva3"]),
+    ]
+
+    for ax, (f, nome, conta, veredito, cor) in zip(eixos, casos):
+        ax.set_xlim(-0.4, 6.6)
+        ax.set_ylim(-0.3, 1.75)
+        for lado in ("right", "top"):
+            ax.spines[lado].set_visible(False)
+        ax.spines["left"].set_position("zero")
+        ax.spines["bottom"].set_position("zero")
+        ax.set_yticks([1])
+        ax.set_xticks([1])
+        ax.tick_params(labelsize=10)
+
+        x = np.linspace(1, 6.4, 400)
+        ax.fill_between(x, f(x), color=cor, alpha=0.22, linewidth=0)
+        xc = np.linspace(0.62, 6.4, 400)
+        ax.plot(xc, f(xc), color=ec.CORES["curva"], linewidth=2.3, zorder=3)
+        ax.plot([1, 1], [0, 1], color=ec.CORES["curva"], linewidth=1.4)
+
+        ax.text(4.3, 1.42, nome, fontsize=13, color=ec.CORES["curva"], ha="center")
+        ax.text(4.3, 1.02, conta, fontsize=10, color=ec.CORES["texto"], ha="center")
+        ax.text(3.3, -0.22, veredito, fontsize=11.5, color=cor, ha="center",
+                fontweight="bold")
+
+    fig.tight_layout()
+    ec.salvar(fig, UNIDADE, "5.5-convergencia-comparada")
+
+
+# ======================================================================================
 
 FIGURAS = [
     familia_de_primitivas,
@@ -609,6 +713,8 @@ FIGURAS = [
     metodo_do_anel,
     casca_cilindrica,
     comprimento_de_arco,
+    dois_tipos_de_impropria,
+    convergencia_1x_versus_1x2,
 ]
 
 
