@@ -51,7 +51,8 @@ página publicada — e vai levar junto todas as outras da mesma página.</p>
 
   let itens;
   try {
-    itens = await (await fetch("formulas.json")).json();
+    // O cache-buster garante que um reload pegue sempre o formulas.json recem-gerado.
+    itens = await (await fetch("formulas.json?t=" + Date.now(), { cache: "no-store" })).json();
   } catch (e) {
     resumo.className = "erro";
     resumo.textContent =

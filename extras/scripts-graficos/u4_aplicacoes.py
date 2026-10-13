@@ -298,6 +298,95 @@ def lhospital_geometrico() -> None:
 
 
 # ======================================================================================
+# 4.4 — Crescimento, concavidade e esboço de gráficos
+# ======================================================================================
+
+def concavidade() -> None:
+    """Côncava para cima fica acima das tangentes; para baixo, abaixo."""
+    fig, ax = ec.novo_plano(xlim=(-3.2, 3.2), ylim=(-3.6, 3.6), figsize=(6.6, 4.4),
+                            passo_y=1)
+
+    f = lambda x: x**3 / 3 - x
+    d1 = lambda x: x**2 - 1
+
+    ec.plotar(ax, f, (-2.6, 2.6), rotulo=r"$y=\frac{x^3}{3}-x$")
+
+    for a, cor in [(-1.6, ec.CORES["curva2"]), (1.6, ec.CORES["curva3"])]:
+        m = d1(a)
+        xs = np.array([a - 1.0, a + 1.0])
+        ax.plot(xs, f(a) + m * (xs - a), color=cor, linewidth=1.6, zorder=3)
+        ec.ponto_fechado(ax, a, f(a), cor=cor, tamanho=6)
+
+    ec.ponto_fechado(ax, 0, 0, cor=ec.CORES["destaque"], tamanho=7)
+    ec.linha_guia(ax, x=0)
+
+    ax.annotate("côncava para BAIXO\n" r"$f''<0$" "\ncurva abaixo da tangente",
+                xy=(-1.6, f(-1.6)), xytext=(-3.1, 1.6), color=ec.CORES["curva2"],
+                fontsize=9)
+    ax.annotate("côncava para CIMA\n" r"$f''>0$" "\ncurva acima da tangente",
+                xy=(1.6, f(1.6)), xytext=(0.35, -3.3), color=ec.CORES["curva3"],
+                fontsize=9)
+    ax.annotate("inflexão", xy=(0, 0), xytext=(10, 10), textcoords="offset points",
+                color=ec.CORES["destaque"], fontsize=10)
+
+    ec.legenda(ax, local="upper left")
+    ec.salvar(fig, UNIDADE, "4.4-concavidade")
+
+
+def esboco_polinomio() -> None:
+    """Esboço completo de f(x) = x^3 - 3x^2, com todos os elementos marcados."""
+    fig, ax = ec.novo_plano(xlim=(-1.8, 4.2), ylim=(-5.5, 3.5), figsize=(6.8, 4.8),
+                            passo_y=1)
+
+    f = lambda x: x**3 - 3 * x**2
+
+    ec.plotar(ax, f, (-1.3, 3.6), rotulo="$f(x)=x^3-3x^2$")
+
+    ec.ponto_fechado(ax, 0, 0, cor=ec.CORES["curva2"], tamanho=7)
+    ec.ponto_fechado(ax, 2, -4, cor=ec.CORES["curva2"], tamanho=7)
+    ec.ponto_fechado(ax, 1, -2, cor=ec.CORES["destaque"], tamanho=7)
+    ec.ponto_fechado(ax, 3, 0, cor=ec.CORES["eixo"], tamanho=6)
+
+    ax.annotate("máx. local\n$(0,0)$", xy=(0, 0), xytext=(-1.75, 1.3),
+                color=ec.CORES["curva2"], fontsize=9)
+    ax.annotate("mín. local\n$(2,-4)$", xy=(2, -4), xytext=(2.25, -4.6),
+                color=ec.CORES["curva2"], fontsize=9)
+    ax.annotate("inflexão $(1,-2)$", xy=(1, -2), xytext=(-1.7, -2.9),
+                color=ec.CORES["destaque"], fontsize=9)
+    ax.annotate("raiz $x=3$", xy=(3, 0), xytext=(6, 10), textcoords="offset points",
+                color=ec.CORES["eixo"], fontsize=9)
+    ec.linha_guia(ax, x=1)
+
+    ec.legenda(ax, local="upper left")
+    ec.salvar(fig, UNIDADE, "4.4-esboco-polinomio")
+
+
+def esboco_racional() -> None:
+    """Esboço de f(x) = x^2/(x^2-1), com as três assíntotas."""
+    fig, ax = ec.novo_plano(xlim=(-4.2, 4.2), ylim=(-5, 6), figsize=(6.6, 4.8),
+                            passo_y=1)
+
+    f = lambda x: x**2 / (x**2 - 1)
+
+    for trecho in [(-4.2, -1.12), (-0.93, 0.93), (1.12, 4.2)]:
+        ec.plotar(ax, f, trecho, cor=ec.CORES["curva"],
+                  rotulo=r"$f(x)=\frac{x^2}{x^2-1}$" if trecho[0] > 1 else None)
+
+    ec.assintota_vertical(ax, -1, rotulo="$x=-1$")
+    ec.assintota_vertical(ax, 1, rotulo="$x=1$")
+    ec.assintota_horizontal(ax, 1, rotulo="$y=1$")
+    ec.ponto_fechado(ax, 0, 0, cor=ec.CORES["destaque"], tamanho=7)
+
+    ax.annotate("máximo local\n$(0,0)$", xy=(0, 0), xytext=(0.2, -1.9),
+                color=ec.CORES["destaque"], fontsize=9)
+    ax.annotate("par: simétrica\nno eixo $y$", xy=(-3.4, 2.6),
+                color=ec.CORES["curva3"], fontsize=9)
+
+    ec.legenda(ax, local="lower right")
+    ec.salvar(fig, UNIDADE, "4.4-esboco-racional")
+
+
+# ======================================================================================
 
 FIGURAS = [
     extremos_locais_e_absolutos,
@@ -308,6 +397,9 @@ FIGURAS = [
     teorema_valor_medio,
     hierarquia_do_infinito,
     lhospital_geometrico,
+    concavidade,
+    esboco_polinomio,
+    esboco_racional,
 ]
 
 
