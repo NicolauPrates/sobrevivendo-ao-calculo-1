@@ -1,8 +1,5 @@
 # Unidade 5 · Integral
 
-> [!NOTE]
-> 🚧 **Unidade em construção.** As páginas abaixo estão sendo escritas e publicadas em ordem. Enquanto isso, o índice já serve de roteiro de estudo.
-
 > Derivar é um procedimento: existe uma regra para cada caso. Integrar é um reconhecimento de padrão: você olha a expressão e decide qual técnica tentar. Por isso integral não se aprende lendo — se aprende fazendo muitos exercícios.
 
 ---

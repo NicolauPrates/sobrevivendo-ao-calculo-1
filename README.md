@@ -148,7 +148,7 @@ flowchart TD
 | 4.4 | [Crescimento, concavidade e esboço de gráficos](04-aplicacoes-das-derivadas/4.4-crescimento-concavidade-e-esboco-de-graficos.md) | [lista](04-aplicacoes-das-derivadas/exercicios/lista-4.4-propostos.md) | [gabarito](04-aplicacoes-das-derivadas/gabaritos/gabarito-4.4.md) |
 | — | **Revisão da unidade** | [lista](04-aplicacoes-das-derivadas/exercicios/revisao-unidade-4.md) | [gabarito](04-aplicacoes-das-derivadas/gabaritos/gabarito-revisao-unidade-4.md) |
 
-### 5 · Integral 🚧 · [índice da unidade](05-integrais/README.md)
+### 5 · Integral ✅ · [índice da unidade](05-integrais/README.md)
 
 | # | Teoria | 📝 Propostos | ✅ Gabarito |
 | :---: | --- | :---: | :---: |
