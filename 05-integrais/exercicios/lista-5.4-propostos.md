@@ -22,7 +22,7 @@
 
 &nbsp;&nbsp;**(b)** $y = x^3$ e $y = x$, no primeiro quadrante
 
-&nbsp;&nbsp;**(c)** $y = \operatorname{sen} x$ e $y = \cos x$, entre $x=0$ e $x=\frac{\pi}{4}$
+&nbsp;&nbsp;**(c)** $y = \mathrm{sen}\thinspace x$ e $y = \cos x$, entre $x=0$ e $x=\frac{\pi}{4}$
 
 **2.** Calcule a área entre $y = x^2-2x$ e o eixo $x$, de $x=0$ a $x=3$.
 
@@ -68,9 +68,9 @@
 
 **13.** A região limitada por $y=x^2$ e $y=4$ gira em torno da reta $y=4$. Calcule o volume.
 
-**14.** A região sob $y=\operatorname{sen} x$, de $0$ a $\pi$, gira em torno do eixo $x$. Calcule o volume.
+**14.** A região sob $y=\mathrm{sen}\thinspace x$, de $0$ a $\pi$, gira em torno do eixo $x$. Calcule o volume.
 
-&nbsp;&nbsp;*(Você vai precisar de $\operatorname{sen}^2 x = \frac{1-\cos 2x}{2}$.)*
+&nbsp;&nbsp;*(Você vai precisar de $\mathrm{sen}^2\thinspace x = \frac{1-\cos 2x}{2}$.)*
 
 **15.** A região sob $y = \dfrac{1}{x}$, de $x=1$ a $x=3$, gira em torno do **eixo $y$**. Calcule o volume por cascas.
 

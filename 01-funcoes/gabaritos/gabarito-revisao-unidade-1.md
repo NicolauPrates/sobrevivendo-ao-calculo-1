@@ -25,14 +25,14 @@
 | 6 (a) | par |
 | 6 (b) | par |
 | 6 (c) | ímpar |
-| 7 | Vértice $(-1,\thinspace 2)$; $\operatorname{Im} = (-\infty,\thinspace 2]$; cortes em $(0,1)$, $(-1-\sqrt2,\thinspace 0)$ e $(-1+\sqrt2,\thinspace 0)$ |
-| 8 | $\operatorname{Im} = [2,\thinspace 6]$, período $\dfrac{2\pi}{3}$ |
+| 7 | Vértice $(-1,\thinspace 2)$; $\mathrm{Im} = (-\infty,\thinspace 2]$; cortes em $(0,1)$, $(-1-\sqrt2,\thinspace 0)$ e $(-1+\sqrt2,\thinspace 0)$ |
+| 8 | $\mathrm{Im} = [2,\thinspace 6]$, período $\dfrac{2\pi}{3}$ |
 | 9 (b) | $f^{-1}(x) = \dfrac{x+2}{x-3}$, $D = \mathbb{R}\setminus\lbrace 3 \rbrace$ |
 | 10 (b) | Com $f : [-2,+\infty) \to [-1,+\infty)$: $f^{-1}(x) = -2 + \sqrt{x+1}$, $D = [-1,+\infty)$ |
 | 11 (a) | $\dfrac{3\pi}{4}$ |
 | 11 (b) | $-\dfrac{\pi}{3}$ |
 | 11 (c) | $5$ |
-| 12 (a) | $D = [-2,\thinspace 2]$, $\operatorname{Im} = [0,\thinspace 2]$ |
+| 12 (a) | $D = [-2,\thinspace 2]$, $\mathrm{Im} = [0,\thinspace 2]$ |
 | 12 (b) | par |
 | 12 (c) | não é injetora |
 | 12 (d) | $f^{-1}(x) = \sqrt{4-x^2}$, $D = [0,\thinspace 2]$ — a função restrita é a **própria inversa** |
@@ -128,7 +128,7 @@ $$\frac{f(x+h)-f(x)}{h} = 2x + h - 2$$
 
 **(b)** Completando o quadrado: $f(x) = (x-1)^2 - 1$. Como $(x-1)^2 \geqslant 0$, o mínimo é $-1$, atingido em $x=1$.
 
-$$\operatorname{Im}(f) = [-1,\thinspace +\infty)$$
+$$\mathrm{Im}(f) = [-1,\thinspace +\infty)$$
 
 ---
 
@@ -166,12 +166,12 @@ $$D(g \circ f) = [1,\thinspace +\infty)$$
 **(a)** $f(-x) = (-x)^4 - \cos(-x) = x^4 - \cos x = f(x)$ → **par**.
 (Usou-se que o cosseno é par.)
 
-**(b)** $g(-x) = (-x)^3\operatorname{sen}(-x) = (-x^3)(-\operatorname{sen} x) = x^3\operatorname{sen} x = g(x)$ → **par**.
+**(b)** $g(-x) = (-x)^3\mathrm{sen}(-x) = (-x^3)(-\mathrm{sen}\thinspace x) = x^3\mathrm{sen}\thinspace x = g(x)$ → **par**.
 
 > 💡 Produto de duas ímpares dá **par** — os dois sinais negativos se cancelam. É a linha mais esquecida da tabela de propriedades.
 
 **(c)** $h(-x) = e^{-x} - e^{x} = -(e^x - e^{-x}) = -h(x)$ → **ímpar**.
-(É $2\operatorname{senh} x$, o seno hiperbólico vezes $2$.)
+(É $2\mathrm{senh}\thinspace x$, o seno hiperbólico vezes $2$.)
 
 ---
 
@@ -189,7 +189,7 @@ $$D(g \circ f) = [1,\thinspace +\infty)$$
 
 **(c)** **Imagem:** como $-(x+1)^2 \leqslant 0$, tem-se $y \leqslant 2$:
 
-$$\operatorname{Im} = (-\infty,\thinspace 2]$$
+$$\mathrm{Im} = (-\infty,\thinspace 2]$$
 
 **Interseção com o eixo $y$** ($x=0$): $y = 2 - 1 = 1$, ponto $(0,\thinspace 1)$.
 
@@ -203,13 +203,13 @@ Pontos $\big(-1-\sqrt2,\thinspace 0\big) \approx (-2{,}41;\thinspace 0)$ e $\big
 
 ### Questão 8
 
-**Imagem.** Partindo de $-1 \leqslant \operatorname{sen}(3x) \leqslant 1$:
+**Imagem.** Partindo de $-1 \leqslant \mathrm{sen}(3x) \leqslant 1$:
 
-$$-2 \leqslant 2\operatorname{sen}(3x) \leqslant 2$$
-$$2 \geqslant -2\operatorname{sen}(3x) \geqslant -2 \qquad \text{(multiplicou por } -1\text{: inverteu)}$$
-$$6 \geqslant 4 - 2\operatorname{sen}(3x) \geqslant 2$$
+$$-2 \leqslant 2\mathrm{sen}(3x) \leqslant 2$$
+$$2 \geqslant -2\mathrm{sen}(3x) \geqslant -2 \qquad \text{(multiplicou por } -1\text{: inverteu)}$$
+$$6 \geqslant 4 - 2\mathrm{sen}(3x) \geqslant 2$$
 
-$$\operatorname{Im} = [2,\thinspace 6]$$
+$$\mathrm{Im} = [2,\thinspace 6]$$
 
 **Período.** Só o coeficiente **dentro** do seno conta:
 
@@ -248,7 +248,7 @@ $$f^{-1}(x) = \frac{x+2}{x-3}, \qquad D(f^{-1}) = \mathbb{R}\setminus\lbrace 3 \
 **(a) Por que não é invertível.** Completando o quadrado: $f(x) = (x+2)^2 - 1$.
 
 - **Não é injetora:** $f(-1) = 0 = f(-3)$, com $-1 \neq -3$ (o gráfico é simétrico em relação a $x=-2$).
-- **Não é sobrejetora** em $\mathbb{R}$: $\operatorname{Im}(f) = [-1,+\infty)$, e nenhum $x$ produz, por exemplo, $y=-5$.
+- **Não é sobrejetora** em $\mathbb{R}$: $\mathrm{Im}(f) = [-1,+\infty)$, e nenhum $x$ produz, por exemplo, $y=-5$.
 
 **(b) Restringindo.** Tome o ramo crescente, à direita do vértice, e ajuste o contradomínio:
 
@@ -278,13 +278,13 @@ $$\arccos\left(-\frac{\sqrt2}{2}\right) = \pi - \frac{\pi}{4} = \frac{3\pi}{4}$$
 
 **(b)** Aqui $-\dfrac{\pi}{3}$ **pertence** a $\left[-\frac\pi2,\frac\pi2\right]$, que é o domínio restrito do seno. Então a identidade vale diretamente:
 
-$$\operatorname{arcsen}\left(\operatorname{sen}\left(-\frac{\pi}{3}\right)\right) = -\frac{\pi}{3}$$
+$$\mathrm{arcsen}\left(\mathrm{sen}\left(-\frac{\pi}{3}\right)\right) = -\frac{\pi}{3}$$
 
-**(c)** $\operatorname{tg}\big(\operatorname{arctg} u\big) = u$ para **todo** $u$ real, pois o domínio do arco-tangente é $\mathbb{R}$:
+**(c)** $\mathrm{tg}\big(\mathrm{arctg}\thinspace u\big) = u$ para **todo** $u$ real, pois o domínio do arco-tangente é $\mathbb{R}$:
 
-$$\operatorname{tg}\big(\operatorname{arctg} 5\big) = 5$$
+$$\mathrm{tg}\big(\mathrm{arctg}\thinspace 5\big) = 5$$
 
-> 💡 Compare (a), (b) e (c): a composição "de fora para dentro" ($\operatorname{tg}\circ\operatorname{arctg}$) sempre devolve o argumento; a composição "de dentro para fora" ($\operatorname{arccos}\circ\cos$) só devolve se o ângulo estiver dentro da restrição.
+> 💡 Compare (a), (b) e (c): a composição "de fora para dentro" ($\mathrm{tg}\thinspace\circ\mathrm{arctg}$) sempre devolve o argumento; a composição "de dentro para fora" ($\mathrm{arccos}\thinspace\circ\cos$) só devolve se o ângulo estiver dentro da restrição.
 
 ---
 
@@ -298,7 +298,7 @@ $$D(f) = [-2,\thinspace 2]$$
 
 Para a imagem: $4-x^2$ varia de $0$ (em $x=\pm2$) a $4$ (em $x=0$), logo a raiz varia de $0$ a $2$.
 
-$$\operatorname{Im}(f) = [0,\thinspace 2]$$
+$$\mathrm{Im}(f) = [0,\thinspace 2]$$
 
 **(b) Paridade.** O domínio $[-2,2]$ é simétrico, e
 

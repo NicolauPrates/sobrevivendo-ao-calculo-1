@@ -41,7 +41,7 @@
 | 12 | $\dfrac12$ |
 | 13 | $0$ |
 | 14 | Demonstração — veja a Parte 2 |
-| 15 | $-\operatorname{sen} a$ |
+| 15 | $-\mathrm{sen}\thinspace a$ |
 | 16 | $2$ |
 | 17 | Demonstração — veja a Parte 2 |
 | 18 | $2$ |
@@ -66,15 +66,15 @@
 
 **(a)** Multiplique e divida por $4$, para o denominador casar com o argumento:
 
-$$\frac{\operatorname{sen} 4x}{x} = 4\cdot\frac{\operatorname{sen} 4x}{4x} \ \longrightarrow \ 4 \cdot 1 = 4$$
+$$\frac{\mathrm{sen}\thinspace 4x}{x} = 4\cdot\frac{\mathrm{sen}\thinspace 4x}{4x} \ \longrightarrow \ 4 \cdot 1 = 4$$
 
-**(b)** $\dfrac{\operatorname{sen} x}{3x} = \dfrac13 \cdot \dfrac{\operatorname{sen} x}{x} \longrightarrow \dfrac13$
+**(b)** $\dfrac{\mathrm{sen}\thinspace x}{3x} = \dfrac13 \cdot \dfrac{\mathrm{sen}\thinspace x}{x} \longrightarrow \dfrac13$
 
 **(c)** Prepare as duas frações:
 
-$$\frac{\operatorname{sen} 2x}{\operatorname{sen} 5x} = \frac{\operatorname{sen} 2x}{2x}\cdot\frac{5x}{\operatorname{sen} 5x}\cdot\frac{2}{5} \ \longrightarrow \ 1 \cdot 1 \cdot \frac25 = \frac25$$
+$$\frac{\mathrm{sen}\thinspace 2x}{\mathrm{sen}\thinspace 5x} = \frac{\mathrm{sen}\thinspace 2x}{2x}\cdot\frac{5x}{\mathrm{sen}\thinspace 5x}\cdot\frac{2}{5} \ \longrightarrow \ 1 \cdot 1 \cdot \frac25 = \frac25$$
 
-**(d)** $\dfrac{\operatorname{tg} 3x}{x} = \dfrac{\operatorname{sen} 3x}{x\cos 3x} = 3\cdot\dfrac{\operatorname{sen} 3x}{3x}\cdot\dfrac{1}{\cos 3x} \longrightarrow 3 \cdot 1 \cdot 1 = 3$
+**(d)** $\dfrac{\mathrm{tg}\thinspace 3x}{x} = \dfrac{\mathrm{sen}\thinspace 3x}{x\cos 3x} = 3\cdot\dfrac{\mathrm{sen}\thinspace 3x}{3x}\cdot\dfrac{1}{\cos 3x} \longrightarrow 3 \cdot 1 \cdot 1 = 3$
 
 ---
 
@@ -82,13 +82,13 @@ $$\frac{\operatorname{sen} 2x}{\operatorname{sen} 5x} = \frac{\operatorname{sen}
 
 Em todos, o segundo fator é **limitado** (seno e cosseno vivem em $[-1,1]$) e o primeiro tende a zero.
 
-**(a)** $\lvert x \rvert \to 0$ e $\left\lvert\operatorname{sen}\frac1x\right\rvert \leqslant 1$ ⟹ limite $0$.
+**(a)** $\lvert x \rvert \to 0$ e $\left\lvert\mathrm{sen}\thinspace\frac1x\right\rvert \leqslant 1$ ⟹ limite $0$.
 
 **(b)** $x^2 \to 0$ e $\left\lvert\cos\frac1x\right\rvert \leqslant 1$ ⟹ limite $0$.
 
-**(c)** $x^4 \to 0$ e $\left\lvert\operatorname{sen}\frac{1}{x^3}\right\rvert \leqslant 1$ ⟹ limite $0$.
+**(c)** $x^4 \to 0$ e $\left\lvert\mathrm{sen}\thinspace\frac{1}{x^3}\right\rvert \leqslant 1$ ⟹ limite $0$.
 
-> 💡 Note que não importa **quão rápido** o fator oscilante varia: $\operatorname{sen}\frac{1}{x^3}$ oscila muito mais do que $\operatorname{sen}\frac1x$, e o resultado é o mesmo. O que importa é só ele ser **limitado**.
+> 💡 Note que não importa **quão rápido** o fator oscilante varia: $\mathrm{sen}\thinspace\frac{1}{x^3}$ oscila muito mais do que $\mathrm{sen}\thinspace\frac1x$, e o resultado é o mesmo. O que importa é só ele ser **limitado**.
 
 ---
 
@@ -104,13 +104,13 @@ As duas pontas tendem a $5$, logo, pelo confronto, $\lim_{x\to2} f(x) = 5$.
 
 **(a)** Multiplicando pelo conjugado:
 
-$$\frac{1-\cos x}{x} = \frac{\operatorname{sen}^2 x}{x(1+\cos x)} = \frac{\operatorname{sen} x}{x}\cdot\frac{\operatorname{sen} x}{1+\cos x} \ \longrightarrow \ 1 \cdot \frac{0}{2} = 0$$
+$$\frac{1-\cos x}{x} = \frac{\mathrm{sen}^2\thinspace x}{x(1+\cos x)} = \frac{\mathrm{sen}\thinspace x}{x}\cdot\frac{\mathrm{sen}\thinspace x}{1+\cos x} \ \longrightarrow \ 1 \cdot \frac{0}{2} = 0$$
 
 **(b)** Mesmo truque, com $x^2$ embaixo:
 
-$$\frac{1-\cos x}{x^2} = \left(\frac{\operatorname{sen} x}{x}\right)^2\cdot\frac{1}{1+\cos x} \ \longrightarrow \ 1 \cdot \frac12 = \frac12$$
+$$\frac{1-\cos x}{x^2} = \left(\frac{\mathrm{sen}\thinspace x}{x}\right)^2\cdot\frac{1}{1+\cos x} \ \longrightarrow \ 1 \cdot \frac12 = \frac12$$
 
-**(c)** É o inverso do limite fundamental: $\dfrac{x}{\operatorname{sen} x} = \left(\dfrac{\operatorname{sen} x}{x}\right)^{-1} \longrightarrow \dfrac11 = 1$.
+**(c)** É o inverso do limite fundamental: $\dfrac{x}{\mathrm{sen}\thinspace x} = \left(\dfrac{\mathrm{sen}\thinspace x}{x}\right)^{-1} \longrightarrow \dfrac11 = 1$.
 
 ---
 
@@ -137,19 +137,19 @@ satisfaz $g \leqslant f \leqslant h$, e $\lim_{x\to0} f(x)$ não existe.
 
 ### Exercício 6
 
-**(a)** $\dfrac{\operatorname{sen}(x^2)}{x} = \dfrac{\operatorname{sen}(x^2)}{x^2}\cdot x \longrightarrow 1 \cdot 0 = 0$
+**(a)** $\dfrac{\mathrm{sen}(x^2)}{x} = \dfrac{\mathrm{sen}(x^2)}{x^2}\cdot x \longrightarrow 1 \cdot 0 = 0$
 
-**(b)** $\dfrac{\operatorname{sen}^2 x}{x^2} = \left(\dfrac{\operatorname{sen} x}{x}\right)^2 \longrightarrow 1^2 = 1$
+**(b)** $\dfrac{\mathrm{sen}^2\thinspace x}{x^2} = \left(\dfrac{\mathrm{sen}\thinspace x}{x}\right)^2 \longrightarrow 1^2 = 1$
 
-**(c)** $\dfrac{x}{\operatorname{tg} x} = \dfrac{x\cos x}{\operatorname{sen} x} = \dfrac{x}{\operatorname{sen} x}\cdot\cos x \longrightarrow 1 \cdot 1 = 1$
+**(c)** $\dfrac{x}{\mathrm{tg}\thinspace x} = \dfrac{x\cos x}{\mathrm{sen}\thinspace x} = \dfrac{x}{\mathrm{sen}\thinspace x}\cdot\cos x \longrightarrow 1 \cdot 1 = 1$
 
 ---
 
 ### Exercício 7
 
-**(a)** Substituindo: $\dfrac{\operatorname{sen}\pi}{\pi} = \dfrac{0}{\pi} = 0$. Não há indeterminação nenhuma — o denominador não zera.
+**(a)** Substituindo: $\dfrac{\mathrm{sen}\thinspace\pi}{\pi} = \dfrac{0}{\pi} = 0$. Não há indeterminação nenhuma — o denominador não zera.
 
-**(b)** $\dfrac{\operatorname{sen}(\pi/2)}{\pi/2} = \dfrac{1}{\pi/2} = \dfrac{2}{\pi} \approx 0{,}637$.
+**(b)** $\dfrac{\mathrm{sen}(\pi/2)}{\pi/2} = \dfrac{1}{\pi/2} = \dfrac{2}{\pi} \approx 0{,}637$.
 
 > ⚠️ **A armadilha da questão:** responder $1$ nos dois, por reflexo. O limite fundamental vale **só** quando $x \to 0$, porque é só aí que aparece a indeterminação $\frac00$. Em qualquer outro ponto, substitua.
 
@@ -157,7 +157,7 @@ satisfaz $g \leqslant f \leqslant h$, e $\lim_{x\to0} f(x)$ não existe.
 
 ### Exercício 8
 
-$$\frac{\operatorname{sen} 3x}{5x} = \frac{3}{5}\cdot\frac{\operatorname{sen} 3x}{3x} \ \longrightarrow \ \frac35$$
+$$\frac{\mathrm{sen}\thinspace 3x}{5x} = \frac{3}{5}\cdot\frac{\mathrm{sen}\thinspace 3x}{3x} \ \longrightarrow \ \frac35$$
 
 ---
 
@@ -175,7 +175,7 @@ $$\frac{\cos x - 1}{x^2} = -\frac{1-\cos x}{x^2} \ \longrightarrow \ -\frac12$$
 
 Ponha $x$ em evidência no denominador:
 
-$$\frac{\operatorname{sen} 2x}{x+x^2} = \frac{\operatorname{sen} 2x}{x(1+x)} = 2\cdot\frac{\operatorname{sen} 2x}{2x}\cdot\frac{1}{1+x} \ \longrightarrow \ 2 \cdot 1 \cdot 1 = 2$$
+$$\frac{\mathrm{sen}\thinspace 2x}{x+x^2} = \frac{\mathrm{sen}\thinspace 2x}{x(1+x)} = 2\cdot\frac{\mathrm{sen}\thinspace 2x}{2x}\cdot\frac{1}{1+x} \ \longrightarrow \ 2 \cdot 1 \cdot 1 = 2$$
 
 ---
 
@@ -183,19 +183,19 @@ $$\frac{\operatorname{sen} 2x}{x+x^2} = \frac{\operatorname{sen} 2x}{x(1+x)} = 2
 
 Separe a fração:
 
-$$\frac{x-\operatorname{sen} x}{x} = \frac{x}{x} - \frac{\operatorname{sen} x}{x} = 1 - \frac{\operatorname{sen} x}{x} \ \longrightarrow \ 1 - 1 = 0$$
+$$\frac{x-\mathrm{sen}\thinspace x}{x} = \frac{x}{x} - \frac{\mathrm{sen}\thinspace x}{x} = 1 - \frac{\mathrm{sen}\thinspace x}{x} \ \longrightarrow \ 1 - 1 = 0$$
 
 ---
 
 ### Exercício 12
 
-**Estratégia.** Fatorar $\operatorname{sen} x$ e fazer aparecer os dois limites conhecidos.
+**Estratégia.** Fatorar $\mathrm{sen}\thinspace x$ e fazer aparecer os dois limites conhecidos.
 
-$$\operatorname{tg} x - \operatorname{sen} x = \frac{\operatorname{sen} x}{\cos x} - \operatorname{sen} x = \operatorname{sen} x\left(\frac{1}{\cos x} - 1\right) = \operatorname{sen} x \cdot \frac{1-\cos x}{\cos x}$$
+$$\mathrm{tg}\thinspace x - \mathrm{sen}\thinspace x = \frac{\mathrm{sen}\thinspace x}{\cos x} - \mathrm{sen}\thinspace x = \mathrm{sen}\thinspace x\left(\frac{1}{\cos x} - 1\right) = \mathrm{sen}\thinspace x \cdot \frac{1-\cos x}{\cos x}$$
 
 Dividindo por $x^3$ e separando em três fatores:
 
-$$\frac{\operatorname{tg} x - \operatorname{sen} x}{x^3} = \frac{\operatorname{sen} x}{x}\cdot\frac{1-\cos x}{x^2}\cdot\frac{1}{\cos x}$$
+$$\frac{\mathrm{tg}\thinspace x - \mathrm{sen}\thinspace x}{x^3} = \frac{\mathrm{sen}\thinspace x}{x}\cdot\frac{1-\cos x}{x^2}\cdot\frac{1}{\cos x}$$
 
 $$\longrightarrow \ 1 \cdot \frac12 \cdot 1 = \frac12$$
 
@@ -203,7 +203,7 @@ $$\longrightarrow \ 1 \cdot \frac12 \cdot 1 = \frac12$$
 
 ### Exercício 13
 
-$\operatorname{sen} x \to 0$ e $\cos\frac1x$ é **limitado**. Pelo anulamento, o limite é $0$.
+$\mathrm{sen}\thinspace x \to 0$ e $\cos\frac1x$ é **limitado**. Pelo anulamento, o limite é $0$.
 
 ---
 
@@ -227,20 +227,20 @@ $$\lim_{x\to0^{+}} x\left\lfloor\frac1x\right\rfloor = 1 \qquad \blacksquare$$
 
 ### Exercício 15
 
-Abra o cosseno da soma: $\cos(a+h) = \cos a\cos h - \operatorname{sen} a \operatorname{sen} h$.
+Abra o cosseno da soma: $\cos(a+h) = \cos a\cos h - \mathrm{sen}\thinspace a \mathrm{sen}\thinspace h$.
 
 $$
 \begin{aligned}
 \frac{\cos(a+h)-\cos a}{h}
-&= \frac{\cos a\cos h - \operatorname{sen} a\operatorname{sen} h - \cos a}{h} \\
-&= \frac{\cos a\thinspace (\cos h - 1) - \operatorname{sen} a\operatorname{sen} h}{h} \\
-&= -\cos a \cdot \frac{1-\cos h}{h} - \operatorname{sen} a\cdot\frac{\operatorname{sen} h}{h}
+&= \frac{\cos a\cos h - \mathrm{sen}\thinspace a\mathrm{sen}\thinspace h - \cos a}{h} \\
+&= \frac{\cos a\thinspace (\cos h - 1) - \mathrm{sen}\thinspace a\mathrm{sen}\thinspace h}{h} \\
+&= -\cos a \cdot \frac{1-\cos h}{h} - \mathrm{sen}\thinspace a\cdot\frac{\mathrm{sen}\thinspace h}{h}
 \end{aligned}
 $$
 
-No limite: $-\cos a \cdot 0 - \operatorname{sen} a \cdot 1 = -\operatorname{sen} a$.
+No limite: $-\cos a \cdot 0 - \mathrm{sen}\thinspace a \cdot 1 = -\mathrm{sen}\thinspace a$.
 
-**Resposta.** $-\operatorname{sen} a$ — que é a derivada do cosseno, obtida pela definição.
+**Resposta.** $-\mathrm{sen}\thinspace a$ — que é a derivada do cosseno, obtida pela definição.
 
 ---
 
@@ -248,7 +248,7 @@ No limite: $-\cos a \cdot 0 - \operatorname{sen} a \cdot 1 = -\operatorname{sen}
 
 Separe em duas frações:
 
-$$\frac{\operatorname{sen} 5x - \operatorname{sen} 3x}{x} = \frac{\operatorname{sen} 5x}{x} - \frac{\operatorname{sen} 3x}{x} = 5\cdot\frac{\operatorname{sen} 5x}{5x} - 3\cdot\frac{\operatorname{sen} 3x}{3x}$$
+$$\frac{\mathrm{sen}\thinspace 5x - \mathrm{sen}\thinspace 3x}{x} = \frac{\mathrm{sen}\thinspace 5x}{x} - \frac{\mathrm{sen}\thinspace 3x}{x} = 5\cdot\frac{\mathrm{sen}\thinspace 5x}{5x} - 3\cdot\frac{\mathrm{sen}\thinspace 3x}{3x}$$
 
 $$\longrightarrow \ 5 - 3 = 2$$
 
@@ -270,9 +270,9 @@ $$\lim_{x\to1}\big(f(x)-3\big) = 0 \ \Longrightarrow \ \lim_{x\to1} f(x) = 3 \qq
 
 ### Exercício 18
 
-**Caminho 1 — pela identidade.** Como $1 - \cos 2x = 2\operatorname{sen}^2 x$:
+**Caminho 1 — pela identidade.** Como $1 - \cos 2x = 2\mathrm{sen}^2\thinspace x$:
 
-$$\frac{1-\cos 2x}{x^2} = \frac{2\operatorname{sen}^2 x}{x^2} = 2\left(\frac{\operatorname{sen} x}{x}\right)^2 \ \longrightarrow \ 2$$
+$$\frac{1-\cos 2x}{x^2} = \frac{2\mathrm{sen}^2\thinspace x}{x^2} = 2\left(\frac{\mathrm{sen}\thinspace x}{x}\right)^2 \ \longrightarrow \ 2$$
 
 **Caminho 2 — ajustando o argumento.** Multiplicando e dividindo por $4$:
 
@@ -286,13 +286,13 @@ Os dois caminhos dão $2$.
 
 ### Exercício 19
 
-Multiplique e divida por $\operatorname{sen} x$ — legítimo porque $\operatorname{sen} x \neq 0$ para $x$ perto de $0$ (mas $x \neq 0$):
+Multiplique e divida por $\mathrm{sen}\thinspace x$ — legítimo porque $\mathrm{sen}\thinspace x \neq 0$ para $x$ perto de $0$ (mas $x \neq 0$):
 
-$$\frac{\operatorname{sen}(\operatorname{sen} x)}{x} = \frac{\operatorname{sen}(\operatorname{sen} x)}{\operatorname{sen} x}\cdot\frac{\operatorname{sen} x}{x}$$
+$$\frac{\mathrm{sen}(\mathrm{sen}\thinspace x)}{x} = \frac{\mathrm{sen}(\mathrm{sen}\thinspace x)}{\mathrm{sen}\thinspace x}\cdot\frac{\mathrm{sen}\thinspace x}{x}$$
 
-No primeiro fator, faça $u = \operatorname{sen} x$. Quando $x \to 0$, tem-se $u \to 0$, e o fator vira $\frac{\operatorname{sen} u}{u} \to 1$. O segundo fator também tende a $1$.
+No primeiro fator, faça $u = \mathrm{sen}\thinspace x$. Quando $x \to 0$, tem-se $u \to 0$, e o fator vira $\frac{\mathrm{sen}\thinspace u}{u} \to 1$. O segundo fator também tende a $1$.
 
-$$\lim_{x\to0}\frac{\operatorname{sen}(\operatorname{sen} x)}{x} = 1 \cdot 1 = 1$$
+$$\lim_{x\to0}\frac{\mathrm{sen}(\mathrm{sen}\thinspace x)}{x} = 1 \cdot 1 = 1$$
 
 ---
 
@@ -302,10 +302,10 @@ Racionalize o numerador:
 
 $$
 \begin{aligned}
-\frac{\sqrt{1+\operatorname{sen} x}-\sqrt{1-\operatorname{sen} x}}{x}
-&= \frac{(1+\operatorname{sen} x)-(1-\operatorname{sen} x)}{x\big(\sqrt{1+\operatorname{sen} x}+\sqrt{1-\operatorname{sen} x}\big)} \\
-&= \frac{2\operatorname{sen} x}{x\big(\sqrt{1+\operatorname{sen} x}+\sqrt{1-\operatorname{sen} x}\big)} \\
-&= \frac{\operatorname{sen} x}{x}\cdot\frac{2}{\sqrt{1+\operatorname{sen} x}+\sqrt{1-\operatorname{sen} x}}
+\frac{\sqrt{1+\mathrm{sen}\thinspace x}-\sqrt{1-\mathrm{sen}\thinspace x}}{x}
+&= \frac{(1+\mathrm{sen}\thinspace x)-(1-\mathrm{sen}\thinspace x)}{x\big(\sqrt{1+\mathrm{sen}\thinspace x}+\sqrt{1-\mathrm{sen}\thinspace x}\big)} \\
+&= \frac{2\mathrm{sen}\thinspace x}{x\big(\sqrt{1+\mathrm{sen}\thinspace x}+\sqrt{1-\mathrm{sen}\thinspace x}\big)} \\
+&= \frac{\mathrm{sen}\thinspace x}{x}\cdot\frac{2}{\sqrt{1+\mathrm{sen}\thinspace x}+\sqrt{1-\mathrm{sen}\thinspace x}}
 \end{aligned}
 $$
 
@@ -341,13 +341,13 @@ $$x^2 - 1 = (u+1)^2 - 1 = u^2 + 2u = u(u+2)$$
 
 Então
 
-$$\frac{\operatorname{sen}(x-1)}{x^2-1} = \frac{\operatorname{sen} u}{u(u+2)} = \frac{\operatorname{sen} u}{u}\cdot\frac{1}{u+2} \ \longrightarrow \ 1 \cdot \frac12 = \frac12$$
+$$\frac{\mathrm{sen}(x-1)}{x^2-1} = \frac{\mathrm{sen}\thinspace u}{u(u+2)} = \frac{\mathrm{sen}\thinspace u}{u}\cdot\frac{1}{u+2} \ \longrightarrow \ 1 \cdot \frac12 = \frac12$$
 
 **Resposta.** $\dfrac12$
 
 > 💡 **Alternativa sem mudança de variável:** fatore $x^2-1 = (x-1)(x+1)$ e escreva
-> $$\frac{\operatorname{sen}(x-1)}{(x-1)(x+1)} = \frac{\operatorname{sen}(x-1)}{x-1}\cdot\frac{1}{x+1}$$
-> O primeiro fator tem a forma $\frac{\operatorname{sen} u}{u}$ com $u = x-1 \to 0$, e o segundo tende a $\frac12$.
+> $$\frac{\mathrm{sen}(x-1)}{(x-1)(x+1)} = \frac{\mathrm{sen}(x-1)}{x-1}\cdot\frac{1}{x+1}$$
+> O primeiro fator tem a forma $\frac{\mathrm{sen}\thinspace u}{u}$ com $u = x-1 \to 0$, e o segundo tende a $\frac12$.
 
 ---
 

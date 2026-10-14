@@ -66,7 +66,7 @@ $$f'(x) = 2x-4 = 0 \ \Longrightarrow \ c = 2 \in (1,3)$$
 
 $$f'(x) = 2x-2 = 0 \ \Longrightarrow \ c = 1$$
 
-**(c)** $\operatorname{sen}$ é contínua e derivável em $\mathbb{R}$ ✔ ; $\operatorname{sen} 0 = 0 = \operatorname{sen}\pi$ ✔
+**(c)** $\mathrm{sen}$ é contínua e derivável em $\mathbb{R}$ ✔ ; $\mathrm{sen}\thinspace 0 = 0 = \mathrm{sen}\thinspace\pi$ ✔
 
 $$f'(x) = \cos x = 0 \ \Longrightarrow \ c = \frac{\pi}{2} \in (0,\pi)$$
 
@@ -174,13 +174,13 @@ $$x - \ln(1+x) > 0 \ \Longrightarrow \ \ln(1+x) < x \qquad \blacksquare$$
 
 ### Exercício 11
 
-Se $a=b$, a desigualdade é trivial. Se $a \neq b$, aplique o TVM a $f(x)=\operatorname{sen} x$ no intervalo de extremos $a$ e $b$: existe $c$ entre eles com
+Se $a=b$, a desigualdade é trivial. Se $a \neq b$, aplique o TVM a $f(x)=\mathrm{sen}\thinspace x$ no intervalo de extremos $a$ e $b$: existe $c$ entre eles com
 
-$$\operatorname{sen} a - \operatorname{sen} b = \cos c\thinspace (a-b)$$
+$$\mathrm{sen}\thinspace a - \mathrm{sen}\thinspace b = \cos c\thinspace (a-b)$$
 
 Tomando módulos e usando $\lvert\cos c\rvert \leqslant 1$:
 
-$$\big\lvert \operatorname{sen} a - \operatorname{sen} b\big\rvert = \lvert\cos c\rvert\cdot\lvert a-b\rvert \leqslant \lvert a-b\rvert \qquad \blacksquare$$
+$$\big\lvert \mathrm{sen}\thinspace a - \mathrm{sen}\thinspace b\big\rvert = \lvert\cos c\rvert\cdot\lvert a-b\rvert \leqslant \lvert a-b\rvert \qquad \blacksquare$$
 
 > 💡 Em palavras: **o seno nunca "estica" distâncias.** É um caso particular do Exercício 18.
 

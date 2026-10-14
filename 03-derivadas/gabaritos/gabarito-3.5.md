@@ -174,7 +174,7 @@ $$\frac{dh}{dt} = \frac{4}{\pi} \approx 1{,}27 \ \text{m/min}$$
 
 Seja $\theta$ o ângulo de elevação e $h$ a altura do balão:
 
-$$\operatorname{tg}\theta = \frac{h}{40}$$
+$$\mathrm{tg}\thinspace\theta = \frac{h}{40}$$
 
 Derivando:
 
@@ -266,7 +266,7 @@ $$\frac{dh}{dt} = -\frac{3}{\pi} \approx -0{,}95 \ \text{m/min}$$
 
 ### Exercício 19
 
-$$A = \frac12(4)(5)\operatorname{sen}\theta = 10\operatorname{sen}\theta$$
+$$A = \frac12(4)(5)\mathrm{sen}\thinspace\theta = 10\mathrm{sen}\thinspace\theta$$
 
 $$\frac{dA}{dt} = 10\cos\theta\cdot\frac{d\theta}{dt}$$
 

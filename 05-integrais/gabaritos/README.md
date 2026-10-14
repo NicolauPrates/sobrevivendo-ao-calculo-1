@@ -25,7 +25,7 @@
 
 1. **Derive a sua resposta.** Se devolve o integrando, está **certa** — ponto final, independentemente do que o gabarito diz.
 2. **Subtraia as duas.** Se a diferença é uma **constante**, as duas respostas descrevem a mesma família de primitivas. Ambas valem nota cheia.
-3. **Procure uma identidade.** $\operatorname{tg}^2 x$ e $\operatorname{sec}^2 x - 1$ são a mesma coisa; $\frac12\operatorname{sen}^2 x$ e $-\frac14\cos(2x)$ diferem por constante. Respostas trigonométricas disfarçam-se com facilidade.
+3. **Procure uma identidade.** $\mathrm{tg}^2\thinspace x$ e $\mathrm{sec}^2\thinspace x - 1$ são a mesma coisa; $\frac12\mathrm{sen}^2\thinspace x$ e $-\frac14\cos(2x)$ diferem por constante. Respostas trigonométricas disfarçam-se com facilidade.
 
 > [!TIP]
 > O teste 1 é definitivo e dispensa os outros dois. **A derivada é o gabarito oficial de qualquer integral** — este arquivo é só uma conveniência.

@@ -75,7 +75,7 @@
 | **(c)** | sim | 2 | $x=1$, **dentro** de $[0,2]$ — precisa quebrar |
 | **(d)** | sim | 2 | $\ln(x-1)\to-\infty$ quando $x\to1^{+}$ |
 | **(e)** | sim | 1 | **os dois** limites são infinitos |
-| **(f)** | sim | 2 | $\operatorname{tg} x$ explode em $x=\frac{\pi}{2}$, dentro de $[0,\pi]$ |
+| **(f)** | sim | 2 | $\mathrm{tg}\thinspace x$ explode em $x=\frac{\pi}{2}$, dentro de $[0,\pi]$ |
 
 > ⚠️ **O item (b) é a pegadinha, e é a mais importante da lista.** A presença de um denominador que zera **não** torna a integral imprópria — ele precisa zerar **dentro** do intervalo. Em $[0,1]$, a função $\frac{1}{x-2}$ é perfeitamente contínua (vale entre $-1$ e $-\frac12$), e o TFC se aplica normalmente.
 >
@@ -142,9 +142,9 @@ Os **dois** limites são infinitos, então quebre (em $0$, por conveniência):
 
 $$\int_{-\infty}^{\infty}\frac{dx}{1+x^2} = \int_{-\infty}^{0}\frac{dx}{1+x^2} + \int_{0}^{\infty}\frac{dx}{1+x^2}$$
 
-$$\int_0^{\infty}\frac{dx}{1+x^2} = \lim_{b\to\infty}\Big[\operatorname{arctg} x\Big]_0^{b} = \frac{\pi}{2}-0 = \frac{\pi}{2}$$
+$$\int_0^{\infty}\frac{dx}{1+x^2} = \lim_{b\to\infty}\Big[\mathrm{arctg}\thinspace x\Big]_0^{b} = \frac{\pi}{2}-0 = \frac{\pi}{2}$$
 
-$$\int_{-\infty}^{0}\frac{dx}{1+x^2} = \lim_{a\to-\infty}\Big[\operatorname{arctg} x\Big]_a^{0} = 0-\left(-\frac{\pi}{2}\right) = \frac{\pi}{2}$$
+$$\int_{-\infty}^{0}\frac{dx}{1+x^2} = \lim_{a\to-\infty}\Big[\mathrm{arctg}\thinspace x\Big]_a^{0} = 0-\left(-\frac{\pi}{2}\right) = \frac{\pi}{2}$$
 
 **As duas convergem**, logo a soma vale
 
@@ -203,15 +203,15 @@ $$\int_1^{\infty}\frac{dx}{x^3+1} \quad\textbf{CONVERGE}$$
 
 **(b)** Quero provar **divergência**, logo preciso de um **piso** que divirja.
 
-Como $\operatorname{sen} x\geqslant-1$ sempre, tem-se $2+\operatorname{sen} x\geqslant 1$, e para $x\geqslant1$:
+Como $\mathrm{sen}\thinspace x\geqslant-1$ sempre, tem-se $2+\mathrm{sen}\thinspace x\geqslant 1$, e para $x\geqslant1$:
 
-$$\frac{2+\operatorname{sen} x}{x} \geqslant \frac{1}{x} > 0$$
+$$\frac{2+\mathrm{sen}\thinspace x}{x} \geqslant \frac{1}{x} > 0$$
 
 Como $\displaystyle\int_1^{\infty}\frac{dx}{x}$ diverge, a comparação dá:
 
-$$\int_1^{\infty}\frac{2+\operatorname{sen} x}{x}dx \quad\textbf{DIVERGE}$$
+$$\int_1^{\infty}\frac{2+\mathrm{sen}\thinspace x}{x}dx \quad\textbf{DIVERGE}$$
 
-> 💡 **O seno oscilando não atrapalha** — basta limitá-lo. O fator $2+\operatorname{sen} x$ vive entre $1$ e $3$, então o integrando é, a menos de uma constante, exatamente $\frac1x$. **Limitar o fator chato por constantes** é a jogada padrão quando aparece seno ou cosseno num teste de comparação.
+> 💡 **O seno oscilando não atrapalha** — basta limitá-lo. O fator $2+\mathrm{sen}\thinspace x$ vive entre $1$ e $3$, então o integrando é, a menos de uma constante, exatamente $\frac1x$. **Limitar o fator chato por constantes** é a jogada padrão quando aparece seno ou cosseno num teste de comparação.
 
 ---
 
@@ -233,7 +233,7 @@ O "argumento de simetria" calcula na verdade $\displaystyle\lim_{b\to\infty}\int
 
 **(d) Verdadeiro.** Para $f\geqslant0$, a função $b\mapsto\displaystyle\int_a^b f$ é **crescente** em $b$ — acrescentar intervalo só acrescenta área. Uma função crescente ou tem limite finito, ou tende a $+\infty$; não há terceira possibilidade.
 
-> 💡 **Para funções que trocam de sinal isso falha.** Em $\displaystyle\int_0^{\infty}\operatorname{sen} x\thinspace dx$, a integral parcial é $1-\cos b$, que **oscila** entre $0$ e $2$ sem tender a nada. A integral diverge, mas não "para $+\infty$" — ela simplesmente não tem limite.
+> 💡 **Para funções que trocam de sinal isso falha.** Em $\displaystyle\int_0^{\infty}\mathrm{sen}\thinspace x\thinspace dx$, a integral parcial é $1-\cos b$, que **oscila** entre $0$ e $2$ sem tender a nada. A integral diverge, mas não "para $+\infty$" — ela simplesmente não tem limite.
 
 ---
 
@@ -287,11 +287,11 @@ $$\int_0^{\infty}\frac{dx}{(1+x)^3} = \int_1^{\infty}\frac{du}{u^3} = \frac{1}{3
 
 Imprópria do **tipo 2**: o denominador zera em $x=1$ (extremo superior).
 
-$$\int_0^{1}\frac{dx}{\sqrt{1-x^2}} = \lim_{t\to1^{-}}\Big[\operatorname{arcsen} x\Big]_0^{t} = \operatorname{arcsen}(1) - 0 = \frac{\pi}{2}$$
+$$\int_0^{1}\frac{dx}{\sqrt{1-x^2}} = \lim_{t\to1^{-}}\Big[\mathrm{arcsen}\thinspace x\Big]_0^{t} = \mathrm{arcsen}(1) - 0 = \frac{\pi}{2}$$
 
 **CONVERGE.**
 
-> ⚠️ **Muita gente resolve esta integral sem perceber que ela é imprópria** — e, por sorte, chega ao resultado certo, porque $\operatorname{arcsen}$ é contínua em $x=1$. **A sorte não é método:** o mesmo descuido em $\int_{-1}^{1}\frac{dx}{x^2}$ produz $-2$.
+> ⚠️ **Muita gente resolve esta integral sem perceber que ela é imprópria** — e, por sorte, chega ao resultado certo, porque $\mathrm{arcsen}$ é contínua em $x=1$. **A sorte não é método:** o mesmo descuido em $\int_{-1}^{1}\frac{dx}{x^2}$ produz $-2$.
 
 ---
 
@@ -335,25 +335,25 @@ $$\int_{-1}^{1}\frac{dx}{\sqrt[3]{x}} = \frac32 + \left(-\frac32\right) = 0$$
 
 A primitiva sai pela integração por partes circular de [5.2](../5.2-tecnicas-de-integracao.md), adaptada a $e^{-x}$:
 
-$$\int e^{-x}\operatorname{sen} x\thinspace dx = -\frac{e^{-x}}{2}\big(\operatorname{sen} x + \cos x\big)$$
+$$\int e^{-x}\mathrm{sen}\thinspace x\thinspace dx = -\frac{e^{-x}}{2}\big(\mathrm{sen}\thinspace x + \cos x\big)$$
 
 **Conferindo:**
 
-$$\left[-\frac{e^{-x}}{2}(\operatorname{sen} x+\cos x)\right]' = \frac{e^{-x}}{2}(\operatorname{sen} x+\cos x) - \frac{e^{-x}}{2}(\cos x-\operatorname{sen} x) = e^{-x}\operatorname{sen} x \ \checkmark$$
+$$\left[-\frac{e^{-x}}{2}(\mathrm{sen}\thinspace x+\cos x)\right]' = \frac{e^{-x}}{2}(\mathrm{sen}\thinspace x+\cos x) - \frac{e^{-x}}{2}(\cos x-\mathrm{sen}\thinspace x) = e^{-x}\mathrm{sen}\thinspace x \ \checkmark$$
 
 Agora o limite:
 
-$$\int_0^{\infty}e^{-x}\operatorname{sen} x\thinspace dx = \lim_{b\to\infty}\left[-\frac{e^{-x}}{2}\big(\operatorname{sen} x+\cos x\big)\right]_0^{b}$$
+$$\int_0^{\infty}e^{-x}\mathrm{sen}\thinspace x\thinspace dx = \lim_{b\to\infty}\left[-\frac{e^{-x}}{2}\big(\mathrm{sen}\thinspace x+\cos x\big)\right]_0^{b}$$
 
-Em $b$: o fator $(\operatorname{sen} b+\cos b)$ é **limitado** (fica entre $-\sqrt2$ e $\sqrt2$) e $e^{-b}\to0$, logo o produto tende a $0$.
+Em $b$: o fator $(\mathrm{sen}\thinspace b+\cos b)$ é **limitado** (fica entre $-\sqrt2$ e $\sqrt2$) e $e^{-b}\to0$, logo o produto tende a $0$.
 
 Em $0$: $-\frac12(0+1) = -\frac12$.
 
-$$\int_0^{\infty}e^{-x}\operatorname{sen} x\thinspace dx = 0-\left(-\frac12\right) = \frac12$$
+$$\int_0^{\infty}e^{-x}\mathrm{sen}\thinspace x\thinspace dx = 0-\left(-\frac12\right) = \frac12$$
 
 **CONVERGE.**
 
-> 💡 **"Limitado vezes algo que tende a zero tende a zero"** é o argumento que fecha a questão — o mesmo do [Teorema do Sanduíche](../../02-limites-e-continuidade/2.3-teorema-do-sanduiche.md). Sem ele, seria tentador dizer que $\operatorname{sen} b$ "não tem limite, logo a integral diverge" — conclusão errada, porque a exponencial esmaga a oscilação.
+> 💡 **"Limitado vezes algo que tende a zero tende a zero"** é o argumento que fecha a questão — o mesmo do [Teorema do Sanduíche](../../02-limites-e-continuidade/2.3-teorema-do-sanduiche.md). Sem ele, seria tentador dizer que $\mathrm{sen}\thinspace b$ "não tem limite, logo a integral diverge" — conclusão errada, porque a exponencial esmaga a oscilação.
 
 ---
 

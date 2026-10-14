@@ -87,7 +87,7 @@ Pelo Teorema 2.5.1, basta determinar o **domínio**:
 
 **(d)** Logaritmo: $x+3>0$, logo $(-3,+\infty)$.
 
-**(e)** $\operatorname{tg} x = \frac{\operatorname{sen} x}{\cos x}$: contínua onde $\cos x \neq 0$, isto é, $x \neq \frac{\pi}{2}+k\pi$, $k\in\mathbb{Z}$.
+**(e)** $\mathrm{tg}\thinspace x = \frac{\mathrm{sen}\thinspace x}{\cos x}$: contínua onde $\cos x \neq 0$, isto é, $x \neq \frac{\pi}{2}+k\pi$, $k\in\mathbb{Z}$.
 
 ---
 
@@ -141,7 +141,7 @@ Em todos, as funções externas são contínuas no ponto, então o limite **entr
 
 **(c) Verdadeiro.** Teorema 2.5.1.
 
-**(d) Falso.** O TVI garante **existência**, não unicidade. Por exemplo, $f(x) = \operatorname{sen} x$ em $[-\pi, \pi]$ tem $f(-\pi)\cdot f(\pi) = 0$... tomando $f(x) = x^3 - x$ em $[-2,2]$: $f(-2) = -6 < 0$, $f(2) = 6 > 0$, e há **três** raízes ($-1$, $0$ e $1$).
+**(d) Falso.** O TVI garante **existência**, não unicidade. Por exemplo, $f(x) = \mathrm{sen}\thinspace x$ em $[-\pi, \pi]$ tem $f(-\pi)\cdot f(\pi) = 0$... tomando $f(x) = x^3 - x$ em $[-2,2]$: $f(-2) = -6 < 0$, $f(2) = 6 > 0$, e há **três** raízes ($-1$, $0$ e $1$).
 
 **(e) Falso.** Só as **removíveis**. Em um salto, nenhum valor de $f(a)$ satisfaz os dois lados.
 
@@ -201,7 +201,7 @@ Subtraindo: $3a = 6 \Rightarrow a = 2$, e então $b = 4 - 4 = 0$.
 
 ### Exercício 11
 
-$$\lim_{x\to0}\frac{\operatorname{sen} 3x}{x} = \lim_{x\to0} 3\cdot\frac{\operatorname{sen} 3x}{3x} = 3$$
+$$\lim_{x\to0}\frac{\mathrm{sen}\thinspace 3x}{x} = \lim_{x\to0} 3\cdot\frac{\mathrm{sen}\thinspace 3x}{3x} = 3$$
 
 A continuidade exige $k = 3$.
 
@@ -256,9 +256,9 @@ O limite **não existe** ✘
 
 ### Exercício 16
 
-A função $\operatorname{sen}$ é contínua em $\mathbb{R}$, e $\frac{\pi}{2}\cos x$ é contínua. Logo o limite entra (Teorema 2.5.3):
+A função $\mathrm{sen}$ é contínua em $\mathbb{R}$, e $\frac{\pi}{2}\cos x$ é contínua. Logo o limite entra (Teorema 2.5.3):
 
-$$\lim_{x\to0}\operatorname{sen}\left(\frac{\pi}{2}\cos x\right) = \operatorname{sen}\left(\frac{\pi}{2}\lim_{x\to0}\cos x\right) = \operatorname{sen}\left(\frac{\pi}{2}\cdot 1\right) = \operatorname{sen}\frac{\pi}{2} = 1$$
+$$\lim_{x\to0}\mathrm{sen}\left(\frac{\pi}{2}\cos x\right) = \mathrm{sen}\left(\frac{\pi}{2}\lim_{x\to0}\cos x\right) = \mathrm{sen}\left(\frac{\pi}{2}\cdot 1\right) = \mathrm{sen}\thinspace\frac{\pi}{2} = 1$$
 
 ---
 
@@ -278,13 +278,13 @@ $$x = -2 \qquad \text{e} \qquad x = 2$$
 
 **Para $f$:**
 
-(i) $f(0) = 0$ ✔ &nbsp; (ii) pelo anulamento, $\lim_{x\to0} x\operatorname{sen}\frac1x = 0$ ✔ &nbsp; (iii) $0=0$ ✔
+(i) $f(0) = 0$ ✔ &nbsp; (ii) pelo anulamento, $\lim_{x\to0} x\mathrm{sen}\thinspace\frac1x = 0$ ✔ &nbsp; (iii) $0=0$ ✔
 
 **$f$ é contínua em $x=0$.**
 
 **Para $g$:**
 
-(i) $g(0) = 0$ ✔ &nbsp; (ii) $\lim_{x\to0}\operatorname{sen}\frac1x$ **não existe** ✘
+(i) $g(0) = 0$ ✔ &nbsp; (ii) $\lim_{x\to0}\mathrm{sen}\thinspace\frac1x$ **não existe** ✘
 
 **$g$ é descontínua**, com descontinuidade **oscilatória** — e nenhum valor atribuído a $g(0)$ conserta isso.
 

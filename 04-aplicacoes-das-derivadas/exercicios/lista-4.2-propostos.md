@@ -20,7 +20,7 @@
 
 &nbsp;&nbsp;**(b)** $f(x) = x^2-2x$ em $[0,\thinspace 2]$
 
-&nbsp;&nbsp;**(c)** $f(x) = \operatorname{sen} x$ em $[0,\thinspace \pi]$
+&nbsp;&nbsp;**(c)** $f(x) = \mathrm{sen}\thinspace x$ em $[0,\thinspace \pi]$
 
 **2.** Verifique as hipóteses do **TVM** e encontre todos os $c$:
 
@@ -66,7 +66,7 @@
 
 **10.** Mostre que $\ln(1+x) < x$ para todo $x>0$.
 
-**11.** Mostre que $\big\lvert \operatorname{sen} a - \operatorname{sen} b\big\rvert \leqslant \lvert a-b\rvert$ para todos $a,b \in \mathbb{R}$.
+**11.** Mostre que $\big\lvert \mathrm{sen}\thinspace a - \mathrm{sen}\thinspace b\big\rvert \leqslant \lvert a-b\rvert$ para todos $a,b \in \mathbb{R}$.
 
 **12.** Seja $f$ derivável em $(a,b)$, com $f'(x) \neq 0$ para todo $x$ nesse intervalo. Mostre que $f$ tem **no máximo uma** raiz em $(a,b)$.
 

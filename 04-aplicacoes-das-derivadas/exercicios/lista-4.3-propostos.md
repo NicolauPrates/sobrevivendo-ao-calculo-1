@@ -16,7 +16,7 @@
 
 **1.** Calcule (forma $\frac00$):
 
-&nbsp;&nbsp;**(a)** $\lim\limits_{x\to0}\dfrac{\operatorname{sen} x}{x}$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to0}\dfrac{e^x-1}{x}$
+&nbsp;&nbsp;**(a)** $\lim\limits_{x\to0}\dfrac{\mathrm{sen}\thinspace x}{x}$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to0}\dfrac{e^x-1}{x}$
 
 &nbsp;&nbsp;**(c)** $\lim\limits_{x\to1}\dfrac{\ln x}{x-1}$ &nbsp;&nbsp;&nbsp; **(d)** $\lim\limits_{x\to0}\dfrac{1-\cos x}{x}$
 
@@ -26,11 +26,11 @@
 
 **3.** Em cada caso, diga se L&#39;Hôspital **se aplica** e justifique. Depois calcule o limite (pelo método correto):
 
-&nbsp;&nbsp;**(a)** $\lim\limits_{x\to0}\dfrac{x+2}{x+1}$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to2}\dfrac{x^2-4}{x-2}$ &nbsp;&nbsp;&nbsp; **(c)** $\lim\limits_{x\to0^{+}}\dfrac{\operatorname{sen} x}{x^2}$
+&nbsp;&nbsp;**(a)** $\lim\limits_{x\to0}\dfrac{x+2}{x+1}$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to2}\dfrac{x^2-4}{x-2}$ &nbsp;&nbsp;&nbsp; **(c)** $\lim\limits_{x\to0^{+}}\dfrac{\mathrm{sen}\thinspace x}{x^2}$
 
 **4.** Calcule (precisa de **duas** aplicações):
 
-&nbsp;&nbsp;**(a)** $\lim\limits_{x\to0}\dfrac{e^x-1-x}{x^2}$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to0}\dfrac{x-\operatorname{sen} x}{x^3}$
+&nbsp;&nbsp;**(a)** $\lim\limits_{x\to0}\dfrac{e^x-1-x}{x^2}$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to0}\dfrac{x-\mathrm{sen}\thinspace x}{x^3}$
 
 **5.** Calcule (forma $0\cdot\infty$):
 
@@ -54,11 +54,11 @@
 
 ## Bloco B · Consolidação
 
-**9.** $\lim\limits_{x\to0}\dfrac{\operatorname{tg} x - x}{x^3}$
+**9.** $\lim\limits_{x\to0}\dfrac{\mathrm{tg}\thinspace x - x}{x^3}$
 
 **10.** $\lim\limits_{x\to+\infty}\dfrac{(\ln x)^2}{x}$
 
-**11.** $\lim\limits_{x\to0^{+}} \operatorname{sen} x\cdot\ln x$
+**11.** $\lim\limits_{x\to0^{+}} \mathrm{sen}\thinspace x\cdot\ln x$
 
 **12.** $\lim\limits_{x\to0}\left(\dfrac1x - \dfrac{1}{e^x-1}\right)$
 
@@ -68,7 +68,7 @@
 
 **15.** $\lim\limits_{x\to+\infty} x\left(e^{1/x}-1\right)$
 
-**16.** Determine $a$ para que $\lim\limits_{x\to0}\dfrac{\operatorname{sen}(ax) - 2x}{x^3}$ seja **finito**, e calcule o limite nesse caso.
+**16.** Determine $a$ para que $\lim\limits_{x\to0}\dfrac{\mathrm{sen}(ax) - 2x}{x^3}$ seja **finito**, e calcule o limite nesse caso.
 
 ---
 
@@ -78,11 +78,11 @@
 
 &nbsp;&nbsp;*(Sugestão: aplique a regra $n$ vezes e descreva o que acontece com o numerador.)*
 
-**18.** $\lim\limits_{x\to0^{+}}\left(\dfrac1x\right)^{\operatorname{sen} x}$
+**18.** $\lim\limits_{x\to0^{+}}\left(\dfrac1x\right)^{\mathrm{sen}\thinspace x}$
 
 **19.** Explique por que **não** se pode concluir nada aplicando L&#39;Hôspital a
 
-$$\lim_{x\to+\infty}\frac{x+\operatorname{sen} x}{x}$$
+$$\lim_{x\to+\infty}\frac{x+\mathrm{sen}\thinspace x}{x}$$
 
 &nbsp;&nbsp;e calcule o limite por outro método.
 

@@ -81,9 +81,9 @@
 
 ### 2.
 
-**(a)** $\displaystyle\int_0^{\pi}\operatorname{sen} x\thinspace dx = \Big[-\cos x\Big]_0^{\pi} = -\cos\pi + \cos 0 = 1+1 = 2$
+**(a)** $\displaystyle\int_0^{\pi}\mathrm{sen}\thinspace x\thinspace dx = \Big[-\cos x\Big]_0^{\pi} = -\cos\pi + \cos 0 = 1+1 = 2$
 
-**(b)** $\displaystyle\int_0^{\pi/4}\operatorname{sec}^2 x\thinspace dx = \Big[\operatorname{tg} x\Big]_0^{\pi/4} = 1-0 = 1$
+**(b)** $\displaystyle\int_0^{\pi/4}\mathrm{sec}^2\thinspace x\thinspace dx = \Big[\mathrm{tg}\thinspace x\Big]_0^{\pi/4} = 1-0 = 1$
 
 **(c)** $\displaystyle\int_1^{2}x^{-2}dx = \left[-\frac1x\right]_1^{2} = -\frac12 + 1 = \frac12$
 
@@ -231,15 +231,15 @@ $$\int_1^2 x\ln x\thinspace dx = \left[\frac{x^2}{2}\ln x - \frac{x^2}{4}\right]
 
 ### 12.
 
-A primitiva de $x\cos x$ é $x\operatorname{sen} x + \cos x$ (teoria 5.2):
+A primitiva de $x\cos x$ é $x\mathrm{sen}\thinspace x + \cos x$ (teoria 5.2):
 
-$$\int_0^{\pi/2}x\cos x\thinspace dx = \Big[x\operatorname{sen} x + \cos x\Big]_0^{\pi/2} = \left(\frac{\pi}{2}\cdot 1 + 0\right) - \big(0+1\big) = \frac{\pi}{2}-1$$
+$$\int_0^{\pi/2}x\cos x\thinspace dx = \Big[x\mathrm{sen}\thinspace x + \cos x\Big]_0^{\pi/2} = \left(\frac{\pi}{2}\cdot 1 + 0\right) - \big(0+1\big) = \frac{\pi}{2}-1$$
 
 ---
 
 ### 13.
 
-$$\int_0^1\frac{dx}{x^2+1} = \Big[\operatorname{arctg} x\Big]_0^1 = \operatorname{arctg} 1 - \operatorname{arctg} 0 = \frac{\pi}{4}$$
+$$\int_0^1\frac{dx}{x^2+1} = \Big[\mathrm{arctg}\thinspace x\Big]_0^1 = \mathrm{arctg}\thinspace 1 - \mathrm{arctg}\thinspace 0 = \frac{\pi}{4}$$
 
 ---
 
@@ -271,7 +271,7 @@ $$\text{Área} = \frac{16}{3}+\frac73 = \frac{23}{3}$$
 
 O cosseno troca de sinal em $x=\frac{\pi}{2}$:
 
-$$\int_0^{\pi/2}\cos x\thinspace dx = \Big[\operatorname{sen} x\Big]_0^{\pi/2} = 1 \qquad \int_{\pi/2}^{\pi}\cos x\thinspace dx = 0-1 = -1$$
+$$\int_0^{\pi/2}\cos x\thinspace dx = \Big[\mathrm{sen}\thinspace x\Big]_0^{\pi/2} = 1 \qquad \int_{\pi/2}^{\pi}\cos x\thinspace dx = 0-1 = -1$$
 
 $$\text{Área} = \lvert1\rvert+\lvert-1\rvert = 2$$
 
@@ -371,7 +371,7 @@ $$\int_{-a}^{a}f = \int_{-a}^{0}f + \int_{0}^{a}f = \int_0^a f + \int_0^a f = 2\
 
 $$\int_{-a}^{a}f = -\int_0^a f + \int_0^a f = 0 \quad\blacksquare$$
 
-> 💡 **Use isso sempre.** $\displaystyle\int_{-5}^{5}\frac{x^3\operatorname{sen} x^2}{1+x^8}dx = 0$ — sem calcular nada, porque o integrando é ímpar e o intervalo é simétrico. Reconhecer paridade antes de integrar é o atalho mais rentável das integrais definidas, e aparece em prova disfarçado de integral monstruosa.
+> 💡 **Use isso sempre.** $\displaystyle\int_{-5}^{5}\frac{x^3\mathrm{sen}\thinspace x^2}{1+x^8}dx = 0$ — sem calcular nada, porque o integrando é ímpar e o intervalo é simétrico. Reconhecer paridade antes de integrar é o atalho mais rentável das integrais definidas, e aparece em prova disfarçado de integral monstruosa.
 
 ---
 

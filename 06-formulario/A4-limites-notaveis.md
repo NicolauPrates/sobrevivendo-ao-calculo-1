@@ -29,19 +29,19 @@ $$\frac{0}{0} \qquad \frac{\infty}{\infty} \qquad 0\cdot\infty \qquad \infty-\in
 
 ## 2. Os trigonométricos
 
-$$\lim_{x\to0}\frac{\operatorname{sen} x}{x} = 1$$
+$$\lim_{x\to0}\frac{\mathrm{sen}\thinspace x}{x} = 1$$
 
 $$\lim_{x\to0}\frac{1-\cos x}{x} = 0 \qquad\qquad \lim_{x\to0}\frac{1-\cos x}{x^2} = \frac12$$
 
-$$\lim_{x\to0}\frac{\operatorname{tg} x}{x} = 1 \qquad\qquad \lim_{x\to0}\frac{\operatorname{arcsen} x}{x} = 1 \qquad\qquad \lim_{x\to0}\frac{\operatorname{arctg} x}{x} = 1$$
+$$\lim_{x\to0}\frac{\mathrm{tg}\thinspace x}{x} = 1 \qquad\qquad \lim_{x\to0}\frac{\mathrm{arcsen}\thinspace x}{x} = 1 \qquad\qquad \lim_{x\to0}\frac{\mathrm{arctg}\thinspace x}{x} = 1$$
 
 > 💡 **O primeiro é o limite fundamental da trigonometria**, demonstrado pelo [Teorema do Sanduíche (2.3)](../02-limites-e-continuidade/2.3-teorema-do-sanduiche.md). Todos os outros desta seção saem dele, e é dele que vem a derivada do seno.
 
 **Versão geral** (com $\square$ representando qualquer expressão que tenda a zero):
 
-$$\lim_{\square\to0}\frac{\operatorname{sen}\square}{\square} = 1$$
+$$\lim_{\square\to0}\frac{\mathrm{sen}\thinspace\square}{\square} = 1$$
 
-Assim, $\displaystyle\lim_{x\to0}\frac{\operatorname{sen}(5x)}{5x} = 1$ — e, para $\frac{\operatorname{sen}(5x)}{x}$, multiplique e divida por $5$ para obter $5$.
+Assim, $\displaystyle\lim_{x\to0}\frac{\mathrm{sen}(5x)}{5x} = 1$ — e, para $\frac{\mathrm{sen}(5x)}{x}$, multiplique e divida por $5$ para obter $5$.
 
 ---
 
@@ -86,10 +86,10 @@ Para $\displaystyle\lim_{x\to\pm\infty}\frac{P(x)}{Q(x)}$, compare os **graus**:
 
 | | Limite | Assíntota |
 | --- | :---: | --- |
-| $\operatorname{gr} P < \operatorname{gr} Q$ | $0$ | horizontal $y=0$ |
-| $\operatorname{gr} P = \operatorname{gr} Q$ | razão dos **coeficientes líderes** | horizontal nesse valor |
-| $\operatorname{gr} P = \operatorname{gr} Q + 1$ | $\pm\infty$ | **oblíqua** (faça a divisão) |
-| $\operatorname{gr} P > \operatorname{gr} Q + 1$ | $\pm\infty$ | nenhuma |
+| $\mathrm{gr}\thinspace P < \mathrm{gr}\thinspace Q$ | $0$ | horizontal $y=0$ |
+| $\mathrm{gr}\thinspace P = \mathrm{gr}\thinspace Q$ | razão dos **coeficientes líderes** | horizontal nesse valor |
+| $\mathrm{gr}\thinspace P = \mathrm{gr}\thinspace Q + 1$ | $\pm\infty$ | **oblíqua** (faça a divisão) |
+| $\mathrm{gr}\thinspace P > \mathrm{gr}\thinspace Q + 1$ | $\pm\infty$ | nenhuma |
 
 ---
 
@@ -103,7 +103,7 @@ Para $\displaystyle\lim_{x\to\pm\infty}\frac{P(x)}{Q(x)}$, compare os **graus**:
 | $\displaystyle\lim_{x\to0^{+}}\ln x$ | $-\infty$ |
 | $\displaystyle\lim_{x\to-\infty}e^{x}$ | $0$ |
 | $\displaystyle\lim_{x\to+\infty}e^{x}$ | $+\infty$ |
-| $\displaystyle\lim_{x\to\pm\infty}\operatorname{arctg} x$ | $\pm\dfrac{\pi}{2}$ |
+| $\displaystyle\lim_{x\to\pm\infty}\mathrm{arctg}\thinspace x$ | $\pm\dfrac{\pi}{2}$ |
 
 > ⚠️ **O sinal do $0$ no denominador decide tudo.** Escrever só "$\frac{k}{0}$" perde a informação: é preciso saber se o denominador se aproxima de zero **por cima** ou **por baixo**. Teste com um valor próximo e veja o sinal.
 

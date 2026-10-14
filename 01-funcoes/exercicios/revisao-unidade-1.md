@@ -65,7 +65,7 @@ Sejam $f(x) = \sqrt{x-1}$ e $g(x) = x^2+1$.
 
 Classifique quanto à paridade, justificando pelo cálculo de $f(-x)$:
 
-**(a)** $f(x) = x^4 - \cos x$ &nbsp;&nbsp;&nbsp; **(b)** $g(x) = x^3\operatorname{sen} x$ &nbsp;&nbsp;&nbsp; **(c)** $h(x) = e^x - e^{-x}$
+**(a)** $f(x) = x^4 - \cos x$ &nbsp;&nbsp;&nbsp; **(b)** $g(x) = x^3\mathrm{sen}\thinspace x$ &nbsp;&nbsp;&nbsp; **(c)** $h(x) = e^x - e^{-x}$
 
 ---
 
@@ -83,7 +83,7 @@ Considere $y = 2 - (x+1)^2$.
 
 ### Questão 8
 
-Determine a imagem e o período de $y = 4 - 2\operatorname{sen}(3x)$.
+Determine a imagem e o período de $y = 4 - 2\mathrm{sen}(3x)$.
 
 ---
 
@@ -111,7 +111,7 @@ Seja $f : \mathbb{R} \to \mathbb{R}$, $f(x) = x^2 + 4x + 3$.
 
 Calcule, justificando cada passo:
 
-**(a)** $\arccos\left(\cos\dfrac{5\pi}{4}\right)$ &nbsp;&nbsp;&nbsp; **(b)** $\operatorname{arcsen}\left(\operatorname{sen}\left(-\dfrac{\pi}{3}\right)\right)$ &nbsp;&nbsp;&nbsp; **(c)** $\operatorname{tg}\big(\operatorname{arctg} 5\big)$
+**(a)** $\arccos\left(\cos\dfrac{5\pi}{4}\right)$ &nbsp;&nbsp;&nbsp; **(b)** $\mathrm{arcsen}\left(\mathrm{sen}\left(-\dfrac{\pi}{3}\right)\right)$ &nbsp;&nbsp;&nbsp; **(c)** $\mathrm{tg}\big(\mathrm{arctg}\thinspace 5\big)$
 
 ---
 

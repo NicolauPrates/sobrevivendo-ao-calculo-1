@@ -13,21 +13,21 @@
 | Ex. | Resposta |
 | :---: | --- |
 | 1 (a) | $3\cos x$ |
-| 1 (b) | $-\operatorname{sen} x - 2$ |
+| 1 (b) | $-\mathrm{sen}\thinspace x - 2$ |
 | 1 (c) | $5e^x$ |
 | 1 (d) | $\dfrac4x$ |
-| 1 (e) | $\sec^2 x + \sec x\operatorname{tg} x$ |
+| 1 (e) | $\sec^2 x + \sec x\mathrm{tg}\thinspace x$ |
 | 1 (f) | $2^x\ln 2$ |
-| 2 (a) | $\operatorname{sen} x + x\cos x$ |
-| 2 (b) | $e^x(\cos x - \operatorname{sen} x)$ |
+| 2 (a) | $\mathrm{sen}\thinspace x + x\cos x$ |
+| 2 (b) | $e^x(\cos x - \mathrm{sen}\thinspace x)$ |
 | 2 (c) | $2x\ln x + x$ |
-| 3 (a) | $\dfrac{x\cos x - \operatorname{sen} x}{x^2}$ |
+| 3 (a) | $\dfrac{x\cos x - \mathrm{sen}\thinspace x}{x^2}$ |
 | 3 (b) | $\dfrac{1-\ln x}{x^2}$ |
 | 3 (c) | $\dfrac{x\thinspace e^x}{(x+1)^2}$ |
 | 4 (a) | $\dfrac5x$ |
 | 4 (b) | $\dfrac1x$ |
 | 4 (c) | $1$ |
-| 4 (d) | $-\operatorname{sen} x$ |
+| 4 (d) | $-\mathrm{sen}\thinspace x$ |
 | 5 (a) | $1$ |
 | 5 (b) | $1$ |
 | 5 (c) | $0$ |
@@ -42,12 +42,12 @@
 
 | Ex. | Resposta |
 | :---: | --- |
-| 9 | $2x\cos x - x^2\operatorname{sen} x$ |
-| 10 | $\dfrac{-2}{(\operatorname{sen} x - \cos x)^2}$ |
+| 9 | $2x\cos x - x^2\mathrm{sen}\thinspace x$ |
+| 10 | $\dfrac{-2}{(\mathrm{sen}\thinspace x - \cos x)^2}$ |
 | 11 | $e^x\left(\ln x + \dfrac1x\right)$ |
 | 12 | $\dfrac{\ln x - 1}{(\ln x)^2}$ |
 | 13 | $(0,\thinspace 1)$ |
-| 14 | $\dfrac{\sec x\thinspace (x\operatorname{tg} x - 1)}{x^2}$ |
+| 14 | $\dfrac{\sec x\thinspace (x\mathrm{tg}\thinspace x - 1)}{x^2}$ |
 | 15 | Demonstração — veja a Parte 2 |
 | 16 | $y = x$ |
 | 17 | Verificações — veja a Parte 2 |
@@ -57,9 +57,9 @@
 
 | Ex. | Resposta |
 | :---: | --- |
-| 19 | $x^{\operatorname{sen} x}\left(\cos x\ln x + \dfrac{\operatorname{sen} x}{x}\right)$ |
+| 19 | $x^{\mathrm{sen}\thinspace x}\left(\cos x\ln x + \dfrac{\mathrm{sen}\thinspace x}{x}\right)$ |
 | 20 (a) | Ciclo de período $4$ |
-| 20 (b) | $f^{(2026)}(x) = -\operatorname{sen} x$ |
+| 20 (b) | $f^{(2026)}(x) = -\mathrm{sen}\thinspace x$ |
 | 21 | $a = 1$ e $b = 1$ |
 | 22 | Demonstração — veja a Parte 2 |
 
@@ -72,17 +72,17 @@
 
 ### Exercício 1
 
-**(a)** $3\cos x$ &nbsp;&nbsp; **(b)** $-\operatorname{sen} x - 2$ &nbsp;&nbsp; **(c)** $5e^x$ &nbsp;&nbsp; **(d)** $\dfrac4x$
+**(a)** $3\cos x$ &nbsp;&nbsp; **(b)** $-\mathrm{sen}\thinspace x - 2$ &nbsp;&nbsp; **(c)** $5e^x$ &nbsp;&nbsp; **(d)** $\dfrac4x$
 
-**(e)** $\sec^2 x + \sec x\operatorname{tg} x$ &nbsp;&nbsp; **(f)** $2^x\ln 2$
+**(e)** $\sec^2 x + \sec x\mathrm{tg}\thinspace x$ &nbsp;&nbsp; **(f)** $2^x\ln 2$
 
 ---
 
 ### Exercício 2
 
-**(a)** $f' = 1\cdot\operatorname{sen} x + x\cos x = \operatorname{sen} x + x\cos x$
+**(a)** $f' = 1\cdot\mathrm{sen}\thinspace x + x\cos x = \mathrm{sen}\thinspace x + x\cos x$
 
-**(b)** $f' = e^x\cos x + e^x(-\operatorname{sen} x) = e^x(\cos x - \operatorname{sen} x)$
+**(b)** $f' = e^x\cos x + e^x(-\mathrm{sen}\thinspace x) = e^x(\cos x - \mathrm{sen}\thinspace x)$
 
 **(c)** $f' = 2x\ln x + x^2\cdot\dfrac1x = 2x\ln x + x$
 
@@ -90,7 +90,7 @@
 
 ### Exercício 3
 
-**(a)** $f' = \dfrac{\cos x\cdot x - \operatorname{sen} x\cdot 1}{x^2} = \dfrac{x\cos x - \operatorname{sen} x}{x^2}$
+**(a)** $f' = \dfrac{\cos x\cdot x - \mathrm{sen}\thinspace x\cdot 1}{x^2} = \dfrac{x\cos x - \mathrm{sen}\thinspace x}{x^2}$
 
 **(b)** $f' = \dfrac{\frac1x\cdot x - \ln x\cdot1}{x^2} = \dfrac{1-\ln x}{x^2}$
 
@@ -108,7 +108,7 @@
 
 **(c)** $e^{\ln x} = x$ (para $x>0$), logo $f' = 1$.
 
-**(d)** $\dfrac{\operatorname{sen} x}{\operatorname{tg} x} = \operatorname{sen} x\cdot\dfrac{\cos x}{\operatorname{sen} x} = \cos x$, logo $f' = -\operatorname{sen} x$.
+**(d)** $\dfrac{\mathrm{sen}\thinspace x}{\mathrm{tg}\thinspace x} = \mathrm{sen}\thinspace x\cdot\dfrac{\cos x}{\mathrm{sen}\thinspace x} = \cos x$, logo $f' = -\mathrm{sen}\thinspace x$.
 
 ---
 
@@ -118,7 +118,7 @@
 
 **(b)** $f'(x) = \cos x$, logo $f'(0) = 1$.
 
-**(c)** $f'(x) = -\operatorname{sen} x$, logo $f'(0) = 0$.
+**(c)** $f'(x) = -\mathrm{sen}\thinspace x$, logo $f'(0) = 0$.
 
 **(d)** $f'(x) = e^x + xe^x$, logo $f'(0) = 1 + 0 = 1$.
 
@@ -132,7 +132,7 @@
 
 **(c)** $f(1)=0$ e $f'(1) = 1$: $\ y = x-1$.
 
-> 💡 As três retas são as **aproximações lineares** dessas funções perto do ponto: $\operatorname{sen} x \approx x$, $e^x \approx 1+x$, $\ln x\approx x-1$. São aproximações excelentes para $x$ pequeno, e aparecem o tempo todo em física e em engenharia.
+> 💡 As três retas são as **aproximações lineares** dessas funções perto do ponto: $\mathrm{sen}\thinspace x \approx x$, $e^x \approx 1+x$, $\ln x\approx x-1$. São aproximações excelentes para $x$ pequeno, e aparecem o tempo todo em física e em engenharia.
 
 ---
 
@@ -150,10 +150,10 @@
 
 $$
 \begin{aligned}
-(\operatorname{cossec} x)' &= \left(\frac{1}{\operatorname{sen} x}\right)' \\
-&= \frac{0\cdot\operatorname{sen} x - 1\cdot\cos x}{\operatorname{sen}^2 x} \\
-&= -\frac{\cos x}{\operatorname{sen}^2 x} \\
-&= -\frac{1}{\operatorname{sen} x}\cdot\frac{\cos x}{\operatorname{sen} x} = -\operatorname{cossec} x\operatorname{cotg} x \qquad \blacksquare
+(\mathrm{cossec}\thinspace x)' &= \left(\frac{1}{\mathrm{sen}\thinspace x}\right)' \\
+&= \frac{0\cdot\mathrm{sen}\thinspace x - 1\cdot\cos x}{\mathrm{sen}^2\thinspace x} \\
+&= -\frac{\cos x}{\mathrm{sen}^2\thinspace x} \\
+&= -\frac{1}{\mathrm{sen}\thinspace x}\cdot\frac{\cos x}{\mathrm{sen}\thinspace x} = -\mathrm{cossec}\thinspace x\mathrm{cotg}\thinspace x \qquad \blacksquare
 \end{aligned}
 $$
 
@@ -163,21 +163,21 @@ $$
 
 ### Exercício 9
 
-$$f'(x) = 2x\cos x + x^2(-\operatorname{sen} x) = 2x\cos x - x^2\operatorname{sen} x$$
+$$f'(x) = 2x\cos x + x^2(-\mathrm{sen}\thinspace x) = 2x\cos x - x^2\mathrm{sen}\thinspace x$$
 
 ---
 
 ### Exercício 10
 
-Com $u = \operatorname{sen} x+\cos x$ e $v = \operatorname{sen} x - \cos x$, tem-se $u' = \cos x - \operatorname{sen} x$ e $v' = \cos x + \operatorname{sen} x$. Note que $u' = -v$ e $v' = u$.
+Com $u = \mathrm{sen}\thinspace x+\cos x$ e $v = \mathrm{sen}\thinspace x - \cos x$, tem-se $u' = \cos x - \mathrm{sen}\thinspace x$ e $v' = \cos x + \mathrm{sen}\thinspace x$. Note que $u' = -v$ e $v' = u$.
 
 $$f' = \frac{u'v - uv'}{v^2} = \frac{-v\cdot v - u\cdot u}{v^2} = \frac{-\big(u^2+v^2\big)}{v^2}$$
 
 Agora calcule $u^2+v^2$:
 
-$$(\operatorname{sen} x+\cos x)^2 + (\operatorname{sen} x-\cos x)^2 = \big(1+2\operatorname{sen} x\cos x\big) + \big(1-2\operatorname{sen} x\cos x\big) = 2$$
+$$(\mathrm{sen}\thinspace x+\cos x)^2 + (\mathrm{sen}\thinspace x-\cos x)^2 = \big(1+2\mathrm{sen}\thinspace x\cos x\big) + \big(1-2\mathrm{sen}\thinspace x\cos x\big) = 2$$
 
-$$f'(x) = \frac{-2}{(\operatorname{sen} x-\cos x)^2}$$
+$$f'(x) = \frac{-2}{(\mathrm{sen}\thinspace x-\cos x)^2}$$
 
 > 💡 Reconhecer que $u' = -v$ e $v' = u$ encurta muito a conta. Procurar essas relações antes de sair expandindo é um hábito que rende.
 
@@ -207,7 +207,7 @@ Como $f(0) = e^0 - 0 = 1$, o ponto é $(0,\thinspace 1)$.
 
 ### Exercício 14
 
-$$f'(x) = \frac{(\sec x\operatorname{tg} x)\cdot x - \sec x\cdot1}{x^2} = \frac{\sec x\thinspace (x\operatorname{tg} x - 1)}{x^2}$$
+$$f'(x) = \frac{(\sec x\mathrm{tg}\thinspace x)\cdot x - \sec x\cdot1}{x^2} = \frac{\sec x\thinspace (x\mathrm{tg}\thinspace x - 1)}{x^2}$$
 
 ---
 
@@ -216,21 +216,21 @@ $$f'(x) = \frac{(\sec x\operatorname{tg} x)\cdot x - \sec x\cdot1}{x^2} = \frac{
 $$
 \begin{aligned}
 (\cos x)' &= \lim_{h\to0}\frac{\cos(x+h)-\cos x}{h} \\
-&= \lim_{h\to0}\frac{\cos x\cos h - \operatorname{sen} x\operatorname{sen} h - \cos x}{h} \\
-&= \lim_{h\to0}\left[-\cos x\cdot\frac{1-\cos h}{h} - \operatorname{sen} x\cdot\frac{\operatorname{sen} h}{h}\right] \\
-&= -\cos x\cdot 0 - \operatorname{sen} x\cdot 1 = -\operatorname{sen} x \qquad \blacksquare
+&= \lim_{h\to0}\frac{\cos x\cos h - \mathrm{sen}\thinspace x\mathrm{sen}\thinspace h - \cos x}{h} \\
+&= \lim_{h\to0}\left[-\cos x\cdot\frac{1-\cos h}{h} - \mathrm{sen}\thinspace x\cdot\frac{\mathrm{sen}\thinspace h}{h}\right] \\
+&= -\cos x\cdot 0 - \mathrm{sen}\thinspace x\cdot 1 = -\mathrm{sen}\thinspace x \qquad \blacksquare
 \end{aligned}
 $$
 
-(Usaram-se $\lim_{h\to0}\frac{1-\cos h}{h} = 0$ e $\lim_{h\to0}\frac{\operatorname{sen} h}{h} = 1$, de [2.3](../../02-limites-e-continuidade/2.3-teorema-do-sanduiche.md).)
+(Usaram-se $\lim_{h\to0}\frac{1-\cos h}{h} = 0$ e $\lim_{h\to0}\frac{\mathrm{sen}\thinspace h}{h} = 1$, de [2.3](../../02-limites-e-continuidade/2.3-teorema-do-sanduiche.md).)
 
 ---
 
 ### Exercício 16
 
-$$f\left(\frac{\pi}{2}\right) = \frac{\pi}{2}\operatorname{sen}\frac{\pi}{2} = \frac{\pi}{2}$$
+$$f\left(\frac{\pi}{2}\right) = \frac{\pi}{2}\mathrm{sen}\thinspace\frac{\pi}{2} = \frac{\pi}{2}$$
 
-$$f'(x) = \operatorname{sen} x + x\cos x \ \Longrightarrow \ f'\left(\frac{\pi}{2}\right) = 1 + \frac{\pi}{2}\cdot 0 = 1$$
+$$f'(x) = \mathrm{sen}\thinspace x + x\cos x \ \Longrightarrow \ f'\left(\frac{\pi}{2}\right) = 1 + \frac{\pi}{2}\cdot 0 = 1$$
 
 $$y - \frac{\pi}{2} = 1\left(x-\frac{\pi}{2}\right) \ \Longrightarrow \ y = x$$
 
@@ -240,9 +240,9 @@ $$y - \frac{\pi}{2} = 1\left(x-\frac{\pi}{2}\right) \ \Longrightarrow \ y = x$$
 
 ### Exercício 17
 
-**(a)** $y = \operatorname{sen} x$ ⟹ $y' = \cos x$ ⟹ $y'' = -\operatorname{sen} x$. Logo
+**(a)** $y = \mathrm{sen}\thinspace x$ ⟹ $y' = \cos x$ ⟹ $y'' = -\mathrm{sen}\thinspace x$. Logo
 
-$$y'' + y = -\operatorname{sen} x + \operatorname{sen} x = 0 \quad \checkmark$$
+$$y'' + y = -\mathrm{sen}\thinspace x + \mathrm{sen}\thinspace x = 0 \quad \checkmark$$
 
 **(b)** $y = e^x$ ⟹ $y' = e^x$ ⟹ $y'' = e^x$. Logo
 
@@ -266,13 +266,13 @@ $$f'(x) = 2x\thinspace e^x + \big(x^2+1\big)e^x = e^x\big(x^2+2x+1\big) = e^x(x+
 
 Reescreva com base $e$:
 
-$$f(x) = x^{\operatorname{sen} x} = e^{\operatorname{sen} x\thinspace \ln x}$$
+$$f(x) = x^{\mathrm{sen}\thinspace x} = e^{\mathrm{sen}\thinspace x\thinspace \ln x}$$
 
 Derivando, com a regra da cadeia por fora e a regra do produto no expoente:
 
-$$f'(x) = e^{\operatorname{sen} x\ln x}\cdot\big(\operatorname{sen} x\ln x\big)' = x^{\operatorname{sen} x}\left(\cos x\ln x + \operatorname{sen} x\cdot\frac1x\right)$$
+$$f'(x) = e^{\mathrm{sen}\thinspace x\ln x}\cdot\big(\mathrm{sen}\thinspace x\ln x\big)' = x^{\mathrm{sen}\thinspace x}\left(\cos x\ln x + \mathrm{sen}\thinspace x\cdot\frac1x\right)$$
 
-**Resposta.** $f'(x) = x^{\operatorname{sen} x}\left(\cos x\ln x + \dfrac{\operatorname{sen} x}{x}\right)$, para $x>0$.
+**Resposta.** $f'(x) = x^{\mathrm{sen}\thinspace x}\left(\cos x\ln x + \dfrac{\mathrm{sen}\thinspace x}{x}\right)$, para $x>0$.
 
 ---
 
@@ -280,7 +280,7 @@ $$f'(x) = e^{\operatorname{sen} x\ln x}\cdot\big(\operatorname{sen} x\ln x\big)'
 
 **(a)** Derivando repetidamente:
 
-$$f' = \cos x \qquad f'' = -\operatorname{sen} x \qquad f''' = -\cos x \qquad f^{(4)} = \operatorname{sen} x$$
+$$f' = \cos x \qquad f'' = -\mathrm{sen}\thinspace x \qquad f''' = -\cos x \qquad f^{(4)} = \mathrm{sen}\thinspace x$$
 
 A quarta derivada **volta à função original**: o padrão tem período $4$.
 
@@ -290,9 +290,9 @@ $$2026 = 4\cdot506 + 2$$
 
 Resto $2$ ⟹ a resposta é a **segunda** derivada do ciclo:
 
-$$f^{(2026)}(x) = -\operatorname{sen} x$$
+$$f^{(2026)}(x) = -\mathrm{sen}\thinspace x$$
 
-> 💡 A tabela do ciclo: resto $0 \to \operatorname{sen} x$; resto $1 \to \cos x$; resto $2 \to -\operatorname{sen} x$; resto $3 \to -\cos x$.
+> 💡 A tabela do ciclo: resto $0 \to \mathrm{sen}\thinspace x$; resto $1 \to \cos x$; resto $2 \to -\mathrm{sen}\thinspace x$; resto $3 \to -\cos x$.
 
 ---
 
@@ -300,7 +300,7 @@ $$f^{(2026)}(x) = -\operatorname{sen} x$$
 
 **1. Continuidade** (necessária para a derivabilidade):
 
-$$\lim_{x\to0^{-}} a\thinspace e^x = a \qquad f(0) = b + \operatorname{sen} 0 = b$$
+$$\lim_{x\to0^{-}} a\thinspace e^x = a \qquad f(0) = b + \mathrm{sen}\thinspace 0 = b$$
 
 $$\Longrightarrow \ a = b$$
 
@@ -320,23 +320,23 @@ Logo $a = b = 1$.
 
 Derive duas vezes, pela regra do produto:
 
-$$f(x) = e^x\operatorname{sen} x$$
+$$f(x) = e^x\mathrm{sen}\thinspace x$$
 
-$$f'(x) = e^x\operatorname{sen} x + e^x\cos x = e^x(\operatorname{sen} x + \cos x)$$
+$$f'(x) = e^x\mathrm{sen}\thinspace x + e^x\cos x = e^x(\mathrm{sen}\thinspace x + \cos x)$$
 
-$$f''(x) = e^x(\operatorname{sen} x+\cos x) + e^x(\cos x - \operatorname{sen} x) = 2e^x\cos x$$
+$$f''(x) = e^x(\mathrm{sen}\thinspace x+\cos x) + e^x(\cos x - \mathrm{sen}\thinspace x) = 2e^x\cos x$$
 
 Substituindo na expressão pedida:
 
 $$
 \begin{aligned}
-f'' - 2f' + 2f &= 2e^x\cos x - 2e^x(\operatorname{sen} x+\cos x) + 2e^x\operatorname{sen} x \\
-&= 2e^x\cos x - 2e^x\operatorname{sen} x - 2e^x\cos x + 2e^x\operatorname{sen} x \\
+f'' - 2f' + 2f &= 2e^x\cos x - 2e^x(\mathrm{sen}\thinspace x+\cos x) + 2e^x\mathrm{sen}\thinspace x \\
+&= 2e^x\cos x - 2e^x\mathrm{sen}\thinspace x - 2e^x\cos x + 2e^x\mathrm{sen}\thinspace x \\
 &= 0 \qquad \blacksquare
 \end{aligned}
 $$
 
-> 💡 A equação $y''-2y'+2y=0$ descreve uma **oscilação amplificada** — e a sua solução geral é exatamente da forma $e^x(A\operatorname{sen} x + B\cos x)$. Trocando o sinal do expoente, vira oscilação **amortecida**, que é o que acontece num pêndulo com atrito.
+> 💡 A equação $y''-2y'+2y=0$ descreve uma **oscilação amplificada** — e a sua solução geral é exatamente da forma $e^x(A\mathrm{sen}\thinspace x + B\cos x)$. Trocando o sinal do expoente, vira oscilação **amortecida**, que é o que acontece num pêndulo com atrito.
 
 ---
 

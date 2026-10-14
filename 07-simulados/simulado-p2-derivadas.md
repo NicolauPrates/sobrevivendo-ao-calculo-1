@@ -38,9 +38,9 @@ Derive, **simplificando** quando possível:
 
 **(b)** $g(x) = \dfrac{\ln\big(x^2+1\big)}{x}$
 
-**(c)** $h(x) = \operatorname{sen}\left(\sqrt{x^2+1}\right)$
+**(c)** $h(x) = \mathrm{sen}\left(\sqrt{x^2+1}\right)$
 
-**(d)** $y = \operatorname{arctg}(3x)$
+**(d)** $y = \mathrm{arctg}(3x)$
 
 ---
 

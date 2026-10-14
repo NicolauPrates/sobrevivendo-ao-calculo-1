@@ -27,7 +27,7 @@ Calcule:
 
 &nbsp;&nbsp;**(a)** $\displaystyle\int\left(3x^2-\frac2x+\sqrt{x}\right)dx$
 
-&nbsp;&nbsp;**(b)** $\displaystyle\int\big(2\operatorname{sen} x - \operatorname{sec}^2 x\big)dx$
+&nbsp;&nbsp;**(b)** $\displaystyle\int\big(2\mathrm{sen}\thinspace x - \mathrm{sec}^2\thinspace x\big)dx$
 
 &nbsp;&nbsp;**(c)** $\displaystyle\int\frac{\big(x^2+1\big)^2}{x^2}\thinspace dx$
 
@@ -79,7 +79,7 @@ Derive, usando o Teorema Fundamental:
 
 ### Questão 8
 
-Calcule $\displaystyle\int_0^{\pi/2}\operatorname{sen} x\cos^2 x\thinspace dx$, **convertendo os limites**.
+Calcule $\displaystyle\int_0^{\pi/2}\mathrm{sen}\thinspace x\cos^2 x\thinspace dx$, **convertendo os limites**.
 
 ---
 

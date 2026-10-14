@@ -18,7 +18,7 @@
 
 &nbsp;&nbsp;**(a)** $\displaystyle\int_0^{\infty}e^{-x}dx$ &nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int_0^{1}\frac{dx}{x-2}$ &nbsp;&nbsp;&nbsp; **(c)** $\displaystyle\int_0^{2}\frac{dx}{x-1}$
 
-&nbsp;&nbsp;**(d)** $\displaystyle\int_1^{2}\ln(x-1)\thinspace dx$ &nbsp;&nbsp;&nbsp; **(e)** $\displaystyle\int_{-\infty}^{\infty}\frac{dx}{1+x^2}$ &nbsp;&nbsp;&nbsp; **(f)** $\displaystyle\int_0^{\pi}\operatorname{tg} x\thinspace dx$
+&nbsp;&nbsp;**(d)** $\displaystyle\int_1^{2}\ln(x-1)\thinspace dx$ &nbsp;&nbsp;&nbsp; **(e)** $\displaystyle\int_{-\infty}^{\infty}\frac{dx}{1+x^2}$ &nbsp;&nbsp;&nbsp; **(f)** $\displaystyle\int_0^{\pi}\mathrm{tg}\thinspace x\thinspace dx$
 
 **2.** Decida a convergência **pelo teste da $p$-integral** (sem calcular):
 
@@ -48,7 +48,7 @@ $$\left[-\frac{1}{x-1}\right]_0^{2} = -1-1 = -2$$
 
 **8.** Use o **teste da comparação** para decidir:
 
-&nbsp;&nbsp;**(a)** $\displaystyle\int_1^{\infty}\frac{dx}{x^3+1}$ &nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int_1^{\infty}\frac{2+\operatorname{sen} x}{x}\thinspace dx$
+&nbsp;&nbsp;**(a)** $\displaystyle\int_1^{\infty}\frac{dx}{x^3+1}$ &nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int_1^{\infty}\frac{2+\mathrm{sen}\thinspace x}{x}\thinspace dx$
 
 **9.** Verdadeiro ou falso? Justifique.
 
@@ -80,7 +80,7 @@ $$\left[-\frac{1}{x-1}\right]_0^{2} = -1-1 = -2$$
 
 &nbsp;&nbsp;*(Cuidado: a singularidade está no meio.)*
 
-**17.** $\displaystyle\int_0^{\infty}e^{-x}\operatorname{sen} x\thinspace dx$
+**17.** $\displaystyle\int_0^{\infty}e^{-x}\mathrm{sen}\thinspace x\thinspace dx$
 
 **18.** Decida, por comparação:
 

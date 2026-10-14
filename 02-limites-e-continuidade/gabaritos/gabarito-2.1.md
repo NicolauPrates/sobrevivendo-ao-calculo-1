@@ -341,17 +341,17 @@ $$\lim_{x\to1}\frac{x^n-1}{x-1} = \underbrace{1 + 1 + \cdots + 1}_{n \text{ parc
 
 ### Exercício 21
 
-A função $\operatorname{sen}\frac1x$ oscila cada vez mais rápido conforme $x \to 0$. Para mostrar que o limite não existe, basta exibir **duas** aproximações de $0$ que levem a valores diferentes.
+A função $\mathrm{sen}\thinspace\frac1x$ oscila cada vez mais rápido conforme $x \to 0$. Para mostrar que o limite não existe, basta exibir **duas** aproximações de $0$ que levem a valores diferentes.
 
 **Primeira aproximação.** Tome os pontos $x_k = \dfrac{1}{k\pi}$, com $k = 1, 2, 3, \ldots$ Eles tendem a $0$, e
 
-$$\operatorname{sen}\frac{1}{x_k} = \operatorname{sen}(k\pi) = 0 \quad \text{para todo } k$$
+$$\mathrm{sen}\thinspace\frac{1}{x_k} = \mathrm{sen}(k\pi) = 0 \quad \text{para todo } k$$
 
 Por esse caminho, os valores da função são **sempre $0$**.
 
 **Segunda aproximação.** Tome $y_k = \dfrac{1}{\frac{\pi}{2} + 2k\pi}$. Eles também tendem a $0$, e
 
-$$\operatorname{sen}\frac{1}{y_k} = \operatorname{sen}\left(\frac{\pi}{2} + 2k\pi\right) = 1 \quad \text{para todo } k$$
+$$\mathrm{sen}\thinspace\frac{1}{y_k} = \mathrm{sen}\left(\frac{\pi}{2} + 2k\pi\right) = 1 \quad \text{para todo } k$$
 
 Por esse caminho, os valores são **sempre $1$**.
 

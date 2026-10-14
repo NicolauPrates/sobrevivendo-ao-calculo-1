@@ -36,11 +36,11 @@
 
 **5.** Determine a imagem e o período:
 
-&nbsp;&nbsp;**(a)** $y = 4\operatorname{sen} x$ &nbsp;&nbsp;&nbsp; **(b)** $y = \cos 3x$ &nbsp;&nbsp;&nbsp; **(c)** $y = 1 + \operatorname{sen} x$ &nbsp;&nbsp;&nbsp; **(d)** $y = -2\cos\dfrac{x}{2}$
+&nbsp;&nbsp;**(a)** $y = 4\mathrm{sen}\thinspace x$ &nbsp;&nbsp;&nbsp; **(b)** $y = \cos 3x$ &nbsp;&nbsp;&nbsp; **(c)** $y = 1 + \mathrm{sen}\thinspace x$ &nbsp;&nbsp;&nbsp; **(d)** $y = -2\cos\dfrac{x}{2}$
 
 **6.** Determine o domínio:
 
-&nbsp;&nbsp;**(a)** $f(x) = \ln(x-4)$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = \ln(x^2-1)$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = \operatorname{tg} x$ &nbsp;&nbsp;&nbsp; **(d)** $f(x) = e^{1/x}$
+&nbsp;&nbsp;**(a)** $f(x) = \ln(x-4)$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = \ln(x^2-1)$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = \mathrm{tg}\thinspace x$ &nbsp;&nbsp;&nbsp; **(d)** $f(x) = e^{1/x}$
 
 **7.** Resolva:
 
@@ -78,11 +78,11 @@
 
 **15.** Mostre que $f(x) = \ln\left(\dfrac{1-x}{1+x}\right)$ é **ímpar** e determine o seu domínio.
 
-**16.** Determine todos os $x \in [0,\thinspace 2\pi]$ tais que $\operatorname{sen} x = \dfrac{1}{2}$.
+**16.** Determine todos os $x \in [0,\thinspace 2\pi]$ tais que $\mathrm{sen}\thinspace x = \dfrac{1}{2}$.
 
 **17.** Esboce $y = 2^x$ e $y = \left(\dfrac{1}{2}\right)^x$ no mesmo plano e explique a relação entre os dois gráficos.
 
-**18.** Determine o domínio de $f(x) = \sqrt{\operatorname{sen} x}$, restrito a $[0,\thinspace 2\pi]$.
+**18.** Determine o domínio de $f(x) = \sqrt{\mathrm{sen}\thinspace x}$, restrito a $[0,\thinspace 2\pi]$.
 
 ---
 
@@ -96,9 +96,9 @@
 
 **22.** Mostre que existem $A > 0$ e $\varphi$ tais que
 
-$$\operatorname{sen} x + \cos x = A\operatorname{sen}(x + \varphi)$$
+$$\mathrm{sen}\thinspace x + \cos x = A\mathrm{sen}(x + \varphi)$$
 
-&nbsp;&nbsp;Determine $A$ e $\varphi$, e conclua qual é a imagem de $y = \operatorname{sen} x + \cos x$.
+&nbsp;&nbsp;Determine $A$ e $\varphi$, e conclua qual é a imagem de $y = \mathrm{sen}\thinspace x + \cos x$.
 
 ---
 

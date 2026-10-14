@@ -57,7 +57,7 @@ $$
 
 &nbsp;&nbsp;**(b)** Esboce o gráfico, com as bolinhas corretas.
 
-&nbsp;&nbsp;**(c)** Determine $D(f)$ e $\operatorname{Im}(f)$.
+&nbsp;&nbsp;**(c)** Determine $D(f)$ e $\mathrm{Im}(f)$.
 
 ---
 

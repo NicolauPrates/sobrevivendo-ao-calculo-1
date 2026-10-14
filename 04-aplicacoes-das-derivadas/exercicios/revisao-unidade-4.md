@@ -54,7 +54,7 @@ Considere $f(x) = x^3-4x$ no intervalo $[-2,\thinspace 2]$.
 
 Use o **Teorema do Valor Médio** para demonstrar que
 
-$$\lvert \operatorname{sen} a - \operatorname{sen} b\rvert \leqslant \lvert a-b\rvert$$
+$$\lvert \mathrm{sen}\thinspace a - \mathrm{sen}\thinspace b\rvert \leqslant \lvert a-b\rvert$$
 
 para todos os números reais $a$ e $b$.
 
@@ -68,7 +68,7 @@ Calcule, indicando em cada item **qual é a indeterminação**:
 
 **(b)** $\lim\limits_{x\to+\infty}\left(1+\dfrac3x\right)^{2x}$
 
-**(c)** $\lim\limits_{x\to0^{+}}\left(\dfrac1x - \dfrac{1}{\operatorname{sen} x}\right)$
+**(c)** $\lim\limits_{x\to0^{+}}\left(\dfrac1x - \dfrac{1}{\mathrm{sen}\thinspace x}\right)$
 
 ---
 

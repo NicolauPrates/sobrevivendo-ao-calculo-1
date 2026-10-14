@@ -101,7 +101,7 @@ $$
 
 $$\lim_{x \to 1} \frac{x^n-1}{x-1} = n$$
 
-**21.** Mostre que $\lim\limits_{x \to 0} \operatorname{sen}\dfrac{1}{x}$ **não existe**, exibindo duas maneiras de $x$ se aproximar de $0$ que produzem valores diferentes.
+**21.** Mostre que $\lim\limits_{x \to 0} \mathrm{sen}\thinspace\dfrac{1}{x}$ **não existe**, exibindo duas maneiras de $x$ se aproximar de $0$ que produzem valores diferentes.
 
 **22.** $\lim\limits_{x \to 2} \dfrac{\sqrt{x+2}-2}{\sqrt[3]{x+6}-2}$
 

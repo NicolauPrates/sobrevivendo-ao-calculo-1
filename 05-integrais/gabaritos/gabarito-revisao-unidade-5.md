@@ -11,7 +11,7 @@
 | Q. | Resposta |
 | :---: | --- |
 | 1 (a) | $x^3 - 2\ln\lvert x\rvert + \dfrac23 x^{3/2} + C$ |
-| 1 (b) | $-2\cos x - \operatorname{tg} x + C$ |
+| 1 (b) | $-2\cos x - \mathrm{tg}\thinspace x + C$ |
 | 1 (c) | $\dfrac{x^3}{3}+2x-\dfrac1x + C$ |
 | 2 | $-\dfrac{1}{9\big(x^3+5\big)^{3}} + C$ |
 | 3 | $\dfrac{x^3}{3}\ln x - \dfrac{x^3}{9} + C$ |
@@ -40,9 +40,9 @@ $$= x^3 - 2\ln\lvert x\rvert + \frac23 x^{3/2} + C$$
 
 **(b)**
 
-$$\int\big(2\operatorname{sen} x - \operatorname{sec}^2 x\big)dx = -2\cos x - \operatorname{tg} x + C$$
+$$\int\big(2\mathrm{sen}\thinspace x - \mathrm{sec}^2\thinspace x\big)dx = -2\cos x - \mathrm{tg}\thinspace x + C$$
 
-> ⚠️ O sinal: $\int\operatorname{sen} = -\cos$. Na dúvida, derive de volta.
+> ⚠️ O sinal: $\int\mathrm{sen} = -\cos$. Na dúvida, derive de volta.
 
 **(c)** **Expanda e divida antes de integrar:**
 
@@ -101,23 +101,23 @@ $$\int\frac{2x+3}{x^2-x-2}dx = \frac73\ln\lvert x-2\rvert - \frac13\ln\lvert x+1
 
 Radical da forma $\sqrt{a^2+x^2}$ com $a=3$ ⟹ **tangente**:
 
-$$x = 3\operatorname{tg}\theta \ \Longrightarrow \ dx = 3\operatorname{sec}^2\theta\thinspace d\theta, \qquad \sqrt{x^2+9} = 3\operatorname{sec}\theta, \qquad x^2 = 9\operatorname{tg}^2\theta$$
+$$x = 3\mathrm{tg}\thinspace\theta \ \Longrightarrow \ dx = 3\mathrm{sec}^2\thinspace\theta\thinspace d\theta, \qquad \sqrt{x^2+9} = 3\mathrm{sec}\thinspace\theta, \qquad x^2 = 9\mathrm{tg}^2\thinspace\theta$$
 
 **Substituindo:**
 
-$$\int\frac{dx}{x^2\sqrt{x^2+9}} = \int\frac{3\operatorname{sec}^2\theta\thinspace d\theta}{9\operatorname{tg}^2\theta\cdot 3\operatorname{sec}\theta} = \frac19\int\frac{\operatorname{sec}\theta}{\operatorname{tg}^2\theta}d\theta$$
+$$\int\frac{dx}{x^2\sqrt{x^2+9}} = \int\frac{3\mathrm{sec}^2\thinspace\theta\thinspace d\theta}{9\mathrm{tg}^2\thinspace\theta\cdot 3\mathrm{sec}\thinspace\theta} = \frac19\int\frac{\mathrm{sec}\thinspace\theta}{\mathrm{tg}^2\thinspace\theta}d\theta$$
 
 **Reescreva em seno e cosseno** — é sempre o movimento que destrava integrais trigonométricas estranhas:
 
-$$\frac{\operatorname{sec}\theta}{\operatorname{tg}^2\theta} = \frac{1}{\cos\theta}\cdot\frac{\cos^2\theta}{\operatorname{sen}^2\theta} = \frac{\cos\theta}{\operatorname{sen}^2\theta}$$
+$$\frac{\mathrm{sec}\thinspace\theta}{\mathrm{tg}^2\thinspace\theta} = \frac{1}{\cos\theta}\cdot\frac{\cos^2\theta}{\mathrm{sen}^2\thinspace\theta} = \frac{\cos\theta}{\mathrm{sen}^2\thinspace\theta}$$
 
-Com $w = \operatorname{sen}\theta$ e $dw = \cos\theta\thinspace d\theta$:
+Com $w = \mathrm{sen}\thinspace\theta$ e $dw = \cos\theta\thinspace d\theta$:
 
-$$\frac19\int\frac{dw}{w^2} = -\frac{1}{9w} = -\frac{1}{9\operatorname{sen}\theta}$$
+$$\frac19\int\frac{dw}{w^2} = -\frac{1}{9w} = -\frac{1}{9\mathrm{sen}\thinspace\theta}$$
 
-**Voltando ao triângulo.** De $\operatorname{tg}\theta = \frac{x}{3}$: cateto oposto $x$, adjacente $3$, hipotenusa $\sqrt{x^2+9}$. Logo
+**Voltando ao triângulo.** De $\mathrm{tg}\thinspace\theta = \frac{x}{3}$: cateto oposto $x$, adjacente $3$, hipotenusa $\sqrt{x^2+9}$. Logo
 
-$$\operatorname{sen}\theta = \frac{x}{\sqrt{x^2+9}}$$
+$$\mathrm{sen}\thinspace\theta = \frac{x}{\sqrt{x^2+9}}$$
 
 $$\int\frac{dx}{x^2\sqrt{x^2+9}} = -\frac{1}{9}\cdot\frac{\sqrt{x^2+9}}{x} = -\frac{\sqrt{x^2+9}}{9x}+C$$
 
@@ -171,7 +171,7 @@ $$G'(x) = e^{-x^2}\cdot 2x = 2x\thinspace e^{-x^2}$$
 
 ## Questão 8
 
-$$u = \cos x \ \Longrightarrow \ du = -\operatorname{sen} x\thinspace dx \ \Longrightarrow \ \operatorname{sen} x\thinspace dx = -du$$
+$$u = \cos x \ \Longrightarrow \ du = -\mathrm{sen}\thinspace x\thinspace dx \ \Longrightarrow \ \mathrm{sen}\thinspace x\thinspace dx = -du$$
 
 **Convertendo os limites:**
 
@@ -180,7 +180,7 @@ $$u = \cos x \ \Longrightarrow \ du = -\operatorname{sen} x\thinspace dx \ \Long
 | $0$ | $1$ |
 | $\frac{\pi}{2}$ | $0$ |
 
-$$\int_0^{\pi/2}\operatorname{sen} x\cos^2 x\thinspace dx = \int_{1}^{0}u^2(-du) = \int_0^{1}u^2 du = \left[\frac{u^3}{3}\right]_0^1 = \frac13$$
+$$\int_0^{\pi/2}\mathrm{sen}\thinspace x\cos^2 x\thinspace dx = \int_{1}^{0}u^2(-du) = \int_0^{1}u^2 du = \left[\frac{u^3}{3}\right]_0^1 = \frac13$$
 
 > 💡 **O sinal negativo inverteu os limites** — e inverter os limites cancela o sinal. Quem se perde nessa troca pode usar o Caminho 2: ache a primitiva $-\frac{\cos^3 x}{3}$, volte para $x$ e avalie em $0$ e $\frac{\pi}{2}$:
 >

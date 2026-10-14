@@ -46,7 +46,7 @@
 
 **6.** Calcule:
 
-&nbsp;&nbsp;**(a)** $\operatorname{arcsen} 1$ &nbsp;&nbsp;&nbsp; **(b)** $\operatorname{arcsen}\left(-\dfrac12\right)$ &nbsp;&nbsp;&nbsp; **(c)** $\arccos 0$ &nbsp;&nbsp;&nbsp; **(d)** $\operatorname{arctg} 1$ &nbsp;&nbsp;&nbsp; **(e)** $\arccos(-1)$
+&nbsp;&nbsp;**(a)** $\mathrm{arcsen}\thinspace 1$ &nbsp;&nbsp;&nbsp; **(b)** $\mathrm{arcsen}\left(-\dfrac12\right)$ &nbsp;&nbsp;&nbsp; **(c)** $\arccos 0$ &nbsp;&nbsp;&nbsp; **(d)** $\mathrm{arctg}\thinspace 1$ &nbsp;&nbsp;&nbsp; **(e)** $\arccos(-1)$
 
 **7.** A função é estritamente monótona no seu domínio? O que isso permite concluir sobre injetividade?
 
@@ -80,9 +80,9 @@
 
 **14.** Calcule, com atenção às restrições:
 
-&nbsp;&nbsp;**(a)** $\operatorname{arcsen}\left(\operatorname{sen}\dfrac{2\pi}{3}\right)$ &nbsp;&nbsp;&nbsp; **(b)** $\arccos\left(\cos\dfrac{7\pi}{6}\right)$
+&nbsp;&nbsp;**(a)** $\mathrm{arcsen}\left(\mathrm{sen}\thinspace\dfrac{2\pi}{3}\right)$ &nbsp;&nbsp;&nbsp; **(b)** $\arccos\left(\cos\dfrac{7\pi}{6}\right)$
 
-&nbsp;&nbsp;**(c)** $\operatorname{arctg}\left(\operatorname{tg}\dfrac{3\pi}{4}\right)$ &nbsp;&nbsp;&nbsp; **(d)** $\operatorname{sen}\big(\operatorname{arcsen} 0{,}3\big)$
+&nbsp;&nbsp;**(c)** $\mathrm{arctg}\left(\mathrm{tg}\thinspace\dfrac{3\pi}{4}\right)$ &nbsp;&nbsp;&nbsp; **(d)** $\mathrm{sen}\big(\mathrm{arcsen}\thinspace 0{,}3\big)$
 
 **15.** Demonstre: se $f$ é estritamente crescente em um intervalo, então $f$ é injetora nesse intervalo.
 

@@ -64,7 +64,7 @@ Calcule $\lim\limits_{x\to2^{-}} \dfrac{x^2-4}{\lvert x-2 \rvert}$ e $\lim\limit
 
 Calcule:
 
-**(a)** $\lim\limits_{x\to0} \dfrac{\operatorname{sen} 5x}{\operatorname{sen} 2x}$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to0} \dfrac{1-\cos 3x}{x^2}$ &nbsp;&nbsp;&nbsp; **(c)** $\lim\limits_{x\to0} \dfrac{\operatorname{tg} 2x}{3x}$
+**(a)** $\lim\limits_{x\to0} \dfrac{\mathrm{sen}\thinspace 5x}{\mathrm{sen}\thinspace 2x}$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to0} \dfrac{1-\cos 3x}{x^2}$ &nbsp;&nbsp;&nbsp; **(c)** $\lim\limits_{x\to0} \dfrac{\mathrm{tg}\thinspace 2x}{3x}$
 
 ---
 

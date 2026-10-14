@@ -171,7 +171,7 @@ Para $x\to+\infty$, $\lvert x\rvert = x$ e a razão tende a $+1$. Para $x\to-\in
 
 **(b) Verdadeiro.** O Exercício 7 é um exemplo: $y=1$ e $y=-1$.
 
-**(c) Verdadeiro.** A função $\operatorname{tg} x$ tem uma assíntota em cada $\frac{\pi}{2}+k\pi$ — infinitas.
+**(c) Verdadeiro.** A função $\mathrm{tg}\thinspace x$ tem uma assíntota em cada $\frac{\pi}{2}+k\pi$ — infinitas.
 
 **(d) Falso.** Pode haver cancelamento, e aí o ponto é apenas um furo (Exercício 5(b)).
 
@@ -282,15 +282,15 @@ O gráfico tem **assíntota vertical $x=0$** (o eixo $y$). Não há assíntota h
 
 ### Exercício 17
 
-Use o teorema do anulamento ([2.3](../2.3-teorema-do-sanduiche.md)), que também vale no infinito: $\operatorname{sen} x$ é **limitado** e $\frac1x \to 0$.
+Use o teorema do anulamento ([2.3](../2.3-teorema-do-sanduiche.md)), que também vale no infinito: $\mathrm{sen}\thinspace x$ é **limitado** e $\frac1x \to 0$.
 
 Formalmente, para $x>0$:
 
-$$-\frac1x \ \leqslant \ \frac{\operatorname{sen} x}{x} \ \leqslant \ \frac1x$$
+$$-\frac1x \ \leqslant \ \frac{\mathrm{sen}\thinspace x}{x} \ \leqslant \ \frac1x$$
 
 e as duas pontas tendem a $0$. Logo
 
-$$\lim_{x\to+\infty}\frac{\operatorname{sen} x}{x} = 0$$
+$$\lim_{x\to+\infty}\frac{\mathrm{sen}\thinspace x}{x} = 0$$
 
 > ⚠️ **Não confunda com o limite fundamental.** Em $x\to0$, essa mesma expressão tende a $1$; em $x\to+\infty$, tende a $0$. O que muda é que, no infinito, não há indeterminação alguma: é "limitado dividido por algo que explode".
 
@@ -332,11 +332,11 @@ $$= \frac{1}{\sqrt{1+\frac{1}{x^2}}+1} \ \longrightarrow \ \frac{1}{1+1} = \frac
 
 Separe o fator que você já sabe tratar:
 
-$$\frac{x^2\operatorname{sen}\frac1x}{x+1} = \underbrace{\left(x\operatorname{sen}\frac1x\right)}_{\to\thinspace 1}\cdot\underbrace{\frac{x}{x+1}}_{\to\thinspace 1}$$
+$$\frac{x^2\mathrm{sen}\thinspace\frac1x}{x+1} = \underbrace{\left(x\mathrm{sen}\thinspace\frac1x\right)}_{\to\thinspace 1}\cdot\underbrace{\frac{x}{x+1}}_{\to\thinspace 1}$$
 
 **Por que o primeiro fator tende a $1$:** faça $u = \frac1x$. Quando $x\to+\infty$, tem-se $u\to0^{+}$, e
 
-$$x\operatorname{sen}\frac1x = \frac{\operatorname{sen} u}{u} \ \longrightarrow \ 1$$
+$$x\mathrm{sen}\thinspace\frac1x = \frac{\mathrm{sen}\thinspace u}{u} \ \longrightarrow \ 1$$
 
 que é o limite fundamental de [2.3](../2.3-teorema-do-sanduiche.md).
 

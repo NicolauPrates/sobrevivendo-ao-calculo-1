@@ -13,20 +13,20 @@
 | Ex. | Resposta |
 | :---: | --- |
 | 1 (a) | $5\cos(5x)$ |
-| 1 (b) | $-2x\operatorname{sen}\big(x^2\big)$ |
+| 1 (b) | $-2x\mathrm{sen}\big(x^2\big)$ |
 | 1 (c) | $4e^{4x}$ |
 | 1 (d) | $\dfrac{3}{3x+1}$ |
 | 1 (e) | $12(2x+7)^5$ |
 | 1 (f) | $\dfrac{x}{\sqrt{x^2+9}}$ |
-| 2 (a) | $3\operatorname{sen}^2 x\cos x$ |
+| 2 (a) | $3\mathrm{sen}^2\thinspace x\cos x$ |
 | 2 (b) | $3x^2\cos\big(x^3\big)$ |
 | 2 (c) | $\dfrac{2\ln x}{x}$ |
 | 2 (d) | $\dfrac2x$ |
-| 3 (a) | $-\operatorname{sen} x\thinspace e^{\cos x}$ |
+| 3 (a) | $-\mathrm{sen}\thinspace x\thinspace e^{\cos x}$ |
 | 3 (b) | $2\sec^2(2x+1)$ |
-| 3 (c) | $-6\cos(3x)\operatorname{sen}(3x)$ |
+| 3 (c) | $-6\cos(3x)\mathrm{sen}(3x)$ |
 | 4 (a) | $e^{2x}(1+2x)$ |
-| 4 (b) | $\dfrac{2x\cos(2x) - \operatorname{sen}(2x)}{x^2}$ |
+| 4 (b) | $\dfrac{2x\cos(2x) - \mathrm{sen}(2x)}{x^2}$ |
 | 4 (c) | $2x\ln(3x) + x$ |
 | 5 (a) | $-\dfrac{x}{y}$ |
 | 5 (b) | $-\dfrac{y}{x}$ |
@@ -39,16 +39,16 @@
 
 | Ex. | Resposta |
 | :---: | --- |
-| 9 | $-\operatorname{sen} x\cos(\cos x)$ |
-| 10 | $\dfrac{\sec^2 x}{2\sqrt{1+\operatorname{tg} x}}$ |
+| 9 | $-\mathrm{sen}\thinspace x\cos(\cos x)$ |
+| 10 | $\dfrac{\sec^2 x}{2\sqrt{1+\mathrm{tg}\thinspace x}}$ |
 | 11 | $\dfrac{2e^{2x}\big(x^2-x+1\big)}{\big(x^2+1\big)^2}$ |
 | 12 | $\dfrac{-2}{x^2-1}$ |
-| 13 | $e^{x^2}\big[2x\operatorname{sen}(3x)+3\cos(3x)\big]$ |
+| 13 | $e^{x^2}\big[2x\mathrm{sen}(3x)+3\cos(3x)\big]$ |
 | 14 | $y = -x+2$ |
 | 15 | $\dfrac{1 - y\cos(xy)}{x\cos(xy)}$ |
 | 16 | $\dfrac13$ |
 | 17 | $y\left[\dfrac{2}{x+1}+\dfrac{1}{2(x-3)}-\dfrac4x\right]$ |
-| 18 | $\cos\big(\operatorname{sen}(\operatorname{sen} x)\big)\cos(\operatorname{sen} x)\cos x$ |
+| 18 | $\cos\big(\mathrm{sen}(\mathrm{sen}\thinspace x)\big)\cos(\mathrm{sen}\thinspace x)\cos x$ |
 
 ### Bloco C · Desafio
 
@@ -70,7 +70,7 @@
 
 **(a)** $\cos(5x)\cdot 5 = 5\cos(5x)$
 
-**(b)** $-\operatorname{sen}\big(x^2\big)\cdot 2x = -2x\operatorname{sen}\big(x^2\big)$
+**(b)** $-\mathrm{sen}\big(x^2\big)\cdot 2x = -2x\mathrm{sen}\big(x^2\big)$
 
 **(c)** $e^{4x}\cdot 4 = 4e^{4x}$
 
@@ -84,11 +84,11 @@
 
 ### Exercício 2
 
-**(a)** $\operatorname{sen}^3 x = (\operatorname{sen} x)^3$: de fora é a **potência**.
+**(a)** $\mathrm{sen}^3\thinspace x = (\mathrm{sen}\thinspace x)^3$: de fora é a **potência**.
 
-$$f' = 3\operatorname{sen}^2 x\cdot\cos x$$
+$$f' = 3\mathrm{sen}^2\thinspace x\cdot\cos x$$
 
-**(b)** $\operatorname{sen}\big(x^3\big)$: de fora é o **seno**.
+**(b)** $\mathrm{sen}\big(x^3\big)$: de fora é o **seno**.
 
 $$f' = \cos\big(x^3\big)\cdot 3x^2$$
 
@@ -104,13 +104,13 @@ $$f' = 2\ln x\cdot\frac1x = \frac{2\ln x}{x}$$
 
 ### Exercício 3
 
-**(a)** $e^{\cos x}\cdot(-\operatorname{sen} x) = -\operatorname{sen} x\thinspace e^{\cos x}$
+**(a)** $e^{\cos x}\cdot(-\mathrm{sen}\thinspace x) = -\mathrm{sen}\thinspace x\thinspace e^{\cos x}$
 
 **(b)** $\sec^2(2x+1)\cdot 2 = 2\sec^2(2x+1)$
 
 **(c)** $\cos^2(3x) = [\cos(3x)]^2$, três camadas:
 
-$$f' = 2\cos(3x)\cdot(-\operatorname{sen}(3x))\cdot 3 = -6\cos(3x)\operatorname{sen}(3x)$$
+$$f' = 2\cos(3x)\cdot(-\mathrm{sen}(3x))\cdot 3 = -6\cos(3x)\mathrm{sen}(3x)$$
 
 ---
 
@@ -118,7 +118,7 @@ $$f' = 2\cos(3x)\cdot(-\operatorname{sen}(3x))\cdot 3 = -6\cos(3x)\operatorname{
 
 **(a)** $f' = 1\cdot e^{2x} + x\cdot 2e^{2x} = e^{2x}(1+2x)$
 
-**(b)** $f' = \dfrac{2\cos(2x)\cdot x - \operatorname{sen}(2x)}{x^2} = \dfrac{2x\cos(2x)-\operatorname{sen}(2x)}{x^2}$
+**(b)** $f' = \dfrac{2\cos(2x)\cdot x - \mathrm{sen}(2x)}{x^2} = \dfrac{2x\cos(2x)-\mathrm{sen}(2x)}{x^2}$
 
 **(c)** $f' = 2x\ln(3x) + x^2\cdot\dfrac{3}{3x} = 2x\ln(3x) + x$
 
@@ -176,13 +176,13 @@ $$f'(x) = 3\big(x^2+1\big)^2\cdot 2x = 6x\big(x^2+1\big)^2$$
 
 ### Exercício 9
 
-$$f'(x) = \cos(\cos x)\cdot(-\operatorname{sen} x) = -\operatorname{sen} x\cos(\cos x)$$
+$$f'(x) = \cos(\cos x)\cdot(-\mathrm{sen}\thinspace x) = -\mathrm{sen}\thinspace x\cos(\cos x)$$
 
 ---
 
 ### Exercício 10
 
-$$f'(x) = \frac{1}{2\sqrt{1+\operatorname{tg} x}}\cdot\sec^2 x = \frac{\sec^2 x}{2\sqrt{1+\operatorname{tg} x}}$$
+$$f'(x) = \frac{1}{2\sqrt{1+\mathrm{tg}\thinspace x}}\cdot\sec^2 x = \frac{\sec^2 x}{2\sqrt{1+\mathrm{tg}\thinspace x}}$$
 
 ---
 
@@ -206,7 +206,7 @@ $$f'(x) = \frac{1}{x+1} - \frac{1}{x-1} = \frac{(x-1)-(x+1)}{(x+1)(x-1)} = \frac
 
 Regra do produto, com cadeia em cada fator:
 
-$$f'(x) = 2x\thinspace e^{x^2}\operatorname{sen}(3x) + e^{x^2}\cdot 3\cos(3x) = e^{x^2}\big[2x\operatorname{sen}(3x)+3\cos(3x)\big]$$
+$$f'(x) = 2x\thinspace e^{x^2}\mathrm{sen}(3x) + e^{x^2}\cdot 3\cos(3x) = e^{x^2}\big[2x\mathrm{sen}(3x)+3\cos(3x)\big]$$
 
 ---
 
@@ -262,7 +262,7 @@ $$y' = \frac{(x+1)^2\sqrt{x-3}}{x^4}\left[\frac{2}{x+1} + \frac{1}{2(x-3)} - \fr
 
 Três camadas, de fora para dentro:
 
-$$f'(x) = \cos\big(\operatorname{sen}(\operatorname{sen} x)\big)\cdot\cos(\operatorname{sen} x)\cdot\cos x$$
+$$f'(x) = \cos\big(\mathrm{sen}(\mathrm{sen}\thinspace x)\big)\cdot\cos(\mathrm{sen}\thinspace x)\cdot\cos x$$
 
 ---
 
@@ -294,7 +294,7 @@ $$f'(-x) = -f'(x)$$
 
 que é exatamente a definição de função **ímpar**. $\blacksquare$
 
-> 💡 **Confira com um exemplo:** $f(x) = x^2$ é par, e $f'(x) = 2x$ é ímpar ✔ ; $\cos x$ é par, e $(\cos x)' = -\operatorname{sen} x$ é ímpar ✔. O mesmo argumento mostra que a derivada de uma função **ímpar** é **par**.
+> 💡 **Confira com um exemplo:** $f(x) = x^2$ é par, e $f'(x) = 2x$ é ímpar ✔ ; $\cos x$ é par, e $(\cos x)' = -\mathrm{sen}\thinspace x$ é ímpar ✔. O mesmo argumento mostra que a derivada de uma função **ímpar** é **par**.
 
 ---
 

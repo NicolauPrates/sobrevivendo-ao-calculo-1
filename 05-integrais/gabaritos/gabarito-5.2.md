@@ -23,24 +23,24 @@
 | 2 (a) | $\dfrac13\ln\lvert 3x-1\rvert$ |
 | 2 (b) | $\ln\lvert x^2+3x+1\rvert$ |
 | 2 (c) | $\dfrac{(\ln x)^2}{2}$ |
-| 2 (d) | $\ln\lvert\operatorname{sen} x\rvert$ |
+| 2 (d) | $\ln\lvert\mathrm{sen}\thinspace x\rvert$ |
 | 3 (a) | $-\dfrac{\cos^4 x}{4}$ |
 | 3 (b) | $-\dfrac{e^{-x^2}}{2}$ |
 | 3 (c) | $2e^{\sqrt{x}}$ |
-| 4 (a) | $-x\cos x + \operatorname{sen} x$ |
+| 4 (a) | $-x\cos x + \mathrm{sen}\thinspace x$ |
 | 4 (b) | $\dfrac{e^{3x}}{9}(3x-1)$ |
 | 4 (c) | $\dfrac{x^2}{2}\ln x - \dfrac{x^2}{4}$ |
 | 5 (a) | $e^{x}\big(x^2-2x+2\big)$ |
-| 5 (b) | $x^2\operatorname{sen} x + 2x\cos x - 2\operatorname{sen} x$ |
-| 6 (a) | $x\operatorname{arctg} x - \dfrac12\ln\big(1+x^2\big)$ |
-| 6 (b) | $x\operatorname{arcsen} x + \sqrt{1-x^2}$ |
+| 5 (b) | $x^2\mathrm{sen}\thinspace x + 2x\cos x - 2\mathrm{sen}\thinspace x$ |
+| 6 (a) | $x\mathrm{arctg}\thinspace x - \dfrac12\ln\big(1+x^2\big)$ |
+| 6 (b) | $x\mathrm{arcsen}\thinspace x + \sqrt{1-x^2}$ |
 | 7 (a) | $\dfrac{1/2}{x-1} - \dfrac{1/2}{x+1}$ |
 | 7 (b) | $\dfrac{11/5}{x-3} + \dfrac{14/5}{x+2}$ |
 | 7 (c) | $\dfrac2x - \dfrac{2}{x+1} - \dfrac{2}{(x+1)^2}$ |
 | 8 (a) | $\dfrac12\ln\left\lvert\dfrac{x-1}{x+1}\right\rvert$ |
 | 8 (b) | $\dfrac{11}{5}\ln\lvert x-3\rvert + \dfrac{14}{5}\ln\lvert x+2\rvert$ |
-| 9 | (a) $x=5\operatorname{sen}\theta$ · (b) $x=2\operatorname{tg}\theta$ · (c) $x=4\operatorname{sec}\theta$ |
-| 10 | $\operatorname{arcsen}\dfrac{x}{2}$ pelos dois caminhos |
+| 9 | (a) $x=5\mathrm{sen}\thinspace\theta$ · (b) $x=2\mathrm{tg}\thinspace\theta$ · (c) $x=4\mathrm{sec}\thinspace\theta$ |
+| 10 | $\mathrm{arcsen}\thinspace\dfrac{x}{2}$ pelos dois caminhos |
 
 ### Bloco B · Consolidação
 
@@ -48,26 +48,26 @@
 | :---: | :---: | --- |
 | 11 | substituição | $\dfrac23\sqrt{x^3+1}$ |
 | 12 | substituição | $\dfrac25 (x-1)^{5/2} + \dfrac23 (x-1)^{3/2}$ |
-| 13 | partes (circular) | $\dfrac{e^x}{2}\big(\cos x + \operatorname{sen} x\big)$ |
+| 13 | partes (circular) | $\dfrac{e^x}{2}\big(\cos x + \mathrm{sen}\thinspace x\big)$ |
 | 14 | frações parciais | $-\dfrac25\ln\lvert x+3\rvert + \dfrac75\ln\lvert x-2\rvert$ |
 | 15 | divisão + tabela | $\dfrac{x^3}{3}+x^2+4x+8\ln\lvert x-2\rvert$ |
-| 16 | identidade | $\dfrac{x}{2}-\dfrac{\operatorname{sen} 2x}{4}$ |
+| 16 | identidade | $\dfrac{x}{2}-\dfrac{\mathrm{sen}\thinspace 2x}{4}$ |
 | 17 | identidade + substituição | $-\cos x + \dfrac{\cos^3 x}{3}$ |
-| 18 | completar quadrado | $\dfrac12\operatorname{arctg}\dfrac{x+3}{2}$ |
-| 19 | trigonométrica | $-\dfrac{\sqrt{4-x^2}}{x} - \operatorname{arcsen}\dfrac{x}{2}$ |
+| 18 | completar quadrado | $\dfrac12\mathrm{arctg}\thinspace\dfrac{x+3}{2}$ |
+| 19 | trigonométrica | $-\dfrac{\sqrt{4-x^2}}{x} - \mathrm{arcsen}\thinspace\dfrac{x}{2}$ |
 | 20 | propriedade + partes | $2x\ln\lvert x\rvert - 2x$ |
-| 21 | frações parciais | $-\ln\lvert x\rvert + 2\ln\big(x^2+1\big) + 2\operatorname{arctg} x$ |
+| 21 | frações parciais | $-\ln\lvert x\rvert + 2\ln\big(x^2+1\big) + 2\mathrm{arctg}\thinspace x$ |
 | 22 | substituição + partes | $\dfrac{\big(x^2-1\big)e^{x^2}}{2}$ |
 
 ### Bloco C · Desafio
 
 | Ex. | Resposta |
 | :---: | --- |
-| 23 | Demonstração (o truque cria $u = \operatorname{sec} x + \operatorname{tg} x$) |
-| 24 | Demonstração; $\displaystyle\int\operatorname{sen}^4 x\thinspace dx = -\dfrac{\operatorname{sen}^3 x\cos x}{4} + \dfrac{3x}{8} - \dfrac{3\operatorname{sen} 2x}{16}$ |
+| 23 | Demonstração (o truque cria $u = \mathrm{sec}\thinspace x + \mathrm{tg}\thinspace x$) |
+| 24 | Demonstração; $\displaystyle\int\mathrm{sen}^4\thinspace x\thinspace dx = -\dfrac{\mathrm{sen}^3\thinspace x\cos x}{4} + \dfrac{3x}{8} - \dfrac{3\mathrm{sen}\thinspace 2x}{16}$ |
 | 25 | $x - \ln\big(1+e^{x}\big)$ |
-| 26 | $\dfrac{\operatorname{sen}^2 x}{2}$, $-\dfrac{\cos^2 x}{2}$ e $-\dfrac{\cos 2x}{4}$ — **as três corretas** |
-| 27 | $\operatorname{arcsec}\lvert x\rvert$ |
+| 26 | $\dfrac{\mathrm{sen}^2\thinspace x}{2}$, $-\dfrac{\cos^2 x}{2}$ e $-\dfrac{\cos 2x}{4}$ — **as três corretas** |
+| 27 | $\mathrm{arcsec}\lvert x\rvert$ |
 
 ---
 
@@ -91,7 +91,7 @@ $$\int\frac{x\thinspace dx}{\sqrt{x^2+9}} = \frac12\int u^{-1/2}du = \frac12\cdo
 
 **(d)** $u = 5x$, $du = 5\thinspace dx$:
 
-$$\int \operatorname{sen} 5x\thinspace dx = \frac15\int\operatorname{sen} u\thinspace du = -\frac{\cos 5x}{5}+C$$
+$$\int \mathrm{sen}\thinspace 5x\thinspace dx = \frac15\int\mathrm{sen}\thinspace u\thinspace du = -\frac{\cos 5x}{5}+C$$
 
 > 💡 **O padrão de (a) e (d) é o mais simples de todos:** quando o argumento é $ax+b$, a substituição só introduz o fator $\frac1a$. Com prática, você escreve direto — mas escreva o $u$ explicitamente enquanto não estiver automático.
 
@@ -109,19 +109,19 @@ $$\int\frac{2x+3}{x^2+3x+1}dx = \ln\lvert x^2+3x+1\rvert + C$$
 
 $$\int\frac{\ln x}{x}dx = \int u\thinspace du = \frac{u^2}{2} = \frac{(\ln x)^2}{2}+C$$
 
-**(d)** $\operatorname{cotg} x = \dfrac{\cos x}{\operatorname{sen} x}$, e o numerador é a derivada do denominador:
+**(d)** $\mathrm{cotg}\thinspace x = \dfrac{\cos x}{\mathrm{sen}\thinspace x}$, e o numerador é a derivada do denominador:
 
-$$\int\operatorname{cotg} x\thinspace dx = \ln\lvert\operatorname{sen} x\rvert + C$$
+$$\int\mathrm{cotg}\thinspace x\thinspace dx = \ln\lvert\mathrm{sen}\thinspace x\rvert + C$$
 
-> 💡 **Compare com $\int\operatorname{tg} x\thinspace dx = -\ln\lvert\cos x\rvert$ do Exercício Resolvido 2.** A cotangente **não** ganha sinal negativo, porque $(\operatorname{sen} x)' = +\cos x$. As duas integrais parecem simétricas e não são — e esse sinal é exatamente o que a prova cobra.
+> 💡 **Compare com $\int\mathrm{tg}\thinspace x\thinspace dx = -\ln\lvert\cos x\rvert$ do Exercício Resolvido 2.** A cotangente **não** ganha sinal negativo, porque $(\mathrm{sen}\thinspace x)' = +\cos x$. As duas integrais parecem simétricas e não são — e esse sinal é exatamente o que a prova cobra.
 
 ---
 
 ### 3.
 
-**(a)** $u = \cos x$, $du = -\operatorname{sen} x\thinspace dx$:
+**(a)** $u = \cos x$, $du = -\mathrm{sen}\thinspace x\thinspace dx$:
 
-$$\int\cos^3 x\operatorname{sen} x\thinspace dx = \int u^3(-du) = -\frac{u^4}{4} = -\frac{\cos^4 x}{4}+C$$
+$$\int\cos^3 x\mathrm{sen}\thinspace x\thinspace dx = \int u^3(-du) = -\frac{u^4}{4} = -\frac{\cos^4 x}{4}+C$$
 
 **(b)** $u = -x^2$, $du = -2x\thinspace dx$, logo $x\thinspace dx = -\dfrac{du}{2}$:
 
@@ -139,9 +139,9 @@ $$\int\frac{e^{\sqrt{x}}}{\sqrt{x}}dx = \int e^u\cdot 2\thinspace du = 2e^{\sqrt
 
 **(a)** LIATE: **A**lgébrica antes de **T**rigonométrica, logo $u=x$.
 
-$$u = x,\quad dv = \operatorname{sen} x\thinspace dx \ \Longrightarrow \ du = dx,\quad v = -\cos x$$
+$$u = x,\quad dv = \mathrm{sen}\thinspace x\thinspace dx \ \Longrightarrow \ du = dx,\quad v = -\cos x$$
 
-$$\int x\operatorname{sen} x\thinspace dx = -x\cos x - \int(-\cos x)dx = -x\cos x + \operatorname{sen} x + C$$
+$$\int x\mathrm{sen}\thinspace x\thinspace dx = -x\cos x - \int(-\cos x)dx = -x\cos x + \mathrm{sen}\thinspace x + C$$
 
 **(b)** $u = x$, $dv = e^{3x}dx$, logo $du = dx$ e $v = \dfrac{e^{3x}}{3}$:
 
@@ -169,13 +169,13 @@ $$\int x^2 e^x dx = x^2 e^x - 2(x-1)e^x + C = e^x\big(x^2-2x+2\big)+C$$
 
 **Conferindo:** $\big[e^x(x^2-2x+2)\big]' = e^x(x^2-2x+2) + e^x(2x-2) = e^x\cdot x^2$ ✔
 
-**(b)** $u = x^2$, $dv = \cos x\thinspace dx$, logo $du = 2x\thinspace dx$ e $v = \operatorname{sen} x$:
+**(b)** $u = x^2$, $dv = \cos x\thinspace dx$, logo $du = 2x\thinspace dx$ e $v = \mathrm{sen}\thinspace x$:
 
-$$\int x^2\cos x\thinspace dx = x^2\operatorname{sen} x - 2\int x\operatorname{sen} x\thinspace dx$$
+$$\int x^2\cos x\thinspace dx = x^2\mathrm{sen}\thinspace x - 2\int x\mathrm{sen}\thinspace x\thinspace dx$$
 
-E $\int x\operatorname{sen} x\thinspace dx = -x\cos x + \operatorname{sen} x$ (exercício 4a):
+E $\int x\mathrm{sen}\thinspace x\thinspace dx = -x\cos x + \mathrm{sen}\thinspace x$ (exercício 4a):
 
-$$= x^2\operatorname{sen} x - 2\big(-x\cos x + \operatorname{sen} x\big) + C = x^2\operatorname{sen} x + 2x\cos x - 2\operatorname{sen} x + C$$
+$$= x^2\mathrm{sen}\thinspace x - 2\big(-x\cos x + \mathrm{sen}\thinspace x\big) + C = x^2\mathrm{sen}\thinspace x + 2x\cos x - 2\mathrm{sen}\thinspace x + C$$
 
 > 💡 **O padrão geral:** cada aplicação de partes **baixa o grau do polinômio em uma unidade**. Com $x^2$, são duas aplicações; com $x^3$, três. É previsível — e é por isso que $\int x^{10}e^x dx$ é possível, mas ninguém pede em prova.
 
@@ -185,33 +185,33 @@ $$= x^2\operatorname{sen} x - 2\big(-x\cos x + \operatorname{sen} x\big) + C = x
 
 **(a)** O truque $dv = dx$:
 
-$$u = \operatorname{arctg} x,\quad dv = dx \ \Longrightarrow \ du = \frac{dx}{1+x^2},\quad v = x$$
+$$u = \mathrm{arctg}\thinspace x,\quad dv = dx \ \Longrightarrow \ du = \frac{dx}{1+x^2},\quad v = x$$
 
-$$\int\operatorname{arctg} x\thinspace dx = x\operatorname{arctg} x - \int\frac{x}{1+x^2}dx$$
+$$\int\mathrm{arctg}\thinspace x\thinspace dx = x\mathrm{arctg}\thinspace x - \int\frac{x}{1+x^2}dx$$
 
 A integral que sobrou é do padrão $\frac{g'}{g}$ (a menos do fator $2$), com $w = 1+x^2$:
 
 $$\int\frac{x}{1+x^2}dx = \frac12\ln\big(1+x^2\big)$$
 
-$$\int\operatorname{arctg} x\thinspace dx = x\operatorname{arctg} x - \frac12\ln\big(1+x^2\big) + C$$
+$$\int\mathrm{arctg}\thinspace x\thinspace dx = x\mathrm{arctg}\thinspace x - \frac12\ln\big(1+x^2\big) + C$$
 
 > 💡 O módulo foi dispensado porque $1+x^2 > 0$ sempre.
 
 **(b)** Mesmo truque:
 
-$$u = \operatorname{arcsen} x,\quad dv = dx \ \Longrightarrow \ du = \frac{dx}{\sqrt{1-x^2}},\quad v = x$$
+$$u = \mathrm{arcsen}\thinspace x,\quad dv = dx \ \Longrightarrow \ du = \frac{dx}{\sqrt{1-x^2}},\quad v = x$$
 
-$$\int\operatorname{arcsen} x\thinspace dx = x\operatorname{arcsen} x - \int\frac{x\thinspace dx}{\sqrt{1-x^2}}$$
+$$\int\mathrm{arcsen}\thinspace x\thinspace dx = x\mathrm{arcsen}\thinspace x - \int\frac{x\thinspace dx}{\sqrt{1-x^2}}$$
 
 Com $w = 1-x^2$ e $x\thinspace dx = -\dfrac{dw}{2}$:
 
 $$\int\frac{x\thinspace dx}{\sqrt{1-x^2}} = -\frac12\int w^{-1/2}dw = -\sqrt{1-x^2}$$
 
-$$\int\operatorname{arcsen} x\thinspace dx = x\operatorname{arcsen} x + \sqrt{1-x^2} + C$$
+$$\int\mathrm{arcsen}\thinspace x\thinspace dx = x\mathrm{arcsen}\thinspace x + \sqrt{1-x^2} + C$$
 
 **Conferindo:**
 
-$$\operatorname{arcsen} x + \frac{x}{\sqrt{1-x^2}} + \frac{-2x}{2\sqrt{1-x^2}} = \operatorname{arcsen} x \ \checkmark$$
+$$\mathrm{arcsen}\thinspace x + \frac{x}{\sqrt{1-x^2}} + \frac{-2x}{2\sqrt{1-x^2}} = \mathrm{arcsen}\thinspace x \ \checkmark$$
 
 ---
 
@@ -275,14 +275,14 @@ $$\int\frac{5x-4}{x^2-x-6}dx = \frac{11}{5}\ln\lvert x-3\rvert + \frac{14}{5}\ln
 
 | | Radical | Forma | Substituição |
 | :---: | :---: | :---: | --- |
-| **(a)** | $\sqrt{25-x^2}$ | $\sqrt{a^2-x^2}$ com $a=5$ | $x = 5\operatorname{sen}\theta$ |
-| **(b)** | $\sqrt{x^2+4}$ | $\sqrt{a^2+x^2}$ com $a=2$ | $x = 2\operatorname{tg}\theta$ |
-| **(c)** | $\sqrt{x^2-16}$ | $\sqrt{x^2-a^2}$ com $a=4$ | $x = 4\operatorname{sec}\theta$ |
+| **(a)** | $\sqrt{25-x^2}$ | $\sqrt{a^2-x^2}$ com $a=5$ | $x = 5\mathrm{sen}\thinspace\theta$ |
+| **(b)** | $\sqrt{x^2+4}$ | $\sqrt{a^2+x^2}$ com $a=2$ | $x = 2\mathrm{tg}\thinspace\theta$ |
+| **(c)** | $\sqrt{x^2-16}$ | $\sqrt{x^2-a^2}$ com $a=4$ | $x = 4\mathrm{sec}\thinspace\theta$ |
 
 > 💡 **Como não confundir as três.** Pergunte qual identidade pitagórica **transforma a expressão num quadrado perfeito**:
-> - $a^2-x^2$ precisa de $1-\operatorname{sen}^2 = \cos^2$ → **seno**;
-> - $a^2+x^2$ precisa de $1+\operatorname{tg}^2 = \operatorname{sec}^2$ → **tangente**;
-> - $x^2-a^2$ precisa de $\operatorname{sec}^2-1 = \operatorname{tg}^2$ → **secante**.
+> - $a^2-x^2$ precisa de $1-\mathrm{sen}^2 = \cos^2$ → **seno**;
+> - $a^2+x^2$ precisa de $1+\mathrm{tg}^2 = \mathrm{sec}^2$ → **tangente**;
+> - $x^2-a^2$ precisa de $\mathrm{sec}^2-1 = \mathrm{tg}^2$ → **secante**.
 >
 > Os sinais dizem tudo: **menos primeiro** é seno, **mais** é tangente, **menos depois** é secante.
 
@@ -290,19 +290,19 @@ $$\int\frac{5x-4}{x^2-x-6}dx = \frac{11}{5}\ln\lvert x-3\rvert + \frac{14}{5}\ln
 
 ### 10.
 
-**Pela tabela.** A forma geral é $\displaystyle\int\frac{dx}{\sqrt{a^2-x^2}} = \operatorname{arcsen}\frac{x}{a}+C$, com $a=2$:
+**Pela tabela.** A forma geral é $\displaystyle\int\frac{dx}{\sqrt{a^2-x^2}} = \mathrm{arcsen}\thinspace\frac{x}{a}+C$, com $a=2$:
 
-$$\int\frac{dx}{\sqrt{4-x^2}} = \operatorname{arcsen}\frac{x}{2}+C$$
+$$\int\frac{dx}{\sqrt{4-x^2}} = \mathrm{arcsen}\thinspace\frac{x}{2}+C$$
 
-**Por substituição trigonométrica.** Com $x = 2\operatorname{sen}\theta$ e $dx = 2\cos\theta\thinspace d\theta$:
+**Por substituição trigonométrica.** Com $x = 2\mathrm{sen}\thinspace\theta$ e $dx = 2\cos\theta\thinspace d\theta$:
 
-$$\sqrt{4-x^2} = \sqrt{4-4\operatorname{sen}^2\theta} = 2\cos\theta$$
+$$\sqrt{4-x^2} = \sqrt{4-4\mathrm{sen}^2\thinspace\theta} = 2\cos\theta$$
 
 $$\int\frac{2\cos\theta\thinspace d\theta}{2\cos\theta} = \int d\theta = \theta + C$$
 
-Voltando: de $x = 2\operatorname{sen}\theta$ vem $\operatorname{sen}\theta = \frac{x}{2}$, logo $\theta = \operatorname{arcsen}\frac{x}{2}$.
+Voltando: de $x = 2\mathrm{sen}\thinspace\theta$ vem $\mathrm{sen}\thinspace\theta = \frac{x}{2}$, logo $\theta = \mathrm{arcsen}\thinspace\frac{x}{2}$.
 
-$$\int\frac{dx}{\sqrt{4-x^2}} = \operatorname{arcsen}\frac{x}{2}+C \ \checkmark$$
+$$\int\frac{dx}{\sqrt{4-x^2}} = \mathrm{arcsen}\thinspace\frac{x}{2}+C \ \checkmark$$
 
 > 💡 **O segundo caminho é a demonstração do primeiro.** A linha da tabela não caiu do céu: ela é o resultado desta substituição, feita uma vez e guardada. Vale a pena ter visto de onde vem — tabela entendida se recupera quando a memória falha.
 
@@ -340,17 +340,17 @@ $$= \frac25 u^{5/2} + \frac23 u^{3/2} + C = \frac25 (x-1)^{5/2} + \frac23 (x-1)^
 
 **Técnica:** por partes, duas vezes, com retorno circular. É a gêmea do [Exercício Resolvido 4](../5.2-tecnicas-de-integracao.md).
 
-Chamando $J = \displaystyle\int e^x\cos x\thinspace dx$ e $I = \displaystyle\int e^x\operatorname{sen} x\thinspace dx$, a conta do ER4 mostrou que
+Chamando $J = \displaystyle\int e^x\cos x\thinspace dx$ e $I = \displaystyle\int e^x\mathrm{sen}\thinspace x\thinspace dx$, a conta do ER4 mostrou que
 
-$$J = e^x\cos x + I \qquad\text{e}\qquad I = \frac{e^x}{2}\big(\operatorname{sen} x-\cos x\big)$$
+$$J = e^x\cos x + I \qquad\text{e}\qquad I = \frac{e^x}{2}\big(\mathrm{sen}\thinspace x-\cos x\big)$$
 
 Substituindo:
 
-$$J = e^x\cos x + \frac{e^x}{2}\operatorname{sen} x - \frac{e^x}{2}\cos x = \frac{e^x}{2}\big(\cos x + \operatorname{sen} x\big)+C$$
+$$J = e^x\cos x + \frac{e^x}{2}\mathrm{sen}\thinspace x - \frac{e^x}{2}\cos x = \frac{e^x}{2}\big(\cos x + \mathrm{sen}\thinspace x\big)+C$$
 
 **Conferindo:**
 
-$$\left[\frac{e^x}{2}(\cos x+\operatorname{sen} x)\right]' = \frac{e^x}{2}(\cos x+\operatorname{sen} x) + \frac{e^x}{2}(-\operatorname{sen} x+\cos x) = e^x\cos x \ \checkmark$$
+$$\left[\frac{e^x}{2}(\cos x+\mathrm{sen}\thinspace x)\right]' = \frac{e^x}{2}(\cos x+\mathrm{sen}\thinspace x) + \frac{e^x}{2}(-\mathrm{sen}\thinspace x+\cos x) = e^x\cos x \ \checkmark$$
 
 ---
 
@@ -385,9 +385,9 @@ $$\int\frac{x^3}{x-2}dx = \frac{x^3}{3}+x^2+4x+8\ln\lvert x-2\rvert + C$$
 
 **Técnica:** identidade. A potência par do seno pede o **arco duplo**:
 
-$$\operatorname{sen}^2 x = \frac{1-\cos 2x}{2}$$
+$$\mathrm{sen}^2\thinspace x = \frac{1-\cos 2x}{2}$$
 
-$$\int\operatorname{sen}^2 x\thinspace dx = \frac12\int\big(1-\cos 2x\big)dx = \frac12\left(x - \frac{\operatorname{sen} 2x}{2}\right) = \frac{x}{2}-\frac{\operatorname{sen} 2x}{4}+C$$
+$$\int\mathrm{sen}^2\thinspace x\thinspace dx = \frac12\int\big(1-\cos 2x\big)dx = \frac12\left(x - \frac{\mathrm{sen}\thinspace 2x}{2}\right) = \frac{x}{2}-\frac{\mathrm{sen}\thinspace 2x}{4}+C$$
 
 ---
 
@@ -395,9 +395,9 @@ $$\int\operatorname{sen}^2 x\thinspace dx = \frac12\int\big(1-\cos 2x\big)dx = \
 
 **Técnica:** potência **ímpar** — separa-se um fator e usa-se a identidade no resto.
 
-$$\int\operatorname{sen}^3 x\thinspace dx = \int\operatorname{sen}^2 x\cdot\operatorname{sen} x\thinspace dx = \int\big(1-\cos^2 x\big)\operatorname{sen} x\thinspace dx$$
+$$\int\mathrm{sen}^3\thinspace x\thinspace dx = \int\mathrm{sen}^2\thinspace x\cdot\mathrm{sen}\thinspace x\thinspace dx = \int\big(1-\cos^2 x\big)\mathrm{sen}\thinspace x\thinspace dx$$
 
-Agora é substituição, com $u = \cos x$ e $du = -\operatorname{sen} x\thinspace dx$:
+Agora é substituição, com $u = \cos x$ e $du = -\mathrm{sen}\thinspace x\thinspace dx$:
 
 $$= \int\big(1-u^2\big)(-du) = -u + \frac{u^3}{3} + C = -\cos x + \frac{\cos^3 x}{3} + C$$
 
@@ -405,7 +405,7 @@ $$= \int\big(1-u^2\big)(-du) = -u + \frac{u^3}{3} + C = -\cos x + \frac{\cos^3 x
 > - expoente **ímpar** → separe um fator e substitua (exercício 17);
 > - expoente **par** → use o arco duplo (exercício 16).
 >
-> Essas duas linhas resolvem a grande maioria das integrais de $\operatorname{sen}^n$ e $\cos^n$ que aparecem em Cálculo 1.
+> Essas duas linhas resolvem a grande maioria das integrais de $\mathrm{sen}^n$ e $\cos^n$ que aparecem em Cálculo 1.
 
 ---
 
@@ -417,9 +417,9 @@ $$x^2+6x+13 = \big(x^2+6x+9\big)+4 = (x+3)^2+4$$
 
 Com $u = x+3$ (e $du = dx$), a integral vira a forma da arco-tangente:
 
-$$\int\frac{dx}{(x+3)^2+4} = \int\frac{du}{u^2+4} = \frac12\operatorname{arctg}\frac{u}{2} + C = \frac12\operatorname{arctg}\frac{x+3}{2}+C$$
+$$\int\frac{dx}{(x+3)^2+4} = \int\frac{du}{u^2+4} = \frac12\mathrm{arctg}\thinspace\frac{u}{2} + C = \frac12\mathrm{arctg}\thinspace\frac{x+3}{2}+C$$
 
-> 💡 **Completar o quadrado é o que faz a arco-tangente aparecer.** Sempre que o denominador for quadrático sem raízes reais, esse é o movimento: $(x+p)^2+q^2$, e então $\int\frac{du}{u^2+q^2} = \frac1q\operatorname{arctg}\frac uq$.
+> 💡 **Completar o quadrado é o que faz a arco-tangente aparecer.** Sempre que o denominador for quadrático sem raízes reais, esse é o movimento: $(x+p)^2+q^2$, e então $\int\frac{du}{u^2+q^2} = \frac1q\mathrm{arctg}\thinspace\frac uq$.
 
 ---
 
@@ -427,19 +427,19 @@ $$\int\frac{dx}{(x+3)^2+4} = \int\frac{du}{u^2+4} = \frac12\operatorname{arctg}\
 
 **Técnica:** substituição trigonométrica, radical $\sqrt{4-x^2}$ com $a=2$.
 
-$$x = 2\operatorname{sen}\theta,\quad dx = 2\cos\theta\thinspace d\theta,\quad \sqrt{4-x^2} = 2\cos\theta,\quad x^2 = 4\operatorname{sen}^2\theta$$
+$$x = 2\mathrm{sen}\thinspace\theta,\quad dx = 2\cos\theta\thinspace d\theta,\quad \sqrt{4-x^2} = 2\cos\theta,\quad x^2 = 4\mathrm{sen}^2\thinspace\theta$$
 
-$$\int\frac{\sqrt{4-x^2}}{x^2}dx = \int\frac{2\cos\theta\cdot 2\cos\theta\thinspace d\theta}{4\operatorname{sen}^2\theta} = \int\frac{\cos^2\theta}{\operatorname{sen}^2\theta}d\theta = \int\operatorname{cotg}^2\theta\thinspace d\theta$$
+$$\int\frac{\sqrt{4-x^2}}{x^2}dx = \int\frac{2\cos\theta\cdot 2\cos\theta\thinspace d\theta}{4\mathrm{sen}^2\thinspace\theta} = \int\frac{\cos^2\theta}{\mathrm{sen}^2\thinspace\theta}d\theta = \int\mathrm{cotg}^2\thinspace\theta\thinspace d\theta$$
 
-E $\operatorname{cotg}^2 = \operatorname{cossec}^2-1$:
+E $\mathrm{cotg}^2 = \mathrm{cossec}^2-1$:
 
-$$= \int\big(\operatorname{cossec}^2\theta - 1\big)d\theta = -\operatorname{cotg}\theta - \theta + C$$
+$$= \int\big(\mathrm{cossec}^2\thinspace\theta - 1\big)d\theta = -\mathrm{cotg}\thinspace\theta - \theta + C$$
 
 **Voltando ao triângulo** (hipotenusa $2$, oposto $x$, adjacente $\sqrt{4-x^2}$):
 
-$$\operatorname{cotg}\theta = \frac{\sqrt{4-x^2}}{x} \qquad \theta = \operatorname{arcsen}\frac{x}{2}$$
+$$\mathrm{cotg}\thinspace\theta = \frac{\sqrt{4-x^2}}{x} \qquad \theta = \mathrm{arcsen}\thinspace\frac{x}{2}$$
 
-$$\int\frac{\sqrt{4-x^2}}{x^2}dx = -\frac{\sqrt{4-x^2}}{x} - \operatorname{arcsen}\frac{x}{2} + C$$
+$$\int\frac{\sqrt{4-x^2}}{x^2}dx = -\frac{\sqrt{4-x^2}}{x} - \mathrm{arcsen}\thinspace\frac{x}{2} + C$$
 
 ---
 
@@ -479,9 +479,9 @@ $$\int\frac{3x^2+2x-1}{x^3+x}dx = \int\left(-\frac1x + \frac{4x+2}{x^2+1}\right)
 
 A segunda parcela se separa em duas de tabela:
 
-$$\int\frac{4x}{x^2+1}dx = 2\ln\big(x^2+1\big) \qquad \int\frac{2}{x^2+1}dx = 2\operatorname{arctg} x$$
+$$\int\frac{4x}{x^2+1}dx = 2\ln\big(x^2+1\big) \qquad \int\frac{2}{x^2+1}dx = 2\mathrm{arctg}\thinspace x$$
 
-$$\int\frac{3x^2+2x-1}{x^3+x}dx = -\ln\lvert x\rvert + 2\ln\big(x^2+1\big) + 2\operatorname{arctg} x + C$$
+$$\int\frac{3x^2+2x-1}{x^3+x}dx = -\ln\lvert x\rvert + 2\ln\big(x^2+1\big) + 2\mathrm{arctg}\thinspace x + C$$
 
 > ⚠️ **Fator irredutível pede numerador $Ax+B$, não só $A$.** E, como ele não tem raiz real, não dá para usar o atalho de substituir raízes: aqui é **comparar coeficientes** mesmo. Note também que a parcela $\frac{4x+2}{x^2+1}$ gera **duas** funções diferentes — logaritmo (da parte $4x$) e arco-tangente (da parte $2$). Separá-las é parte do exercício.
 
@@ -513,21 +513,21 @@ $$\left[\frac{(x^2-1)e^{x^2}}{2}\right]' = \frac{2x\thinspace e^{x^2} + (x^2-1)e
 
 ### 23. A integral da secante
 
-O truque é multiplicar e dividir pelo mesmo fator $\operatorname{sec} x + \operatorname{tg} x$:
+O truque é multiplicar e dividir pelo mesmo fator $\mathrm{sec}\thinspace x + \mathrm{tg}\thinspace x$:
 
-$$\int\operatorname{sec} x\thinspace dx = \int \operatorname{sec} x\cdot\frac{\operatorname{sec} x+\operatorname{tg} x}{\operatorname{sec} x+\operatorname{tg} x}dx = \int\frac{\operatorname{sec}^2 x + \operatorname{sec} x\operatorname{tg} x}{\operatorname{sec} x+\operatorname{tg} x}dx$$
+$$\int\mathrm{sec}\thinspace x\thinspace dx = \int \mathrm{sec}\thinspace x\cdot\frac{\mathrm{sec}\thinspace x+\mathrm{tg}\thinspace x}{\mathrm{sec}\thinspace x+\mathrm{tg}\thinspace x}dx = \int\frac{\mathrm{sec}^2\thinspace x + \mathrm{sec}\thinspace x\mathrm{tg}\thinspace x}{\mathrm{sec}\thinspace x+\mathrm{tg}\thinspace x}dx$$
 
 Agora olhe o denominador e derive-o:
 
-$$\big(\operatorname{sec} x + \operatorname{tg} x\big)' = \operatorname{sec} x\operatorname{tg} x + \operatorname{sec}^2 x$$
+$$\big(\mathrm{sec}\thinspace x + \mathrm{tg}\thinspace x\big)' = \mathrm{sec}\thinspace x\mathrm{tg}\thinspace x + \mathrm{sec}^2\thinspace x$$
 
-que é **exatamente** o numerador. Com $u = \operatorname{sec} x+\operatorname{tg} x$, é o padrão $\frac{g'}{g}$:
+que é **exatamente** o numerador. Com $u = \mathrm{sec}\thinspace x+\mathrm{tg}\thinspace x$, é o padrão $\frac{g'}{g}$:
 
-$$\int\operatorname{sec} x\thinspace dx = \int\frac{du}{u} = \ln\lvert u\rvert + C = \ln\lvert\operatorname{sec} x+\operatorname{tg} x\rvert + C \quad\blacksquare$$
+$$\int\mathrm{sec}\thinspace x\thinspace dx = \int\frac{du}{u} = \ln\lvert u\rvert + C = \ln\lvert\mathrm{sec}\thinspace x+\mathrm{tg}\thinspace x\rvert + C \quad\blacksquare$$
 
 > 💡 **De onde veio a ideia de multiplicar por isso?** De lugar nenhum — é um truque histórico, descoberto no século XVII e guardado desde então. Ninguém o redescobre em prova.
 >
-> **Essa é a exceção que confirma a regra:** quase toda integral de Cálculo 1 cede a uma das quatro técnicas aplicadas com método. Umas poucas, como esta, são **resultados a memorizar**. $\int\operatorname{sec} x\thinspace dx$ é a principal delas — e aparece sempre que você calcular comprimento de arco em [5.4](../5.4-aplicacoes-da-integral-definida.md).
+> **Essa é a exceção que confirma a regra:** quase toda integral de Cálculo 1 cede a uma das quatro técnicas aplicadas com método. Umas poucas, como esta, são **resultados a memorizar**. $\int\mathrm{sec}\thinspace x\thinspace dx$ é a principal delas — e aparece sempre que você calcular comprimento de arco em [5.4](../5.4-aplicacoes-da-integral-definida.md).
 
 ---
 
@@ -535,33 +535,33 @@ $$\int\operatorname{sec} x\thinspace dx = \int\frac{du}{u} = \ln\lvert u\rvert +
 
 **Dedução.** Separe um fator de seno e aplique partes:
 
-$$I_n = \int\operatorname{sen}^n x\thinspace dx = \int\underbrace{\operatorname{sen}^{n-1}x}_{u}\cdot\underbrace{\operatorname{sen} x\thinspace dx}_{dv}$$
+$$I_n = \int\mathrm{sen}^n\thinspace x\thinspace dx = \int\underbrace{\mathrm{sen}^{n-1}\thinspace x}_{u}\cdot\underbrace{\mathrm{sen}\thinspace x\thinspace dx}_{dv}$$
 
-$$du = (n-1)\operatorname{sen}^{n-2}x\cos x\thinspace dx \qquad v = -\cos x$$
+$$du = (n-1)\mathrm{sen}^{n-2}\thinspace x\cos x\thinspace dx \qquad v = -\cos x$$
 
-$$I_n = -\operatorname{sen}^{n-1}x\cos x + (n-1)\int\operatorname{sen}^{n-2}x\cos^2 x\thinspace dx$$
+$$I_n = -\mathrm{sen}^{n-1}\thinspace x\cos x + (n-1)\int\mathrm{sen}^{n-2}\thinspace x\cos^2 x\thinspace dx$$
 
-Usando $\cos^2 x = 1-\operatorname{sen}^2 x$:
+Usando $\cos^2 x = 1-\mathrm{sen}^2\thinspace x$:
 
-$$I_n = -\operatorname{sen}^{n-1}x\cos x + (n-1)\int\operatorname{sen}^{n-2}x\thinspace dx - (n-1)\int\operatorname{sen}^{n}x\thinspace dx$$
+$$I_n = -\mathrm{sen}^{n-1}\thinspace x\cos x + (n-1)\int\mathrm{sen}^{n-2}\thinspace x\thinspace dx - (n-1)\int\mathrm{sen}^{n}\thinspace x\thinspace dx$$
 
-$$I_n = -\operatorname{sen}^{n-1}x\cos x + (n-1)I_{n-2} - (n-1)I_n$$
+$$I_n = -\mathrm{sen}^{n-1}\thinspace x\cos x + (n-1)I_{n-2} - (n-1)I_n$$
 
 **A integral original voltou** — é o mesmo fenômeno do Exercício Resolvido 4. Isolando:
 
-$$n\thinspace I_n = -\operatorname{sen}^{n-1}x\cos x + (n-1)I_{n-2}$$
+$$n\thinspace I_n = -\mathrm{sen}^{n-1}\thinspace x\cos x + (n-1)I_{n-2}$$
 
-$$I_n = -\frac{\operatorname{sen}^{n-1}x\cos x}{n} + \frac{n-1}{n}I_{n-2} \quad\blacksquare$$
+$$I_n = -\frac{\mathrm{sen}^{n-1}\thinspace x\cos x}{n} + \frac{n-1}{n}I_{n-2} \quad\blacksquare$$
 
 **Aplicando para $n=4$:**
 
-$$I_4 = -\frac{\operatorname{sen}^3 x\cos x}{4} + \frac34 I_2$$
+$$I_4 = -\frac{\mathrm{sen}^3\thinspace x\cos x}{4} + \frac34 I_2$$
 
-E $I_2 = \dfrac{x}{2}-\dfrac{\operatorname{sen} 2x}{4}$ (exercício 16):
+E $I_2 = \dfrac{x}{2}-\dfrac{\mathrm{sen}\thinspace 2x}{4}$ (exercício 16):
 
-$$\int\operatorname{sen}^4 x\thinspace dx = -\frac{\operatorname{sen}^3 x\cos x}{4} + \frac{3x}{8} - \frac{3\operatorname{sen} 2x}{16} + C$$
+$$\int\mathrm{sen}^4\thinspace x\thinspace dx = -\frac{\mathrm{sen}^3\thinspace x\cos x}{4} + \frac{3x}{8} - \frac{3\mathrm{sen}\thinspace 2x}{16} + C$$
 
-> 💡 **Fórmulas de redução são a resposta "industrial" às potências altas.** Em vez de resolver $\int\operatorname{sen}^6$ do zero, você aplica a fórmula três vezes e cai em $\int dx$. É assim que tabelas de integrais são construídas — e é por isso que elas têm entradas com $n$ genérico.
+> 💡 **Fórmulas de redução são a resposta "industrial" às potências altas.** Em vez de resolver $\int\mathrm{sen}^6$ do zero, você aplica a fórmula três vezes e cai em $\int dx$. É assim que tabelas de integrais são construídas — e é por isso que elas têm entradas com $n$ genérico.
 
 ---
 
@@ -591,27 +591,27 @@ $$\int\frac{dx}{1+e^x} = x-\ln\big(1+e^x\big)+C$$
 
 ### 26. Três respostas, todas certas
 
-**(a)** $u = \operatorname{sen} x$, $du = \cos x\thinspace dx$:
+**(a)** $u = \mathrm{sen}\thinspace x$, $du = \cos x\thinspace dx$:
 
-$$\int\operatorname{sen} x\cos x\thinspace dx = \int u\thinspace du = \frac{\operatorname{sen}^2 x}{2}+C$$
+$$\int\mathrm{sen}\thinspace x\cos x\thinspace dx = \int u\thinspace du = \frac{\mathrm{sen}^2\thinspace x}{2}+C$$
 
-**(b)** $u = \cos x$, $du = -\operatorname{sen} x\thinspace dx$:
+**(b)** $u = \cos x$, $du = -\mathrm{sen}\thinspace x\thinspace dx$:
 
-$$\int\operatorname{sen} x\cos x\thinspace dx = -\int u\thinspace du = -\frac{\cos^2 x}{2}+C$$
+$$\int\mathrm{sen}\thinspace x\cos x\thinspace dx = -\int u\thinspace du = -\frac{\cos^2 x}{2}+C$$
 
-**(c)** Com $\operatorname{sen} x\cos x = \dfrac{\operatorname{sen} 2x}{2}$:
+**(c)** Com $\mathrm{sen}\thinspace x\cos x = \dfrac{\mathrm{sen}\thinspace 2x}{2}$:
 
-$$\int\frac{\operatorname{sen} 2x}{2}dx = \frac12\cdot\left(-\frac{\cos 2x}{2}\right) = -\frac{\cos 2x}{4}+C$$
+$$\int\frac{\mathrm{sen}\thinspace 2x}{2}dx = \frac12\cdot\left(-\frac{\cos 2x}{2}\right) = -\frac{\cos 2x}{4}+C$$
 
 **Por que as três estão corretas.** Basta mostrar que diferem por **constantes**.
 
 **(a) menos (b):**
 
-$$\frac{\operatorname{sen}^2 x}{2} - \left(-\frac{\cos^2 x}{2}\right) = \frac{\operatorname{sen}^2 x+\cos^2 x}{2} = \frac12$$
+$$\frac{\mathrm{sen}^2\thinspace x}{2} - \left(-\frac{\cos^2 x}{2}\right) = \frac{\mathrm{sen}^2\thinspace x+\cos^2 x}{2} = \frac12$$
 
-**(a) menos (c):** usando $\cos 2x = 1-2\operatorname{sen}^2 x$,
+**(a) menos (c):** usando $\cos 2x = 1-2\mathrm{sen}^2\thinspace x$,
 
-$$-\frac{\cos 2x}{4} = -\frac{1-2\operatorname{sen}^2 x}{4} = -\frac14 + \frac{\operatorname{sen}^2 x}{2}$$
+$$-\frac{\cos 2x}{4} = -\frac{1-2\mathrm{sen}^2\thinspace x}{4} = -\frac14 + \frac{\mathrm{sen}^2\thinspace x}{2}$$
 
 logo a diferença para (a) é $\frac14$.
 
@@ -627,17 +627,17 @@ As três diferenças são constantes, então as três expressões pertencem à *
 
 **Técnica:** substituição trigonométrica, radical $\sqrt{x^2-1}$ com $a=1$.
 
-$$x = \operatorname{sec}\theta \ \Longrightarrow \ dx = \operatorname{sec}\theta\operatorname{tg}\theta\thinspace d\theta, \qquad \sqrt{x^2-1} = \sqrt{\operatorname{sec}^2\theta-1} = \operatorname{tg}\theta$$
+$$x = \mathrm{sec}\thinspace\theta \ \Longrightarrow \ dx = \mathrm{sec}\thinspace\theta\mathrm{tg}\thinspace\theta\thinspace d\theta, \qquad \sqrt{x^2-1} = \sqrt{\mathrm{sec}^2\thinspace\theta-1} = \mathrm{tg}\thinspace\theta$$
 
-$$\int\frac{dx}{x\sqrt{x^2-1}} = \int\frac{\operatorname{sec}\theta\operatorname{tg}\theta\thinspace d\theta}{\operatorname{sec}\theta\cdot\operatorname{tg}\theta} = \int d\theta = \theta + C$$
+$$\int\frac{dx}{x\sqrt{x^2-1}} = \int\frac{\mathrm{sec}\thinspace\theta\mathrm{tg}\thinspace\theta\thinspace d\theta}{\mathrm{sec}\thinspace\theta\cdot\mathrm{tg}\thinspace\theta} = \int d\theta = \theta + C$$
 
-Tudo se cancelou. Voltando, de $x = \operatorname{sec}\theta$ vem $\theta = \operatorname{arcsec} x$:
+Tudo se cancelou. Voltando, de $x = \mathrm{sec}\thinspace\theta$ vem $\theta = \mathrm{arcsec}\thinspace x$:
 
-$$\int\frac{dx}{x\sqrt{x^2-1}} = \operatorname{arcsec}\lvert x\rvert + C$$
+$$\int\frac{dx}{x\sqrt{x^2-1}} = \mathrm{arcsec}\lvert x\rvert + C$$
 
-> 💡 **O módulo cobre os dois ramos.** A substituição $x=\operatorname{sec}\theta$ foi feita supondo $x>1$; para $x<-1$ o cálculo é análogo e o resultado se escreve com $\lvert x\rvert$, cobrindo os dois pedaços do domínio.
+> 💡 **O módulo cobre os dois ramos.** A substituição $x=\mathrm{sec}\thinspace\theta$ foi feita supondo $x>1$; para $x<-1$ o cálculo é análogo e o resultado se escreve com $\lvert x\rvert$, cobrindo os dois pedaços do domínio.
 >
-> **E repare no cancelamento total.** Quando uma substituição trigonométrica reduz a integral a $\int d\theta$, isso é sinal de que você acabou de redescobrir uma linha da tabela de derivadas — neste caso, $\big(\operatorname{arcsec} x\big)' = \frac{1}{\lvert x\rvert\sqrt{x^2-1}}$, da [seção 3.4](../../03-derivadas/3.4-derivadas-das-funcoes-trigonometricas-inversas.md).
+> **E repare no cancelamento total.** Quando uma substituição trigonométrica reduz a integral a $\int d\theta$, isso é sinal de que você acabou de redescobrir uma linha da tabela de derivadas — neste caso, $\big(\mathrm{arcsec}\thinspace x\big)' = \frac{1}{\lvert x\rvert\sqrt{x^2-1}}$, da [seção 3.4](../../03-derivadas/3.4-derivadas-das-funcoes-trigonometricas-inversas.md).
 
 ---
 

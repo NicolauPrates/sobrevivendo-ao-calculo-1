@@ -22,7 +22,7 @@
 
 **2.** Calcule:
 
-&nbsp;&nbsp;**(a)** $\displaystyle\int_0^{\pi}\operatorname{sen} x\thinspace dx$ &nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int_0^{\pi/4}\operatorname{sec}^2 x\thinspace dx$ &nbsp;&nbsp;&nbsp; **(c)** $\displaystyle\int_1^{2}\frac{dx}{x^2}$
+&nbsp;&nbsp;**(a)** $\displaystyle\int_0^{\pi}\mathrm{sen}\thinspace x\thinspace dx$ &nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int_0^{\pi/4}\mathrm{sec}^2\thinspace x\thinspace dx$ &nbsp;&nbsp;&nbsp; **(c)** $\displaystyle\int_1^{2}\frac{dx}{x^2}$
 
 **3.** Calcule $\displaystyle\int_0^2 x\thinspace dx$ **pela definição** (limite de somas de Riemann) e confirme pelo TFC.
 

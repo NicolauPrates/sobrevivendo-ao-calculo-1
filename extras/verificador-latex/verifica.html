@@ -30,9 +30,12 @@
 <body>
 
 <h1>Verificador de LaTeX</h1>
-<p>Cada fórmula do material é passada pelo KaTeX <strong>já com o pré-processamento do
-GitHub aplicado</strong>. Se algo aparecer abaixo, essa fórmula não vai renderizar na
-página publicada — e vai levar junto todas as outras da mesma página.</p>
+<p>Cada fórmula do material passa por <strong>duas</strong> checagens: a lista de macros
+que o GitHub recusa, e o KaTeX <strong>já com o pré-processamento do GitHub aplicado</strong>.
+Se algo aparecer abaixo, essa fórmula não vai renderizar na página publicada — e vai levar
+junto todas as outras da mesma página.</p>
+<p><small>A primeira checagem existe porque o KaTeX sozinho <em>não basta</em>: ele aceita
+macros que o GitHub bloqueia, como <code>\operatorname</code>.</small></p>
 
 <div id="resumo">Carregando <code>formulas.json</code>…</div>
 <div id="lista"></div>
@@ -65,7 +68,45 @@ página publicada — e vai levar junto todas as outras da mesma página.</p>
   const erros = [];
   const alertas = [];
 
+  // ---------------------------------------------------------------------------
+  // Macros que o GitHub recusa.
+  //
+  // Não basta ser LaTeX válido: o GitHub mantém uma lista própria de macros
+  // bloqueadas e, ao encontrar uma, descarta a fórmula inteira e imprime no lugar
+  // "The following macros are not allowed: ...". O KaTeX local aceita todas elas
+  // numa boa — foi exatamente assim que \operatorname passou despercebido por
+  // 16 mil fórmulas até alguém abrir a página publicada.
+  //
+  // Não há lista oficial: o GitHub não documenta quais são, e a mensagem é
+  // emitida no navegador, então nem buscar o HTML servido acusa o problema.
+  // A lista abaixo é empírica e deve crescer quando aparecer outra.
+  // ---------------------------------------------------------------------------
+  const PROIBIDAS = [
+    // Confirmada na prática: quebrou as páginas de trigonometria do material.
+    { macro: "operatorname",
+      troque: "\\mathrm{...}, com \\thinspace antes do argumento" },
+    // Preventivas: definição de macro é bloqueada por todo renderizador de
+    // matemática sanitizado. O material não usa nenhuma delas.
+    { macro: "def",          troque: "escreva a expressão por extenso" },
+    { macro: "newcommand",   troque: "escreva a expressão por extenso" },
+    { macro: "renewcommand", troque: "escreva a expressão por extenso" },
+    { macro: "gdef",         troque: "escreva a expressão por extenso" },
+    { macro: "let",          troque: "escreva a expressão por extenso" },
+  ].map(p => ({ ...p, re: new RegExp("\\\\" + p.macro + "\\*?(?![A-Za-z])") }));
+
   for (const item of itens) {
+    // Esta checagem vem ANTES do KaTeX de propósito: o KaTeX renderiza essas
+    // macros sem reclamar, e o erro só apareceria no GitHub.
+    const proibida = PROIBIDAS.find(p => p.re.test(item.tex));
+    if (proibida) {
+      erros.push({
+        ...item,
+        motivo: `o GitHub recusa \\${proibida.macro} e descarta a fórmula — ` +
+          `troque por ${proibida.troque}`
+      });
+      continue;
+    }
+
     try {
       katex.render(item.tex, sandbox, {
         displayMode: item.estilo === "display",

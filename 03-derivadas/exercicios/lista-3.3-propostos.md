@@ -16,21 +16,21 @@
 
 **1.** Derive (uma camada):
 
-&nbsp;&nbsp;**(a)** $f(x) = \operatorname{sen}(5x)$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = \cos\big(x^2\big)$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = e^{4x}$
+&nbsp;&nbsp;**(a)** $f(x) = \mathrm{sen}(5x)$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = \cos\big(x^2\big)$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = e^{4x}$
 
 &nbsp;&nbsp;**(d)** $f(x) = \ln(3x+1)$ &nbsp;&nbsp;&nbsp; **(e)** $f(x) = \big(2x+7\big)^6$ &nbsp;&nbsp;&nbsp; **(f)** $f(x) = \sqrt{x^2+9}$
 
 **2.** Derive, prestando atenção em quem é a função de fora:
 
-&nbsp;&nbsp;**(a)** $f(x) = \operatorname{sen}^3 x$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = \operatorname{sen}\big(x^3\big)$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = \big(\ln x\big)^2$ &nbsp;&nbsp;&nbsp; **(d)** $f(x) = \ln\big(x^2\big)$
+&nbsp;&nbsp;**(a)** $f(x) = \mathrm{sen}^3\thinspace x$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = \mathrm{sen}\big(x^3\big)$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = \big(\ln x\big)^2$ &nbsp;&nbsp;&nbsp; **(d)** $f(x) = \ln\big(x^2\big)$
 
 **3.** Derive (duas camadas):
 
-&nbsp;&nbsp;**(a)** $f(x) = e^{\cos x}$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = \operatorname{tg}(2x+1)$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = \cos^2(3x)$
+&nbsp;&nbsp;**(a)** $f(x) = e^{\cos x}$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = \mathrm{tg}(2x+1)$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = \cos^2(3x)$
 
 **4.** Derive, combinando com produto ou quociente:
 
-&nbsp;&nbsp;**(a)** $f(x) = x\thinspace e^{2x}$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = \dfrac{\operatorname{sen}(2x)}{x}$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = x^2\ln(3x)$
+&nbsp;&nbsp;**(a)** $f(x) = x\thinspace e^{2x}$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = \dfrac{\mathrm{sen}(2x)}{x}$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = x^2\ln(3x)$
 
 **5.** Determine $\dfrac{dy}{dx}$ por derivação implícita:
 
@@ -40,7 +40,7 @@
 
 **7.** Verdadeiro ou falso? Justifique.
 
-&nbsp;&nbsp;**(a)** $\big(\operatorname{sen}(2x)\big)' = \cos(2x)$
+&nbsp;&nbsp;**(a)** $\big(\mathrm{sen}(2x)\big)' = \cos(2x)$
 
 &nbsp;&nbsp;**(b)** $\big(e^{3x}\big)' = 3e^{3x}$
 
@@ -54,25 +54,25 @@
 
 ## Bloco B · Consolidação
 
-**9.** $f(x) = \operatorname{sen}\big(\cos x\big)$
+**9.** $f(x) = \mathrm{sen}\big(\cos x\big)$
 
-**10.** $f(x) = \sqrt{1+\operatorname{tg} x}$
+**10.** $f(x) = \sqrt{1+\mathrm{tg}\thinspace x}$
 
 **11.** $f(x) = \dfrac{e^{2x}}{x^2+1}$
 
 **12.** $f(x) = \ln\left(\dfrac{x+1}{x-1}\right)$ &nbsp;&nbsp;*(quebre o logaritmo antes)*
 
-**13.** $f(x) = e^{x^2}\operatorname{sen}(3x)$
+**13.** $f(x) = e^{x^2}\mathrm{sen}(3x)$
 
 **14.** Determine a reta tangente à curva $x^2 + xy + y^2 = 3$ no ponto $(1,\thinspace 1)$.
 
-**15.** Determine $\dfrac{dy}{dx}$ para $\operatorname{sen}(xy) = x$.
+**15.** Determine $\dfrac{dy}{dx}$ para $\mathrm{sen}(xy) = x$.
 
-**16.** Seja $f(x) = 2x + \operatorname{sen} x$, com $f(0)=0$. Calcule $\big(f^{-1}\big)'(0)$.
+**16.** Seja $f(x) = 2x + \mathrm{sen}\thinspace x$, com $f(0)=0$. Calcule $\big(f^{-1}\big)'(0)$.
 
 **17.** Use **derivação logarítmica** para derivar $y = \dfrac{(x+1)^2\sqrt{x-3}}{x^4}$.
 
-**18.** $f(x) = \operatorname{sen}\big(\operatorname{sen}(\operatorname{sen} x)\big)$ &nbsp;&nbsp;*(três camadas)*
+**18.** $f(x) = \mathrm{sen}\big(\mathrm{sen}(\mathrm{sen}\thinspace x)\big)$ &nbsp;&nbsp;*(três camadas)*
 
 ---
 

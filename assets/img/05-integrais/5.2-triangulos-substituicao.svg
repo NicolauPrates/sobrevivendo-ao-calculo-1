@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-13T02:08:06.951623</dc:date>
+    <dc:date>2026-10-14T19:42:05.516807</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -34,13 +34,13 @@ z
 L 152.747417 156.369927 
 L 152.747417 73.324975 
 L 25.73749 156.369927 
-" clip-path="url(#pf9f765f55a)" style="fill: none; stroke: #1a5fb4; stroke-width: 2; stroke-linecap: round"/>
+" clip-path="url(#p5f1695297c)" style="fill: none; stroke: #1a5fb4; stroke-width: 2; stroke-linecap: round"/>
    </g>
    <g id="line2d_2">
     <path d="M 142.000423 156.369927 
 L 142.000423 145.622933 
 L 152.747417 145.622933 
-" clip-path="url(#pf9f765f55a)" style="fill: none; stroke: #2b2b2b; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p5f1695297c)" style="fill: none; stroke: #2b2b2b; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="line2d_3">
     <path d="M 52.604975 156.369927 
@@ -83,7 +83,7 @@ L 48.857179 142.682643
 L 48.651408 142.340882 
 L 48.440586 142.002214 
 L 48.224758 141.666713 
-" clip-path="url(#pf9f765f55a)" style="fill: none; stroke: #a51d2d; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p5f1695297c)" style="fill: none; stroke: #a51d2d; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="text_1">
     <!-- $\theta$ -->
@@ -254,7 +254,7 @@ z
     </g>
    </g>
    <g id="text_5">
-    <!-- $x = a\operatorname{sen}\theta$ -->
+    <!-- $x = a\mathrm{sen}\,\theta$ -->
     <g style="fill: #a51d2d" transform="translate(59.362454 206.08865) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-3d" d="M 678 2906 
@@ -464,13 +464,13 @@ z
 L 383.089793 156.369927 
 L 383.089793 73.324975 
 L 256.079865 156.369927 
-" clip-path="url(#p28140d74a3)" style="fill: none; stroke: #1a5fb4; stroke-width: 2; stroke-linecap: round"/>
+" clip-path="url(#p88cdd5249c)" style="fill: none; stroke: #1a5fb4; stroke-width: 2; stroke-linecap: round"/>
    </g>
    <g id="line2d_5">
     <path d="M 372.342799 156.369927 
 L 372.342799 145.622933 
 L 383.089793 145.622933 
-" clip-path="url(#p28140d74a3)" style="fill: none; stroke: #2b2b2b; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p88cdd5249c)" style="fill: none; stroke: #2b2b2b; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="line2d_6">
     <path d="M 282.94735 156.369927 
@@ -513,7 +513,7 @@ L 279.199554 142.682643
 L 278.993783 142.340882 
 L 278.782961 142.002214 
 L 278.567134 141.666713 
-" clip-path="url(#p28140d74a3)" style="fill: none; stroke: #a51d2d; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p88cdd5249c)" style="fill: none; stroke: #a51d2d; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="text_7">
     <!-- $\theta$ -->
@@ -569,7 +569,7 @@ z
     </g>
    </g>
    <g id="text_11">
-    <!-- $x = a\operatorname{tg}\theta$ -->
+    <!-- $x = a\mathrm{tg}\,\theta$ -->
     <g style="fill: #a51d2d" transform="translate(294.144829 206.1374) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-74" d="M 1172 4494 
@@ -666,13 +666,13 @@ z
 L 613.432168 156.369927 
 L 613.432168 73.324975 
 L 486.422241 156.369927 
-" clip-path="url(#p73f9de2929)" style="fill: none; stroke: #1a5fb4; stroke-width: 2; stroke-linecap: round"/>
+" clip-path="url(#peb2d2f4387)" style="fill: none; stroke: #1a5fb4; stroke-width: 2; stroke-linecap: round"/>
    </g>
    <g id="line2d_8">
     <path d="M 602.685174 156.369927 
 L 602.685174 145.622933 
 L 613.432168 145.622933 
-" clip-path="url(#p73f9de2929)" style="fill: none; stroke: #2b2b2b; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#peb2d2f4387)" style="fill: none; stroke: #2b2b2b; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="line2d_9">
     <path d="M 513.289725 156.369927 
@@ -715,7 +715,7 @@ L 509.541929 142.682643
 L 509.336159 142.340882 
 L 509.125336 142.002214 
 L 508.909509 141.666713 
-" clip-path="url(#p73f9de2929)" style="fill: none; stroke: #a51d2d; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#peb2d2f4387)" style="fill: none; stroke: #a51d2d; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="text_13">
     <!-- $\theta$ -->
@@ -754,7 +754,7 @@ z
     </g>
    </g>
    <g id="text_17">
-    <!-- $x = a\operatorname{sec}\theta$ -->
+    <!-- $x = a\mathrm{sec}\,\theta$ -->
     <g style="fill: #a51d2d" transform="translate(520.527204 206.08865) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-63" d="M 3122 3366 
@@ -814,13 +814,13 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pf9f765f55a">
+  <clipPath id="p5f1695297c">
    <rect x="8.64" y="29.36" width="217.382375" height="183.187395"/>
   </clipPath>
-  <clipPath id="p28140d74a3">
+  <clipPath id="p88cdd5249c">
    <rect x="238.982375" y="29.36" width="217.382375" height="183.187395"/>
   </clipPath>
-  <clipPath id="p73f9de2929">
+  <clipPath id="peb2d2f4387">
    <rect x="469.324751" y="29.36" width="217.382375" height="183.187395"/>
   </clipPath>
  </defs>

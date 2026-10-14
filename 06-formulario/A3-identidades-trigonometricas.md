@@ -6,15 +6,15 @@
 
 > **Onde isso é usado:** limites trigonométricos ([2.3](../02-limites-e-continuidade/2.3-teorema-do-sanduiche.md)), derivadas ([3.2](../03-derivadas/3.2-derivadas-das-funcoes-elementares.md)) e, sobretudo, técnicas de integração ([5.2](../05-integrais/5.2-tecnicas-de-integracao.md)).
 
-> 📝 **Notação brasileira:** $\operatorname{sen}$, $\operatorname{tg}$, $\operatorname{cotg}$, $\operatorname{sec}$, $\operatorname{cossec}$ — veja [CONVENCOES.md](../CONVENCOES.md).
+> 📝 **Notação brasileira:** $\mathrm{sen}$, $\mathrm{tg}$, $\mathrm{cotg}$, $\mathrm{sec}$, $\mathrm{cossec}$ — veja [CONVENCOES.md](../CONVENCOES.md).
 
 ---
 
 ## 1. Definições a partir de seno e cosseno
 
-$$\operatorname{tg} x = \frac{\operatorname{sen} x}{\cos x} \qquad \operatorname{cotg} x = \frac{\cos x}{\operatorname{sen} x} = \frac{1}{\operatorname{tg} x}$$
+$$\mathrm{tg}\thinspace x = \frac{\mathrm{sen}\thinspace x}{\cos x} \qquad \mathrm{cotg}\thinspace x = \frac{\cos x}{\mathrm{sen}\thinspace x} = \frac{1}{\mathrm{tg}\thinspace x}$$
 
-$$\operatorname{sec} x = \frac{1}{\cos x} \qquad \operatorname{cossec} x = \frac{1}{\operatorname{sen} x}$$
+$$\mathrm{sec}\thinspace x = \frac{1}{\cos x} \qquad \mathrm{cossec}\thinspace x = \frac{1}{\mathrm{sen}\thinspace x}$$
 
 > [!TIP]
 > **Quando uma identidade trigonométrica não aparecer, reescreva tudo em seno e cosseno.** É o movimento que destrava a maioria das integrais trigonométricas estranhas — e muitas vezes revela um cancelamento que não estava visível.
@@ -26,9 +26,9 @@ $$\operatorname{sec} x = \frac{1}{\cos x} \qquad \operatorname{cossec} x = \frac
 | $x$ | $0$ | $\dfrac{\pi}{6}$ | $\dfrac{\pi}{4}$ | $\dfrac{\pi}{3}$ | $\dfrac{\pi}{2}$ | $\pi$ | $\dfrac{3\pi}{2}$ | $2\pi$ |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | graus | $0°$ | $30°$ | $45°$ | $60°$ | $90°$ | $180°$ | $270°$ | $360°$ |
-| $\operatorname{sen} x$ | $0$ | $\dfrac12$ | $\dfrac{\sqrt2}{2}$ | $\dfrac{\sqrt3}{2}$ | $1$ | $0$ | $-1$ | $0$ |
+| $\mathrm{sen}\thinspace x$ | $0$ | $\dfrac12$ | $\dfrac{\sqrt2}{2}$ | $\dfrac{\sqrt3}{2}$ | $1$ | $0$ | $-1$ | $0$ |
 | $\cos x$ | $1$ | $\dfrac{\sqrt3}{2}$ | $\dfrac{\sqrt2}{2}$ | $\dfrac12$ | $0$ | $-1$ | $0$ | $1$ |
-| $\operatorname{tg} x$ | $0$ | $\dfrac{\sqrt3}{3}$ | $1$ | $\sqrt3$ | ∄ | $0$ | ∄ | $0$ |
+| $\mathrm{tg}\thinspace x$ | $0$ | $\dfrac{\sqrt3}{3}$ | $1$ | $\sqrt3$ | ∄ | $0$ | ∄ | $0$ |
 
 > 💡 **O truque da mão esquerda.** Para $0°,30°,45°,60°,90°$, o seno é $\dfrac{\sqrt0}{2}, \dfrac{\sqrt1}{2}, \dfrac{\sqrt2}{2}, \dfrac{\sqrt3}{2}, \dfrac{\sqrt4}{2}$ — basta contar $0,1,2,3,4$ sob a raiz. O cosseno é a mesma sequência **ao contrário**.
 
@@ -36,17 +36,17 @@ $$\operatorname{sec} x = \frac{1}{\cos x} \qquad \operatorname{cossec} x = \frac
 
 ## 3. Identidades pitagóricas
 
-$$\operatorname{sen}^2 x + \cos^2 x = 1$$
+$$\mathrm{sen}^2\thinspace x + \cos^2 x = 1$$
 
-$$1 + \operatorname{tg}^2 x = \operatorname{sec}^2 x$$
+$$1 + \mathrm{tg}^2\thinspace x = \mathrm{sec}^2\thinspace x$$
 
-$$1 + \operatorname{cotg}^2 x = \operatorname{cossec}^2 x$$
+$$1 + \mathrm{cotg}^2\thinspace x = \mathrm{cossec}^2\thinspace x$$
 
-> 💡 **As duas últimas saem da primeira.** Divida $\operatorname{sen}^2+\cos^2=1$ por $\cos^2 x$ e aparece a segunda; divida por $\operatorname{sen}^2 x$ e aparece a terceira. **Decore uma, deduza três.**
+> 💡 **As duas últimas saem da primeira.** Divida $\mathrm{sen}^2+\cos^2=1$ por $\cos^2 x$ e aparece a segunda; divida por $\mathrm{sen}^2\thinspace x$ e aparece a terceira. **Decore uma, deduza três.**
 
 **As formas mais usadas em integração:**
 
-$$\operatorname{sen}^2 x = 1-\cos^2 x \qquad \operatorname{tg}^2 x = \operatorname{sec}^2 x - 1 \qquad \operatorname{cotg}^2 x = \operatorname{cossec}^2 x - 1$$
+$$\mathrm{sen}^2\thinspace x = 1-\cos^2 x \qquad \mathrm{tg}^2\thinspace x = \mathrm{sec}^2\thinspace x - 1 \qquad \mathrm{cotg}^2\thinspace x = \mathrm{cossec}^2\thinspace x - 1$$
 
 ---
 
@@ -54,25 +54,25 @@ $$\operatorname{sen}^2 x = 1-\cos^2 x \qquad \operatorname{tg}^2 x = \operatorna
 
 | | |
 | --- | --- |
-| $\operatorname{sen}(-x) = -\operatorname{sen} x$ | **ímpar** |
+| $\mathrm{sen}(-x) = -\mathrm{sen}\thinspace x$ | **ímpar** |
 | $\cos(-x) = \cos x$ | **par** |
-| $\operatorname{tg}(-x) = -\operatorname{tg} x$ | **ímpar** |
+| $\mathrm{tg}(-x) = -\mathrm{tg}\thinspace x$ | **ímpar** |
 
-**Períodos:** $\operatorname{sen}$, $\cos$, $\operatorname{sec}$ e $\operatorname{cossec}$ têm período $2\pi$; $\operatorname{tg}$ e $\operatorname{cotg}$ têm período $\pi$.
+**Períodos:** $\mathrm{sen}$, $\cos$, $\mathrm{sec}$ e $\mathrm{cossec}$ têm período $2\pi$; $\mathrm{tg}$ e $\mathrm{cotg}$ têm período $\pi$.
 
 **Relações de complemento:**
 
-$$\operatorname{sen}\left(\frac{\pi}{2}-x\right) = \cos x \qquad \cos\left(\frac{\pi}{2}-x\right) = \operatorname{sen} x$$
+$$\mathrm{sen}\left(\frac{\pi}{2}-x\right) = \cos x \qquad \cos\left(\frac{\pi}{2}-x\right) = \mathrm{sen}\thinspace x$$
 
 ---
 
 ## 5. Soma e diferença de arcos
 
-$$\operatorname{sen}(a\pm b) = \operatorname{sen} a\cos b \pm \cos a\operatorname{sen} b$$
+$$\mathrm{sen}(a\pm b) = \mathrm{sen}\thinspace a\cos b \pm \cos a\mathrm{sen}\thinspace b$$
 
-$$\cos(a\pm b) = \cos a\cos b \mp \operatorname{sen} a\operatorname{sen} b$$
+$$\cos(a\pm b) = \cos a\cos b \mp \mathrm{sen}\thinspace a\mathrm{sen}\thinspace b$$
 
-$$\operatorname{tg}(a\pm b) = \frac{\operatorname{tg} a \pm \operatorname{tg} b}{1 \mp \operatorname{tg} a\operatorname{tg} b}$$
+$$\mathrm{tg}(a\pm b) = \frac{\mathrm{tg}\thinspace a \pm \mathrm{tg}\thinspace b}{1 \mp \mathrm{tg}\thinspace a\mathrm{tg}\thinspace b}$$
 
 > ⚠️ **Atenção aos sinais cruzados do cosseno:** $\cos(a+b)$ leva **menos**, e $\cos(a-b)$ leva **mais**. É o contrário do seno, e é o erro mais comum desta página.
 
@@ -80,11 +80,11 @@ $$\operatorname{tg}(a\pm b) = \frac{\operatorname{tg} a \pm \operatorname{tg} b}
 
 ## 6. Arco duplo
 
-$$\operatorname{sen} 2x = 2\operatorname{sen} x\cos x$$
+$$\mathrm{sen}\thinspace 2x = 2\mathrm{sen}\thinspace x\cos x$$
 
-$$\cos 2x = \cos^2 x - \operatorname{sen}^2 x = 2\cos^2 x - 1 = 1 - 2\operatorname{sen}^2 x$$
+$$\cos 2x = \cos^2 x - \mathrm{sen}^2\thinspace x = 2\cos^2 x - 1 = 1 - 2\mathrm{sen}^2\thinspace x$$
 
-$$\operatorname{tg} 2x = \frac{2\operatorname{tg} x}{1-\operatorname{tg}^2 x}$$
+$$\mathrm{tg}\thinspace 2x = \frac{2\mathrm{tg}\thinspace x}{1-\mathrm{tg}^2\thinspace x}$$
 
 > 💡 **As três formas de $\cos 2x$ existem porque cada uma serve a um propósito.** A segunda isola o cosseno; a terceira isola o seno — e é de onde saem as fórmulas de redução de potência abaixo.
 
@@ -92,12 +92,12 @@ $$\operatorname{tg} 2x = \frac{2\operatorname{tg} x}{1-\operatorname{tg}^2 x}$$
 
 ## 7. Redução de potência — as que resolvem integrais
 
-Isolando $\operatorname{sen}^2$ e $\cos^2$ nas identidades de arco duplo:
+Isolando $\mathrm{sen}^2$ e $\cos^2$ nas identidades de arco duplo:
 
-$$\operatorname{sen}^2 x = \frac{1-\cos 2x}{2} \qquad\qquad \cos^2 x = \frac{1+\cos 2x}{2}$$
+$$\mathrm{sen}^2\thinspace x = \frac{1-\cos 2x}{2} \qquad\qquad \cos^2 x = \frac{1+\cos 2x}{2}$$
 
 > [!TIP]
-> **Estas duas são as identidades mais rentáveis do formulário inteiro.** Toda integral de potência **par** de seno ou cosseno passa por aqui. Sem elas, $\int\operatorname{sen}^2 x\thinspace dx$ é impossível; com elas, é imediata.
+> **Estas duas são as identidades mais rentáveis do formulário inteiro.** Toda integral de potência **par** de seno ou cosseno passa por aqui. Sem elas, $\int\mathrm{sen}^2\thinspace x\thinspace dx$ é impossível; com elas, é imediata.
 >
 > **Como lembrar o sinal:** $\cos^2$ fica com o **mais** (as duas palavras têm "co"). O seno fica com o menos.
 
@@ -105,7 +105,7 @@ $$\operatorname{sen}^2 x = \frac{1-\cos 2x}{2} \qquad\qquad \cos^2 x = \frac{1+\
 
 ## 8. Arco metade
 
-$$\operatorname{sen}\frac{x}{2} = \pm\sqrt{\frac{1-\cos x}{2}} \qquad \cos\frac{x}{2} = \pm\sqrt{\frac{1+\cos x}{2}}$$
+$$\mathrm{sen}\thinspace\frac{x}{2} = \pm\sqrt{\frac{1-\cos x}{2}} \qquad \cos\frac{x}{2} = \pm\sqrt{\frac{1+\cos x}{2}}$$
 
 (o sinal depende do quadrante de $\frac{x}{2}$)
 
@@ -113,13 +113,13 @@ $$\operatorname{sen}\frac{x}{2} = \pm\sqrt{\frac{1-\cos x}{2}} \qquad \cos\frac{
 
 ## 9. Produto em soma
 
-$$\operatorname{sen} a\cos b = \frac12\Big[\operatorname{sen}(a+b)+\operatorname{sen}(a-b)\Big]$$
+$$\mathrm{sen}\thinspace a\cos b = \frac12\Big[\mathrm{sen}(a+b)+\mathrm{sen}(a-b)\Big]$$
 
-$$\operatorname{sen} a\operatorname{sen} b = \frac12\Big[\cos(a-b)-\cos(a+b)\Big]$$
+$$\mathrm{sen}\thinspace a\mathrm{sen}\thinspace b = \frac12\Big[\cos(a-b)-\cos(a+b)\Big]$$
 
 $$\cos a\cos b = \frac12\Big[\cos(a-b)+\cos(a+b)\Big]$$
 
-> 💡 **Para que servem:** transformam $\int\operatorname{sen}(3x)\cos(5x)\thinspace dx$ — que não tem padrão nenhum — numa soma de duas integrais imediatas. Raramente caem em Cálculo 1, mas quando caem, são a única saída.
+> 💡 **Para que servem:** transformam $\int\mathrm{sen}(3x)\cos(5x)\thinspace dx$ — que não tem padrão nenhum — numa soma de duas integrais imediatas. Raramente caem em Cálculo 1, mas quando caem, são a única saída.
 
 ---
 
@@ -127,21 +127,21 @@ $$\cos a\cos b = \frac12\Big[\cos(a-b)+\cos(a+b)\Big]$$
 
 | Função | Domínio | Imagem |
 | --- | :---: | :---: |
-| $\operatorname{arcsen} x$ | $[-1,1]$ | $\left[-\frac{\pi}{2},\thinspace\frac{\pi}{2}\right]$ |
-| $\operatorname{arccos} x$ | $[-1,1]$ | $[0,\thinspace\pi]$ |
-| $\operatorname{arctg} x$ | $\mathbb{R}$ | $\left(-\frac{\pi}{2},\thinspace\frac{\pi}{2}\right)$ |
+| $\mathrm{arcsen}\thinspace x$ | $[-1,1]$ | $\left[-\frac{\pi}{2},\thinspace\frac{\pi}{2}\right]$ |
+| $\mathrm{arccos}\thinspace x$ | $[-1,1]$ | $[0,\thinspace\pi]$ |
+| $\mathrm{arctg}\thinspace x$ | $\mathbb{R}$ | $\left(-\frac{\pi}{2},\thinspace\frac{\pi}{2}\right)$ |
 
 **Relações úteis:**
 
-$$\operatorname{arcsen} x + \operatorname{arccos} x = \frac{\pi}{2} \qquad \operatorname{arctg} x + \operatorname{arccotg} x = \frac{\pi}{2}$$
+$$\mathrm{arcsen}\thinspace x + \mathrm{arccos}\thinspace x = \frac{\pi}{2} \qquad \mathrm{arctg}\thinspace x + \mathrm{arccotg}\thinspace x = \frac{\pi}{2}$$
 
-$$\cos\big(\operatorname{arcsen} x\big) = \sqrt{1-x^2} \qquad \operatorname{sen}\big(\operatorname{arctg} x\big) = \frac{x}{\sqrt{1+x^2}}$$
+$$\cos\big(\mathrm{arcsen}\thinspace x\big) = \sqrt{1-x^2} \qquad \mathrm{sen}\big(\mathrm{arctg}\thinspace x\big) = \frac{x}{\sqrt{1+x^2}}$$
 
-> 💡 **As duas últimas saem de um triângulo**, não de decoreba. Para $\theta = \operatorname{arcsen} x$: monte o triângulo com hipotenusa $1$ e cateto oposto $x$; o adjacente é $\sqrt{1-x^2}$, e daí lê-se qualquer razão de $\theta$. É exatamente o procedimento da substituição trigonométrica.
+> 💡 **As duas últimas saem de um triângulo**, não de decoreba. Para $\theta = \mathrm{arcsen}\thinspace x$: monte o triângulo com hipotenusa $1$ e cateto oposto $x$; o adjacente é $\sqrt{1-x^2}$, e daí lê-se qualquer razão de $\theta$. É exatamente o procedimento da substituição trigonométrica.
 
 **Limites notáveis das inversas:**
 
-$$\lim_{x\to+\infty}\operatorname{arctg} x = \frac{\pi}{2} \qquad \lim_{x\to-\infty}\operatorname{arctg} x = -\frac{\pi}{2}$$
+$$\lim_{x\to+\infty}\mathrm{arctg}\thinspace x = \frac{\pi}{2} \qquad \lim_{x\to-\infty}\mathrm{arctg}\thinspace x = -\frac{\pi}{2}$$
 
 ---
 
@@ -149,11 +149,11 @@ $$\lim_{x\to+\infty}\operatorname{arctg} x = \frac{\pi}{2} \qquad \lim_{x\to-\in
 
 | **Decore** | **Deduza** |
 | --- | --- |
-| $\operatorname{sen}^2+\cos^2=1$ | as outras duas pitagóricas (divida por $\cos^2$ ou $\operatorname{sen}^2$) |
+| $\mathrm{sen}^2+\cos^2=1$ | as outras duas pitagóricas (divida por $\cos^2$ ou $\mathrm{sen}^2$) |
 | soma e diferença de arcos | arco duplo (faça $b=a$) |
-| $\cos 2x = 1-2\operatorname{sen}^2 x$ | redução de potência (isole $\operatorname{sen}^2$) |
+| $\cos 2x = 1-2\mathrm{sen}^2\thinspace x$ | redução de potência (isole $\mathrm{sen}^2$) |
 | a linha dos valores notáveis do seno | a do cosseno (é a mesma ao contrário) |
-| as definições de $\operatorname{tg}$, $\operatorname{sec}$… | tudo que envolver elas (volte a seno e cosseno) |
+| as definições de $\mathrm{tg}$, $\mathrm{sec}$… | tudo que envolver elas (volte a seno e cosseno) |
 
 > [!TIP]
 > **Cinco linhas decoradas geram esta página inteira.** Em prova sem consulta, é isso que você precisa levar — o resto se reconstrói em trinta segundos.

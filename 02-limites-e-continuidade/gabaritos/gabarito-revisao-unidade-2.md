@@ -106,7 +106,7 @@ As pontas tendem ao mesmo valor. Pelo **Teorema do Confronto**, $\lim_{x\to1} f(
 
 **(a)** Prepare as duas frações:
 
-$$\frac{\operatorname{sen} 5x}{\operatorname{sen} 2x} = \frac{\operatorname{sen} 5x}{5x}\cdot\frac{2x}{\operatorname{sen} 2x}\cdot\frac{5}{2} \ \longrightarrow \ 1\cdot1\cdot\frac52 = \frac52$$
+$$\frac{\mathrm{sen}\thinspace 5x}{\mathrm{sen}\thinspace 2x} = \frac{\mathrm{sen}\thinspace 5x}{5x}\cdot\frac{2x}{\mathrm{sen}\thinspace 2x}\cdot\frac{5}{2} \ \longrightarrow \ 1\cdot1\cdot\frac52 = \frac52$$
 
 **(b)** Ajuste o argumento, multiplicando e dividindo por $9$:
 
@@ -116,7 +116,7 @@ $$\frac{1-\cos 3x}{x^2} = 9\cdot\frac{1-\cos 3x}{(3x)^2} \ \longrightarrow \ 9\c
 
 **(c)**
 
-$$\frac{\operatorname{tg} 2x}{3x} = \frac{\operatorname{sen} 2x}{3x\cos 2x} = \frac23\cdot\frac{\operatorname{sen} 2x}{2x}\cdot\frac{1}{\cos 2x} \ \longrightarrow \ \frac23 \cdot 1 \cdot 1 = \frac23$$
+$$\frac{\mathrm{tg}\thinspace 2x}{3x} = \frac{\mathrm{sen}\thinspace 2x}{3x\cos 2x} = \frac23\cdot\frac{\mathrm{sen}\thinspace 2x}{2x}\cdot\frac{1}{\cos 2x} \ \longrightarrow \ \frac23 \cdot 1 \cdot 1 = \frac23$$
 
 ---
 

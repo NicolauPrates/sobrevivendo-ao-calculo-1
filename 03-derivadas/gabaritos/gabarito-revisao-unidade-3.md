@@ -13,17 +13,17 @@
 | 1 | $f'(x) = 4x-1$ |
 | 2 | Tangente $y = 4x-7$; normal $y = -\dfrac{x}{4}+\dfrac32$ |
 | 3 (a) | $3e^x - \dfrac2x + \cos x$ |
-| 3 (b) | $2x\cos x - x^2\operatorname{sen} x$ |
+| 3 (b) | $2x\cos x - x^2\mathrm{sen}\thinspace x$ |
 | 3 (c) | $\dfrac{1-2\ln x}{x^3}$ |
 | 4 (a) | $2x\cos\big(x^2+1\big)$ |
-| 4 (b) | $e^{3x}\big[3\cos(2x) - 2\operatorname{sen}(2x)\big]$ |
+| 4 (b) | $e^{3x}\big[3\cos(2x) - 2\mathrm{sen}(2x)\big]$ |
 | 4 (c) | $\dfrac{1}{2x\sqrt{1+\ln x}}$ |
 | 5 (a) | $\dfrac{dy}{dx} = \dfrac{2y-x^2}{y^2-2x}$ |
 | 5 (b) | $y = -x+6$ |
 | 6 | $\dfrac15$ |
 | 7 (a) | $\dfrac{2}{1+4x^2}$ |
 | 7 (b) | $\arccos x - \dfrac{x}{\sqrt{1-x^2}}$ |
-| 7 (c) | $\dfrac{3\big(\operatorname{arctg} x\big)^2}{1+x^2}$ |
+| 7 (c) | $\dfrac{3\big(\mathrm{arctg}\thinspace x\big)^2}{1+x^2}$ |
 | 8 | $x^{2x}\big(2\ln x + 2\big)$ |
 | 9 | Sim, é derivável; $f'(2) = 4$ |
 | 10 | $\dfrac{1}{\pi} \approx 0{,}32$ cm/s |
@@ -70,7 +70,7 @@ $$y - 1 = -\frac14(x-2) \ \Longrightarrow \ y = -\frac{x}{4}+\frac32$$
 
 **(a)** $f'(x) = 3e^x - \dfrac2x + \cos x$
 
-**(b)** $f'(x) = 2x\cos x + x^2(-\operatorname{sen} x) = 2x\cos x - x^2\operatorname{sen} x$
+**(b)** $f'(x) = 2x\cos x + x^2(-\mathrm{sen}\thinspace x) = 2x\cos x - x^2\mathrm{sen}\thinspace x$
 
 **(c)** Pela regra do quociente:
 
@@ -84,7 +84,7 @@ $$f'(x) = \frac{\frac1x\cdot x^2 - \ln x\cdot 2x}{x^4} = \frac{x - 2x\ln x}{x^4}
 
 **(b)** Regra do produto, com cadeia nos dois fatores:
 
-$$f'(x) = 3e^{3x}\cos(2x) + e^{3x}\big(-2\operatorname{sen}(2x)\big) = e^{3x}\big[3\cos(2x)-2\operatorname{sen}(2x)\big]$$
+$$f'(x) = 3e^{3x}\cos(2x) + e^{3x}\big(-2\mathrm{sen}(2x)\big) = e^{3x}\big[3\cos(2x)-2\mathrm{sen}(2x)\big]$$
 
 **(c)**
 
@@ -126,7 +126,7 @@ $$\big(f^{-1}\big)'(4) = \frac{1}{f'(1)} = \frac15$$
 
 **(b)** $f'(x) = 1\cdot\arccos x + x\cdot\left(-\dfrac{1}{\sqrt{1-x^2}}\right) = \arccos x - \dfrac{x}{\sqrt{1-x^2}}$
 
-**(c)** $f'(x) = 3\big(\operatorname{arctg} x\big)^2\cdot\dfrac{1}{1+x^2} = \dfrac{3\big(\operatorname{arctg} x\big)^2}{1+x^2}$
+**(c)** $f'(x) = 3\big(\mathrm{arctg}\thinspace x\big)^2\cdot\dfrac{1}{1+x^2} = \dfrac{3\big(\mathrm{arctg}\thinspace x\big)^2}{1+x^2}$
 
 ---
 

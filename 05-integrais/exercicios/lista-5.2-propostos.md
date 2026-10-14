@@ -20,23 +20,23 @@ Esta é a lista mais longa do material — e com razão: integrar se aprende por
 
 &nbsp;&nbsp;**(a)** $\displaystyle\int \big(3x+5\big)^{7}dx$ &nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int 2x\big(x^2-4\big)^{5}dx$
 
-&nbsp;&nbsp;**(c)** $\displaystyle\int \frac{x\thinspace dx}{\sqrt{x^2+9}}$ &nbsp;&nbsp;&nbsp; **(d)** $\displaystyle\int \operatorname{sen}\big(5x\big)dx$
+&nbsp;&nbsp;**(c)** $\displaystyle\int \frac{x\thinspace dx}{\sqrt{x^2+9}}$ &nbsp;&nbsp;&nbsp; **(d)** $\displaystyle\int \mathrm{sen}\big(5x\big)dx$
 
 **2.** Calcule:
 
 &nbsp;&nbsp;**(a)** $\displaystyle\int \frac{dx}{3x-1}$ &nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int \frac{2x+3}{x^2+3x+1}\thinspace dx$
 
-&nbsp;&nbsp;**(c)** $\displaystyle\int \frac{\ln x}{x}\thinspace dx$ &nbsp;&nbsp;&nbsp; **(d)** $\displaystyle\int \operatorname{cotg} x\thinspace dx$
+&nbsp;&nbsp;**(c)** $\displaystyle\int \frac{\ln x}{x}\thinspace dx$ &nbsp;&nbsp;&nbsp; **(d)** $\displaystyle\int \mathrm{cotg}\thinspace x\thinspace dx$
 
 **3.** Calcule:
 
-&nbsp;&nbsp;**(a)** $\displaystyle\int \cos^3 x\operatorname{sen} x\thinspace dx$ &nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int x\thinspace e^{-x^2}dx$ &nbsp;&nbsp;&nbsp; **(c)** $\displaystyle\int \frac{e^{\sqrt{x}}}{\sqrt{x}}\thinspace dx$
+&nbsp;&nbsp;**(a)** $\displaystyle\int \cos^3 x\mathrm{sen}\thinspace x\thinspace dx$ &nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int x\thinspace e^{-x^2}dx$ &nbsp;&nbsp;&nbsp; **(c)** $\displaystyle\int \frac{e^{\sqrt{x}}}{\sqrt{x}}\thinspace dx$
 
 ### Integração por partes
 
 **4.** Calcule:
 
-&nbsp;&nbsp;**(a)** $\displaystyle\int x\operatorname{sen} x\thinspace dx$ &nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int x\thinspace e^{3x}dx$ &nbsp;&nbsp;&nbsp; **(c)** $\displaystyle\int x\ln x\thinspace dx$
+&nbsp;&nbsp;**(a)** $\displaystyle\int x\mathrm{sen}\thinspace x\thinspace dx$ &nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int x\thinspace e^{3x}dx$ &nbsp;&nbsp;&nbsp; **(c)** $\displaystyle\int x\ln x\thinspace dx$
 
 **5.** Calcule (precisa de **duas** aplicações):
 
@@ -44,7 +44,7 @@ Esta é a lista mais longa do material — e com razão: integrar se aprende por
 
 **6.** Calcule, usando o truque $dv = dx$:
 
-&nbsp;&nbsp;**(a)** $\displaystyle\int \operatorname{arctg} x\thinspace dx$ &nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int \operatorname{arcsen} x\thinspace dx$
+&nbsp;&nbsp;**(a)** $\displaystyle\int \mathrm{arctg}\thinspace x\thinspace dx$ &nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int \mathrm{arcsen}\thinspace x\thinspace dx$
 
 ### Frações parciais
 
@@ -82,11 +82,11 @@ Esta é a lista mais longa do material — e com razão: integrar se aprende por
 
 **15.** $\displaystyle\int \frac{x^3}{x-2}\thinspace dx$
 
-**16.** $\displaystyle\int \operatorname{sen}^2 x\thinspace dx$
+**16.** $\displaystyle\int \mathrm{sen}^2\thinspace x\thinspace dx$
 
-**17.** $\displaystyle\int \operatorname{sen}^3 x\thinspace dx$
+**17.** $\displaystyle\int \mathrm{sen}^3\thinspace x\thinspace dx$
 
-&nbsp;&nbsp;*(Sugestão: separe um $\operatorname{sen} x$ e use $\operatorname{sen}^2 = 1-\cos^2$.)*
+&nbsp;&nbsp;*(Sugestão: separe um $\mathrm{sen}\thinspace x$ e use $\mathrm{sen}^2 = 1-\cos^2$.)*
 
 **18.** $\displaystyle\int \frac{dx}{x^2+6x+13}$
 
@@ -108,21 +108,21 @@ Esta é a lista mais longa do material — e com razão: integrar se aprende por
 
 **23.** Mostre que
 
-$$\int \operatorname{sec} x\thinspace dx = \ln\lvert\operatorname{sec} x + \operatorname{tg} x\rvert + C$$
+$$\int \mathrm{sec}\thinspace x\thinspace dx = \ln\lvert\mathrm{sec}\thinspace x + \mathrm{tg}\thinspace x\rvert + C$$
 
-&nbsp;&nbsp;*(Sugestão: multiplique e divida por $\operatorname{sec} x + \operatorname{tg} x$.)*
+&nbsp;&nbsp;*(Sugestão: multiplique e divida por $\mathrm{sec}\thinspace x + \mathrm{tg}\thinspace x$.)*
 
 **24.** Deduza a **fórmula de redução**
 
-$$\int \operatorname{sen}^n x\thinspace dx = -\frac{\operatorname{sen}^{n-1}x\cos x}{n} + \frac{n-1}{n}\int \operatorname{sen}^{n-2}x\thinspace dx$$
+$$\int \mathrm{sen}^n\thinspace x\thinspace dx = -\frac{\mathrm{sen}^{n-1}\thinspace x\cos x}{n} + \frac{n-1}{n}\int \mathrm{sen}^{n-2}\thinspace x\thinspace dx$$
 
-&nbsp;&nbsp;e use-a para calcular $\displaystyle\int\operatorname{sen}^4 x\thinspace dx$.
+&nbsp;&nbsp;e use-a para calcular $\displaystyle\int\mathrm{sen}^4\thinspace x\thinspace dx$.
 
 **25.** $\displaystyle\int \frac{dx}{1+e^{x}}$
 
-**26.** Calcule $\displaystyle\int \operatorname{sen} x\cos x\thinspace dx$ de **três** maneiras:
+**26.** Calcule $\displaystyle\int \mathrm{sen}\thinspace x\cos x\thinspace dx$ de **três** maneiras:
 
-&nbsp;&nbsp;**(a)** com $u=\operatorname{sen} x$; &nbsp;&nbsp;**(b)** com $u=\cos x$; &nbsp;&nbsp;**(c)** usando $\operatorname{sen} 2x = 2\operatorname{sen} x\cos x$.
+&nbsp;&nbsp;**(a)** com $u=\mathrm{sen}\thinspace x$; &nbsp;&nbsp;**(b)** com $u=\cos x$; &nbsp;&nbsp;**(c)** usando $\mathrm{sen}\thinspace 2x = 2\mathrm{sen}\thinspace x\cos x$.
 
 &nbsp;&nbsp;As três respostas parecem diferentes. Mostre que todas estão corretas.
 

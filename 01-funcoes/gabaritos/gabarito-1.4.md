@@ -67,7 +67,7 @@
 | Ex. | Resposta |
 | :---: | --- |
 | 19 | Demonstração — veja a Parte 2 |
-| 20 | $\operatorname{Im}(f) = (-1,\thinspace 1)$ e $f^{-1}(x) = \dfrac{x}{1-\lvert x \rvert}$, $D = (-1,1)$ |
+| 20 | $\mathrm{Im}(f) = (-1,\thinspace 1)$ e $f^{-1}(x) = \dfrac{x}{1-\lvert x \rvert}$, $D = (-1,1)$ |
 | 21 | Demonstração — veja a Parte 2 |
 | 22 | $f = f^{-1}$; o gráfico é simétrico em relação à reta $y=x$ |
 
@@ -94,13 +94,13 @@
 
 ### Exercício 2
 
-**(a)** $\operatorname{Im} = \mathbb{R}$: dado qualquer $y$, basta tomar $x = \frac{y+6}{2}$. **Sobrejetora.**
+**(a)** $\mathrm{Im} = \mathbb{R}$: dado qualquer $y$, basta tomar $x = \frac{y+6}{2}$. **Sobrejetora.**
 
-**(b)** $\operatorname{Im} = [1,+\infty) \neq \mathbb{R}$: nenhum $x$ produz $y=0$. **Não é sobrejetora.**
+**(b)** $\mathrm{Im} = [1,+\infty) \neq \mathbb{R}$: nenhum $x$ produz $y=0$. **Não é sobrejetora.**
 
-**(c)** $\operatorname{Im} = \mathbb{R}$: dado $y$, tome $x = \sqrt[3]{y}$. **Sobrejetora.**
+**(c)** $\mathrm{Im} = \mathbb{R}$: dado $y$, tome $x = \sqrt[3]{y}$. **Sobrejetora.**
 
-**(d)** $\operatorname{Im} = (0,+\infty) \neq \mathbb{R}$: a exponencial nunca é negativa nem zero. **Não é sobrejetora.**
+**(d)** $\mathrm{Im} = (0,+\infty) \neq \mathbb{R}$: a exponencial nunca é negativa nem zero. **Não é sobrejetora.**
 
 ---
 
@@ -144,9 +144,9 @@
 
 ### Exercício 6
 
-**(a)** $\operatorname{arcsen} 1 = \dfrac{\pi}{2}$ &nbsp;&nbsp; **(b)** $\operatorname{arcsen}\left(-\frac12\right) = -\dfrac{\pi}{6}$ &nbsp;&nbsp; **(c)** $\arccos 0 = \dfrac{\pi}{2}$
+**(a)** $\mathrm{arcsen}\thinspace 1 = \dfrac{\pi}{2}$ &nbsp;&nbsp; **(b)** $\mathrm{arcsen}\left(-\frac12\right) = -\dfrac{\pi}{6}$ &nbsp;&nbsp; **(c)** $\arccos 0 = \dfrac{\pi}{2}$
 
-**(d)** $\operatorname{arctg} 1 = \dfrac{\pi}{4}$ &nbsp;&nbsp; **(e)** $\arccos(-1) = \pi$
+**(d)** $\mathrm{arctg}\thinspace 1 = \dfrac{\pi}{4}$ &nbsp;&nbsp; **(e)** $\arccos(-1) = \pi$
 
 > 💡 Em (b), a resposta é negativa porque o arco-seno devolve valores em $\left[-\frac\pi2,\frac\pi2\right]$ — e nesse intervalo o ângulo com seno $-\frac12$ é $-\frac{\pi}{6}$. Já em (e), o arco-cosseno vive em $[0,\pi]$, e por isso a resposta é $\pi$, e não $-\pi$.
 
@@ -235,7 +235,7 @@ $$f^{-1}(x) = 3 + \sqrt{x+4}, \qquad D(f^{-1}) = [-4,\thinspace +\infty)$$
 
 ### Exercício 11
 
-**Domínio e imagem de $f$:** $2x-1 \geqslant 0 \Rightarrow D(f) = \left[\frac12,+\infty\right)$. Como $\sqrt{2x-1} \geqslant 0$, tem-se $f(x) \geqslant 4$, logo $\operatorname{Im}(f) = [4,+\infty)$.
+**Domínio e imagem de $f$:** $2x-1 \geqslant 0 \Rightarrow D(f) = \left[\frac12,+\infty\right)$. Como $\sqrt{2x-1} \geqslant 0$, tem-se $f(x) \geqslant 4$, logo $\mathrm{Im}(f) = [4,+\infty)$.
 
 **Invertendo:**
 
@@ -245,13 +245,13 @@ Elevando ao quadrado (legítimo porque $y-4 \geqslant 0$):
 
 $$(y-4)^2 = 2x - 1 \ \Longrightarrow \ x = \frac{(y-4)^2+1}{2}$$
 
-$$f^{-1}(x) = \frac{(x-4)^2+1}{2}, \qquad D(f^{-1}) = [4,\thinspace +\infty), \qquad \operatorname{Im}(f^{-1}) = \left[\tfrac12,\thinspace +\infty\right)$$
+$$f^{-1}(x) = \frac{(x-4)^2+1}{2}, \qquad D(f^{-1}) = [4,\thinspace +\infty), \qquad \mathrm{Im}(f^{-1}) = \left[\tfrac12,\thinspace +\infty\right)$$
 
 ---
 
 ### Exercício 12
 
-$D(f) = \mathbb{R}$ e $\operatorname{Im}(f) = (0,+\infty)$, pois a exponencial é sempre positiva.
+$D(f) = \mathbb{R}$ e $\mathrm{Im}(f) = (0,+\infty)$, pois a exponencial é sempre positiva.
 
 $$y = e^{x-2} \ \Longrightarrow \ \ln y = x - 2 \ \Longrightarrow \ x = 2 + \ln y$$
 
@@ -261,11 +261,11 @@ $$f^{-1}(x) = 2 + \ln x, \qquad D(f^{-1}) = (0,\thinspace +\infty)$$
 
 ### Exercício 13
 
-$D(f)$: o logaritmando precisa ser positivo, $x + 3 > 0 \Rightarrow D(f) = (-3,+\infty)$. Como $\ln$ percorre todo $\mathbb{R}$, $\operatorname{Im}(f) = \mathbb{R}$.
+$D(f)$: o logaritmando precisa ser positivo, $x + 3 > 0 \Rightarrow D(f) = (-3,+\infty)$. Como $\ln$ percorre todo $\mathbb{R}$, $\mathrm{Im}(f) = \mathbb{R}$.
 
 $$y = \ln(x+3) - 1 \ \Longrightarrow \ y + 1 = \ln(x+3) \ \Longrightarrow \ e^{y+1} = x+3 \ \Longrightarrow \ x = e^{y+1} - 3$$
 
-$$f^{-1}(x) = e^{x+1} - 3, \qquad D(f^{-1}) = \mathbb{R}, \qquad \operatorname{Im}(f^{-1}) = (-3,\thinspace +\infty)$$
+$$f^{-1}(x) = e^{x+1} - 3, \qquad D(f^{-1}) = \mathbb{R}, \qquad \mathrm{Im}(f^{-1}) = (-3,\thinspace +\infty)$$
 
 > 💡 Note a troca completa: o domínio de $f$ virou a imagem de $f^{-1}$, e vice-versa. Isso é um bom teste de consistência da sua resposta.
 
@@ -273,24 +273,24 @@ $$f^{-1}(x) = e^{x+1} - 3, \qquad D(f^{-1}) = \mathbb{R}, \qquad \operatorname{I
 
 ### Exercício 14
 
-**(a)** $\operatorname{sen}\dfrac{2\pi}{3} = \dfrac{\sqrt3}{2}$. Como $\dfrac{2\pi}{3} \notin \left[-\frac\pi2,\frac\pi2\right]$, **não** se pode cancelar direto. O arco-seno devolve o ângulo da restrição com esse seno:
+**(a)** $\mathrm{sen}\thinspace\dfrac{2\pi}{3} = \dfrac{\sqrt3}{2}$. Como $\dfrac{2\pi}{3} \notin \left[-\frac\pi2,\frac\pi2\right]$, **não** se pode cancelar direto. O arco-seno devolve o ângulo da restrição com esse seno:
 
-$$\operatorname{arcsen}\frac{\sqrt3}{2} = \frac{\pi}{3}$$
+$$\mathrm{arcsen}\thinspace\frac{\sqrt3}{2} = \frac{\pi}{3}$$
 
 **(b)** $\cos\dfrac{7\pi}{6} = -\dfrac{\sqrt3}{2}$. O arco-cosseno devolve valores em $[0,\pi]$:
 
 $$\arccos\left(-\frac{\sqrt3}{2}\right) = \pi - \frac{\pi}{6} = \frac{5\pi}{6}$$
 
-**(c)** $\operatorname{tg}\dfrac{3\pi}{4} = -1$, e o arco-tangente devolve valores em $\left(-\frac\pi2,\frac\pi2\right)$:
+**(c)** $\mathrm{tg}\thinspace\dfrac{3\pi}{4} = -1$, e o arco-tangente devolve valores em $\left(-\frac\pi2,\frac\pi2\right)$:
 
-$$\operatorname{arctg}(-1) = -\frac{\pi}{4}$$
+$$\mathrm{arctg}(-1) = -\frac{\pi}{4}$$
 
-**(d)** Aqui a ordem é a outra: $0{,}3 \in [-1,1]$, que é o domínio do arco-seno. Então vale $\operatorname{sen}\big(\operatorname{arcsen} u\big) = u$ diretamente:
+**(d)** Aqui a ordem é a outra: $0{,}3 \in [-1,1]$, que é o domínio do arco-seno. Então vale $\mathrm{sen}\big(\mathrm{arcsen}\thinspace u\big) = u$ diretamente:
 
-$$\operatorname{sen}\big(\operatorname{arcsen} 0{,}3\big) = 0{,}3$$
+$$\mathrm{sen}\big(\mathrm{arcsen}\thinspace 0{,}3\big) = 0{,}3$$
 
 > [!IMPORTANT]
-> **A ordem das composições não é simétrica.** $\operatorname{sen}(\operatorname{arcsen} u) = u$ vale para **todo** $u \in [-1,1]$. Já $\operatorname{arcsen}(\operatorname{sen} x) = x$ vale só para $x \in \left[-\frac\pi2,\frac\pi2\right]$. A razão: a restrição foi feita no domínio do seno, não no do arco-seno.
+> **A ordem das composições não é simétrica.** $\mathrm{sen}(\mathrm{arcsen}\thinspace u) = u$ vale para **todo** $u \in [-1,1]$. Já $\mathrm{arcsen}(\mathrm{sen}\thinspace x) = x$ vale só para $x \in \left[-\frac\pi2,\frac\pi2\right]$. A razão: a restrição foi feita no domínio do seno, não no do arco-seno.
 
 ---
 
@@ -397,7 +397,7 @@ que cresce de $0$ (em $x=0$) e se aproxima de $1$ sem atingi-lo. Esse ramo cobre
 
 Como $f$ é **ímpar** — pois $f(-x) = \dfrac{-x}{1+\lvert x \rvert} = -f(x)$ — o ramo negativo cobre $(-1,\thinspace 0]$ por simetria.
 
-$$\operatorname{Im}(f) = (-1,\thinspace 1)$$
+$$\mathrm{Im}(f) = (-1,\thinspace 1)$$
 
 **Injetividade.** Cada ramo é estritamente crescente, e eles ocupam faixas disjuntas da imagem ($[0,1)$ e $(-1,0]$, com interseção só no $0$, atingido uma única vez, em $x=0$). Logo $f$ é injetora em $\mathbb{R}$.
 

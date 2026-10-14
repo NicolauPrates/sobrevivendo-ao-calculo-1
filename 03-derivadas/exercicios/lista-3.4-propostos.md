@@ -1,6 +1,6 @@
 # 📝 Lista 3.4 — Derivadas das funções trigonométricas inversas
 
-> **Antes de começar:** leia a [teoria 3.4](../3.4-derivadas-das-funcoes-trigonometricas-inversas.md). Se esquecer uma fórmula, **deduza**: escreva $\operatorname{sen} y = x$ e derive implicitamente.
+> **Antes de começar:** leia a [teoria 3.4](../3.4-derivadas-das-funcoes-trigonometricas-inversas.md). Se esquecer uma fórmula, **deduza**: escreva $\mathrm{sen}\thinspace y = x$ e derive implicitamente.
 
 | Bloco | Exercícios | Quanto fazer |
 | --- | :---: | --- |
@@ -14,77 +14,77 @@
 
 **1.** Derive:
 
-&nbsp;&nbsp;**(a)** $f(x) = \operatorname{arcsen}(2x)$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = \operatorname{arctg}(5x)$
+&nbsp;&nbsp;**(a)** $f(x) = \mathrm{arcsen}(2x)$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = \mathrm{arctg}(5x)$
 
-&nbsp;&nbsp;**(c)** $f(x) = \arccos\left(\dfrac{x}{3}\right)$ &nbsp;&nbsp;&nbsp; **(d)** $f(x) = \operatorname{arcsen}\big(x^2\big)$
+&nbsp;&nbsp;**(c)** $f(x) = \arccos\left(\dfrac{x}{3}\right)$ &nbsp;&nbsp;&nbsp; **(d)** $f(x) = \mathrm{arcsen}\big(x^2\big)$
 
 **2.** Calcule:
 
-&nbsp;&nbsp;**(a)** $\operatorname{arcsen}\dfrac12$ &nbsp;&nbsp;&nbsp; **(b)** $\operatorname{arctg} 1$ &nbsp;&nbsp;&nbsp; **(c)** $\arccos 0$ &nbsp;&nbsp;&nbsp; **(d)** $\operatorname{arcsen} 0$
+&nbsp;&nbsp;**(a)** $\mathrm{arcsen}\thinspace\dfrac12$ &nbsp;&nbsp;&nbsp; **(b)** $\mathrm{arctg}\thinspace 1$ &nbsp;&nbsp;&nbsp; **(c)** $\arccos 0$ &nbsp;&nbsp;&nbsp; **(d)** $\mathrm{arcsen}\thinspace 0$
 
 **3.** Derive:
 
-&nbsp;&nbsp;**(a)** $f(x) = x\operatorname{arcsen} x$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = \dfrac{\operatorname{arctg} x}{x}$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = e^{\operatorname{arctg} x}$
+&nbsp;&nbsp;**(a)** $f(x) = x\mathrm{arcsen}\thinspace x$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = \dfrac{\mathrm{arctg}\thinspace x}{x}$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = e^{\mathrm{arctg}\thinspace x}$
 
 **4.** Use o **triângulo retângulo** para escrever como expressão algébrica:
 
-&nbsp;&nbsp;**(a)** $\cos(\operatorname{arcsen} x)$ &nbsp;&nbsp;&nbsp; **(b)** $\operatorname{sen}(\arccos x)$
+&nbsp;&nbsp;**(a)** $\cos(\mathrm{arcsen}\thinspace x)$ &nbsp;&nbsp;&nbsp; **(b)** $\mathrm{sen}(\arccos x)$
 
-&nbsp;&nbsp;**(c)** $\operatorname{tg}(\operatorname{arcsen} x)$ &nbsp;&nbsp;&nbsp; **(d)** $\sec(\operatorname{arctg} x)$
+&nbsp;&nbsp;**(c)** $\mathrm{tg}(\mathrm{arcsen}\thinspace x)$ &nbsp;&nbsp;&nbsp; **(d)** $\sec(\mathrm{arctg}\thinspace x)$
 
-**5.** Determine a reta tangente a $y = \operatorname{arcsen} x$ no ponto $x=0$.
+**5.** Determine a reta tangente a $y = \mathrm{arcsen}\thinspace x$ no ponto $x=0$.
 
 **6.** Verdadeiro ou falso? Justifique.
 
-&nbsp;&nbsp;**(a)** $(\operatorname{arctg} x)' = \dfrac{1}{1+x^2}$ &nbsp;&nbsp;&nbsp; **(b)** $(\arccos x)' = \dfrac{1}{\sqrt{1-x^2}}$
+&nbsp;&nbsp;**(a)** $(\mathrm{arctg}\thinspace x)' = \dfrac{1}{1+x^2}$ &nbsp;&nbsp;&nbsp; **(b)** $(\arccos x)' = \dfrac{1}{\sqrt{1-x^2}}$
 
-&nbsp;&nbsp;**(c)** $\operatorname{arcsen} x = \dfrac{1}{\operatorname{sen} x}$ &nbsp;&nbsp;&nbsp; **(d)** $(\operatorname{arcsen} x)'$ existe em $x=1$.
+&nbsp;&nbsp;**(c)** $\mathrm{arcsen}\thinspace x = \dfrac{1}{\mathrm{sen}\thinspace x}$ &nbsp;&nbsp;&nbsp; **(d)** $(\mathrm{arcsen}\thinspace x)'$ existe em $x=1$.
 
-**7.** Deduza, por derivação implícita, que $(\operatorname{arccotg} x)' = -\dfrac{1}{1+x^2}$.
+**7.** Deduza, por derivação implícita, que $(\mathrm{arccotg}\thinspace x)' = -\dfrac{1}{1+x^2}$.
 
-**8.** Derive $f(x) = \operatorname{arctg}(\ln x)$.
+**8.** Derive $f(x) = \mathrm{arctg}(\ln x)$.
 
 ---
 
 ## Bloco B · Consolidação
 
-**9.** $f(x) = \operatorname{arcsen}\big(\sqrt{x}\big)$
+**9.** $f(x) = \mathrm{arcsen}\big(\sqrt{x}\big)$
 
-**10.** $f(x) = \operatorname{arctg}\left(\dfrac{1-x}{1+x}\right)$ &nbsp;&nbsp;*(simplifique o resultado — ele é mais bonito do que parece)*
+**10.** $f(x) = \mathrm{arctg}\left(\dfrac{1-x}{1+x}\right)$ &nbsp;&nbsp;*(simplifique o resultado — ele é mais bonito do que parece)*
 
-**11.** $f(x) = x^2\operatorname{arctg}(3x)$
+**11.** $f(x) = x^2\mathrm{arctg}(3x)$
 
-**12.** $f(x) = \operatorname{arcsen}(\cos x)$, para $0 < x < \pi$. &nbsp;&nbsp;*(cuidado com o módulo ao simplificar)*
+**12.** $f(x) = \mathrm{arcsen}(\cos x)$, para $0 < x < \pi$. &nbsp;&nbsp;*(cuidado com o módulo ao simplificar)*
 
-**13.** $f(x) = \operatorname{arctg}\big(e^x\big)$
+**13.** $f(x) = \mathrm{arctg}\big(e^x\big)$
 
-**14.** Mostre que $y = \operatorname{arctg} x$ satisfaz
+**14.** Mostre que $y = \mathrm{arctg}\thinspace x$ satisfaz
 
 $$\big(1+x^2\big)\thinspace y'' + 2x\thinspace y' = 0$$
 
-**15.** Determine a reta tangente a $y = \operatorname{arctg} x$ no ponto de abscissa $x=1$.
+**15.** Determine a reta tangente a $y = \mathrm{arctg}\thinspace x$ no ponto de abscissa $x=1$.
 
-**16.** $f(x) = \big(\operatorname{arcsen} x\big)^2$
+**16.** $f(x) = \big(\mathrm{arcsen}\thinspace x\big)^2$
 
 ---
 
 ## Bloco C · Desafio
 
-**17.** Mostre que $\operatorname{arctg} x + \operatorname{arccotg} x$ é constante em $\mathbb{R}$ e determine a constante.
+**17.** Mostre que $\mathrm{arctg}\thinspace x + \mathrm{arccotg}\thinspace x$ é constante em $\mathbb{R}$ e determine a constante.
 
 **18.** Para $0<x<1$, mostre que
 
-$$\operatorname{arcsen} x + \operatorname{arcsen}\sqrt{1-x^2}$$
+$$\mathrm{arcsen}\thinspace x + \mathrm{arcsen}\thinspace\sqrt{1-x^2}$$
 
 &nbsp;&nbsp;é constante, e determine o valor. Interprete geometricamente.
 
-**19.** Use a derivada para demonstrar que $\operatorname{arctg} x < x$ para todo $x>0$.
+**19.** Use a derivada para demonstrar que $\mathrm{arctg}\thinspace x < x$ para todo $x>0$.
 
-&nbsp;&nbsp;*(Sugestão: estude o sinal da derivada de $g(x) = x - \operatorname{arctg} x$.)*
+&nbsp;&nbsp;*(Sugestão: estude o sinal da derivada de $g(x) = x - \mathrm{arctg}\thinspace x$.)*
 
 **20.** Deduza, por derivação implícita, que
 
-$$\big(\operatorname{arcsec} x\big)' = \frac{1}{\lvert x\rvert\sqrt{x^2-1}}$$
+$$\big(\mathrm{arcsec}\thinspace x\big)' = \frac{1}{\lvert x\rvert\sqrt{x^2-1}}$$
 
 &nbsp;&nbsp;explicando de onde vem o módulo.
 

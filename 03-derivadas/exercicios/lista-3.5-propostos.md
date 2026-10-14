@@ -80,7 +80,7 @@
 
 **19.** Um triângulo tem lados de $4$ m e $5$ m, com o ângulo $\theta$ entre eles crescendo a $0{,}06$ rad/s. A que taxa cresce a área quando $\theta = \dfrac{\pi}{3}$?
 
-&nbsp;&nbsp;*(Lembre: $A = \frac12 ab\operatorname{sen}\theta$.)*
+&nbsp;&nbsp;*(Lembre: $A = \frac12 ab\mathrm{sen}\thinspace\theta$.)*
 
 **20.** O volume de um cubo cresce à taxa **constante** de $10$ cm³/s. Mostre que a taxa de crescimento da **área da superfície** é inversamente proporcional à aresta.
 

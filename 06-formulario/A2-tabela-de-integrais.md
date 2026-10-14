@@ -29,21 +29,21 @@
 
 | Integral | Resultado |
 | --- | --- |
-| $\displaystyle\int\operatorname{sen} x\thinspace dx$ | $-\cos x$ |
-| $\displaystyle\int\cos x\thinspace dx$ | $\operatorname{sen} x$ |
-| $\displaystyle\int\operatorname{sec}^2 x\thinspace dx$ | $\operatorname{tg} x$ |
-| $\displaystyle\int\operatorname{cossec}^2 x\thinspace dx$ | $-\operatorname{cotg} x$ |
-| $\displaystyle\int\operatorname{sec} x\operatorname{tg} x\thinspace dx$ | $\operatorname{sec} x$ |
-| $\displaystyle\int\operatorname{cossec} x\operatorname{cotg} x\thinspace dx$ | $-\operatorname{cossec} x$ |
+| $\displaystyle\int\mathrm{sen}\thinspace x\thinspace dx$ | $-\cos x$ |
+| $\displaystyle\int\cos x\thinspace dx$ | $\mathrm{sen}\thinspace x$ |
+| $\displaystyle\int\mathrm{sec}^2\thinspace x\thinspace dx$ | $\mathrm{tg}\thinspace x$ |
+| $\displaystyle\int\mathrm{cossec}^2\thinspace x\thinspace dx$ | $-\mathrm{cotg}\thinspace x$ |
+| $\displaystyle\int\mathrm{sec}\thinspace x\mathrm{tg}\thinspace x\thinspace dx$ | $\mathrm{sec}\thinspace x$ |
+| $\displaystyle\int\mathrm{cossec}\thinspace x\mathrm{cotg}\thinspace x\thinspace dx$ | $-\mathrm{cossec}\thinspace x$ |
 
 ### As quatro que exigem truque
 
 | Integral | Resultado | Como sai |
 | --- | --- | --- |
-| $\displaystyle\int\operatorname{tg} x\thinspace dx$ | $-\ln\lvert\cos x\rvert = \ln\lvert\operatorname{sec} x\rvert$ | $u=\cos x$ |
-| $\displaystyle\int\operatorname{cotg} x\thinspace dx$ | $\ln\lvert\operatorname{sen} x\rvert$ | $u=\operatorname{sen} x$ |
-| $\displaystyle\int\operatorname{sec} x\thinspace dx$ | $\ln\lvert\operatorname{sec} x+\operatorname{tg} x\rvert$ | multiplique por $\frac{\operatorname{sec}+\operatorname{tg}}{\operatorname{sec}+\operatorname{tg}}$ |
-| $\displaystyle\int\operatorname{cossec} x\thinspace dx$ | $-\ln\lvert\operatorname{cossec} x+\operatorname{cotg} x\rvert$ | truque análogo |
+| $\displaystyle\int\mathrm{tg}\thinspace x\thinspace dx$ | $-\ln\lvert\cos x\rvert = \ln\lvert\mathrm{sec}\thinspace x\rvert$ | $u=\cos x$ |
+| $\displaystyle\int\mathrm{cotg}\thinspace x\thinspace dx$ | $\ln\lvert\mathrm{sen}\thinspace x\rvert$ | $u=\mathrm{sen}\thinspace x$ |
+| $\displaystyle\int\mathrm{sec}\thinspace x\thinspace dx$ | $\ln\lvert\mathrm{sec}\thinspace x+\mathrm{tg}\thinspace x\rvert$ | multiplique por $\frac{\mathrm{sec}+\mathrm{tg}}{\mathrm{sec}+\mathrm{tg}}$ |
+| $\displaystyle\int\mathrm{cossec}\thinspace x\thinspace dx$ | $-\ln\lvert\mathrm{cossec}\thinspace x+\mathrm{cotg}\thinspace x\rvert$ | truque análogo |
 
 > 💡 **A integral da secante é a única da tabela que ninguém redescobre em prova.** Memorize-a: ela aparece sempre que você calcular comprimento de arco.
 
@@ -51,10 +51,10 @@
 
 | Integral | Resultado |
 | --- | --- |
-| $\displaystyle\int\operatorname{sen}^2 x\thinspace dx$ | $\dfrac{x}{2}-\dfrac{\operatorname{sen} 2x}{4}$ |
-| $\displaystyle\int\cos^2 x\thinspace dx$ | $\dfrac{x}{2}+\dfrac{\operatorname{sen} 2x}{4}$ |
-| $\displaystyle\int\operatorname{tg}^2 x\thinspace dx$ | $\operatorname{tg} x - x$ |
-| $\displaystyle\int\operatorname{cotg}^2 x\thinspace dx$ | $-\operatorname{cotg} x - x$ |
+| $\displaystyle\int\mathrm{sen}^2\thinspace x\thinspace dx$ | $\dfrac{x}{2}-\dfrac{\mathrm{sen}\thinspace 2x}{4}$ |
+| $\displaystyle\int\cos^2 x\thinspace dx$ | $\dfrac{x}{2}+\dfrac{\mathrm{sen}\thinspace 2x}{4}$ |
+| $\displaystyle\int\mathrm{tg}^2\thinspace x\thinspace dx$ | $\mathrm{tg}\thinspace x - x$ |
+| $\displaystyle\int\mathrm{cotg}^2\thinspace x\thinspace dx$ | $-\mathrm{cotg}\thinspace x - x$ |
 
 > 💡 **A estratégia geral das potências:** expoente **ímpar** → separe um fator e substitua; expoente **par** → use o arco duplo ([A3](A3-identidades-trigonometricas.md)).
 
@@ -64,13 +64,13 @@
 
 | Integral | Resultado |
 | --- | --- |
-| $\displaystyle\int\frac{dx}{a^2+x^2}$ | $\dfrac1a\operatorname{arctg}\dfrac{x}{a}$ |
-| $\displaystyle\int\frac{dx}{\sqrt{a^2-x^2}}$ | $\operatorname{arcsen}\dfrac{x}{a}$ |
-| $\displaystyle\int\frac{dx}{x\sqrt{x^2-a^2}}$ | $\dfrac1a\operatorname{arcsec}\left\lvert\dfrac{x}{a}\right\rvert$ |
+| $\displaystyle\int\frac{dx}{a^2+x^2}$ | $\dfrac1a\mathrm{arctg}\thinspace\dfrac{x}{a}$ |
+| $\displaystyle\int\frac{dx}{\sqrt{a^2-x^2}}$ | $\mathrm{arcsen}\thinspace\dfrac{x}{a}$ |
+| $\displaystyle\int\frac{dx}{x\sqrt{x^2-a^2}}$ | $\dfrac1a\mathrm{arcsec}\left\lvert\dfrac{x}{a}\right\rvert$ |
 | $\displaystyle\int\frac{dx}{a^2-x^2}$ | $\dfrac{1}{2a}\ln\left\lvert\dfrac{a+x}{a-x}\right\rvert$ |
 | $\displaystyle\int\frac{dx}{x^2-a^2}$ | $\dfrac{1}{2a}\ln\left\lvert\dfrac{x-a}{x+a}\right\rvert$ |
 | $\displaystyle\int\frac{dx}{\sqrt{x^2\pm a^2}}$ | $\ln\left\lvert x+\sqrt{x^2\pm a^2}\right\rvert$ |
-| $\displaystyle\int\sqrt{a^2-x^2}\thinspace dx$ | $\dfrac{x\sqrt{a^2-x^2}}{2}+\dfrac{a^2}{2}\operatorname{arcsen}\dfrac{x}{a}$ |
+| $\displaystyle\int\sqrt{a^2-x^2}\thinspace dx$ | $\dfrac{x\sqrt{a^2-x^2}}{2}+\dfrac{a^2}{2}\mathrm{arcsen}\thinspace\dfrac{x}{a}$ |
 
 > [!TIP]
 > **O radical decide o destino.** Denominador com **radical** de soma/diferença de quadrados → **arco** (seno ou secante). Denominador **sem** radical, com diferença de quadrados → **logaritmo** (frações parciais). Soma de quadrados sem radical → **arco-tangente**.
@@ -98,9 +98,9 @@ A **primeira** da lista que aparecer no integrando vira $u$; o resto vira $dv$.
 
 | Se aparece | Substitua | O radical vira |
 | :---: | :---: | :---: |
-| $\sqrt{a^2-x^2}$ | $x = a\operatorname{sen}\theta$ | $a\cos\theta$ |
-| $\sqrt{a^2+x^2}$ | $x = a\operatorname{tg}\theta$ | $a\operatorname{sec}\theta$ |
-| $\sqrt{x^2-a^2}$ | $x = a\operatorname{sec}\theta$ | $a\operatorname{tg}\theta$ |
+| $\sqrt{a^2-x^2}$ | $x = a\mathrm{sen}\thinspace\theta$ | $a\cos\theta$ |
+| $\sqrt{a^2+x^2}$ | $x = a\mathrm{tg}\thinspace\theta$ | $a\mathrm{sec}\thinspace\theta$ |
+| $\sqrt{x^2-a^2}$ | $x = a\mathrm{sec}\thinspace\theta$ | $a\mathrm{tg}\thinspace\theta$ |
 
 **Mnemônico dos sinais:** menos **primeiro** → seno · **mais** → tangente · menos **depois** → secante.
 

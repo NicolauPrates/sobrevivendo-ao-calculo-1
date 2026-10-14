@@ -46,7 +46,7 @@ Calcule os limites, **justificando** cada passagem:
 
 **(a)** $\displaystyle\lim_{x\to3}\frac{x^2-9}{x^2-x-6}$ &nbsp;&nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\lim_{x\to0}\frac{\sqrt{x+4}-2}{x}$
 
-**(c)** $\displaystyle\lim_{x\to+\infty}\frac{3x^2-x+1}{2x^2+5}$ &nbsp;&nbsp;&nbsp;&nbsp; **(d)** $\displaystyle\lim_{x\to0}\frac{\operatorname{sen}(5x)}{3x}$
+**(c)** $\displaystyle\lim_{x\to+\infty}\frac{3x^2-x+1}{2x^2+5}$ &nbsp;&nbsp;&nbsp;&nbsp; **(d)** $\displaystyle\lim_{x\to0}\frac{\mathrm{sen}(5x)}{3x}$
 
 ---
 

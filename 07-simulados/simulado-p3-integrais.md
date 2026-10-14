@@ -26,7 +26,7 @@ Calcule:
 
 **(a)** $\displaystyle\int\left(4x^3-\frac3x+2\sqrt{x}\right)dx$
 
-**(b)** $\displaystyle\int\left(e^{2x}+\operatorname{sec}^2 x\right)dx$
+**(b)** $\displaystyle\int\left(e^{2x}+\mathrm{sec}^2\thinspace x\right)dx$
 
 **(c)** $\displaystyle\int\frac{(x-1)^2}{x}\thinspace dx$
 

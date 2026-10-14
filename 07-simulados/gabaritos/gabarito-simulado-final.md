@@ -13,7 +13,7 @@
 | **1** | $(1,\thinspace 2)\cup(2,\thinspace 3]$ |
 | **2** | (a) $4$ · (b) $\dfrac32$ · (c) $\dfrac12$ |
 | **3** | $a=3$ |
-| **4** | (a) $x(2\ln x+1)$ · (b) $e^{\operatorname{sen} x}\cos x$ · (c) $\dfrac{(2x+1)^4(18x-1)}{2x\sqrt x}$ · (d) $-1$ |
+| **4** | (a) $x(2\ln x+1)$ · (b) $e^{\mathrm{sen}\thinspace x}\cos x$ · (c) $\dfrac{(2x+1)^4(18x-1)}{2x\sqrt x}$ · (d) $-1$ |
 | **5** | $\dfrac{8}{9\pi}$ m/min $\approx 0{,}28$ m/min |
 | **6** | O ponto $(1,\thinspace 1)$, a distância $\sqrt5$ |
 | **7** | (a) $\dfrac92$ · (b) $e^{6}$ |
@@ -57,7 +57,7 @@ $$= \frac{3}{\sqrt{1+\frac3x}+1} \ \longrightarrow \ \frac{3}{1+1} = \frac32$$
 
 $$\lim_{x\to0}\frac{1-\cos x}{x^2} = \frac12$$
 
-(Quem não lembrar: L&#39;Hôspital duas vezes dá $\lim\frac{\operatorname{sen} x}{2x} = \frac12$.)
+(Quem não lembrar: L&#39;Hôspital duas vezes dá $\lim\frac{\mathrm{sen}\thinspace x}{2x} = \frac12$.)
 
 > ⚠️ **Em (b), não dá para "distribuir o limite".** Escrever $\lim\sqrt{x^2+3x} - \lim x = \infty-\infty$ não é conclusão — é a indeterminação. A álgebra precisa vir **antes** do limite.
 
@@ -67,7 +67,7 @@ $$\lim_{x\to0}\frac{1-\cos x}{x^2} = \frac12$$
 
 A continuidade em $x=0$ exige $a = \displaystyle\lim_{x\to0}f(x)$:
 
-$$\lim_{x\to0}\frac{\operatorname{sen}(3x)}{x} = \lim_{x\to0} 3\cdot\frac{\operatorname{sen}(3x)}{3x} = 3\cdot 1 = 3$$
+$$\lim_{x\to0}\frac{\mathrm{sen}(3x)}{x} = \lim_{x\to0} 3\cdot\frac{\mathrm{sen}(3x)}{3x} = 3\cdot 1 = 3$$
 
 $$\boxed{\ a = 3\ }$$
 
@@ -83,7 +83,7 @@ $$f'(x) = 2x\ln x + x^2\cdot\frac1x = 2x\ln x + x = x\big(2\ln x+1\big)$$
 
 **(b)** Regra da **cadeia**:
 
-$$g'(x) = e^{\operatorname{sen} x}\cdot\cos x$$
+$$g'(x) = e^{\mathrm{sen}\thinspace x}\cdot\cos x$$
 
 **(c)** Reescreva como produto de potências — fica mais simples que o quociente:
 
@@ -263,14 +263,14 @@ $$= x^2 e^x - 2(x-1)e^x + C = e^x\big(x^2-2x+2\big)+C$$
 
 **(c) Substituição em integral definida**, com os limites convertidos:
 
-$$u = \operatorname{sen} x \ \Longrightarrow \ du = \cos x\thinspace dx$$
+$$u = \mathrm{sen}\thinspace x \ \Longrightarrow \ du = \cos x\thinspace dx$$
 
-| $x$ | $u=\operatorname{sen} x$ |
+| $x$ | $u=\mathrm{sen}\thinspace x$ |
 | :---: | :---: |
 | $0$ | $0$ |
 | $\frac{\pi}{2}$ | $1$ |
 
-$$\int_0^{\pi/2}\operatorname{sen}^3 x\cos x\thinspace dx = \int_0^1 u^3 du = \left[\frac{u^4}{4}\right]_0^1 = \frac14$$
+$$\int_0^{\pi/2}\mathrm{sen}^3\thinspace x\cos x\thinspace dx = \int_0^1 u^3 du = \left[\frac{u^4}{4}\right]_0^1 = \frac14$$
 
 ---
 

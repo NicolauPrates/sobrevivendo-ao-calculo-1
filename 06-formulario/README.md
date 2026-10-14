@@ -29,8 +29,8 @@ Esta seção não ensina nada: ela **lembra**. É o que você abre na véspera d
 
 > [!TIP]
 > **O que vale a pena decorar e o que vale a pena saber deduzir.**
-> Decore: derivadas de $x^n$, $e^x$, $\ln x$, $\operatorname{sen} x$, $\cos x$; as regras do produto, do quociente e da cadeia; $\operatorname{sen}^2 + \cos^2 = 1$.
-> Saiba deduzir: $\operatorname{tg}$, $\operatorname{sec}$, $\operatorname{cossec}$ e $\operatorname{cotg}$ (saem do quociente), as trigonométricas inversas (saem da derivada da inversa), e o resto das identidades (saem das fórmulas de soma de arcos).
+> Decore: derivadas de $x^n$, $e^x$, $\ln x$, $\mathrm{sen}\thinspace x$, $\cos x$; as regras do produto, do quociente e da cadeia; $\mathrm{sen}^2 + \cos^2 = 1$.
+> Saiba deduzir: $\mathrm{tg}$, $\mathrm{sec}$, $\mathrm{cossec}$ e $\mathrm{cotg}$ (saem do quociente), as trigonométricas inversas (saem da derivada da inversa), e o resto das identidades (saem das fórmulas de soma de arcos).
 
 ---
 

@@ -54,7 +54,7 @@ Determine o valor de $a$ que torna $f$ contínua em $x=0$:
 
 $$
 f(x) = \begin{cases}
-\dfrac{\operatorname{sen}(3x)}{x} & \text{se } x\neq0 \\[6pt]
+\dfrac{\mathrm{sen}(3x)}{x} & \text{se } x\neq0 \\[6pt]
 a & \text{se } x=0
 \end{cases}
 $$
@@ -65,7 +65,7 @@ $$
 
 Derive:
 
-**(a)** $f(x) = x^2\ln x$ &nbsp;&nbsp;&nbsp;&nbsp; **(b)** $g(x) = e^{\operatorname{sen} x}$ &nbsp;&nbsp;&nbsp;&nbsp; **(c)** $h(x) = \dfrac{(2x+1)^{5}}{\sqrt{x}}$
+**(a)** $f(x) = x^2\ln x$ &nbsp;&nbsp;&nbsp;&nbsp; **(b)** $g(x) = e^{\mathrm{sen}\thinspace x}$ &nbsp;&nbsp;&nbsp;&nbsp; **(c)** $h(x) = \dfrac{(2x+1)^{5}}{\sqrt{x}}$
 
 **(d)** Determine $\dfrac{dy}{dx}$ no ponto $(3,\thinspace 3)$, para a curva $x^3+y^3 = 6xy$ (o **fólio de Descartes**).
 
@@ -103,7 +103,7 @@ Faça o **esboço completo** do gráfico de $f(x) = x^3-3x^2+2$, indicando raíz
 
 Calcule:
 
-**(a)** $\displaystyle\int x\sqrt{x+1}\thinspace dx$ &nbsp;&nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int x^2 e^{x}dx$ &nbsp;&nbsp;&nbsp;&nbsp; **(c)** $\displaystyle\int_0^{\pi/2}\operatorname{sen}^3 x\cos x\thinspace dx$
+**(a)** $\displaystyle\int x\sqrt{x+1}\thinspace dx$ &nbsp;&nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int x^2 e^{x}dx$ &nbsp;&nbsp;&nbsp;&nbsp; **(c)** $\displaystyle\int_0^{\pi/2}\mathrm{sen}^3\thinspace x\cos x\thinspace dx$
 
 ---
 

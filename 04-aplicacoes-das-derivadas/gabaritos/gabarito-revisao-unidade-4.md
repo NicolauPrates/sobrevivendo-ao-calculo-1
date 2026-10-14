@@ -13,7 +13,7 @@
 | 1 | Máximo absoluto $10$ em $x=-1$; mínimo absoluto $-22$ em $x=3$ |
 | 2 | (a) $r=\sqrt[3]{500/\pi}\approx5{,}42$ cm e $h\approx10{,}84$ cm · (b) $h=2r$ ✔ |
 | 3 | (a) As três valem · (b) $c = \pm\dfrac{2\sqrt3}{3}$ |
-| 4 | Demonstração (TVM com $f=\operatorname{sen}$ e $\lvert\cos c\rvert\leqslant1$) |
+| 4 | Demonstração (TVM com $f=\mathrm{sen}$ e $\lvert\cos c\rvert\leqslant1$) |
 | 5 | (a) $\frac00$, limite $=2$ · (b) $1^{\infty}$, limite $=e^6$ · (c) $\infty-\infty$, limite $=0$ |
 | 6 | Mín $(0,\thinspace 0)$; máx $\left(2,\thinspace 4e^{-2}\right)$; A.H. $y=0$ só à direita; inflexões em $x=2\pm\sqrt2$ |
 | 7 | (a) **Sim** · (b) **Não** · (c) **Sim** · (d) **Não** — por quatro motivos diferentes |
@@ -117,19 +117,19 @@ Os **dois** valores pertencem a $(-2,2)$ ✔
 
 **Caso trivial.** Se $a=b$, os dois lados valem zero e a desigualdade vale.
 
-**Caso $a\neq b$.** Seja $f(x) = \operatorname{sen} x$. Como $f$ é contínua e derivável em $\mathbb{R}$, ela o é em particular no intervalo fechado de extremos $a$ e $b$.
+**Caso $a\neq b$.** Seja $f(x) = \mathrm{sen}\thinspace x$. Como $f$ é contínua e derivável em $\mathbb{R}$, ela o é em particular no intervalo fechado de extremos $a$ e $b$.
 
 Pelo **Teorema do Valor Médio**, existe $c$ **entre** $a$ e $b$ tal que
 
-$$f'(c) = \frac{f(a)-f(b)}{a-b} \ \Longrightarrow \ \cos c = \frac{\operatorname{sen} a - \operatorname{sen} b}{a-b}$$
+$$f'(c) = \frac{f(a)-f(b)}{a-b} \ \Longrightarrow \ \cos c = \frac{\mathrm{sen}\thinspace a - \mathrm{sen}\thinspace b}{a-b}$$
 
 Tomando módulo dos dois lados:
 
-$$\left\lvert\frac{\operatorname{sen} a - \operatorname{sen} b}{a-b}\right\rvert = \lvert\cos c\rvert \leqslant 1$$
+$$\left\lvert\frac{\mathrm{sen}\thinspace a - \mathrm{sen}\thinspace b}{a-b}\right\rvert = \lvert\cos c\rvert \leqslant 1$$
 
 pois o cosseno está sempre entre $-1$ e $1$. Multiplicando por $\lvert a-b\rvert>0$:
 
-$$\lvert \operatorname{sen} a - \operatorname{sen} b\rvert \leqslant \lvert a-b\rvert \quad \blacksquare$$
+$$\lvert \mathrm{sen}\thinspace a - \mathrm{sen}\thinspace b\rvert \leqslant \lvert a-b\rvert \quad \blacksquare$$
 
 > 💡 **O que a desigualdade diz.** O seno nunca "estica" distâncias: dois pontos próximos têm senos próximos, no mesmo ritmo ou mais devagar. Essa propriedade tem nome — a função é **lipschitziana de constante $1$** — e é o TVM que a entrega, em três linhas, para qualquer função com derivada limitada.
 
@@ -159,13 +159,13 @@ Portanto $L = \mathbf{e^6}$.
 
 **(c)** Substituindo: $\dfrac{1}{0^{+}} - \dfrac{1}{0^{+}} = +\infty-\infty$ ✔ indeterminação $\infty-\infty$. **Combina-se numa fração:**
 
-$$\frac1x - \frac{1}{\operatorname{sen} x} = \frac{\operatorname{sen} x - x}{x\operatorname{sen} x}$$
+$$\frac1x - \frac{1}{\mathrm{sen}\thinspace x} = \frac{\mathrm{sen}\thinspace x - x}{x\mathrm{sen}\thinspace x}$$
 
 que é $\frac00$. Aplicando a regra:
 
-$$\overset{\text{L'H}}{=} \lim_{x\to0^{+}}\frac{\cos x-1}{\operatorname{sen} x + x\cos x} = \frac{0}{0}$$
+$$\overset{\text{L'H}}{=} \lim_{x\to0^{+}}\frac{\cos x-1}{\mathrm{sen}\thinspace x + x\cos x} = \frac{0}{0}$$
 
-$$\overset{\text{L'H}}{=} \lim_{x\to0^{+}}\frac{-\operatorname{sen} x}{2\cos x - x\operatorname{sen} x} = \frac{0}{2-0} = \mathbf{0}$$
+$$\overset{\text{L'H}}{=} \lim_{x\to0^{+}}\frac{-\mathrm{sen}\thinspace x}{2\cos x - x\mathrm{sen}\thinspace x} = \frac{0}{2-0} = \mathbf{0}$$
 
 > ⚠️ **Note a ordem de operações em (b) e (c).** L&#39;Hôspital só aceita $\frac00$ e $\frac{\infty}{\infty}$. As outras formas precisam primeiro ser **convertidas**: $1^{\infty}$ pelo logaritmo, $\infty-\infty$ pela soma de frações, $0\cdot\infty$ passando um fator para o denominador.
 

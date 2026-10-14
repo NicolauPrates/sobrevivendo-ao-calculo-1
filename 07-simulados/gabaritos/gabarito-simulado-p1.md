@@ -14,7 +14,7 @@
 | :---: | --- |
 | **1 (a)** | $(-\infty,-2]\cup[2,3)\cup(3,+\infty)$ |
 | **1 (b)** | $(-2,\thinspace 5)$ |
-| **2** | $D=\mathbb{R}\setminus\lbrace-3\rbrace$, $\operatorname{Im}=\mathbb{R}\setminus\lbrace2\rbrace$, $f^{-1}(x)=\dfrac{3x+1}{2-x}$ |
+| **2** | $D=\mathbb{R}\setminus\lbrace-3\rbrace$, $\mathrm{Im}=\mathbb{R}\setminus\lbrace2\rbrace$, $f^{-1}(x)=\dfrac{3x+1}{2-x}$ |
 | **3** | (a) $\frac65$ · (b) $\frac14$ · (c) $\frac32$ · (d) $\frac53$ |
 | **4** | (a) $2$ e $3$; o limite **não** existe · (b) descontinuidade **de salto** |
 | **5** | A.V. $x=\pm3$; A.H. $y=2$; cortes em $(\pm2,0)$ e $\left(0,\frac89\right)$ |
@@ -75,7 +75,7 @@ $$x = \frac{-3y-1}{y-2} = \frac{3y+1}{2-y}$$
 
 Essa expressão existe para todo $y$ **exceto** $y=2$. Logo
 
-$$\operatorname{Im} = \mathbb{R}\setminus\lbrace2\rbrace$$
+$$\mathrm{Im} = \mathbb{R}\setminus\lbrace2\rbrace$$
 
 **(b) Injetividade.** O próprio cálculo de (a) já prova: para cada $y$ da imagem, a equação $f(x)=y$ tem **uma única** solução, dada pela fórmula acima. Logo $f$ é injetora.
 
@@ -117,9 +117,9 @@ $$\lim_{x\to+\infty}\frac{3x^2-x+1}{2x^2+5} = \frac32$$
 
 (Formalmente: divida numerador e denominador por $x^2$ e os termos com $\frac1x$ somem.)
 
-**(d)** Ajuste para a forma do limite fundamental $\dfrac{\operatorname{sen}\square}{\square}$:
+**(d)** Ajuste para a forma do limite fundamental $\dfrac{\mathrm{sen}\thinspace\square}{\square}$:
 
-$$\frac{\operatorname{sen}(5x)}{3x} = \frac{5}{3}\cdot\frac{\operatorname{sen}(5x)}{5x} \ \longrightarrow \ \frac53\cdot 1 = \frac53$$
+$$\frac{\mathrm{sen}(5x)}{3x} = \frac{5}{3}\cdot\frac{\mathrm{sen}(5x)}{5x} \ \longrightarrow \ \frac53\cdot 1 = \frac53$$
 
 > ⚠️ **A resposta de (d) não é $1$.** O limite fundamental exige que o **argumento do seno** e o **denominador** sejam a mesma expressão. Aqui são $5x$ e $3x$ — daí o fator $\frac53$.
 

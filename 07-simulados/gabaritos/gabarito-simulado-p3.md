@@ -15,10 +15,10 @@
 | Q. | Resposta |
 | :---: | --- |
 | **1 (a)** | $x^4 - 3\ln\lvert x\rvert + \dfrac43 x^{3/2}$ |
-| **1 (b)** | $\dfrac{e^{2x}}{2} + \operatorname{tg} x$ |
+| **1 (b)** | $\dfrac{e^{2x}}{2} + \mathrm{tg}\thinspace x$ |
 | **1 (c)** | $\dfrac{x^2}{2} - 2x + \ln\lvert x\rvert$ |
 | **2 (a)** | $\dfrac12\ln\big(x^2+4\big)$ — substituição |
-| **2 (b)** | $\dfrac{x\operatorname{sen} 2x}{2} + \dfrac{\cos 2x}{4}$ — por partes |
+| **2 (b)** | $\dfrac{x\mathrm{sen}\thinspace 2x}{2} + \dfrac{\cos 2x}{4}$ — por partes |
 | **2 (c)** | $-\dfrac45\ln\lvert x+3\rvert + \dfrac95\ln\lvert x-2\rvert$ — frações parciais |
 | **3** | $f(x) = 2x^3-x^2-x$ |
 | **4** | (a) $\dfrac{65}{12}$ · (b) $3x^2\cos\big(x^6\big)$ · (c) $\dfrac14$ |
@@ -37,7 +37,7 @@ $$= x^4 - 3\ln\lvert x\rvert + \frac43 x^{3/2} + C$$
 
 **(b)**
 
-$$\int\left(e^{2x}+\operatorname{sec}^2 x\right)dx = \frac{e^{2x}}{2} + \operatorname{tg} x + C$$
+$$\int\left(e^{2x}+\mathrm{sec}^2\thinspace x\right)dx = \frac{e^{2x}}{2} + \mathrm{tg}\thinspace x + C$$
 
 > ⚠️ **O $\frac12$ de $e^{2x}$ é obrigatório.** Derivando $e^{2x}$ sai $2e^{2x}$, então integrar precisa **dividir** por $2$ para compensar. Esquecer esse fator é o erro mais frequente do item.
 
@@ -63,13 +63,13 @@ $$\int\frac{x\thinspace dx}{x^2+4} = \frac12\int\frac{du}{u} = \frac12\ln\lvert 
 
 **(b) Técnica: integração por partes.** Produto de **A**lgébrica e **T**rigonométrica; por LIATE, $u$ é a algébrica:
 
-$$u = x, \quad dv = \cos(2x)\thinspace dx \ \Longrightarrow \ du = dx, \quad v = \frac{\operatorname{sen}(2x)}{2}$$
+$$u = x, \quad dv = \cos(2x)\thinspace dx \ \Longrightarrow \ du = dx, \quad v = \frac{\mathrm{sen}(2x)}{2}$$
 
-$$\int x\cos(2x)\thinspace dx = \frac{x\operatorname{sen}(2x)}{2} - \frac12\int\operatorname{sen}(2x)\thinspace dx = \frac{x\operatorname{sen}(2x)}{2} + \frac{\cos(2x)}{4} + C$$
+$$\int x\cos(2x)\thinspace dx = \frac{x\mathrm{sen}(2x)}{2} - \frac12\int\mathrm{sen}(2x)\thinspace dx = \frac{x\mathrm{sen}(2x)}{2} + \frac{\cos(2x)}{4} + C$$
 
 **Conferindo:**
 
-$$\left[\frac{x\operatorname{sen} 2x}{2}+\frac{\cos 2x}{4}\right]' = \frac{\operatorname{sen} 2x}{2} + x\cos 2x - \frac{2\operatorname{sen} 2x}{4} = x\cos 2x \ \checkmark$$
+$$\left[\frac{x\mathrm{sen}\thinspace 2x}{2}+\frac{\cos 2x}{4}\right]' = \frac{\mathrm{sen}\thinspace 2x}{2} + x\cos 2x - \frac{2\mathrm{sen}\thinspace 2x}{4} = x\cos 2x \ \checkmark$$
 
 **(c) Técnica: frações parciais.** Grau $1<2$ ✔ e $x^2+x-6 = (x+3)(x-2)$:
 

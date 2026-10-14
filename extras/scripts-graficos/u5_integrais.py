@@ -78,11 +78,11 @@ def triangulos_substituicao() -> None:
     casos = [
         # (radical, hipotenusa, cateto oposto, cateto adjacente, substituicao)
         ("$\\sqrt{a^2-x^2}$", "$a$", "$x$", "$\\sqrt{a^2-x^2}$",
-         "$x = a\\operatorname{sen}\\theta$"),
+         "$x = a\\mathrm{sen}\\,\\theta$"),
         ("$\\sqrt{a^2+x^2}$", "$\\sqrt{a^2+x^2}$", "$x$", "$a$",
-         "$x = a\\operatorname{tg}\\theta$"),
+         "$x = a\\mathrm{tg}\\,\\theta$"),
         ("$\\sqrt{x^2-a^2}$", "$x$", "$\\sqrt{x^2-a^2}$", "$a$",
-         "$x = a\\operatorname{sec}\\theta$"),
+         "$x = a\\mathrm{sec}\\,\\theta$"),
     ]
 
     fig, eixos = plt.subplots(1, 3, figsize=(9.8, 3.6))
@@ -183,7 +183,7 @@ def area_com_sinal() -> None:
                             passo_y=1)
 
     f = np.sin
-    ec.plotar(ax, f, (-0.5, 7.1), rotulo="$y = \\operatorname{sen} x$")
+    ec.plotar(ax, f, (-0.5, 7.1), rotulo="$y = \\mathrm{sen}\\,x$")
 
     x1 = np.linspace(0, np.pi, 300)
     ax.fill_between(x1, f(x1), color=ec.CORES["curva"], alpha=0.25, linewidth=0,

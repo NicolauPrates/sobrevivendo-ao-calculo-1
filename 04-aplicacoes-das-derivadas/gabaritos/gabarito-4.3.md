@@ -68,7 +68,7 @@
 
 **(c)** $\frac00$ ✔ → $\lim\dfrac{1/x}{1} = 1$
 
-**(d)** $\frac00$ ✔ → $\lim\dfrac{\operatorname{sen} x}{1} = 0$
+**(d)** $\frac00$ ✔ → $\lim\dfrac{\mathrm{sen}\thinspace x}{1} = 0$
 
 ---
 
@@ -110,9 +110,9 @@ $$\lim_{x\to0}\frac{e^x-1}{2x} \ \longrightarrow \ \frac00 \ \overset{\text{L'H}
 
 **(b)** $\frac00$ ✔
 
-$$\lim_{x\to0}\frac{1-\cos x}{3x^2} \ \longrightarrow \ \frac00 \ \overset{\text{L'H}}{=} \ \lim_{x\to0}\frac{\operatorname{sen} x}{6x} = \frac16$$
+$$\lim_{x\to0}\frac{1-\cos x}{3x^2} \ \longrightarrow \ \frac00 \ \overset{\text{L'H}}{=} \ \lim_{x\to0}\frac{\mathrm{sen}\thinspace x}{6x} = \frac16$$
 
-*(Na última passagem usou-se $\frac{\operatorname{sen} x}{x}\to1$; aplicar L&#39;Hôspital mais uma vez daria $\frac{\cos x}{6}\to\frac16$ igualmente.)*
+*(Na última passagem usou-se $\frac{\mathrm{sen}\thinspace x}{x}\to1$; aplicar L&#39;Hôspital mais uma vez daria $\frac{\cos x}{6}\to\frac16$ igualmente.)*
 
 ---
 
@@ -174,9 +174,9 @@ $$\overset{\text{L'H}}{=} \lim_{x\to+\infty}\frac{\dfrac{1}{1+\frac2x}\cdot\left
 
 $\frac00$ ✔
 
-$$\overset{\text{L'H}}{=} \lim_{x\to0}\frac{\sec^2 x - 1}{3x^2} = \lim_{x\to0}\frac{\operatorname{tg}^2 x}{3x^2} = \frac13\lim_{x\to0}\left(\frac{\operatorname{tg} x}{x}\right)^2 = \frac13\cdot1 = \frac13$$
+$$\overset{\text{L'H}}{=} \lim_{x\to0}\frac{\sec^2 x - 1}{3x^2} = \lim_{x\to0}\frac{\mathrm{tg}^2\thinspace x}{3x^2} = \frac13\lim_{x\to0}\left(\frac{\mathrm{tg}\thinspace x}{x}\right)^2 = \frac13\cdot1 = \frac13$$
 
-*(usou-se $\sec^2 x - 1 = \operatorname{tg}^2 x$ e o limite de [2.3](../../02-limites-e-continuidade/2.3-teorema-do-sanduiche.md))*
+*(usou-se $\sec^2 x - 1 = \mathrm{tg}^2\thinspace x$ e o limite de [2.3](../../02-limites-e-continuidade/2.3-teorema-do-sanduiche.md))*
 
 ---
 
@@ -192,9 +192,9 @@ $$\overset{\text{L'H}}{=} \lim_{x\to+\infty}\frac{2\ln x\cdot\frac1x}{1} = \lim_
 
 Forma $0\cdot(-\infty)$. Reescreva com o **logaritmo em cima** (ele é o fator difícil):
 
-$$\operatorname{sen} x\cdot\ln x = \frac{\ln x}{\operatorname{cossec} x} \ \longrightarrow \ \frac{-\infty}{+\infty} \quad \checkmark$$
+$$\mathrm{sen}\thinspace x\cdot\ln x = \frac{\ln x}{\mathrm{cossec}\thinspace x} \ \longrightarrow \ \frac{-\infty}{+\infty} \quad \checkmark$$
 
-$$\overset{\text{L'H}}{=} \lim_{x\to0^{+}}\frac{1/x}{-\operatorname{cossec} x\operatorname{cotg} x} = \lim_{x\to0^{+}}\frac{-\operatorname{sen}^2 x}{x\cos x} = \lim_{x\to0^{+}}\left(-\frac{\operatorname{sen} x}{x}\cdot\frac{\operatorname{sen} x}{\cos x}\right) = -1\cdot 0 = 0$$
+$$\overset{\text{L'H}}{=} \lim_{x\to0^{+}}\frac{1/x}{-\mathrm{cossec}\thinspace x\mathrm{cotg}\thinspace x} = \lim_{x\to0^{+}}\frac{-\mathrm{sen}^2\thinspace x}{x\cos x} = \lim_{x\to0^{+}}\left(-\frac{\mathrm{sen}\thinspace x}{x}\cdot\frac{\mathrm{sen}\thinspace x}{\cos x}\right) = -1\cdot 0 = 0$$
 
 ---
 
@@ -224,7 +224,7 @@ Forma $1^\infty$. Com $y = (\cos x)^{1/x^2}$:
 
 $$\ln y = \frac{\ln(\cos x)}{x^2} \ \longrightarrow \ \frac00 \quad \checkmark$$
 
-$$\overset{\text{L'H}}{=} \lim_{x\to0}\frac{\dfrac{-\operatorname{sen} x}{\cos x}}{2x} = \lim_{x\to0}\frac{-\operatorname{tg} x}{2x} = -\frac12$$
+$$\overset{\text{L'H}}{=} \lim_{x\to0}\frac{\dfrac{-\mathrm{sen}\thinspace x}{\cos x}}{2x} = \lim_{x\to0}\frac{-\mathrm{tg}\thinspace x}{2x} = -\frac12$$
 
 **Voltando:** $y \to e^{-1/2} = \dfrac{1}{\sqrt e} \approx 0{,}607$.
 
@@ -252,7 +252,7 @@ $$a\cos 0 - 2 = a - 2 = 0 \ \Longrightarrow \ a = 2$$
 
 **Com $a=2$**, a forma volta a ser $\frac00$:
 
-$$\lim_{x\to0}\frac{2\cos(2x)-2}{3x^2} \ \overset{\text{L'H}}{=} \ \lim_{x\to0}\frac{-4\operatorname{sen}(2x)}{6x} = -\frac46\cdot\lim_{x\to0}\frac{\operatorname{sen}(2x)}{x} = -\frac23\cdot2 = -\frac43$$
+$$\lim_{x\to0}\frac{2\cos(2x)-2}{3x^2} \ \overset{\text{L'H}}{=} \ \lim_{x\to0}\frac{-4\mathrm{sen}(2x)}{6x} = -\frac46\cdot\lim_{x\to0}\frac{\mathrm{sen}(2x)}{x} = -\frac23\cdot2 = -\frac43$$
 
 **Resposta.** $a=2$ e o limite vale $-\dfrac43$.
 
@@ -278,11 +278,11 @@ pois o denominador cresce sem limitação e o numerador é fixo. $\blacksquare$
 
 ### Exercício 18
 
-Forma $\infty^0$. Com $y = \left(\dfrac1x\right)^{\operatorname{sen} x}$:
+Forma $\infty^0$. Com $y = \left(\dfrac1x\right)^{\mathrm{sen}\thinspace x}$:
 
-$$\ln y = \operatorname{sen} x\cdot\ln\frac1x = -\operatorname{sen} x\cdot\ln x$$
+$$\ln y = \mathrm{sen}\thinspace x\cdot\ln\frac1x = -\mathrm{sen}\thinspace x\cdot\ln x$$
 
-Pelo Exercício 11, $\operatorname{sen} x\ln x \to 0$, logo $\ln y \to 0$.
+Pelo Exercício 11, $\mathrm{sen}\thinspace x\ln x \to 0$, logo $\ln y \to 0$.
 
 **Voltando:** $y \to e^0 = 1$.
 
@@ -298,11 +298,11 @@ Mas esse limite **não existe** — $\cos x$ oscila entre $-1$ e $1$ indefinidam
 
 **Calculando por outro método.** Separe a fração:
 
-$$\frac{x+\operatorname{sen} x}{x} = 1 + \frac{\operatorname{sen} x}{x}$$
+$$\frac{x+\mathrm{sen}\thinspace x}{x} = 1 + \frac{\mathrm{sen}\thinspace x}{x}$$
 
-E $\frac{\operatorname{sen} x}{x}\to0$ quando $x\to+\infty$ (teorema do anulamento, [2.3](../../02-limites-e-continuidade/2.3-teorema-do-sanduiche.md)). Logo
+E $\frac{\mathrm{sen}\thinspace x}{x}\to0$ quando $x\to+\infty$ (teorema do anulamento, [2.3](../../02-limites-e-continuidade/2.3-teorema-do-sanduiche.md)). Logo
 
-$$\lim_{x\to+\infty}\frac{x+\operatorname{sen} x}{x} = 1 + 0 = 1$$
+$$\lim_{x\to+\infty}\frac{x+\mathrm{sen}\thinspace x}{x} = 1 + 0 = 1$$
 
 > 💡 **A moral:** L&#39;Hôspital pode **falhar em concluir** mesmo quando o limite existe. É uma ferramenta poderosa, não universal — e é por isso que as técnicas da Unidade 2 continuam valendo.
 

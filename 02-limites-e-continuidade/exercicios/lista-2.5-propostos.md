@@ -47,13 +47,13 @@ $$
 
 &nbsp;&nbsp;**(a)** $f(x) = x^3-2x+1$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = \dfrac{x+1}{x-4}$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = \sqrt{x-2}$
 
-&nbsp;&nbsp;**(d)** $f(x) = \ln(x+3)$ &nbsp;&nbsp;&nbsp; **(e)** $f(x) = \operatorname{tg} x$
+&nbsp;&nbsp;**(d)** $f(x) = \ln(x+3)$ &nbsp;&nbsp;&nbsp; **(e)** $f(x) = \mathrm{tg}\thinspace x$
 
 **3.** Classifique a descontinuidade no ponto indicado:
 
 &nbsp;&nbsp;**(a)** $\dfrac{x^2-1}{x-1}$ em $x=1$ &nbsp;&nbsp;&nbsp; **(b)** $\dfrac{1}{x-2}$ em $x=2$
 
-&nbsp;&nbsp;**(c)** $\dfrac{\lvert x-3 \rvert}{x-3}$ em $x=3$ &nbsp;&nbsp;&nbsp; **(d)** $\operatorname{sen}\dfrac1x$ em $x=0$
+&nbsp;&nbsp;**(c)** $\dfrac{\lvert x-3 \rvert}{x-3}$ em $x=3$ &nbsp;&nbsp;&nbsp; **(d)** $\mathrm{sen}\thinspace\dfrac1x$ em $x=0$
 
 **4.** Determine $k$ para que a função seja contínua:
 
@@ -121,7 +121,7 @@ $$
 
 $$
 f(x) = \begin{cases}
-\dfrac{\operatorname{sen} 3x}{x}, & \text{se } x \neq 0 \\
+\dfrac{\mathrm{sen}\thinspace 3x}{x}, & \text{se } x \neq 0 \\
 k, & \text{se } x = 0
 \end{cases}
 $$
@@ -148,16 +148,16 @@ x+1, & \text{se } x \leqslant 0 \\[2pt]
 \end{cases}
 $$
 
-**16.** Calcule $\lim\limits_{x\to0} \operatorname{sen}\left(\dfrac{\pi}{2}\cos x\right)$, justificando a passagem do limite para dentro do seno.
+**16.** Calcule $\lim\limits_{x\to0} \mathrm{sen}\left(\dfrac{\pi}{2}\cos x\right)$, justificando a passagem do limite para dentro do seno.
 
 **17.** A função $f(x) = \lvert x^2-4 \rvert$ é contínua em $\mathbb{R}$? Em quais pontos o seu gráfico tem "bico"?
 
 **18.** Analise a continuidade em $x=0$ de cada uma:
 
 $$
-f(x) = \begin{cases} x\operatorname{sen}\dfrac1x, & x \neq 0 \\ 0, & x=0 \end{cases}
+f(x) = \begin{cases} x\mathrm{sen}\thinspace\dfrac1x, & x \neq 0 \\ 0, & x=0 \end{cases}
 \qquad\qquad
-g(x) = \begin{cases} \operatorname{sen}\dfrac1x, & x \neq 0 \\ 0, & x=0 \end{cases}
+g(x) = \begin{cases} \mathrm{sen}\thinspace\dfrac1x, & x \neq 0 \\ 0, & x=0 \end{cases}
 $$
 
 ---

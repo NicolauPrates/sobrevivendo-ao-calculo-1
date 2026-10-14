@@ -242,8 +242,8 @@ $$\Longrightarrow \ (x-4)(x+1) = 0 \ \Longrightarrow \ x=4 \ \text{ ou } \ x=-1$
 | | |
 | --- | --- |
 | **Radianos** | $180° = \pi$ rad. Em Cálculo, **sempre** radianos |
-| **Pitagórica** | $\operatorname{sen}^2 x + \cos^2 x = 1$ |
-| **Definições** | $\operatorname{tg} = \frac{\operatorname{sen}}{\cos}$, $\operatorname{sec} = \frac{1}{\cos}$, $\operatorname{cossec} = \frac{1}{\operatorname{sen}}$, $\operatorname{cotg} = \frac{\cos}{\operatorname{sen}}$ |
+| **Pitagórica** | $\mathrm{sen}^2\thinspace x + \cos^2 x = 1$ |
+| **Definições** | $\mathrm{tg} = \frac{\mathrm{sen}}{\cos}$, $\mathrm{sec} = \frac{1}{\cos}$, $\mathrm{cossec} = \frac{1}{\mathrm{sen}}$, $\mathrm{cotg} = \frac{\cos}{\mathrm{sen}}$ |
 | **Paridade** | seno é **ímpar**, cosseno é **par** |
 | **Período** | $2\pi$ para seno e cosseno; $\pi$ para tangente |
 
@@ -251,7 +251,7 @@ $$\Longrightarrow \ (x-4)(x+1) = 0 \ \Longrightarrow \ x=4 \ \text{ ou } \ x=-1$
 
 | $x$ | $0$ | $\dfrac{\pi}{6}$ | $\dfrac{\pi}{4}$ | $\dfrac{\pi}{3}$ | $\dfrac{\pi}{2}$ |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| $\operatorname{sen} x$ | $0$ | $\dfrac12$ | $\dfrac{\sqrt2}{2}$ | $\dfrac{\sqrt3}{2}$ | $1$ |
+| $\mathrm{sen}\thinspace x$ | $0$ | $\dfrac12$ | $\dfrac{\sqrt2}{2}$ | $\dfrac{\sqrt3}{2}$ | $1$ |
 | $\cos x$ | $1$ | $\dfrac{\sqrt3}{2}$ | $\dfrac{\sqrt2}{2}$ | $\dfrac12$ | $0$ |
 
 > 💡 **O truque:** o seno é $\frac{\sqrt0}{2},\frac{\sqrt1}{2},\frac{\sqrt2}{2},\frac{\sqrt3}{2},\frac{\sqrt4}{2}$ — conte $0,1,2,3,4$ sob a raiz. O cosseno é a mesma lista **ao contrário**.

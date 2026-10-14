@@ -25,8 +25,8 @@
 | 2 (c) | $2\sqrt{x}$ |
 | 2 (d) | $\dfrac25 x^{5/2}$ |
 | 3 (a) | $3e^x - 2\ln\lvert x\rvert$ |
-| 3 (b) | $-\cos x + 4\operatorname{sen} x$ |
-| 3 (c) | $2\operatorname{tg} x - 5x$ |
+| 3 (b) | $-\cos x + 4\mathrm{sen}\thinspace x$ |
+| 3 (c) | $2\mathrm{tg}\thinspace x - 5x$ |
 | 3 (d) | $\dfrac{3^x}{\ln 3}$ |
 | 4 (a) | $\dfrac{x^2}{2}+3x$ |
 | 4 (b) | $\dfrac43 x^3 - \ln\lvert x\rvert - \dfrac{3}{x^2}$ |
@@ -42,11 +42,11 @@
 | :---: | --- |
 | 10 | $\dfrac{x^2}{2}+\dfrac43 x^{3/2}+x$ |
 | 11 | $\dfrac25 x^{5/2}+\dfrac43 x^{3/2}+2\sqrt{x}$ |
-| 12 | $-\operatorname{cotg} x - x$ |
-| 13 | $\operatorname{sec} x$ |
-| 14 | $\operatorname{tg} x + x$ |
-| 15 | $x-\operatorname{arctg} x$ |
-| 16 | $2\operatorname{arcsen} x$ |
+| 12 | $-\mathrm{cotg}\thinspace x - x$ |
+| 13 | $\mathrm{sec}\thinspace x$ |
+| 14 | $\mathrm{tg}\thinspace x + x$ |
+| 15 | $x-\mathrm{arctg}\thinspace x$ |
+| 16 | $2\mathrm{arcsen}\thinspace x$ |
 | 17 | $f(x)=x^3-x-1$ |
 | 18 | $s(t)=t^3-2t^2+2t+1$ |
 
@@ -104,11 +104,11 @@ A regra é sempre a mesma: **reescreva como potência de $x$**, depois aplique $
 
 **(a)** $\displaystyle\int \left(3e^x-\frac2x\right)dx = 3e^x - 2\ln\lvert x\rvert + C$
 
-**(b)** $\displaystyle\int \big(\operatorname{sen} x + 4\cos x\big)dx = -\cos x + 4\operatorname{sen} x + C$
+**(b)** $\displaystyle\int \big(\mathrm{sen}\thinspace x + 4\cos x\big)dx = -\cos x + 4\mathrm{sen}\thinspace x + C$
 
-> ⚠️ **O sinal.** $\int\operatorname{sen} = -\cos$ e $\int\cos = +\operatorname{sen}$. Se confundir, derive de volta: $(-\cos x)' = +\operatorname{sen} x$ ✔ Esse teste de dez segundos resolve a dúvida para sempre.
+> ⚠️ **O sinal.** $\int\mathrm{sen} = -\cos$ e $\int\cos = +\mathrm{sen}$. Se confundir, derive de volta: $(-\cos x)' = +\mathrm{sen}\thinspace x$ ✔ Esse teste de dez segundos resolve a dúvida para sempre.
 
-**(c)** $\displaystyle\int \big(2\operatorname{sec}^2 x - 5\big)dx = 2\operatorname{tg} x - 5x + C$
+**(c)** $\displaystyle\int \big(2\mathrm{sec}^2\thinspace x - 5\big)dx = 2\mathrm{tg}\thinspace x - 5x + C$
 
 **(d)** $\displaystyle\int 3^x dx = \frac{3^x}{\ln 3} + C$
 
@@ -134,9 +134,9 @@ $$\int \big(4x^2-x^{-1}+6x^{-3}\big)dx = \frac43 x^3 - \ln\lvert x\rvert + 6\cdo
 
 ### 5.
 
-**(a) ERRADA.** Derivando o resultado proposto: $(-\operatorname{sen} x)' = -\cos x$, mas o integrando era $+\cos x$.
+**(a) ERRADA.** Derivando o resultado proposto: $(-\mathrm{sen}\thinspace x)' = -\cos x$, mas o integrando era $+\cos x$.
 
-**Correto:** $\displaystyle\int\cos x\thinspace dx = \operatorname{sen} x + C$
+**Correto:** $\displaystyle\int\cos x\thinspace dx = \mathrm{sen}\thinspace x + C$
 
 **(b) ERRADA** (ou, no mínimo, incompleta). A expressão $\ln x$ só existe para $x>0$, mas o integrando $\frac1x$ está definido também para $x<0$.
 
@@ -148,9 +148,9 @@ $$\big(2\sqrt{x}\big)' = 2\cdot\frac{1}{2\sqrt{x}} = \frac{1}{\sqrt{x}} = x^{-1/
 
 **(d) ERRADA.** Derivando o resultado proposto, pela regra da cadeia:
 
-$$\big(\operatorname{sec}^2 x\big)' = 2\operatorname{sec} x\cdot\big(\operatorname{sec} x\operatorname{tg} x\big) = 2\operatorname{sec}^2 x\operatorname{tg} x$$
+$$\big(\mathrm{sec}^2\thinspace x\big)' = 2\mathrm{sec}\thinspace x\cdot\big(\mathrm{sec}\thinspace x\mathrm{tg}\thinspace x\big) = 2\mathrm{sec}^2\thinspace x\mathrm{tg}\thinspace x$$
 
-que não é o integrando. **Correto:** $\displaystyle\int\operatorname{sec} x\operatorname{tg} x\thinspace dx = \operatorname{sec} x + C$
+que não é o integrando. **Correto:** $\displaystyle\int\mathrm{sec}\thinspace x\mathrm{tg}\thinspace x\thinspace dx = \mathrm{sec}\thinspace x + C$
 
 > 💡 **Esta questão é o método da seção inteira em forma de exercício.** Toda integral pode ser auditada derivando — e três das quatro afirmações acima são erros que aparecem em prova todo semestre.
 
@@ -202,9 +202,9 @@ $$f(x) = \int \big(3x^2+1\big)dx = x^3+x+C_2 \qquad f(0) = C_2 = -2$$
 
 **(b) Falso.** Derivando o resultado proposto, pela regra do produto:
 
-$$\left(\frac{x^2}{2}\operatorname{sen} x\right)' = x\operatorname{sen} x + \frac{x^2}{2}\cos x \ \neq\ x\cos x$$
+$$\left(\frac{x^2}{2}\mathrm{sen}\thinspace x\right)' = x\mathrm{sen}\thinspace x + \frac{x^2}{2}\cos x \ \neq\ x\cos x$$
 
-O erro de fundo é ter integrado cada fator separadamente, como se existisse "regra do produto" para integrais. A integral correta é $x\operatorname{sen} x + \cos x + C$, e sai por **integração por partes** ([5.2](../5.2-tecnicas-de-integracao.md)).
+O erro de fundo é ter integrado cada fator separadamente, como se existisse "regra do produto" para integrais. A integral correta é $x\mathrm{sen}\thinspace x + \cos x + C$, e sai por **integração por partes** ([5.2](../5.2-tecnicas-de-integracao.md)).
 
 **(c) Verdadeiro.** Toda função contínua num intervalo tem primitiva. A demonstração vem na [seção 5.3](../5.3-integral-definida-e-o-teorema-fundamental-do-calculo.md): a função $F(x) = \int_a^x f(t)\thinspace dt$ é uma primitiva de $f$, e é exatamente isso que a **primeira parte do Teorema Fundamental** afirma.
 
@@ -240,11 +240,11 @@ $$\int \left(x^{3/2}+2x^{1/2}+x^{-1/2}\right)dx = \frac25 x^{5/2} + \frac43 x^{3
 
 ### 12.
 
-A tabela não tem $\operatorname{cotg}^2$, mas tem $\operatorname{cossec}^2$. A identidade pitagórica correspondente é
+A tabela não tem $\mathrm{cotg}^2$, mas tem $\mathrm{cossec}^2$. A identidade pitagórica correspondente é
 
-$$\operatorname{cossec}^2 x = 1+\operatorname{cotg}^2 x \ \Longrightarrow \ \operatorname{cotg}^2 x = \operatorname{cossec}^2 x - 1$$
+$$\mathrm{cossec}^2\thinspace x = 1+\mathrm{cotg}^2\thinspace x \ \Longrightarrow \ \mathrm{cotg}^2\thinspace x = \mathrm{cossec}^2\thinspace x - 1$$
 
-$$\int \operatorname{cotg}^2 x\thinspace dx = \int \big(\operatorname{cossec}^2 x - 1\big)dx = -\operatorname{cotg} x - x + C$$
+$$\int \mathrm{cotg}^2\thinspace x\thinspace dx = \int \big(\mathrm{cossec}^2\thinspace x - 1\big)dx = -\mathrm{cotg}\thinspace x - x + C$$
 
 ---
 
@@ -252,13 +252,13 @@ $$\int \operatorname{cotg}^2 x\thinspace dx = \int \big(\operatorname{cossec}^2 
 
 **Reescreva separando os fatores:**
 
-$$\frac{\operatorname{sen} x}{\cos^2 x} = \frac{1}{\cos x}\cdot\frac{\operatorname{sen} x}{\cos x} = \operatorname{sec} x\operatorname{tg} x$$
+$$\frac{\mathrm{sen}\thinspace x}{\cos^2 x} = \frac{1}{\cos x}\cdot\frac{\mathrm{sen}\thinspace x}{\cos x} = \mathrm{sec}\thinspace x\mathrm{tg}\thinspace x$$
 
 que **está** na tabela:
 
-$$\int \operatorname{sec} x\operatorname{tg} x\thinspace dx = \operatorname{sec} x + C$$
+$$\int \mathrm{sec}\thinspace x\mathrm{tg}\thinspace x\thinspace dx = \mathrm{sec}\thinspace x + C$$
 
-**Conferindo:** $(\operatorname{sec} x)' = \operatorname{sec} x\operatorname{tg} x = \dfrac{\operatorname{sen} x}{\cos^2 x}$ ✔
+**Conferindo:** $(\mathrm{sec}\thinspace x)' = \mathrm{sec}\thinspace x\mathrm{tg}\thinspace x = \dfrac{\mathrm{sen}\thinspace x}{\cos^2 x}$ ✔
 
 ---
 
@@ -266,9 +266,9 @@ $$\int \operatorname{sec} x\operatorname{tg} x\thinspace dx = \operatorname{sec}
 
 **Divida a fração:**
 
-$$\frac{1+\cos^2 x}{\cos^2 x} = \frac{1}{\cos^2 x} + \frac{\cos^2 x}{\cos^2 x} = \operatorname{sec}^2 x + 1$$
+$$\frac{1+\cos^2 x}{\cos^2 x} = \frac{1}{\cos^2 x} + \frac{\cos^2 x}{\cos^2 x} = \mathrm{sec}^2\thinspace x + 1$$
 
-$$\int \big(\operatorname{sec}^2 x + 1\big)dx = \operatorname{tg} x + x + C$$
+$$\int \big(\mathrm{sec}^2\thinspace x + 1\big)dx = \mathrm{tg}\thinspace x + x + C$$
 
 ---
 
@@ -278,7 +278,7 @@ O grau do numerador **não é menor** que o do denominador, então o integrando 
 
 $$\frac{x^2}{1+x^2} = \frac{\big(1+x^2\big)-1}{1+x^2} = 1 - \frac{1}{1+x^2}$$
 
-$$\int \left(1-\frac{1}{1+x^2}\right)dx = x - \operatorname{arctg} x + C$$
+$$\int \left(1-\frac{1}{1+x^2}\right)dx = x - \mathrm{arctg}\thinspace x + C$$
 
 > 💡 **Somar e subtrair o mesmo termo é um dos truques mais rentáveis da unidade.** Sempre que o numerador tiver grau maior ou igual ao do denominador, o primeiro movimento é esse (ou a divisão de polinômios, que é a versão geral dele).
 
@@ -286,7 +286,7 @@ $$\int \left(1-\frac{1}{1+x^2}\right)dx = x - \operatorname{arctg} x + C$$
 
 ### 16.
 
-$$\int \frac{2}{\sqrt{1-x^2}}\thinspace dx = 2\int\frac{dx}{\sqrt{1-x^2}} = 2\operatorname{arcsen} x + C$$
+$$\int \frac{2}{\sqrt{1-x^2}}\thinspace dx = 2\int\frac{dx}{\sqrt{1-x^2}} = 2\mathrm{arcsen}\thinspace x + C$$
 
 ---
 

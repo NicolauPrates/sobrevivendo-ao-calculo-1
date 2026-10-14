@@ -7,7 +7,22 @@ Confere se **todas** as fórmulas do material vão renderizar no GitHub — ante
 
 ---
 
-## O problema que ele resolve
+## Os dois problemas que ele resolve
+
+### 1. Macros que o GitHub recusa
+
+Ser LaTeX válido não basta: o GitHub bloqueia certas macros e descarta a fórmula inteira, imprimindo no lugar
+
+> The following macros are not allowed: operatorname
+
+A pior parte é que **nenhum teste local acusa**. O KaTeX, o MathJax e o VS Code aceitam `\operatorname` sem reclamar, e a mensagem é gerada no navegador — então nem baixar o HTML da página publicada revela o problema. Foi assim que `\operatorname` entrou em 82 arquivos deste repositório e passou por 16 mil fórmulas "verificadas".
+
+Por isso a checagem de macros proibidas roda **antes** do KaTeX. A lista fica no topo do script em `verifica.html`; se aparecer outra macro recusada, acrescente-a ali.
+
+> [!NOTE]
+> A lista é **empírica** — o GitHub não publica a dele. Hoje tem `\operatorname` (confirmada na prática) e as macros de definição `\def`, `\newcommand`, `\renewcommand`, `\gdef` e `\let` (preventivas).
+
+### 2. Escapes do Markdown comidos antes do LaTeX
 
 O GitHub aplica os escapes do Markdown **antes** de entregar a fórmula ao renderizador de LaTeX. Dentro de `$...$`, toda barra invertida seguida de pontuação é apagada:
 
@@ -20,7 +35,10 @@ O GitHub aplica os escapes do Markdown **antes** de entregar a fórmula ao rende
 > [!CAUTION]
 > **Um único erro desses derruba todas as fórmulas da página**, não só a defeituosa: o GitHub mostra uma tarja vermelha no topo e exibe o resto da matemática como texto cru, com os cifrões à mostra. Já aconteceu aqui — um `\left\{` deixou a página 1.1 inteira sem renderizar.
 
-A regra completa, com a tabela dos equivalentes seguros (`\lbrace`, `\thinspace`, blocos `$$` em várias linhas), está na **[§5.1 das convenções](../../CONVENCOES.md)**.
+A regra completa, com a tabela dos equivalentes seguros (`\lbrace`, `\thinspace`, blocos `$$` em várias linhas), está na **[§5.1 das convenções](../../CONVENCOES.md)**; a lista de macros proibidas, na **[§5.2](../../CONVENCOES.md)**.
+
+> [!IMPORTANT]
+> **O verificador reduz o risco; não o elimina.** Ele só conhece as armadilhas que já descobrimos. Continue abrindo a página publicada depois de cada mudança grande — foi assim que as duas desta lista apareceram.
 
 ---
 

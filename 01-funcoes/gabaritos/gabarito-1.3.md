@@ -12,12 +12,12 @@
 
 | Ex. | Resposta |
 | :---: | --- |
-| 1 (a) | $D=\mathbb{R}$, $\operatorname{Im}=[0,+\infty)$ |
-| 1 (b) | $D=[0,+\infty)$, $\operatorname{Im}=[0,+\infty)$ |
-| 1 (c) | $D=\mathbb{R}\setminus\lbrace 0 \rbrace$, $\operatorname{Im}=\mathbb{R}\setminus\lbrace 0 \rbrace$ |
-| 1 (d) | $D=\mathbb{R}$, $\operatorname{Im}=[0,+\infty)$ |
-| 1 (e) | $D=\mathbb{R}$, $\operatorname{Im}=(0,+\infty)$ |
-| 1 (f) | $D=(0,+\infty)$, $\operatorname{Im}=\mathbb{R}$ |
+| 1 (a) | $D=\mathbb{R}$, $\mathrm{Im}=[0,+\infty)$ |
+| 1 (b) | $D=[0,+\infty)$, $\mathrm{Im}=[0,+\infty)$ |
+| 1 (c) | $D=\mathbb{R}\setminus\lbrace 0 \rbrace$, $\mathrm{Im}=\mathbb{R}\setminus\lbrace 0 \rbrace$ |
+| 1 (d) | $D=\mathbb{R}$, $\mathrm{Im}=[0,+\infty)$ |
+| 1 (e) | $D=\mathbb{R}$, $\mathrm{Im}=(0,+\infty)$ |
+| 1 (f) | $D=(0,+\infty)$, $\mathrm{Im}=\mathbb{R}$ |
 | 2 (a) | par |
 | 2 (b) | ímpar |
 | 2 (c) | nem par nem ímpar |
@@ -34,10 +34,10 @@
 | 4 (b) | desloca $2$ para a esquerda; vértice $(-2,0)$ |
 | 4 (c) | reflete no eixo $x$; concavidade para baixo |
 | 4 (d) | desloca $1$ à direita e sobe $4$; vértice $(1,4)$ |
-| 5 (a) | $\operatorname{Im}=[-4,4]$, período $2\pi$ |
-| 5 (b) | $\operatorname{Im}=[-1,1]$, período $\dfrac{2\pi}{3}$ |
-| 5 (c) | $\operatorname{Im}=[0,2]$, período $2\pi$ |
-| 5 (d) | $\operatorname{Im}=[-2,2]$, período $4\pi$ |
+| 5 (a) | $\mathrm{Im}=[-4,4]$, período $2\pi$ |
+| 5 (b) | $\mathrm{Im}=[-1,1]$, período $\dfrac{2\pi}{3}$ |
+| 5 (c) | $\mathrm{Im}=[0,2]$, período $2\pi$ |
+| 5 (d) | $\mathrm{Im}=[-2,2]$, período $4\pi$ |
 | 6 (a) | $(4,+\infty)$ |
 | 6 (b) | $(-\infty,-1) \cup (1,+\infty)$ |
 | 6 (c) | $\lbrace x \in \mathbb{R} \mid x \neq \frac{\pi}{2} + k\pi,\thinspace k \in \mathbb{Z} \rbrace$ |
@@ -55,11 +55,11 @@
 | 9 (a) | ímpar |
 | 9 (b) | par |
 | 9 (c) | nem par nem ímpar |
-| 10 | $D=[-2,+\infty)$, $\operatorname{Im}=(-\infty,1]$ |
-| 11 | $\operatorname{Im}=[0,+\infty)$; bicos em $x=-1$ e $x=1$ |
-| 12 | Assíntotas $x=2$ e $y=3$; $D=\mathbb{R}\setminus\lbrace 2 \rbrace$, $\operatorname{Im}=\mathbb{R}\setminus\lbrace 3 \rbrace$ |
+| 10 | $D=[-2,+\infty)$, $\mathrm{Im}=(-\infty,1]$ |
+| 11 | $\mathrm{Im}=[0,+\infty)$; bicos em $x=-1$ e $x=1$ |
+| 12 | Assíntotas $x=2$ e $y=3$; $D=\mathbb{R}\setminus\lbrace 2 \rbrace$, $\mathrm{Im}=\mathbb{R}\setminus\lbrace 3 \rbrace$ |
 | 13 | $f(x) = 3 - \dfrac{7}{x+2}$; assíntotas $x=-2$ e $y=3$ |
-| 14 | $\operatorname{Im}=[2,8]$, período $\pi$ |
+| 14 | $\mathrm{Im}=[2,8]$, período $\pi$ |
 | 15 | Ímpar; $D = (-1,\thinspace 1)$ |
 | 16 | $x = \dfrac{\pi}{6}$ e $x = \dfrac{5\pi}{6}$ |
 | 17 | São reflexos um do outro no eixo $y$, pois $\left(\frac12\right)^x = 2^{-x}$ |
@@ -70,9 +70,9 @@
 | Ex. | Resposta |
 | :---: | --- |
 | 19 | $f(x) = \underbrace{(x^2+1)}_{\text{par}} + \underbrace{(x^3+x)}_{\text{ímpar}}$ |
-| 20 | $D=(0,+\infty)$, $\operatorname{Im}=[0,+\infty)$ |
+| 20 | $D=(0,+\infty)$, $\mathrm{Im}=[0,+\infty)$ |
 | 21 | Demonstração — veja a Parte 2 |
-| 22 | $A = \sqrt{2}$, $\varphi = \dfrac{\pi}{4}$; $\operatorname{Im} = [-\sqrt{2},\thinspace \sqrt{2}]$ |
+| 22 | $A = \sqrt{2}$, $\varphi = \dfrac{\pi}{4}$; $\mathrm{Im} = [-\sqrt{2},\thinspace \sqrt{2}]$ |
 
 ---
 ---
@@ -83,7 +83,7 @@
 
 ### Exercício 1
 
-| Função | Formato do gráfico | $D$ | $\operatorname{Im}$ |
+| Função | Formato do gráfico | $D$ | $\mathrm{Im}$ |
 | :---: | --- | :---: | :---: |
 | $x^2$ | parábola com vértice na origem, concavidade para cima | $\mathbb{R}$ | $[0,+\infty)$ |
 | $\sqrt{x}$ | meia parábola deitada, começando em $(0,0)$ | $[0,+\infty)$ | $[0,+\infty)$ |
@@ -136,13 +136,13 @@
 
 ### Exercício 5
 
-**(a)** O $4$ multiplica **fora**: amplitude $4$. $\operatorname{Im} = [-4,4]$; o período não muda: $2\pi$.
+**(a)** O $4$ multiplica **fora**: amplitude $4$. $\mathrm{Im} = [-4,4]$; o período não muda: $2\pi$.
 
-**(b)** O $3$ está **dentro**: comprime horizontalmente. $\operatorname{Im} = [-1,1]$; período $\dfrac{2\pi}{3}$.
+**(b)** O $3$ está **dentro**: comprime horizontalmente. $\mathrm{Im} = [-1,1]$; período $\dfrac{2\pi}{3}$.
 
-**(c)** Soma **fora**: sobe $1$. $\operatorname{Im} = [0,2]$; período $2\pi$.
+**(c)** Soma **fora**: sobe $1$. $\mathrm{Im} = [0,2]$; período $2\pi$.
 
-**(d)** O $-2$ de fora dá amplitude $2$ (o sinal só vira o gráfico, não muda a imagem); o $\frac12$ de dentro **estica** horizontalmente. $\operatorname{Im} = [-2,2]$; período $\dfrac{2\pi}{1/2} = 4\pi$.
+**(d)** O $-2$ de fora dá amplitude $2$ (o sinal só vira o gráfico, não muda a imagem); o $\frac12$ de dentro **estica** horizontalmente. $\mathrm{Im} = [-2,2]$; período $\dfrac{2\pi}{1/2} = 4\pi$.
 
 ---
 
@@ -226,7 +226,7 @@ Partindo de $y = \sqrt{x}$:
 
 **Imagem:** $\sqrt{x+2} \geqslant 0 \Rightarrow -\sqrt{x+2} \leqslant 0 \Rightarrow y \leqslant 1$, e todo valor $\leqslant 1$ é atingido.
 
-$$\operatorname{Im} = (-\infty,\thinspace 1]$$
+$$\mathrm{Im} = (-\infty,\thinspace 1]$$
 
 ---
 
@@ -237,7 +237,7 @@ $$\operatorname{Im} = (-\infty,\thinspace 1]$$
 
 O resultado: fora de $[-1,1]$, o gráfico é o da parábola original; dentro, é um arco com máximo $1$ em $x=0$.
 
-**Imagem:** $\operatorname{Im} = [0,+\infty)$.
+**Imagem:** $\mathrm{Im} = [0,+\infty)$.
 
 **Bicos:** em $x = -1$ e $x = 1$ — exatamente onde a função original cruzava o eixo $x$ e o rebatimento mudou a direção da curva.
 
@@ -250,7 +250,7 @@ Partindo de $y = \dfrac1x$: desloca-se $2$ para a direita e sobe-se $3$.
 - Assíntota vertical: era $x=0$, vai para $\boxed{x = 2}$.
 - Assíntota horizontal: era $y=0$, vai para $\boxed{y = 3}$.
 
-$$D = \mathbb{R}\setminus\lbrace 2 \rbrace \qquad \operatorname{Im} = \mathbb{R}\setminus\lbrace 3 \rbrace$$
+$$D = \mathbb{R}\setminus\lbrace 2 \rbrace \qquad \mathrm{Im} = \mathbb{R}\setminus\lbrace 3 \rbrace$$
 
 A imagem exclui $3$ porque $\dfrac{1}{x-2}$ nunca é zero.
 
@@ -282,7 +282,7 @@ $$-3 \leqslant 3\cos(2x+\pi) \leqslant 3$$
 $$3 \geqslant -3\cos(2x+\pi) \geqslant -3 \qquad \text{(multiplicou por } -1\text{)}$$
 $$8 \geqslant 5 - 3\cos(2x+\pi) \geqslant 2$$
 
-$$\operatorname{Im} = [2,\thinspace 8]$$
+$$\mathrm{Im} = [2,\thinspace 8]$$
 
 **Período.** Só o coeficiente de $x$ **dentro** do cosseno importa: período $= \dfrac{2\pi}{2} = \pi$.
 
@@ -318,7 +318,7 @@ Logo $f$ é **ímpar**. $\blacksquare$
 
 ### Exercício 16
 
-No ciclo trigonométrico, $\operatorname{sen} x = \frac12$ nos dois pontos de ordenada $\frac12$: um no primeiro quadrante e outro no segundo.
+No ciclo trigonométrico, $\mathrm{sen}\thinspace x = \frac12$ nos dois pontos de ordenada $\frac12$: um no primeiro quadrante e outro no segundo.
 
 $$x = \frac{\pi}{6} \qquad \text{e} \qquad x = \pi - \frac{\pi}{6} = \frac{5\pi}{6}$$
 
@@ -336,7 +336,7 @@ Os dois passam por $(0,1)$; $2^x$ cresce para a direita, e $\left(\frac12\right)
 
 ### Exercício 18
 
-Exige-se $\operatorname{sen} x \geqslant 0$. Em $[0,2\pi]$, o seno é não negativo no primeiro e no segundo quadrantes:
+Exige-se $\mathrm{sen}\thinspace x \geqslant 0$. Em $[0,2\pi]$, o seno é não negativo no primeiro e no segundo quadrantes:
 
 $$D = [0,\thinspace \pi]$$
 
@@ -374,7 +374,7 @@ O gráfico resultante:
 - em $[1,+\infty)$: sobe a partir de $0$, igual a $\ln x$;
 - toca o eixo $x$ apenas em $x=1$, formando um **bico** ali.
 
-$$D = (0,\thinspace +\infty) \qquad \operatorname{Im} = [0,\thinspace +\infty)$$
+$$D = (0,\thinspace +\infty) \qquad \mathrm{Im} = [0,\thinspace +\infty)$$
 
 ---
 
@@ -394,33 +394,33 @@ E isso vale para **todo** $x$ do domínio. Logo a única função simultaneament
 
 ### Exercício 22
 
-**Estratégia.** Desenvolver $A\operatorname{sen}(x+\varphi)$ pela fórmula do seno da soma e comparar coeficientes.
+**Estratégia.** Desenvolver $A\mathrm{sen}(x+\varphi)$ pela fórmula do seno da soma e comparar coeficientes.
 
 **Solução.**
 
-$$A\operatorname{sen}(x+\varphi) = A\big(\operatorname{sen} x \cos\varphi + \cos x \operatorname{sen}\varphi\big) = (A\cos\varphi)\operatorname{sen} x + (A\operatorname{sen}\varphi)\cos x$$
+$$A\mathrm{sen}(x+\varphi) = A\big(\mathrm{sen}\thinspace x \cos\varphi + \cos x \mathrm{sen}\thinspace\varphi\big) = (A\cos\varphi)\mathrm{sen}\thinspace x + (A\mathrm{sen}\thinspace\varphi)\cos x$$
 
-Para que isso seja igual a $\operatorname{sen} x + \cos x$, é preciso
+Para que isso seja igual a $\mathrm{sen}\thinspace x + \cos x$, é preciso
 
-$$A\cos\varphi = 1 \qquad \text{e} \qquad A\operatorname{sen}\varphi = 1$$
+$$A\cos\varphi = 1 \qquad \text{e} \qquad A\mathrm{sen}\thinspace\varphi = 1$$
 
-Elevando ao quadrado e somando, com $\operatorname{sen}^2\varphi + \cos^2\varphi = 1$:
+Elevando ao quadrado e somando, com $\mathrm{sen}^2\thinspace\varphi + \cos^2\varphi = 1$:
 
-$$A^2\cos^2\varphi + A^2\operatorname{sen}^2\varphi = 1 + 1 \ \Longrightarrow \ A^2 = 2 \ \Longrightarrow \ A = \sqrt{2}$$
+$$A^2\cos^2\varphi + A^2\mathrm{sen}^2\thinspace\varphi = 1 + 1 \ \Longrightarrow \ A^2 = 2 \ \Longrightarrow \ A = \sqrt{2}$$
 
 Dividindo as duas equações:
 
-$$\frac{A\operatorname{sen}\varphi}{A\cos\varphi} = \frac{1}{1} \ \Longrightarrow \ \operatorname{tg}\varphi = 1 \ \Longrightarrow \ \varphi = \frac{\pi}{4}$$
+$$\frac{A\mathrm{sen}\thinspace\varphi}{A\cos\varphi} = \frac{1}{1} \ \Longrightarrow \ \mathrm{tg}\thinspace\varphi = 1 \ \Longrightarrow \ \varphi = \frac{\pi}{4}$$
 
 (escolhendo a solução do primeiro quadrante, já que seno e cosseno de $\varphi$ são ambos positivos).
 
 **Resposta.**
 
-$$\operatorname{sen} x + \cos x = \sqrt{2}\operatorname{sen}\left(x + \frac{\pi}{4}\right)$$
+$$\mathrm{sen}\thinspace x + \cos x = \sqrt{2}\mathrm{sen}\left(x + \frac{\pi}{4}\right)$$
 
 Como o seno percorre $[-1,1]$, a imagem é
 
-$$\operatorname{Im} = \left[-\sqrt{2},\thinspace \sqrt{2}\right]$$
+$$\mathrm{Im} = \left[-\sqrt{2},\thinspace \sqrt{2}\right]$$
 
 > 💡 **Por que isso é útil.** Escrita assim, a função mostra de graça a amplitude ($\sqrt2$), o período ($2\pi$) e o deslocamento ($\frac{\pi}{4}$ para a esquerda) — informações que a forma original escondia. Essa reescrita aparece em oscilações amortecidas, em circuitos de corrente alternada e nas integrais de [5.2](../../05-integrais/5.2-tecnicas-de-integracao.md).
 

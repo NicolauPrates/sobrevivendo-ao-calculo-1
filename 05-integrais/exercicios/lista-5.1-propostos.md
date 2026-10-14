@@ -26,9 +26,9 @@
 
 **3.** Calcule:
 
-&nbsp;&nbsp;**(a)** $\displaystyle\int \left(3e^x - \frac{2}{x}\right)dx$ &nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int \big(\operatorname{sen} x + 4\cos x\big)dx$
+&nbsp;&nbsp;**(a)** $\displaystyle\int \left(3e^x - \frac{2}{x}\right)dx$ &nbsp;&nbsp;&nbsp; **(b)** $\displaystyle\int \big(\mathrm{sen}\thinspace x + 4\cos x\big)dx$
 
-&nbsp;&nbsp;**(c)** $\displaystyle\int \big(2\operatorname{sec}^2 x - 5\big)dx$ &nbsp;&nbsp;&nbsp; **(d)** $\displaystyle\int 3^{x}\thinspace dx$
+&nbsp;&nbsp;**(c)** $\displaystyle\int \big(2\mathrm{sec}^2\thinspace x - 5\big)dx$ &nbsp;&nbsp;&nbsp; **(d)** $\displaystyle\int 3^{x}\thinspace dx$
 
 **4.** Calcule, dividindo a fração termo a termo:
 
@@ -36,13 +36,13 @@
 
 **5.** Verifique, **derivando**, se cada igualdade está correta. Se estiver errada, corrija:
 
-&nbsp;&nbsp;**(a)** $\displaystyle\int \cos x\thinspace dx = -\operatorname{sen} x + C$
+&nbsp;&nbsp;**(a)** $\displaystyle\int \cos x\thinspace dx = -\mathrm{sen}\thinspace x + C$
 
 &nbsp;&nbsp;**(b)** $\displaystyle\int \frac{dx}{x} = \ln x + C$
 
 &nbsp;&nbsp;**(c)** $\displaystyle\int x^{-1/2}dx = 2\sqrt{x} + C$
 
-&nbsp;&nbsp;**(d)** $\displaystyle\int \operatorname{sec} x\operatorname{tg} x\thinspace dx = \operatorname{sec}^2 x + C$
+&nbsp;&nbsp;**(d)** $\displaystyle\int \mathrm{sec}\thinspace x\mathrm{tg}\thinspace x\thinspace dx = \mathrm{sec}^2\thinspace x + C$
 
 **6.** Determine $f$ tal que $f'(x) = 4x-3$ e $f(2)=1$.
 
@@ -54,7 +54,7 @@
 
 &nbsp;&nbsp;**(a)** Se $F$ e $G$ são primitivas de $f$ em $\mathbb{R}$, então $F-G$ é constante.
 
-&nbsp;&nbsp;**(b)** $\displaystyle\int x\cos x\thinspace dx = \frac{x^2}{2}\operatorname{sen} x + C$.
+&nbsp;&nbsp;**(b)** $\displaystyle\int x\cos x\thinspace dx = \frac{x^2}{2}\mathrm{sen}\thinspace x + C$.
 
 &nbsp;&nbsp;**(c)** Toda função contínua tem primitiva.
 
@@ -68,9 +68,9 @@
 
 **11.** $\displaystyle\int \frac{\big(x+1\big)^2}{\sqrt{x}}\thinspace dx$
 
-**12.** $\displaystyle\int \operatorname{cotg}^2 x\thinspace dx$
+**12.** $\displaystyle\int \mathrm{cotg}^2\thinspace x\thinspace dx$
 
-**13.** $\displaystyle\int \frac{\operatorname{sen} x}{\cos^2 x}\thinspace dx$
+**13.** $\displaystyle\int \frac{\mathrm{sen}\thinspace x}{\cos^2 x}\thinspace dx$
 
 **14.** $\displaystyle\int \frac{1+\cos^2 x}{\cos^2 x}\thinspace dx$
 

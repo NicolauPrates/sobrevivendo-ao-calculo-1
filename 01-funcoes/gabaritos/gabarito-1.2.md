@@ -40,7 +40,7 @@
 | 7 (b) | $2x + h + 1$ |
 | 7 (c) | $0$ |
 | 8 (a) | $f(-2) = -1$; $f(0) = 1$; $f(1) = 2$; $f(2) = 0$ |
-| 8 (c) | $D(f) = \mathbb{R}$; $\operatorname{Im}(f) = (-\infty,\thinspace 3)$ |
+| 8 (c) | $D(f) = \mathbb{R}$; $\mathrm{Im}(f) = (-\infty,\thinspace 3)$ |
 
 ### Bloco B · Consolidação
 
@@ -55,7 +55,7 @@
 | 15 | $(f \circ g)(x) = \sqrt{\dfrac{1}{x} - 1}$, $D = (0,\thinspace 1]$; $(g \circ f)(x) = \dfrac{1}{\sqrt{x-1}}$, $D = (1,\thinspace +\infty)$ |
 | 16 | $\dfrac{-1}{(x+h+1)(x+1)}$ |
 | 17 | $\dfrac{1}{\sqrt{x+h+3} + \sqrt{x+3}}$ |
-| 18 | $D(f) = [-2,\thinspace +\infty)$; $\operatorname{Im}(f) = (-\infty,\thinspace 3]$ |
+| 18 | $D(f) = [-2,\thinspace +\infty)$; $\mathrm{Im}(f) = (-\infty,\thinspace 3]$ |
 
 ### Bloco C · Desafio
 
@@ -141,13 +141,13 @@ $$D = (-\infty,\thinspace -1] \cup [1,\thinspace +\infty)$$
 
 ### Exercício 5
 
-**(a)** $x^2 \geqslant 0$ para todo $x$, logo $x^2 + 1 \geqslant 1$. $\operatorname{Im} = [1,\thinspace +\infty)$
+**(a)** $x^2 \geqslant 0$ para todo $x$, logo $x^2 + 1 \geqslant 1$. $\mathrm{Im} = [1,\thinspace +\infty)$
 
-**(b)** $-x^2 \leqslant 0$, logo $-x^2 + 4 \leqslant 4$. $\operatorname{Im} = (-\infty,\thinspace 4]$
+**(b)** $-x^2 \leqslant 0$, logo $-x^2 + 4 \leqslant 4$. $\mathrm{Im} = (-\infty,\thinspace 4]$
 
-**(c)** $\lvert x \rvert \geqslant 0$, logo $\lvert x \rvert - 2 \geqslant -2$. $\operatorname{Im} = [-2,\thinspace +\infty)$
+**(c)** $\lvert x \rvert \geqslant 0$, logo $\lvert x \rvert - 2 \geqslant -2$. $\mathrm{Im} = [-2,\thinspace +\infty)$
 
-**(d)** A função constante atinge um valor só. $\operatorname{Im} = \lbrace 5 \rbrace$
+**(d)** A função constante atinge um valor só. $\mathrm{Im} = \lbrace 5 \rbrace$
 
 ---
 
@@ -201,7 +201,7 @@ Imagem, ramo a ramo:
 - $x \leqslant 1$: $x+1$ cresce e atinge no máximo $2$ → $(-\infty,\thinspace 2]$;
 - $x > 1$: $4 - x^2$ decresce a partir de (sem atingir) $3$ → $(-\infty,\thinspace 3)$.
 
-$$\operatorname{Im}(f) = (-\infty,\thinspace 2] \cup (-\infty,\thinspace 3) = (-\infty,\thinspace 3)$$
+$$\mathrm{Im}(f) = (-\infty,\thinspace 2] \cup (-\infty,\thinspace 3) = (-\infty,\thinspace 3)$$
 
 > ⚠️ O valor $3$ **não** entra: ele exigiria $x = 1$, e nesse ponto vale a primeira regra, não a segunda.
 
@@ -241,7 +241,7 @@ $$y(x-1) = x+4 \ \Longrightarrow \ yx - y = x + 4 \ \Longrightarrow \ x(y-1) = 4
 
 Há solução para todo $y \neq 1$.
 
-$$\operatorname{Im}(f) = \mathbb{R} \setminus \lbrace 1 \rbrace$$
+$$\mathrm{Im}(f) = \mathbb{R} \setminus \lbrace 1 \rbrace$$
 
 ---
 
@@ -253,7 +253,7 @@ $$x^2 - 6x + 11 = (x^2 - 6x + 9) - 9 + 11 = (x-3)^2 + 2$$
 
 Como $(x-3)^2 \geqslant 0$, o mínimo é $2$, atingido em $x=3$.
 
-$$\operatorname{Im}(f) = [2,\thinspace +\infty)$$
+$$\mathrm{Im}(f) = [2,\thinspace +\infty)$$
 
 ---
 
@@ -351,7 +351,7 @@ $$3 - \sqrt{x+2} \leqslant 3$$
 
 e todo valor $\leqslant 3$ é atingido.
 
-$$\operatorname{Im}(f) = (-\infty,\thinspace 3]$$
+$$\mathrm{Im}(f) = (-\infty,\thinspace 3]$$
 
 ---
 
@@ -373,7 +373,7 @@ $$
 
 A composição está bem definida porque $f(x) \neq 1$ para todo $x \neq 1$: a igualdade $\frac{x+1}{x-1} = 1$ exigiria $x+1 = x-1$, o que é impossível. $\blacksquare$
 
-> 💡 Uma função que satisfaz $f \circ f = \operatorname{id}$ é a sua **própria inversa** — assunto de [1.4](../1.4-injetoras-sobrejetoras-bijetoras-e-inversas.md). Guarde este exemplo.
+> 💡 Uma função que satisfaz $f \circ f = \mathrm{id}$ é a sua **própria inversa** — assunto de [1.4](../1.4-injetoras-sobrejetoras-bijetoras-e-inversas.md). Guarde este exemplo.
 
 ---
 

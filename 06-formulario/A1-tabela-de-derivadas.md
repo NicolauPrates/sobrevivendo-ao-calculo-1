@@ -46,12 +46,12 @@
 
 | $f(x)$ | $f'(x)$ |
 | :---: | :---: |
-| $\operatorname{sen} x$ | $\cos x$ |
-| $\cos x$ | $-\operatorname{sen} x$ |
-| $\operatorname{tg} x$ | $\operatorname{sec}^2 x$ |
-| $\operatorname{cotg} x$ | $-\operatorname{cossec}^2 x$ |
-| $\operatorname{sec} x$ | $\operatorname{sec} x\operatorname{tg} x$ |
-| $\operatorname{cossec} x$ | $-\operatorname{cossec} x\operatorname{cotg} x$ |
+| $\mathrm{sen}\thinspace x$ | $\cos x$ |
+| $\cos x$ | $-\mathrm{sen}\thinspace x$ |
+| $\mathrm{tg}\thinspace x$ | $\mathrm{sec}^2\thinspace x$ |
+| $\mathrm{cotg}\thinspace x$ | $-\mathrm{cossec}^2\thinspace x$ |
+| $\mathrm{sec}\thinspace x$ | $\mathrm{sec}\thinspace x\mathrm{tg}\thinspace x$ |
+| $\mathrm{cossec}\thinspace x$ | $-\mathrm{cossec}\thinspace x\mathrm{cotg}\thinspace x$ |
 
 > 💡 **O padrão do sinal:** as três **co**-funções (**co**sseno, **co**tangente, **co**ssecante) são as que ganham **menos**. Lembrar disso dispensa decorar seis linhas — bastam três mais a regra.
 
@@ -61,14 +61,14 @@
 
 | $f(x)$ | $f'(x)$ | Domínio de $f'$ |
 | :---: | :---: | :---: |
-| $\operatorname{arcsen} x$ | $\dfrac{1}{\sqrt{1-x^2}}$ | $-1<x<1$ |
-| $\operatorname{arccos} x$ | $-\dfrac{1}{\sqrt{1-x^2}}$ | $-1<x<1$ |
-| $\operatorname{arctg} x$ | $\dfrac{1}{1+x^2}$ | $\mathbb{R}$ |
-| $\operatorname{arccotg} x$ | $-\dfrac{1}{1+x^2}$ | $\mathbb{R}$ |
-| $\operatorname{arcsec} x$ | $\dfrac{1}{\lvert x\rvert\sqrt{x^2-1}}$ | $\lvert x\rvert>1$ |
-| $\operatorname{arccossec} x$ | $-\dfrac{1}{\lvert x\rvert\sqrt{x^2-1}}$ | $\lvert x\rvert>1$ |
+| $\mathrm{arcsen}\thinspace x$ | $\dfrac{1}{\sqrt{1-x^2}}$ | $-1<x<1$ |
+| $\mathrm{arccos}\thinspace x$ | $-\dfrac{1}{\sqrt{1-x^2}}$ | $-1<x<1$ |
+| $\mathrm{arctg}\thinspace x$ | $\dfrac{1}{1+x^2}$ | $\mathbb{R}$ |
+| $\mathrm{arccotg}\thinspace x$ | $-\dfrac{1}{1+x^2}$ | $\mathbb{R}$ |
+| $\mathrm{arcsec}\thinspace x$ | $\dfrac{1}{\lvert x\rvert\sqrt{x^2-1}}$ | $\lvert x\rvert>1$ |
+| $\mathrm{arccossec}\thinspace x$ | $-\dfrac{1}{\lvert x\rvert\sqrt{x^2-1}}$ | $\lvert x\rvert>1$ |
 
-> 💡 **Mesmo padrão:** as **co**-inversas são as negativas das outras. E note que $\operatorname{arcsen} x + \operatorname{arccos} x = \frac{\pi}{2}$ é constante — por isso as derivadas são opostas.
+> 💡 **Mesmo padrão:** as **co**-inversas são as negativas das outras. E note que $\mathrm{arcsen}\thinspace x + \mathrm{arccos}\thinspace x = \frac{\pi}{2}$ é constante — por isso as derivadas são opostas.
 
 ---
 
@@ -82,12 +82,12 @@ Na prática, o argumento quase nunca é $x$ puro. Com $u = u(x)$:
 | $e^{u}$ | $e^{u}\thinspace u'$ |
 | $a^{u}$ | $a^{u}\ln a\cdot u'$ |
 | $\ln\lvert u\rvert$ | $\dfrac{u'}{u}$ |
-| $\operatorname{sen} u$ | $\cos u\cdot u'$ |
-| $\cos u$ | $-\operatorname{sen} u\cdot u'$ |
-| $\operatorname{tg} u$ | $\operatorname{sec}^2 u\cdot u'$ |
-| $\operatorname{sec} u$ | $\operatorname{sec} u\operatorname{tg} u\cdot u'$ |
-| $\operatorname{arcsen} u$ | $\dfrac{u'}{\sqrt{1-u^2}}$ |
-| $\operatorname{arctg} u$ | $\dfrac{u'}{1+u^2}$ |
+| $\mathrm{sen}\thinspace u$ | $\cos u\cdot u'$ |
+| $\cos u$ | $-\mathrm{sen}\thinspace u\cdot u'$ |
+| $\mathrm{tg}\thinspace u$ | $\mathrm{sec}^2\thinspace u\cdot u'$ |
+| $\mathrm{sec}\thinspace u$ | $\mathrm{sec}\thinspace u\mathrm{tg}\thinspace u\cdot u'$ |
+| $\mathrm{arcsen}\thinspace u$ | $\dfrac{u'}{\sqrt{1-u^2}}$ |
+| $\mathrm{arctg}\thinspace u$ | $\dfrac{u'}{1+u^2}$ |
 | $\sqrt{u}$ | $\dfrac{u'}{2\sqrt{u}}$ |
 
 > [!TIP]
@@ -125,7 +125,7 @@ $$f'' = \big(f'\big)' \qquad f''' = \big(f''\big)' \qquad f^{(n)} = \big(f^{(n-1
 | --- | --- |
 | $\big(f\thinspace g\big)' = f'g'$ | $f'g + fg'$ |
 | $\left(\frac{f}{g}\right)' = \frac{f'}{g'}$ | $\frac{f'g-fg'}{g^2}$ |
-| $\big(\operatorname{sen}(x^2)\big)' = \cos(x^2)$ | falta o $\cdot\thinspace 2x$ da cadeia |
+| $\big(\mathrm{sen}(x^2)\big)' = \cos(x^2)$ | falta o $\cdot\thinspace 2x$ da cadeia |
 | $\big(e^{3x}\big)' = e^{3x}$ | $3e^{3x}$ |
 | $\big(\ln(5x)\big)' = \frac{1}{5x}$ | $\frac{5}{5x} = \frac1x$ |
 | $\big(2^{x}\big)' = x\thinspace 2^{x-1}$ | $2^{x}\ln 2$ — é exponencial, não potência |

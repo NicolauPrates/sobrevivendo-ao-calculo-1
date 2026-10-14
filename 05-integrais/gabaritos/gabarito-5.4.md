@@ -72,7 +72,7 @@ $$A = \int_0^1\big(x-x^3\big)dx = \left[\frac{x^2}{2}-\frac{x^4}{4}\right]_0^1 =
 
 **(c)** Em $\left[0,\frac{\pi}{4}\right]$, o **cosseno** está acima do seno (eles se igualam exatamente em $\frac{\pi}{4}$).
 
-$$A = \int_0^{\pi/4}\big(\cos x-\operatorname{sen} x\big)dx = \Big[\operatorname{sen} x+\cos x\Big]_0^{\pi/4} = \left(\frac{\sqrt2}{2}+\frac{\sqrt2}{2}\right)-\big(0+1\big) = \sqrt2-1$$
+$$A = \int_0^{\pi/4}\big(\cos x-\mathrm{sen}\thinspace x\big)dx = \Big[\mathrm{sen}\thinspace x+\cos x\Big]_0^{\pi/4} = \left(\frac{\sqrt2}{2}+\frac{\sqrt2}{2}\right)-\big(0+1\big) = \sqrt2-1$$
 
 ---
 
@@ -237,7 +237,7 @@ $$= 2\pi\left[16x-\frac{8x^3}{3}+\frac{x^5}{5}\right]_0^2 = 2\pi\left(32-\frac{6
 
 ### 14.
 
-$$V = \pi\int_0^{\pi}\operatorname{sen}^2 x\thinspace dx = \pi\int_0^{\pi}\frac{1-\cos 2x}{2}dx = \frac{\pi}{2}\left[x-\frac{\operatorname{sen} 2x}{2}\right]_0^{\pi}$$
+$$V = \pi\int_0^{\pi}\mathrm{sen}^2\thinspace x\thinspace dx = \pi\int_0^{\pi}\frac{1-\cos 2x}{2}dx = \frac{\pi}{2}\left[x-\frac{\mathrm{sen}\thinspace 2x}{2}\right]_0^{\pi}$$
 
 $$= \frac{\pi}{2}\big(\pi-0\big) = \frac{\pi^2}{2}$$
 
@@ -271,15 +271,15 @@ $$V = \pi\int_0^4\left[4-\big(\sqrt y\big)^2\right]dy = \pi\int_0^4\big(4-y\big)
 
 ### 17.
 
-$$y = \ln(\cos x) \ \Longrightarrow \ y' = \frac{-\operatorname{sen} x}{\cos x} = -\operatorname{tg} x$$
+$$y = \ln(\cos x) \ \Longrightarrow \ y' = \frac{-\mathrm{sen}\thinspace x}{\cos x} = -\mathrm{tg}\thinspace x$$
 
-$$1+\big(y'\big)^2 = 1+\operatorname{tg}^2 x = \operatorname{sec}^2 x \ \Longrightarrow \ \sqrt{1+\big(y'\big)^2} = \operatorname{sec} x$$
+$$1+\big(y'\big)^2 = 1+\mathrm{tg}^2\thinspace x = \mathrm{sec}^2\thinspace x \ \Longrightarrow \ \sqrt{1+\big(y'\big)^2} = \mathrm{sec}\thinspace x$$
 
 (positivo, pois $\cos x>0$ em $\left[0,\frac{\pi}{3}\right]$).
 
-$$L = \int_0^{\pi/3}\operatorname{sec} x\thinspace dx = \Big[\ln\lvert\operatorname{sec} x+\operatorname{tg} x\rvert\Big]_0^{\pi/3}$$
+$$L = \int_0^{\pi/3}\mathrm{sec}\thinspace x\thinspace dx = \Big[\ln\lvert\mathrm{sec}\thinspace x+\mathrm{tg}\thinspace x\rvert\Big]_0^{\pi/3}$$
 
-Em $x=\frac{\pi}{3}$: $\operatorname{sec} = 2$ e $\operatorname{tg} = \sqrt3$. Em $x=0$: $\operatorname{sec}=1$ e $\operatorname{tg}=0$.
+Em $x=\frac{\pi}{3}$: $\mathrm{sec} = 2$ e $\mathrm{tg} = \sqrt3$. Em $x=0$: $\mathrm{sec}=1$ e $\mathrm{tg}=0$.
 
 $$L = \ln\big(2+\sqrt3\big)-\ln 1 = \ln\big(2+\sqrt3\big) \approx 1{,}317$$
 

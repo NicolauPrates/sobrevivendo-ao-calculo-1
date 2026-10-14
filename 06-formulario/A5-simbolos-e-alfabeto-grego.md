@@ -87,7 +87,7 @@
 | $\to$ | tende a |
 | $\propto$ | proporcional a |
 
-> 💡 **$=$ e $\equiv$ não são a mesma coisa.** $\operatorname{sen} x = 0$ vale só para certos $x$; $\operatorname{sen}^2 x + \cos^2 x \equiv 1$ vale para **todos**. Em identidades trigonométricas, o segundo é o correto.
+> 💡 **$=$ e $\equiv$ não são a mesma coisa.** $\mathrm{sen}\thinspace x = 0$ vale só para certos $x$; $\mathrm{sen}^2\thinspace x + \cos^2 x \equiv 1$ vale para **todos**. Em identidades trigonométricas, o segundo é o correto.
 
 ---
 
@@ -130,9 +130,9 @@ $$\sum_{i=1}^{n} 1 = n \qquad \sum_{i=1}^{n} i = \frac{n(n+1)}{2} \qquad \sum_{i
 | $f\circ g$ | composta: $f\big(g(x)\big)$ |
 | $f^{-1}$ | função **inversa** (não é $\frac1f$) |
 
-> ⚠️ **$f^{-1}$ versus $f^{-1}$.** Em $f^{-1}(x)$, o $-1$ indica **inversa**. Mas em $\operatorname{sen}^{2}x$, o $2$ indica **potência**. A notação é genuinamente ambígua e a convenção é só costume: $\operatorname{sen}^{-1}x$ significa $\operatorname{arcsen} x$, **não** $\frac{1}{\operatorname{sen} x}$ (que é $\operatorname{cossec} x$).
+> ⚠️ **$f^{-1}$ versus $f^{-1}$.** Em $f^{-1}(x)$, o $-1$ indica **inversa**. Mas em $\mathrm{sen}^{2}\thinspace x$, o $2$ indica **potência**. A notação é genuinamente ambígua e a convenção é só costume: $\mathrm{sen}^{-1}\thinspace x$ significa $\mathrm{arcsen}\thinspace x$, **não** $\frac{1}{\mathrm{sen}\thinspace x}$ (que é $\mathrm{cossec}\thinspace x$).
 >
-> É um dos motivos de este material preferir **$\operatorname{arcsen}$** a $\operatorname{sen}^{-1}$.
+> É um dos motivos de este material preferir **$\mathrm{arcsen}$** a $\mathrm{sen}^{-1}$.
 
 ---
 

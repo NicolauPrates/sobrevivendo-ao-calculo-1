@@ -35,7 +35,7 @@ Determine as equações da reta **tangente** e da reta **normal** ao gráfico de
 
 Derive:
 
-**(a)** $f(x) = 3e^x - 2\ln x + \operatorname{sen} x$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = x^2\cos x$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = \dfrac{\ln x}{x^2}$
+**(a)** $f(x) = 3e^x - 2\ln x + \mathrm{sen}\thinspace x$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = x^2\cos x$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = \dfrac{\ln x}{x^2}$
 
 ---
 
@@ -43,7 +43,7 @@ Derive:
 
 Derive:
 
-**(a)** $f(x) = \operatorname{sen}\big(x^2+1\big)$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = e^{3x}\cos(2x)$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = \sqrt{1+\ln x}$
+**(a)** $f(x) = \mathrm{sen}\big(x^2+1\big)$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = e^{3x}\cos(2x)$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = \sqrt{1+\ln x}$
 
 ---
 
@@ -67,7 +67,7 @@ Seja $f(x) = x^3+2x+1$, com $f(1) = 4$. Calcule $\big(f^{-1}\big)'(4)$.
 
 Derive:
 
-**(a)** $f(x) = \operatorname{arctg}(2x)$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = x\arccos x$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = \big(\operatorname{arctg} x\big)^3$
+**(a)** $f(x) = \mathrm{arctg}(2x)$ &nbsp;&nbsp;&nbsp; **(b)** $f(x) = x\arccos x$ &nbsp;&nbsp;&nbsp; **(c)** $f(x) = \big(\mathrm{arctg}\thinspace x\big)^3$
 
 ---
 

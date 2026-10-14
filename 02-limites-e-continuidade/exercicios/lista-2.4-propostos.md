@@ -72,7 +72,7 @@
 
 **16.** Calcule $\lim\limits_{x\to0^{+}} \ln x$ e $\lim\limits_{x\to+\infty} \ln x$, e diga que assíntota o gráfico de $\ln$ possui.
 
-**17.** $\lim\limits_{x\to+\infty} \dfrac{\operatorname{sen} x}{x}$ &nbsp;&nbsp;*(cuidado: aqui $x\to+\infty$, não $x \to 0$)*
+**17.** $\lim\limits_{x\to+\infty} \dfrac{\mathrm{sen}\thinspace x}{x}$ &nbsp;&nbsp;*(cuidado: aqui $x\to+\infty$, não $x \to 0$)*
 
 **18.** $\lim\limits_{x\to+\infty}\left(\sqrt{4x^2+x} - 2x\right)$
 
@@ -82,7 +82,7 @@
 
 **19.** $\lim\limits_{x\to+\infty} x\left(\sqrt{x^2+1} - x\right)$
 
-**20.** $\lim\limits_{x\to+\infty} \dfrac{x^2\operatorname{sen}\frac1x}{x+1}$
+**20.** $\lim\limits_{x\to+\infty} \dfrac{x^2\mathrm{sen}\thinspace\frac1x}{x+1}$
 
 **21.** Determine $a$ e $b$ para que
 

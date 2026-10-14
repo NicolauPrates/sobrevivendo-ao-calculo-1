@@ -157,30 +157,37 @@ O GitHub renderiza LaTeX nativamente. As regras abaixo não são estéticas: cad
 | Limite | `\lim_{x \to a}` | `lim`, `\lim_{x->a}` |
 | Diferencial | `\int f(x)\thinspace dx` | `\int f(x) dx`, `\int f(x)\,dx` |
 | Texto dentro da fórmula | `\text{se } x > 0` | palavras em itálico de variável |
-| Função composta de nome longo | `\operatorname{arcsec} x` | `arcsec\,x` |
+| Função composta de nome longo | `\mathrm{arcsec}\thinspace x` | `arcsec\,x` |
 | Épsilon e delta | `\varepsilon`, `\delta` | `\epsilon` (o símbolo "lunar" não é o usado nos livros) |
-| Seno e tangente | `\operatorname{sen}`, `\operatorname{tg}` | `\sin`, `\tan`, `sen` sem comando |
+| Seno e tangente | `\mathrm{sen}`, `\mathrm{tg}` | `\sin`, `\tan`, `sen` sem comando |
 | Cosseno, log | `\cos`, `\ln`, `\log` | `cos` sem barra, `Ln` |
 
 ### Notação trigonométrica — padrão brasileiro
 
-O material usa a notação dos livros brasileiros e do quadro do professor, e **não** a do LaTeX em inglês. O LaTeX não traz esses comandos prontos, então eles são escritos com `\operatorname`:
+O material usa a notação dos livros brasileiros e do quadro do professor, e **não** a do LaTeX em inglês. O LaTeX não traz esses comandos prontos, então eles são escritos com **`\mathrm`** — veja a **§5.2** logo abaixo para o motivo de não ser `\operatorname`:
 
 | Função | Escreva | Renderiza | Nunca use |
 | --- | --- | :---: | --- |
-| seno | `\operatorname{sen} x` | $\operatorname{sen} x$ | `\sin` |
+| seno | `\mathrm{sen}\thinspace x` | $\mathrm{sen}\thinspace x$ | `\sin` |
 | cosseno | `\cos x` | $\cos x$ | `cos` sem barra |
-| tangente | `\operatorname{tg} x` | $\operatorname{tg} x$ | `\tan` |
-| cotangente | `\operatorname{cotg} x` | $\operatorname{cotg} x$ | `\cot` |
+| tangente | `\mathrm{tg}\thinspace x` | $\mathrm{tg}\thinspace x$ | `\tan` |
+| cotangente | `\mathrm{cotg}\thinspace x` | $\mathrm{cotg}\thinspace x$ | `\cot` |
 | secante | `\sec x` | $\sec x$ | — |
-| cossecante | `\operatorname{cossec} x` | $\operatorname{cossec} x$ | `\csc` |
-| arco seno | `\operatorname{arcsen} x` | $\operatorname{arcsen} x$ | `\arcsin` |
-| arco tangente | `\operatorname{arctg} x` | $\operatorname{arctg} x$ | `\arctan` |
+| cossecante | `\mathrm{cossec}\thinspace x` | $\mathrm{cossec}\thinspace x$ | `\csc` |
+| arco seno | `\mathrm{arcsen}\thinspace x` | $\mathrm{arcsen}\thinspace x$ | `\arcsin` |
+| arco tangente | `\mathrm{arctg}\thinspace x` | $\mathrm{arctg}\thinspace x$ | `\arctan` |
 
-Potências e inversas funcionam normalmente: `\operatorname{sen}^2 x` dá $\operatorname{sen}^2 x$, e `\operatorname{tg}^{-1} x` dá $\operatorname{tg}^{-1} x$.
+Potências e inversas funcionam normalmente: `\mathrm{sen}^2\thinspace x` dá $\mathrm{sen}^2\thinspace x$, e `\mathrm{tg}^{-1}\thinspace x` dá $\mathrm{tg}^{-1}\thinspace x$.
+
+> [!CAUTION]
+> **O `\thinspace` é obrigatório, e precisa de um espaço depois quando vier letra.**
+>
+> O `\mathrm` só troca a fonte: ele **não** gera o espaçamento de operador. Sem o `\thinspace`, `\mathrm{sen}x` sai grudado — "senx".
+>
+> E, como nome de comando no TeX é uma sequência de letras, `\thinspacex` vira um comando inexistente e derruba a página. Escreva sempre `\thinspace x`, com o espaço.
 
 > [!NOTE]
-> Nos **scripts de gráfico** o rótulo é escrito com o *mathtext* do matplotlib, que é mais limitado: lá se escreve `$\mathrm{sen}\,x$` (e `|x|` no lugar de `\lvert x \rvert`, porque o mathtext não conhece esse comando).
+> Nos **scripts de gráfico** o rótulo é escrito com o *mathtext* do matplotlib, que é mais limitado: lá se escreve `$\mathrm{sen}\,x$` — com `\,` mesmo, porque ali não há Markdown para comer a barra — e `|x|` no lugar de `\lvert x \rvert`, porque o mathtext não conhece esse comando.
 
 ### 5.1 ⚠️ A regra mais importante deste arquivo: barra invertida antes de pontuação
 
@@ -224,13 +231,34 @@ $$
 
 Nesse formato o GitHub **não** aplica escapes, e `\\`, `&` e tudo mais chegam intactos ao LaTeX. O mesmo vale dentro de citação (`>`), desde que cada linha do bloco leve o seu `>`.
 
-### 5.2 Outras armadilhas de renderização
+### 5.2 ⚠️ Macros que o GitHub recusa
+
+Ser LaTeX válido **não basta**. O GitHub mantém uma lista própria de macros bloqueadas e, ao encontrar uma, descarta a fórmula inteira e imprime no lugar uma tarja vermelha:
+
+> The following macros are not allowed: operatorname
+
+| Nunca use | Use em lugar dele |
+| --- | --- |
+| `\operatorname{sen}` | `\mathrm{sen}\thinspace` |
+| `\def`, `\newcommand`, `\renewcommand`, `\gdef`, `\let` | escreva a expressão por extenso |
+
+> [!CAUTION]
+> **Esta armadilha é invisível em qualquer teste local.** O KaTeX, o MathJax e o VS Code aceitam `\operatorname` sem reclamar — só o GitHub recusa. E a mensagem de erro é gerada **no navegador**, então nem baixar o HTML da página publicada acusa o problema.
+>
+> Foi assim que `\operatorname` entrou em 82 arquivos deste repositório e passou por 16 mil fórmulas verificadas antes de alguém abrir a página e ver a tarja.
+
+**O verificador agora pega isso.** A checagem de macros proibidas roda **antes** do KaTeX, exatamente porque o KaTeX não reclamaria. A lista está no topo do script em [`extras/verificador-latex/verifica.html`](extras/verificador-latex/verifica.html) — se você descobrir outra macro recusada, acrescente-a ali.
+
+> [!NOTE]
+> **Não existe lista oficial.** O GitHub não documenta quais macros bloqueia. A nossa é empírica: cresce quando alguém encontra mais uma. Por isso a regra do final da §5.3 continua valendo — **confira na página publicada**.
+
+### 5.3 Outras armadilhas de renderização
 
 1. **Não deixe espaço depois do `$` de abertura**: `$ x $` pode não renderizar; `$x$` sempre renderiza.
 2. **Dentro de tabelas**, o caractere `|` quebra a célula: use `\mid`, `\lvert`, `\rvert`.
 3. **Em listas numeradas**, um `$$` destacado precisa estar **indentado com 3 espaços** para continuar pertencendo ao item.
 4. **Um cifrão solto no texto** (`custa \$5`) pode desregular o pareamento de `$` e desligar a matemática do **documento inteiro**. Escreva "5 reais", ou ponha o cifrão dentro de `código`.
-5. **Não use `\label`, `\ref`, `\tag` nem `\newcommand`** — o renderizador do GitHub não mantém estado entre blocos.
+5. **Não use `\label`, `\ref` nem `\tag`** — o renderizador do GitHub não mantém estado entre blocos. (`\newcommand` e as outras macros de definição estão na §5.2.)
 
 > [!TIP]
 > **Confira sempre na página publicada, não no editor local.** O VS Code renderiza `\{` sem reclamar; o GitHub, não. Depois de publicar, abra a página e verifique se há tarja vermelha no topo e se os cifrões sumiram do texto.

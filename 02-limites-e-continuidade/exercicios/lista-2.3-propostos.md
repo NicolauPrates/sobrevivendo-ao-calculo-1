@@ -1,6 +1,6 @@
 # 📝 Lista 2.3 — Teorema do Confronto e limites trigonométricos
 
-> **Antes de começar:** leia a [teoria 2.3](../2.3-teorema-do-sanduiche.md). Tenha em mãos o limite fundamental $\lim_{x\to0}\frac{\operatorname{sen} x}{x} = 1$ — quase toda questão desta lista se resume a fazê-lo aparecer.
+> **Antes de começar:** leia a [teoria 2.3](../2.3-teorema-do-sanduiche.md). Tenha em mãos o limite fundamental $\lim_{x\to0}\frac{\mathrm{sen}\thinspace x}{x} = 1$ — quase toda questão desta lista se resume a fazê-lo aparecer.
 
 | Bloco | Exercícios | Quanto fazer |
 | --- | :---: | --- |
@@ -14,17 +14,17 @@
 
 **1.** Calcule, usando o limite fundamental:
 
-&nbsp;&nbsp;**(a)** $\lim\limits_{x\to0} \dfrac{\operatorname{sen} 4x}{x}$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to0} \dfrac{\operatorname{sen} x}{3x}$ &nbsp;&nbsp;&nbsp; **(c)** $\lim\limits_{x\to0} \dfrac{\operatorname{sen} 2x}{\operatorname{sen} 5x}$ &nbsp;&nbsp;&nbsp; **(d)** $\lim\limits_{x\to0} \dfrac{\operatorname{tg} 3x}{x}$
+&nbsp;&nbsp;**(a)** $\lim\limits_{x\to0} \dfrac{\mathrm{sen}\thinspace 4x}{x}$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to0} \dfrac{\mathrm{sen}\thinspace x}{3x}$ &nbsp;&nbsp;&nbsp; **(c)** $\lim\limits_{x\to0} \dfrac{\mathrm{sen}\thinspace 2x}{\mathrm{sen}\thinspace 5x}$ &nbsp;&nbsp;&nbsp; **(d)** $\lim\limits_{x\to0} \dfrac{\mathrm{tg}\thinspace 3x}{x}$
 
 **2.** Calcule pelo teorema do anulamento:
 
-&nbsp;&nbsp;**(a)** $\lim\limits_{x\to0} x\operatorname{sen}\dfrac1x$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to0} x^2\cos\dfrac1x$ &nbsp;&nbsp;&nbsp; **(c)** $\lim\limits_{x\to0} x^4\operatorname{sen}\dfrac{1}{x^3}$
+&nbsp;&nbsp;**(a)** $\lim\limits_{x\to0} x\mathrm{sen}\thinspace\dfrac1x$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to0} x^2\cos\dfrac1x$ &nbsp;&nbsp;&nbsp; **(c)** $\lim\limits_{x\to0} x^4\mathrm{sen}\thinspace\dfrac{1}{x^3}$
 
 **3.** Sabe-se que $3x-1 \leqslant f(x) \leqslant x^2+1$ para todo $x$ próximo de $2$. Calcule $\lim\limits_{x\to2} f(x)$.
 
 **4.** Calcule:
 
-&nbsp;&nbsp;**(a)** $\lim\limits_{x\to0} \dfrac{1-\cos x}{x}$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to0} \dfrac{1-\cos x}{x^2}$ &nbsp;&nbsp;&nbsp; **(c)** $\lim\limits_{x\to0} \dfrac{x}{\operatorname{sen} x}$
+&nbsp;&nbsp;**(a)** $\lim\limits_{x\to0} \dfrac{1-\cos x}{x}$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to0} \dfrac{1-\cos x}{x^2}$ &nbsp;&nbsp;&nbsp; **(c)** $\lim\limits_{x\to0} \dfrac{x}{\mathrm{sen}\thinspace x}$
 
 **5.** Verdadeiro ou falso? Justifique.
 
@@ -32,19 +32,19 @@
 
 &nbsp;&nbsp;**(b)** Se $g \leqslant f \leqslant h$ perto de $a$, com $\lim g = 1$ e $\lim h = 3$, então $\lim f$ existe.
 
-&nbsp;&nbsp;**(c)** $\lim\limits_{x\to0}\frac{\operatorname{sen} x}{x} = 1$ vale com $x$ medido em graus.
+&nbsp;&nbsp;**(c)** $\lim\limits_{x\to0}\frac{\mathrm{sen}\thinspace x}{x} = 1$ vale com $x$ medido em graus.
 
 &nbsp;&nbsp;**(d)** Se $f$ é limitada perto de $a$ e $g(x) \to 0$, então $f(x)g(x) \to 0$.
 
 **6.** Calcule:
 
-&nbsp;&nbsp;**(a)** $\lim\limits_{x\to0} \dfrac{\operatorname{sen}(x^2)}{x}$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to0} \dfrac{\operatorname{sen}^2 x}{x^2}$ &nbsp;&nbsp;&nbsp; **(c)** $\lim\limits_{x\to0} \dfrac{x}{\operatorname{tg} x}$
+&nbsp;&nbsp;**(a)** $\lim\limits_{x\to0} \dfrac{\mathrm{sen}(x^2)}{x}$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to0} \dfrac{\mathrm{sen}^2\thinspace x}{x^2}$ &nbsp;&nbsp;&nbsp; **(c)** $\lim\limits_{x\to0} \dfrac{x}{\mathrm{tg}\thinspace x}$
 
 **7.** Calcule — e repare que **nenhum dos dois** é indeterminação:
 
-&nbsp;&nbsp;**(a)** $\lim\limits_{x\to\pi} \dfrac{\operatorname{sen} x}{x}$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to\pi/2} \dfrac{\operatorname{sen} x}{x}$
+&nbsp;&nbsp;**(a)** $\lim\limits_{x\to\pi} \dfrac{\mathrm{sen}\thinspace x}{x}$ &nbsp;&nbsp;&nbsp; **(b)** $\lim\limits_{x\to\pi/2} \dfrac{\mathrm{sen}\thinspace x}{x}$
 
-**8.** Calcule $\lim\limits_{x\to0} \dfrac{\operatorname{sen} 3x}{5x}$.
+**8.** Calcule $\lim\limits_{x\to0} \dfrac{\mathrm{sen}\thinspace 3x}{5x}$.
 
 ---
 
@@ -52,13 +52,13 @@
 
 **9.** $\lim\limits_{x\to0} \dfrac{\cos x - 1}{x^2}$
 
-**10.** $\lim\limits_{x\to0} \dfrac{\operatorname{sen} 2x}{x+x^2}$
+**10.** $\lim\limits_{x\to0} \dfrac{\mathrm{sen}\thinspace 2x}{x+x^2}$
 
-**11.** $\lim\limits_{x\to0} \dfrac{x - \operatorname{sen} x}{x}$
+**11.** $\lim\limits_{x\to0} \dfrac{x - \mathrm{sen}\thinspace x}{x}$
 
-**12.** $\lim\limits_{x\to0} \dfrac{\operatorname{tg} x - \operatorname{sen} x}{x^3}$
+**12.** $\lim\limits_{x\to0} \dfrac{\mathrm{tg}\thinspace x - \mathrm{sen}\thinspace x}{x^3}$
 
-**13.** $\lim\limits_{x\to0} \operatorname{sen} x \cdot \cos\dfrac1x$
+**13.** $\lim\limits_{x\to0} \mathrm{sen}\thinspace x \cdot \cos\dfrac1x$
 
 **14.** Mostre que $\lim\limits_{x\to0^{+}} x\left\lfloor \dfrac1x \right\rfloor = 1$.
 
@@ -66,7 +66,7 @@
 
 **15.** $\lim\limits_{h\to0} \dfrac{\cos(a+h) - \cos a}{h}$, com $a$ constante.
 
-**16.** $\lim\limits_{x\to0} \dfrac{\operatorname{sen} 5x - \operatorname{sen} 3x}{x}$
+**16.** $\lim\limits_{x\to0} \dfrac{\mathrm{sen}\thinspace 5x - \mathrm{sen}\thinspace 3x}{x}$
 
 **17.** Sabe-se que $\lvert f(x) - 3 \rvert \leqslant 2\lvert x-1 \rvert$ para todo $x$ real. Mostre que $\lim\limits_{x\to1} f(x) = 3$.
 
@@ -76,13 +76,13 @@
 
 ## Bloco C · Desafio
 
-**19.** $\lim\limits_{x\to0} \dfrac{\operatorname{sen}(\operatorname{sen} x)}{x}$
+**19.** $\lim\limits_{x\to0} \dfrac{\mathrm{sen}(\mathrm{sen}\thinspace x)}{x}$
 
-**20.** $\lim\limits_{x\to0} \dfrac{\sqrt{1+\operatorname{sen} x} - \sqrt{1-\operatorname{sen} x}}{x}$
+**20.** $\lim\limits_{x\to0} \dfrac{\sqrt{1+\mathrm{sen}\thinspace x} - \sqrt{1-\mathrm{sen}\thinspace x}}{x}$
 
 **21.** Demonstre o **teorema do anulamento** a partir do Teorema do Confronto: se $f$ é limitada perto de $a$ e $\lim\limits_{x\to a} g(x) = 0$, então $\lim\limits_{x\to a} f(x)g(x) = 0$.
 
-**22.** $\lim\limits_{x\to1} \dfrac{\operatorname{sen}(x-1)}{x^2-1}$
+**22.** $\lim\limits_{x\to1} \dfrac{\mathrm{sen}(x-1)}{x^2-1}$
 
 ---
 
